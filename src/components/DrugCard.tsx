@@ -23,6 +23,7 @@ export function DrugCard({ drug }: DrugCardProps) {
         </span>
         <span className="drug-card__class">{drug.drugClass}</span>
         <span className="drug-card__tags">
+          <span className={`priority-tag priority-tag--${drug.priority.toLowerCase()}`}>{drug.priority}</span>
           {categories.slice(0, 3).map((category) => (
             <span key={category.id}>{category.shortName}</span>
           ))}

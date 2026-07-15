@@ -5,7 +5,7 @@ import { LogoMark } from '../components/LogoMark'
 import { SafetyBanner } from '../components/SafetyBanner'
 import { SearchBar } from '../components/SearchBar'
 import { drugCategories } from '../data/categories'
-import { drugs } from '../data/drugs'
+import { catalogDrugCount, drugs, reviewedDrugCount } from '../data/drugs'
 import { searchDrugs } from '../lib/search'
 
 export function HomePage() {
@@ -56,7 +56,7 @@ export function HomePage() {
             ) : (
               <div className="empty-state">
                 <strong>Sem resultados para “{query}”</strong>
-                <p>Tente outro nome, classe ou indicação. A base seed é deliberadamente pequena.</p>
+                <p>Tente outro nome, classe, indicação, subcategoria ou alias.</p>
               </div>
             )}
           </section>
@@ -64,11 +64,14 @@ export function HomePage() {
           <section className="categories-section">
             <div className="section-heading">
               <div>
-                <span className="eyebrow">Biblioteca por validar</span>
+                <span className="eyebrow">Catálogo de Medicina Intensiva</span>
                 <h2>Explorar por categoria</h2>
-                <p>Uma estrutura preparada para crescer sem misturar conteúdo clínico com a interface.</p>
+                <p>
+                  {reviewedDrugCount} fichas documentadas em revisão; as restantes entradas
+                  mantêm placeholders explícitos até validação bibliográfica e local.
+                </p>
               </div>
-              <span className="record-count">{drugs.length} fichas seed</span>
+              <span className="record-count">{catalogDrugCount} fármacos</span>
             </div>
             <div className="category-grid">
               {drugCategories.map((category) => (

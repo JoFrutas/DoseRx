@@ -145,6 +145,9 @@ img { display: block; max-width: 100%; }
 .drug-card__class { margin-top: 4px; color: var(--mid); font-size: 12px; }
 .drug-card__tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
 .drug-card__tags > span, .drug-hero__tags a { padding: 3px 8px; color: var(--primary); background: var(--primary-light); border: 1px solid #b8e6de; border-radius: 999px; font-size: 9px; font-weight: 800; text-decoration: none; }
+.drug-card__tags .priority-tag { color: #475467; background: #f2f4f7; border-color: #d0d5dd; }
+.drug-card__tags .priority-tag--p1 { color: #9c2a10; background: #fff1ed; border-color: #f7c3b7; }
+.drug-card__tags .priority-tag--p2 { color: #854a0e; background: #fff8e8; border-color: #f2d49a; }
 .validation-badge { display: inline-flex; align-items: center; gap: 6px; width: fit-content; padding: 4px 8px; border-radius: 999px; font-size: 9px; font-weight: 800; letter-spacing: .02em; }
 .validation-badge > span { width: 6px; height: 6px; border-radius: 50%; }
 .validation-badge--not-validated { color: var(--warning); background: var(--warning-bg); border: 1px solid #f6d9a5; }
@@ -222,6 +225,9 @@ img { display: block; max-width: 100%; }
 .prescription-list article strong { font-size: 12px; }
 .prescription-list code { display: block; margin-top: 11px; padding: 11px 12px; overflow-wrap: anywhere; color: #7a2e0e; background: var(--warning-bg); border-left: 3px solid #f79009; border-radius: 7px; font-family: "Cascadia Code", Consolas, monospace; font-size: 11px; line-height: 1.5; }
 .prescription-list p { margin: 8px 0 0; color: var(--mid); font-size: 11px; }
+.source-links { display: flex; align-items: center; flex-wrap: wrap; gap: 5px 8px; margin-top: 10px; color: var(--muted); font-size: 10px; }
+.source-links > span:first-child { font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.source-links a { color: var(--primary); font-weight: 800; text-decoration: underline; text-underline-offset: 2px; }
 .two-column-list { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .two-column-list > div { padding: 13px; background: var(--danger-bg); border: 1px solid #f7c6c2; border-radius: var(--radius-sm); }
 .two-column-list h3 { margin: 0 0 9px; color: var(--danger); }

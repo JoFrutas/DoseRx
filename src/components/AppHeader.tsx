@@ -14,7 +14,7 @@ export function AppHeader() {
         </a>
         <div className="header-status">
           <span className="status-dot" />
-          Conteúdo clínico por validar
+          Validação local obrigatória
         </div>
       </div>
     </header>

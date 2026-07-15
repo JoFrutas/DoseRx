@@ -1,11 +1,13 @@
-import type { DoseAdjustment } from '../types/drug'
+import type { DoseAdjustment, EvidenceReference } from '../types/drug'
+import { SourceLinks } from './SourceLinks'
 import { ValidationBadge } from './ValidationBadge'
 
 interface DoseAdjustmentListProps {
   items: DoseAdjustment[]
+  references: EvidenceReference[]
 }
 
-export function DoseAdjustmentList({ items }: DoseAdjustmentListProps) {
+export function DoseAdjustmentList({ items, references }: DoseAdjustmentListProps) {
   return (
     <div className="adjustment-list">
       {items.map((item) => (
@@ -20,6 +22,7 @@ export function DoseAdjustmentList({ items }: DoseAdjustmentListProps) {
               {item.notes.map((note) => <li key={note}>{note}</li>)}
             </ul>
           )}
+          <SourceLinks sourceIds={item.sourceIds} references={references} />
         </article>
       ))}
     </div>

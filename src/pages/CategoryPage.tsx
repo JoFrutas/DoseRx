@@ -48,8 +48,8 @@ export function CategoryPage({ categoryId }: CategoryPageProps) {
           </div>
         ) : (
           <div className="empty-state">
-            <strong>Ainda não existem fichas seed nesta categoria.</strong>
-            <p>A categoria já está pronta para receber dados clínicos estruturados.</p>
+            <strong>Ainda não existem fármacos nesta categoria.</strong>
+            <p>A categoria já está pronta para receber conteúdo clínico estruturado.</p>
           </div>
         )}
       </section>

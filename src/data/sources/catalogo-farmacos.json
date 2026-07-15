@@ -1,0 +1,5714 @@
+[
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Penicilinas naturais e antiestafilocócicas",
+    "Fármaco / produto": "Benzilpenicilina (penicilina G)",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Penicilinas naturais e antiestafilocócicas",
+    "Fármaco / produto": "Flucloxacilina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminopenicilinas e combinações",
+    "Fármaco / produto": "Ampicilina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminopenicilinas e combinações",
+    "Fármaco / produto": "Amoxicilina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminopenicilinas e combinações",
+    "Fármaco / produto": "Amoxicilina/ácido clavulânico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminopenicilinas e combinações",
+    "Fármaco / produto": "Ampicilina/sulbactam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Penicilinas antipseudomonas",
+    "Fármaco / produto": "Piperacilina/tazobactam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Penicilinas especiais",
+    "Fármaco / produto": "Temocilina",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Disponibilidade e preferência variam por país."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Penicilinas especiais",
+    "Fármaco / produto": "Oxacilina",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Disponibilidade e preferência variam por país."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Penicilinas especiais",
+    "Fármaco / produto": "Nafcilina",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Disponibilidade e preferência variam por país."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 1.ª/2.ª geração",
+    "Fármaco / produto": "Cefazolina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 1.ª/2.ª geração",
+    "Fármaco / produto": "Cefuroxima",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 1.ª/2.ª geração",
+    "Fármaco / produto": "Cefoxitina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 3.ª geração",
+    "Fármaco / produto": "Cefotaxima",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 3.ª geração",
+    "Fármaco / produto": "Ceftriaxona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 3.ª geração",
+    "Fármaco / produto": "Ceftazidima",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 4.ª/5.ª geração",
+    "Fármaco / produto": "Cefepima",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 4.ª/5.ª geração",
+    "Fármaco / produto": "Ceftarolina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas de 4.ª/5.ª geração",
+    "Fármaco / produto": "Ceftobiprole",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas/inibidores para multirresistência",
+    "Fármaco / produto": "Ceftazidima/avibactam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas/inibidores para multirresistência",
+    "Fármaco / produto": "Ceftolozano/tazobactam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas/inibidores especiais",
+    "Fármaco / produto": "Cefoperazona/sulbactam",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Disponibilidade regulamentar/local variável."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Cefalosporinas/inibidores especiais",
+    "Fármaco / produto": "Cefepima/enmetazobactam",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Disponibilidade regulamentar/local variável."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Sideróforo",
+    "Fármaco / produto": "Cefiderocol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Carbapenemes",
+    "Fármaco / produto": "Meropenem",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Carbapenemes",
+    "Fármaco / produto": "Imipenem/cilastatina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Carbapenemes",
+    "Fármaco / produto": "Ertapenem",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Carbapenemes/inibidores",
+    "Fármaco / produto": "Meropenem/vaborbactam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Carbapenemes/inibidores",
+    "Fármaco / produto": "Imipenem/cilastatina/relebactam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Carbapenemes especiais",
+    "Fármaco / produto": "Doripenem",
+    "Prioridade": "P3",
+    "Notas de âmbito": "Uso e disponibilidade limitados."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Monobactâmicos",
+    "Fármaco / produto": "Aztreonam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Monobactâmicos/inibidores",
+    "Fármaco / produto": "Aztreonam/avibactam",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Importante para metalo-beta-lactamases; disponibilidade local variável."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Glicopeptídeos",
+    "Fármaco / produto": "Vancomicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Glicopeptídeos",
+    "Fármaco / produto": "Teicoplanina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Lipoglicopeptídeos",
+    "Fármaco / produto": "Dalbavancina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Lipoglicopeptídeos",
+    "Fármaco / produto": "Oritavancina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Lipoglicopeptídeos",
+    "Fármaco / produto": "Telavancina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Lipopeptídeos",
+    "Fármaco / produto": "Daptomicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Oxazolidinonas",
+    "Fármaco / produto": "Linezolida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Oxazolidinonas",
+    "Fármaco / produto": "Tedizolida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminoglicosídeos",
+    "Fármaco / produto": "Gentamicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminoglicosídeos",
+    "Fármaco / produto": "Amicacina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminoglicosídeos",
+    "Fármaco / produto": "Tobramicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminoglicosídeos especiais",
+    "Fármaco / produto": "Plazomicina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Aminoglicosídeos especiais",
+    "Fármaco / produto": "Estreptomicina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Macrólidos",
+    "Fármaco / produto": "Azitromicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Macrólidos",
+    "Fármaco / produto": "Claritromicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Macrólidos",
+    "Fármaco / produto": "Eritromicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Macrólidos especiais",
+    "Fármaco / produto": "Espiramicina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tetraciclinas",
+    "Fármaco / produto": "Doxiciclina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tetraciclinas",
+    "Fármaco / produto": "Minociclina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Glicilciclinas e derivados",
+    "Fármaco / produto": "Tigeciclina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Glicilciclinas e derivados",
+    "Fármaco / produto": "Eravaciclina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Glicilciclinas e derivados",
+    "Fármaco / produto": "Omadaciclina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Fluoroquinolonas",
+    "Fármaco / produto": "Ciprofloxacina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Fluoroquinolonas",
+    "Fármaco / produto": "Levofloxacina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Fluoroquinolonas",
+    "Fármaco / produto": "Moxifloxacina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Fluoroquinolonas especiais",
+    "Fármaco / produto": "Delafloxacina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Lincosamidas",
+    "Fármaco / produto": "Clindamicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Nitroimidazóis",
+    "Fármaco / produto": "Metronidazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Nitroimidazóis especiais",
+    "Fármaco / produto": "Tinidazol",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Nitroimidazóis especiais",
+    "Fármaco / produto": "Ornidazol",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Antifolatos",
+    "Fármaco / produto": "Trimetoprim/sulfametoxazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Antifolatos",
+    "Fármaco / produto": "Trimetoprim",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Polimixinas",
+    "Fármaco / produto": "Colistimetato de sódio (colistina)",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Polimixinas",
+    "Fármaco / produto": "Polimixina B",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Rifamicinas",
+    "Fármaco / produto": "Rifampicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Rifamicinas especiais",
+    "Fármaco / produto": "Rifabutina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Rifamicinas especiais",
+    "Fármaco / produto": "Rifapentina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Outros antibacterianos sistémicos",
+    "Fármaco / produto": "Fosfomicina intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Outros antibacterianos sistémicos",
+    "Fármaco / produto": "Cloranfenicol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Outros antibacterianos sistémicos",
+    "Fármaco / produto": "Quinupristina/dalfopristina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Outros antibacterianos sistémicos",
+    "Fármaco / produto": "Lefamulina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Clostridioides difficile",
+    "Fármaco / produto": "Vancomicina oral/entérica",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Clostridioides difficile",
+    "Fármaco / produto": "Fidaxomicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Clostridioides difficile",
+    "Fármaco / produto": "Metronidazol oral/entérico",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Bezlotoxumab é um anticorpo monoclonal adjuvante, não um antibiótico."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Clostridioides difficile",
+    "Fármaco / produto": "Bezlotoxumab",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Bezlotoxumab é um anticorpo monoclonal adjuvante, não um antibiótico."
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de primeira linha",
+    "Fármaco / produto": "Isoniazida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de primeira linha",
+    "Fármaco / produto": "Rifampicina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de primeira linha",
+    "Fármaco / produto": "Pirazinamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de primeira linha",
+    "Fármaco / produto": "Etambutol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de segunda linha",
+    "Fármaco / produto": "Bedaquilina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de segunda linha",
+    "Fármaco / produto": "Delamanid",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de segunda linha",
+    "Fármaco / produto": "Pretomanid",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de segunda linha",
+    "Fármaco / produto": "Cicloserina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de segunda linha",
+    "Fármaco / produto": "Clofazimina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de segunda linha",
+    "Fármaco / produto": "Etionamida",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AB",
+    "Categoria": "Antibióticos",
+    "Subcategoria": "Tuberculostáticos de segunda linha",
+    "Fármaco / produto": "Ácido para-aminossalicílico",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Azóis",
+    "Fármaco / produto": "Fluconazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Azóis",
+    "Fármaco / produto": "Voriconazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Azóis",
+    "Fármaco / produto": "Posaconazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Azóis",
+    "Fármaco / produto": "Isavuconazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Azóis",
+    "Fármaco / produto": "Itraconazol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Equinocandinas",
+    "Fármaco / produto": "Caspofungina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Equinocandinas",
+    "Fármaco / produto": "Micafungina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Equinocandinas",
+    "Fármaco / produto": "Anidulafungina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Equinocandinas de longa duração",
+    "Fármaco / produto": "Rezafungina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Polienos",
+    "Fármaco / produto": "Anfotericina B lipossómica",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Polienos",
+    "Fármaco / produto": "Anfotericina B desoxicolato",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Polienos",
+    "Fármaco / produto": "Complexo lipídico de anfotericina B",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Antimetabolitos",
+    "Fármaco / produto": "Flucitosina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AF",
+    "Categoria": "Antifúngicos",
+    "Subcategoria": "Tópicos/entéricos relevantes",
+    "Fármaco / produto": "Nistatina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Herpes simplex e varicela-zoster",
+    "Fármaco / produto": "Aciclovir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Herpes simplex e varicela-zoster",
+    "Fármaco / produto": "Valaciclovir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Citomegalovírus",
+    "Fármaco / produto": "Ganciclovir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Citomegalovírus",
+    "Fármaco / produto": "Valganciclovir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Citomegalovírus",
+    "Fármaco / produto": "Foscarnet",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Citomegalovírus — resistência/profilaxia",
+    "Fármaco / produto": "Cidofovir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Citomegalovírus — resistência/profilaxia",
+    "Fármaco / produto": "Letermovir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Citomegalovírus — resistência/profilaxia",
+    "Fármaco / produto": "Maribavir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Influenza",
+    "Fármaco / produto": "Oseltamivir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Influenza",
+    "Fármaco / produto": "Zanamivir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Influenza",
+    "Fármaco / produto": "Peramivir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Influenza",
+    "Fármaco / produto": "Baloxavir marboxil",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "SARS-CoV-2",
+    "Fármaco / produto": "Remdesivir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "SARS-CoV-2",
+    "Fármaco / produto": "Nirmatrelvir/ritonavir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "SARS-CoV-2",
+    "Fármaco / produto": "Molnupiravir",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Vírus sincicial respiratório",
+    "Fármaco / produto": "Ribavirina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Hepatite B",
+    "Fármaco / produto": "Entecavir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Hepatite B",
+    "Fármaco / produto": "Tenofovir disoproxil fumarato",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Hepatite B",
+    "Fármaco / produto": "Tenofovir alafenamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Hepatite B",
+    "Fármaco / produto": "Lamivudina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Mpox/orthopoxvírus",
+    "Fármaco / produto": "Tecovirimat",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Mpox/orthopoxvírus",
+    "Fármaco / produto": "Brincidofovir",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — inibidores da integrase",
+    "Fármaco / produto": "Dolutegravir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — inibidores da integrase",
+    "Fármaco / produto": "Bictegravir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — inibidores da integrase",
+    "Fármaco / produto": "Raltegravir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — análogos nucleós(t)idos",
+    "Fármaco / produto": "Tenofovir disoproxil fumarato",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — análogos nucleós(t)idos",
+    "Fármaco / produto": "Tenofovir alafenamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — análogos nucleós(t)idos",
+    "Fármaco / produto": "Emtricitabina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — análogos nucleós(t)idos",
+    "Fármaco / produto": "Lamivudina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — análogos nucleós(t)idos",
+    "Fármaco / produto": "Abacavir",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — análogos nucleós(t)idos",
+    "Fármaco / produto": "Zidovudina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — não nucleósidos",
+    "Fármaco / produto": "Efavirenz",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — não nucleósidos",
+    "Fármaco / produto": "Rilpivirina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — não nucleósidos",
+    "Fármaco / produto": "Doravirina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — inibidores da protease/boosters",
+    "Fármaco / produto": "Darunavir",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — inibidores da protease/boosters",
+    "Fármaco / produto": "Atazanavir",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — inibidores da protease/boosters",
+    "Fármaco / produto": "Ritonavir",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AV",
+    "Categoria": "Antivirais",
+    "Subcategoria": "Antirretrovirais — inibidores da protease/boosters",
+    "Fármaco / produto": "Cobicistato",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Malária grave",
+    "Fármaco / produto": "Artesunato intravenoso",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Malária grave",
+    "Fármaco / produto": "Quinina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Malária — tratamento complementar",
+    "Fármaco / produto": "Arteméter/lumefantrina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Malária — tratamento complementar",
+    "Fármaco / produto": "Atovaquona/proguanil",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Malária — tratamento complementar",
+    "Fármaco / produto": "Doxiciclina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Malária — tratamento complementar",
+    "Fármaco / produto": "Clindamicina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Malária — tratamento complementar",
+    "Fármaco / produto": "Primaquina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Pneumocystis jirovecii",
+    "Fármaco / produto": "Trimetoprim/sulfametoxazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Pneumocystis jirovecii",
+    "Fármaco / produto": "Pentamidina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Toxoplasmose",
+    "Fármaco / produto": "Pirimetamina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Toxoplasmose",
+    "Fármaco / produto": "Sulfadiazina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Toxoplasmose",
+    "Fármaco / produto": "Ácido folínico",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Toxoplasmose",
+    "Fármaco / produto": "Clindamicina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Amebíase e giardíase",
+    "Fármaco / produto": "Metronidazol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Amebíase e giardíase",
+    "Fármaco / produto": "Tinidazol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Amebíase e giardíase",
+    "Fármaco / produto": "Paromomicina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Estrongiloidíase/hiperinfecção",
+    "Fármaco / produto": "Ivermectina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Helmintas",
+    "Fármaco / produto": "Albendazol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Helmintas",
+    "Fármaco / produto": "Mebendazol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Helmintas",
+    "Fármaco / produto": "Praziquantel",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Leishmaniose",
+    "Fármaco / produto": "Anfotericina B lipossómica",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Leishmaniose",
+    "Fármaco / produto": "Antimoniato de meglumina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Leishmaniose",
+    "Fármaco / produto": "Miltefosina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Tripanossomíase",
+    "Fármaco / produto": "Benznidazol",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Tripanossomíase",
+    "Fármaco / produto": "Nifurtimox",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Tripanossomíase",
+    "Fármaco / produto": "Eflornitina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AP",
+    "Categoria": "Antiparasitários",
+    "Subcategoria": "Tripanossomíase",
+    "Fármaco / produto": "Suramina",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Benzodiazepinas para crise/estado de mal",
+    "Fármaco / produto": "Midazolam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Benzodiazepinas para crise/estado de mal",
+    "Fármaco / produto": "Lorazepam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Benzodiazepinas para crise/estado de mal",
+    "Fármaco / produto": "Diazepam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Benzodiazepinas de manutenção/adjuntas",
+    "Fármaco / produto": "Clonazepam",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Benzodiazepinas de manutenção/adjuntas",
+    "Fármaco / produto": "Clobazam",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Segunda linha no estado de mal",
+    "Fármaco / produto": "Levetiracetam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Segunda linha no estado de mal",
+    "Fármaco / produto": "Valproato de sódio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Segunda linha no estado de mal",
+    "Fármaco / produto": "Fosfenitoína",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Segunda linha no estado de mal",
+    "Fármaco / produto": "Fenitoína",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Segunda linha/alternativas intravenosas",
+    "Fármaco / produto": "Lacosamida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Segunda linha/alternativas intravenosas",
+    "Fármaco / produto": "Fenobarbital",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Alternativas intravenosas",
+    "Fármaco / produto": "Brivaracetam",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Estado de mal refractário — anestésicos",
+    "Fármaco / produto": "Propofol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Estado de mal refractário — anestésicos",
+    "Fármaco / produto": "Midazolam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Estado de mal refractário — anestésicos",
+    "Fármaco / produto": "Cetamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Estado de mal refractário — anestésicos",
+    "Fármaco / produto": "Tiopental",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Estado de mal super-refractário",
+    "Fármaco / produto": "Pentobarbital",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Estado de mal super-refractário",
+    "Fármaco / produto": "Isoflurano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Estado de mal super-refractário",
+    "Fármaco / produto": "Sevoflurano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Manutenção oral/entérica frequente",
+    "Fármaco / produto": "Carbamazepina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Manutenção oral/entérica frequente",
+    "Fármaco / produto": "Oxcarbazepina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Manutenção oral/entérica frequente",
+    "Fármaco / produto": "Eslicarbazepina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Manutenção oral/entérica frequente",
+    "Fármaco / produto": "Lamotrigina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Manutenção oral/entérica frequente",
+    "Fármaco / produto": "Topiramato",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Manutenção oral/entérica frequente",
+    "Fármaco / produto": "Zonisamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Manutenção oral/entérica frequente",
+    "Fármaco / produto": "Gabapentina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Manutenção oral/entérica frequente",
+    "Fármaco / produto": "Pregabalina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Antiepilépticos especializados",
+    "Fármaco / produto": "Perampanel",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Antiepilépticos especializados",
+    "Fármaco / produto": "Rufinamida",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Antiepilépticos especializados",
+    "Fármaco / produto": "Felbamato",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Antiepilépticos especializados",
+    "Fármaco / produto": "Etossuximida",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Antiepilépticos especializados",
+    "Fármaco / produto": "Stiripentol",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Antiepilépticos especializados",
+    "Fármaco / produto": "Cenobamato",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AE",
+    "Categoria": "Antiepilépticos / anticonvulsivantes",
+    "Subcategoria": "Antiepilépticos especializados",
+    "Fármaco / produto": "Primidona",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides de perfusão/uso frequente",
+    "Fármaco / produto": "Fentanilo",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides de perfusão/uso frequente",
+    "Fármaco / produto": "Remifentanilo",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides de perfusão/uso frequente",
+    "Fármaco / produto": "Morfina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides alternativos",
+    "Fármaco / produto": "Sufentanilo",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides alternativos",
+    "Fármaco / produto": "Alfentanilo",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides alternativos",
+    "Fármaco / produto": "Hidromorfona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides alternativos",
+    "Fármaco / produto": "Oxicodona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides alternativos",
+    "Fármaco / produto": "Metadona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides alternativos",
+    "Fármaco / produto": "Buprenorfina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Analgésicos não opióides",
+    "Fármaco / produto": "Paracetamol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Analgésicos não opióides",
+    "Fármaco / produto": "Metamizol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "AINE e adjuvantes analgésicos",
+    "Fármaco / produto": "Cetorolac",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "AINE e adjuvantes analgésicos",
+    "Fármaco / produto": "Ibuprofeno",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "AINE e adjuvantes analgésicos",
+    "Fármaco / produto": "Diclofenac",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "AINE e adjuvantes analgésicos",
+    "Fármaco / produto": "Dexketoprofeno",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "AINE e adjuvantes analgésicos",
+    "Fármaco / produto": "Nefopam",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "AINE e adjuvantes analgésicos",
+    "Fármaco / produto": "Lidocaína intravenosa",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sedativos principais",
+    "Fármaco / produto": "Propofol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sedativos principais",
+    "Fármaco / produto": "Dexmedetomidina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sedativos principais",
+    "Fármaco / produto": "Midazolam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sedativos principais",
+    "Fármaco / produto": "Cetamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sedativos/indutores para procedimentos",
+    "Fármaco / produto": "Etomidato",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sedativos/indutores para procedimentos",
+    "Fármaco / produto": "Tiopental",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sedação inalatória",
+    "Fármaco / produto": "Isoflurano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sedação inalatória",
+    "Fármaco / produto": "Sevoflurano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Agitação e delirium",
+    "Fármaco / produto": "Haloperidol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Agitação e delirium",
+    "Fármaco / produto": "Quetiapina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Agitação e delirium",
+    "Fármaco / produto": "Olanzapina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Agitação e delirium — alternativas",
+    "Fármaco / produto": "Risperidona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Agitação e delirium — alternativas",
+    "Fármaco / produto": "Droperidol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Agitação e delirium — alternativas",
+    "Fármaco / produto": "Ziprasidona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Agitação e delirium — alternativas",
+    "Fármaco / produto": "Aripiprazol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sono e ritmo circadiano",
+    "Fármaco / produto": "Melatonina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sono e ritmo circadiano",
+    "Fármaco / produto": "Ramelteona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Sono e ritmo circadiano",
+    "Fármaco / produto": "Trazodona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Abstinência alcoólica/simpática",
+    "Fármaco / produto": "Diazepam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Abstinência alcoólica/simpática",
+    "Fármaco / produto": "Lorazepam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Abstinência alcoólica/simpática",
+    "Fármaco / produto": "Midazolam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Abstinência alcoólica/simpática",
+    "Fármaco / produto": "Fenobarbital",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Abstinência alcoólica/simpática",
+    "Fármaco / produto": "Clonidina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Abstinência alcoólica/simpática",
+    "Fármaco / produto": "Dexmedetomidina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Abstinência alcoólica/simpática",
+    "Fármaco / produto": "Tiamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Anestésicos locais e analgesia regional",
+    "Fármaco / produto": "Lidocaína",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Anestésicos locais e analgesia regional",
+    "Fármaco / produto": "Bupivacaína",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Anestésicos locais e analgesia regional",
+    "Fármaco / produto": "Levobupivacaína",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Anestésicos locais e analgesia regional",
+    "Fármaco / produto": "Ropivacaína",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Despolarizante",
+    "Fármaco / produto": "Suxametónio (succinilcolina)",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Não despolarizantes — início rápido/intermédio",
+    "Fármaco / produto": "Rocurónio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Não despolarizantes — início rápido/intermédio",
+    "Fármaco / produto": "Cisatracúrio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Não despolarizantes — início rápido/intermédio",
+    "Fármaco / produto": "Atracúrio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Não despolarizantes — alternativas",
+    "Fármaco / produto": "Vecurónio",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Não despolarizantes — alternativas",
+    "Fármaco / produto": "Pancurónio",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Não despolarizantes — alternativas",
+    "Fármaco / produto": "Mivacúrio",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Reversão específica",
+    "Fármaco / produto": "Sugamadex",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Reversão por anticolinesterásico",
+    "Fármaco / produto": "Neostigmina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Reversão por anticolinesterásico",
+    "Fármaco / produto": "Glicopirrolato",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "BN",
+    "Categoria": "Bloqueadores neuromusculares e reversão",
+    "Subcategoria": "Reversão por anticolinesterásico",
+    "Fármaco / produto": "Atropina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasopressores de primeira linha",
+    "Fármaco / produto": "Noradrenalina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasopressores de primeira linha",
+    "Fármaco / produto": "Adrenalina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasopressores de primeira linha",
+    "Fármaco / produto": "Vasopressina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasopressores alternativos/resgate",
+    "Fármaco / produto": "Fenilefrina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasopressores alternativos/resgate",
+    "Fármaco / produto": "Terlipressina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasopressores alternativos/resgate",
+    "Fármaco / produto": "Metaraminol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasopressores alternativos/resgate",
+    "Fármaco / produto": "Angiotensina II",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasopressores alternativos/resgate",
+    "Fármaco / produto": "Dopamina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Inotrópicos",
+    "Fármaco / produto": "Dobutamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Inotrópicos",
+    "Fármaco / produto": "Milrinona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Inotrópicos de uso seleccionado",
+    "Fármaco / produto": "Levosimendano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Inotrópicos de uso seleccionado",
+    "Fármaco / produto": "Enoximona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Cronotrópicos/suporte peri-intubação",
+    "Fármaco / produto": "Isoprenalina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Cronotrópicos/suporte peri-intubação",
+    "Fármaco / produto": "Efedrina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasoplegia refractária — adjuvantes",
+    "Fármaco / produto": "Azul de metileno",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Utilização off-label/seleccionada; remeter também para Toxicologia."
+  },
+  {
+    "Código": "VI",
+    "Categoria": "Vasopressores, inotrópicos e cronotrópicos",
+    "Subcategoria": "Vasoplegia refractária — adjuvantes",
+    "Fármaco / produto": "Hidroxocobalamina",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Utilização off-label/seleccionada; remeter também para Toxicologia."
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Taquicardia supraventricular",
+    "Fármaco / produto": "Adenosina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Taquicardia supraventricular",
+    "Fármaco / produto": "Esmolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Taquicardia supraventricular",
+    "Fármaco / produto": "Metoprolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Taquicardia supraventricular",
+    "Fármaco / produto": "Diltiazem",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Taquicardia supraventricular",
+    "Fármaco / produto": "Verapamilo",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Fibrilhação/flutter auricular",
+    "Fármaco / produto": "Amiodarona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Fibrilhação/flutter auricular",
+    "Fármaco / produto": "Digoxina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Fibrilhação/flutter auricular",
+    "Fármaco / produto": "Esmolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Fibrilhação/flutter auricular",
+    "Fármaco / produto": "Metoprolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Fibrilhação/flutter auricular",
+    "Fármaco / produto": "Diltiazem",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Fibrilhação/flutter auricular",
+    "Fármaco / produto": "Verapamilo",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Cardioversão farmacológica",
+    "Fármaco / produto": "Flecainida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Cardioversão farmacológica",
+    "Fármaco / produto": "Propafenona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Cardioversão farmacológica",
+    "Fármaco / produto": "Ibutilida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Cardioversão farmacológica",
+    "Fármaco / produto": "Vernakalant",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Arritmia ventricular",
+    "Fármaco / produto": "Amiodarona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Arritmia ventricular",
+    "Fármaco / produto": "Lidocaína",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Arritmia ventricular",
+    "Fármaco / produto": "Procainamida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Arritmia ventricular",
+    "Fármaco / produto": "Sulfato de magnésio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Arritmia ventricular — alternativas",
+    "Fármaco / produto": "Sotalol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Arritmia ventricular — alternativas",
+    "Fármaco / produto": "Mexiletina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Bradicardia",
+    "Fármaco / produto": "Atropina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Bradicardia",
+    "Fármaco / produto": "Isoprenalina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Bradicardia",
+    "Fármaco / produto": "Adrenalina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AR",
+    "Categoria": "Antiarrítmicos",
+    "Subcategoria": "Bradicardia",
+    "Fármaco / produto": "Dopamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Nitratos e vasodilatadores",
+    "Fármaco / produto": "Nitroglicerina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Nitratos e vasodilatadores",
+    "Fármaco / produto": "Dinitrato de isossorbida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Nitratos e vasodilatadores",
+    "Fármaco / produto": "Nitroprussiato de sódio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Emergência hipertensiva — bloqueadores dos canais de cálcio",
+    "Fármaco / produto": "Nicardipina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Emergência hipertensiva — bloqueadores dos canais de cálcio",
+    "Fármaco / produto": "Clevidipina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Emergência hipertensiva — beta/bloqueio misto",
+    "Fármaco / produto": "Labetalol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Emergência hipertensiva — beta/bloqueio misto",
+    "Fármaco / produto": "Esmolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Emergência hipertensiva — outros",
+    "Fármaco / produto": "Urapidil",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Emergência hipertensiva — outros",
+    "Fármaco / produto": "Hidralazina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Emergência hipertensiva — outros",
+    "Fármaco / produto": "Enalaprilato",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Emergência hipertensiva — outros",
+    "Fármaco / produto": "Fenoldopam",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Síndrome coronária aguda — anti-isquémicos",
+    "Fármaco / produto": "Nitroglicerina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Síndrome coronária aguda — anti-isquémicos",
+    "Fármaco / produto": "Metoprolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Síndrome coronária aguda — anti-isquémicos",
+    "Fármaco / produto": "Esmolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Insuficiência cardíaca aguda",
+    "Fármaco / produto": "Furosemida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Insuficiência cardíaca aguda",
+    "Fármaco / produto": "Nitroglicerina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Insuficiência cardíaca aguda",
+    "Fármaco / produto": "Dobutamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Insuficiência cardíaca aguda",
+    "Fármaco / produto": "Milrinona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Insuficiência cardíaca — adjuvantes seleccionados",
+    "Fármaco / produto": "Acetazolamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Insuficiência cardíaca — adjuvantes seleccionados",
+    "Fármaco / produto": "Levosimendano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Insuficiência cardíaca — adjuvantes seleccionados",
+    "Fármaco / produto": "Tolvaptano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Pericardite/inflamação",
+    "Fármaco / produto": "Colchicina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Pericardite/inflamação",
+    "Fármaco / produto": "Ibuprofeno",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Pericardite/inflamação",
+    "Fármaco / produto": "Ácido acetilsalicílico",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Choque obstrutivo/hipertensão pulmonar",
+    "Fármaco / produto": "Óxido nítrico inalado",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Choque obstrutivo/hipertensão pulmonar",
+    "Fármaco / produto": "Epoprostenol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "CV",
+    "Categoria": "Cardiologia aguda e controlo tensional",
+    "Subcategoria": "Choque obstrutivo/hipertensão pulmonar",
+    "Fármaco / produto": "Iloprost",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Heparinas",
+    "Fármaco / produto": "Heparina não fraccionada",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Heparinas",
+    "Fármaco / produto": "Enoxaparina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Heparinas",
+    "Fármaco / produto": "Dalteparina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Heparinas",
+    "Fármaco / produto": "Tinzaparina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Inibidor indirecto do factor Xa",
+    "Fármaco / produto": "Fondaparinux",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Inibidores directos da trombina parenterais",
+    "Fármaco / produto": "Argatroban",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Inibidores directos da trombina parenterais",
+    "Fármaco / produto": "Bivalirudina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Anticoagulantes alternativos na HIT",
+    "Fármaco / produto": "Danaparóide",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antagonistas da vitamina K",
+    "Fármaco / produto": "Varfarina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antagonistas da vitamina K",
+    "Fármaco / produto": "Acenocumarol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Anticoagulantes orais directos",
+    "Fármaco / produto": "Apixabano",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Anticoagulantes orais directos",
+    "Fármaco / produto": "Rivaroxabano",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Anticoagulantes orais directos",
+    "Fármaco / produto": "Edoxabano",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Anticoagulantes orais directos",
+    "Fármaco / produto": "Dabigatrano",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antiagregantes orais",
+    "Fármaco / produto": "Ácido acetilsalicílico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antiagregantes orais",
+    "Fármaco / produto": "Clopidogrel",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antiagregantes orais",
+    "Fármaco / produto": "Ticagrelor",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antiagregantes orais",
+    "Fármaco / produto": "Prasugrel",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antiagregante P2Y12 intravenoso",
+    "Fármaco / produto": "Cangrelor",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Inibidores GP IIb/IIIa",
+    "Fármaco / produto": "Tirofibano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Inibidores GP IIb/IIIa",
+    "Fármaco / produto": "Eptifibatida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Inibidores GP IIb/IIIa",
+    "Fármaco / produto": "Abciximab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Fibrinolíticos",
+    "Fármaco / produto": "Alteplase",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Fibrinolíticos",
+    "Fármaco / produto": "Tenecteplase",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Fibrinolíticos alternativos",
+    "Fármaco / produto": "Reteplase",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Fibrinolíticos alternativos",
+    "Fármaco / produto": "Uroquinase",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Reversão de heparina",
+    "Fármaco / produto": "Protamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Reversão de antagonistas da vitamina K",
+    "Fármaco / produto": "Vitamina K",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Reversão de antagonistas da vitamina K",
+    "Fármaco / produto": "Concentrado de complexo protrombínico de 4 factores",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Reversão de antagonistas da vitamina K",
+    "Fármaco / produto": "Plasma fresco congelado",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Reversão de dabigatrano",
+    "Fármaco / produto": "Idarucizumab",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Reversão de inibidores do factor Xa",
+    "Fármaco / produto": "Andexanet alfa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Reversão de inibidores do factor Xa",
+    "Fármaco / produto": "Concentrado de complexo protrombínico de 4 factores",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antifibrinolíticos/hemostáticos",
+    "Fármaco / produto": "Ácido tranexâmico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antifibrinolíticos/hemostáticos",
+    "Fármaco / produto": "Desmopressina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antifibrinolíticos/hemostáticos especiais",
+    "Fármaco / produto": "Ácido aminocapróico",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "AT",
+    "Categoria": "Anticoagulantes, antiagregantes, fibrinolíticos e reversão",
+    "Subcategoria": "Antifibrinolíticos/hemostáticos especiais",
+    "Fármaco / produto": "Concentrado de complexo protrombínico activado",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Diuréticos de ansa",
+    "Fármaco / produto": "Furosemida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Diuréticos de ansa",
+    "Fármaco / produto": "Bumetanida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Diuréticos de ansa",
+    "Fármaco / produto": "Torasemida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Diurético de ansa alternativo",
+    "Fármaco / produto": "Ácido etacrínico",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Tiazidas e semelhantes",
+    "Fármaco / produto": "Metolazona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Tiazidas e semelhantes",
+    "Fármaco / produto": "Clorotiazida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Tiazidas e semelhantes",
+    "Fármaco / produto": "Hidroclorotiazida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Tiazidas e semelhantes",
+    "Fármaco / produto": "Clortalidona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Tiazidas e semelhantes",
+    "Fármaco / produto": "Indapamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Antagonistas da aldosterona",
+    "Fármaco / produto": "Espironolactona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Antagonistas da aldosterona",
+    "Fármaco / produto": "Eplerenona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Poupadores de potássio",
+    "Fármaco / produto": "Amilorida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Poupadores de potássio",
+    "Fármaco / produto": "Triamtereno",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Inibidor da anidrase carbónica",
+    "Fármaco / produto": "Acetazolamida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Diurético osmótico",
+    "Fármaco / produto": "Manitol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Antagonistas da vasopressina",
+    "Fármaco / produto": "Tolvaptano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Antagonistas da vasopressina",
+    "Fármaco / produto": "Conivaptano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "DI",
+    "Categoria": "Diuréticos e aquaréticos",
+    "Subcategoria": "Osmótico para hiponatremia",
+    "Fármaco / produto": "Ureia oral",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Potássio",
+    "Fármaco / produto": "Cloreto de potássio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Potássio",
+    "Fármaco / produto": "Fosfato de potássio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Potássio",
+    "Fármaco / produto": "Acetato de potássio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Magnésio",
+    "Fármaco / produto": "Sulfato de magnésio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Magnésio",
+    "Fármaco / produto": "Cloreto de magnésio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Cálcio",
+    "Fármaco / produto": "Gluconato de cálcio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Cálcio",
+    "Fármaco / produto": "Cloreto de cálcio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Fósforo",
+    "Fármaco / produto": "Fosfato de sódio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Fósforo",
+    "Fármaco / produto": "Fosfato de potássio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Correcção de acidose",
+    "Fármaco / produto": "Bicarbonato de sódio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Correcção de acidose — alternativa",
+    "Fármaco / produto": "Trometamol (THAM)",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Sódio hipertónico",
+    "Fármaco / produto": "Cloreto de sódio 3%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Sódio hipertónico",
+    "Fármaco / produto": "Cloreto de sódio 7,5%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Sódio hipertónico",
+    "Fármaco / produto": "Cloreto de sódio 23,4%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Glicose hipertónica/hipoglicemia",
+    "Fármaco / produto": "Glicose 10%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Glicose hipertónica/hipoglicemia",
+    "Fármaco / produto": "Glicose 20%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Glicose hipertónica/hipoglicemia",
+    "Fármaco / produto": "Glicose 30%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Glicose hipertónica/hipoglicemia",
+    "Fármaco / produto": "Glicose 50%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — estabilização/desvio",
+    "Fármaco / produto": "Gluconato de cálcio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — estabilização/desvio",
+    "Fármaco / produto": "Cloreto de cálcio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — estabilização/desvio",
+    "Fármaco / produto": "Insulina regular",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — estabilização/desvio",
+    "Fármaco / produto": "Glicose",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — estabilização/desvio",
+    "Fármaco / produto": "Salbutamol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — estabilização/desvio",
+    "Fármaco / produto": "Bicarbonato de sódio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — remoção gastrointestinal",
+    "Fármaco / produto": "Ciclossilicato de zircónio sódico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — remoção gastrointestinal",
+    "Fármaco / produto": "Patiromer",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — resinas antigas",
+    "Fármaco / produto": "Poliestireno sulfonato de sódio",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hipercaliemia — resinas antigas",
+    "Fármaco / produto": "Poliestireno sulfonato de cálcio",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Alcalose metabólica",
+    "Fármaco / produto": "Acetazolamida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Alcalose metabólica",
+    "Fármaco / produto": "Cloreto de potássio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hiponatremia/SIADH",
+    "Fármaco / produto": "Cloreto de sódio hipertónico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hiponatremia/SIADH",
+    "Fármaco / produto": "Ureia oral",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hiponatremia/SIADH",
+    "Fármaco / produto": "Tolvaptano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EL",
+    "Categoria": "Electrólitos e correcções metabólicas",
+    "Subcategoria": "Hiponatremia/SIADH",
+    "Fármaco / produto": "Conivaptano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Cristalóides balanceados",
+    "Fármaco / produto": "Lactato de Ringer",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Cristalóides balanceados",
+    "Fármaco / produto": "Solução de Hartmann",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Cristalóides balanceados",
+    "Fármaco / produto": "Plasma-Lyte",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Cristalóide não balanceado",
+    "Fármaco / produto": "Cloreto de sódio 0,9%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Albumina",
+    "Fármaco / produto": "Albumina humana 5%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Albumina",
+    "Fármaco / produto": "Albumina humana 20%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Albumina",
+    "Fármaco / produto": "Albumina humana 25%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Colóides sintéticos — evitar/uso muito restrito",
+    "Fármaco / produto": "Gelatina modificada",
+    "Prioridade": "P3",
+    "Notas de âmbito": "Devem existir na base para alertas de segurança e restrições, não como escolha preferencial."
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Colóides sintéticos — evitar/uso muito restrito",
+    "Fármaco / produto": "Hidroxietilamido",
+    "Prioridade": "P3",
+    "Notas de âmbito": "Devem existir na base para alertas de segurança e restrições, não como escolha preferencial."
+  },
+  {
+    "Código": "FL",
+    "Categoria": "Fluidos de ressuscitação",
+    "Subcategoria": "Colóides sintéticos — evitar/uso muito restrito",
+    "Fármaco / produto": "Dextrano",
+    "Prioridade": "P3",
+    "Notas de âmbito": "Devem existir na base para alertas de segurança e restrições, não como escolha preferencial."
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Paracetamol",
+    "Fármaco / produto": "N-acetilcisteína",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Opióides",
+    "Fármaco / produto": "Naloxona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Benzodiazepinas",
+    "Fármaco / produto": "Flumazenilo",
+    "Prioridade": "P1",
+    "Notas de âmbito": "Uso seleccionado devido ao risco de convulsões/abstinência."
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Álcoois tóxicos",
+    "Fármaco / produto": "Fomepizol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Álcoois tóxicos",
+    "Fármaco / produto": "Etanol intravenoso",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Organofosforados/carbamatos",
+    "Fármaco / produto": "Atropina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Organofosforados/carbamatos",
+    "Fármaco / produto": "Pralidoxima",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Organofosforados/carbamatos",
+    "Fármaco / produto": "Obidoxima",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Cianeto",
+    "Fármaco / produto": "Hidroxocobalamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Cianeto",
+    "Fármaco / produto": "Tiossulfato de sódio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Meta-hemoglobinemia",
+    "Fármaco / produto": "Azul de metileno",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Meta-hemoglobinemia",
+    "Fármaco / produto": "Ácido ascórbico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Síndrome serotoninérgica",
+    "Fármaco / produto": "Cipro-heptadina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Síndrome neuroléptica maligna",
+    "Fármaco / produto": "Dantroleno",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Síndrome neuroléptica maligna",
+    "Fármaco / produto": "Bromocriptina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Síndrome neuroléptica maligna",
+    "Fármaco / produto": "Amantadina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Hipertermia maligna",
+    "Fármaco / produto": "Dantroleno",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Anticolinérgicos",
+    "Fármaco / produto": "Fisostigmina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Beta-bloqueadores",
+    "Fármaco / produto": "Glucagon",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Beta-bloqueadores",
+    "Fármaco / produto": "Insulina em alta dose com euglicemia",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Beta-bloqueadores",
+    "Fármaco / produto": "Emulsão lipídica intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Bloqueadores dos canais de cálcio",
+    "Fármaco / produto": "Cloreto de cálcio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Bloqueadores dos canais de cálcio",
+    "Fármaco / produto": "Gluconato de cálcio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Bloqueadores dos canais de cálcio",
+    "Fármaco / produto": "Insulina em alta dose com euglicemia",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Bloqueadores dos canais de cálcio",
+    "Fármaco / produto": "Emulsão lipídica intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Antidepressivos tricíclicos/bloqueio de canais de sódio",
+    "Fármaco / produto": "Bicarbonato de sódio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Digoxina",
+    "Fármaco / produto": "Fragmentos Fab antidigoxina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Anestésicos locais e fármacos lipofílicos",
+    "Fármaco / produto": "Emulsão lipídica intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Isoniazida",
+    "Fármaco / produto": "Piridoxina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Sulfonilureias",
+    "Fármaco / produto": "Octreótido",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Sulfonilureias",
+    "Fármaco / produto": "Glicose",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Metotrexato",
+    "Fármaco / produto": "Ácido folínico (leucovorina)",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Metotrexato",
+    "Fármaco / produto": "Glucarpidase",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Valproato",
+    "Fármaco / produto": "L-carnitina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Ferro",
+    "Fármaco / produto": "Desferroxamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Metais pesados",
+    "Fármaco / produto": "Dimercaprol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Metais pesados",
+    "Fármaco / produto": "Succímero",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Metais pesados",
+    "Fármaco / produto": "Edetato de cálcio dissódico",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Metais pesados",
+    "Fármaco / produto": "Penicilamina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Tálio e césio",
+    "Fármaco / produto": "Azul da Prússia",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Radionuclídeos",
+    "Fármaco / produto": "Iodeto de potássio",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Radionuclídeos",
+    "Fármaco / produto": "Pentetato de cálcio trissódico",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Radionuclídeos",
+    "Fármaco / produto": "Pentetato de zinco trissódico",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Cogumelos amatoxínicos",
+    "Fármaco / produto": "Silibinina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Cogumelos amatoxínicos",
+    "Fármaco / produto": "N-acetilcisteína",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Cogumelos amatoxínicos",
+    "Fármaco / produto": "Benzilpenicilina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Botulismo",
+    "Fármaco / produto": "Antitoxina botulínica",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Tétano",
+    "Fármaco / produto": "Imunoglobulina humana antitetânica",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Envenenamento por serpente",
+    "Fármaco / produto": "Antiveneno polivalente",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Envenenamento por serpente",
+    "Fármaco / produto": "Antiveneno específico regional",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Envenenamentos marinhos/aranhas/escorpiões",
+    "Fármaco / produto": "Antiveneno específico regional",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Inibidores da bomba de protões",
+    "Fármaco / produto": "Pantoprazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Inibidores da bomba de protões",
+    "Fármaco / produto": "Omeprazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Inibidores da bomba de protões",
+    "Fármaco / produto": "Esomeprazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Inibidores da bomba de protões",
+    "Fármaco / produto": "Lansoprazol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antagonistas H2",
+    "Fármaco / produto": "Famotidina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Protecção da mucosa",
+    "Fármaco / produto": "Sucralfato",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Procinéticos",
+    "Fármaco / produto": "Metoclopramida",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Procinéticos",
+    "Fármaco / produto": "Eritromicina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Procinéticos/íleo",
+    "Fármaco / produto": "Domperidona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Procinéticos/íleo",
+    "Fármaco / produto": "Prucaloprida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Procinéticos/íleo",
+    "Fármaco / produto": "Neostigmina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antieméticos 5-HT3",
+    "Fármaco / produto": "Ondansetrom",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antieméticos 5-HT3",
+    "Fármaco / produto": "Granisetrom",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antieméticos 5-HT3",
+    "Fármaco / produto": "Palonossetrom",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antieméticos alternativos",
+    "Fármaco / produto": "Droperidol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antieméticos alternativos",
+    "Fármaco / produto": "Haloperidol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antieméticos alternativos",
+    "Fármaco / produto": "Proclorperazina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antieméticos alternativos",
+    "Fármaco / produto": "Ciclizina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Antieméticos alternativos",
+    "Fármaco / produto": "Dimenidrinato",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Laxantes osmóticos",
+    "Fármaco / produto": "Macrogol (polietilenoglicol)",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Laxantes osmóticos",
+    "Fármaco / produto": "Lactulose",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Laxantes estimulantes/rectais",
+    "Fármaco / produto": "Sene",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Laxantes estimulantes/rectais",
+    "Fármaco / produto": "Bisacodilo",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Laxantes estimulantes/rectais",
+    "Fármaco / produto": "Picossulfato de sódio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Laxantes estimulantes/rectais",
+    "Fármaco / produto": "Glicerina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Obstipação induzida por opióides",
+    "Fármaco / produto": "Metilnaltrexona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Obstipação induzida por opióides",
+    "Fármaco / produto": "Naloxegol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Obstipação induzida por opióides",
+    "Fármaco / produto": "Naldemedina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Diarreia não infecciosa seleccionada",
+    "Fármaco / produto": "Loperamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Diarreia não infecciosa seleccionada",
+    "Fármaco / produto": "Racecadotril",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Diarreia não infecciosa seleccionada",
+    "Fármaco / produto": "Colestiramina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Hemorragia varicosa/hipertensão portal",
+    "Fármaco / produto": "Terlipressina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Hemorragia varicosa/hipertensão portal",
+    "Fármaco / produto": "Octreótido",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Encefalopatia hepática",
+    "Fármaco / produto": "Lactulose",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Encefalopatia hepática",
+    "Fármaco / produto": "Rifaximina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Encefalopatia hepática — adjuvante",
+    "Fármaco / produto": "L-ornitina-L-aspartato",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Falência hepática aguda",
+    "Fármaco / produto": "N-acetilcisteína",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Colite grave/doença inflamatória",
+    "Fármaco / produto": "Metilprednisolona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Colite grave/doença inflamatória",
+    "Fármaco / produto": "Infliximab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "GI",
+    "Categoria": "Gastrointestinal e hepatologia",
+    "Subcategoria": "Colite grave/doença inflamatória",
+    "Fármaco / produto": "Ciclosporina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Insulina intravenosa",
+    "Fármaco / produto": "Insulina humana regular",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Insulinas rápidas subcutâneas",
+    "Fármaco / produto": "Insulina lispro",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Insulinas rápidas subcutâneas",
+    "Fármaco / produto": "Insulina aspart",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Insulinas rápidas subcutâneas",
+    "Fármaco / produto": "Insulina glulisina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Insulinas basais",
+    "Fármaco / produto": "Insulina glargina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Insulinas basais",
+    "Fármaco / produto": "Insulina detemir",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Insulinas basais",
+    "Fármaco / produto": "Insulina degludec",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Corticóides sistémicos",
+    "Fármaco / produto": "Hidrocortisona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Corticóides sistémicos",
+    "Fármaco / produto": "Metilprednisolona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Corticóides sistémicos",
+    "Fármaco / produto": "Dexametasona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Corticóides sistémicos",
+    "Fármaco / produto": "Prednisolona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Corticóide mineralocorticóide",
+    "Fármaco / produto": "Fludrocortisona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Crise adrenal",
+    "Fármaco / produto": "Hidrocortisona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Crise adrenal",
+    "Fármaco / produto": "Glicose",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Crise adrenal",
+    "Fármaco / produto": "Cloreto de sódio 0,9%",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Tempestade tiroideia",
+    "Fármaco / produto": "Propiltiouracilo",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Tempestade tiroideia",
+    "Fármaco / produto": "Tiamazol (metimazol)",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Tempestade tiroideia",
+    "Fármaco / produto": "Solução de Lugol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Tempestade tiroideia",
+    "Fármaco / produto": "Iodeto de potássio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Tempestade tiroideia",
+    "Fármaco / produto": "Propranolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Tempestade tiroideia",
+    "Fármaco / produto": "Esmolol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Tempestade tiroideia",
+    "Fármaco / produto": "Hidrocortisona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Tempestade tiroideia",
+    "Fármaco / produto": "Colestiramina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Coma mixedematoso",
+    "Fármaco / produto": "Levotiroxina intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Coma mixedematoso",
+    "Fármaco / produto": "Liotironina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Coma mixedematoso",
+    "Fármaco / produto": "Hidrocortisona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipoglicemia",
+    "Fármaco / produto": "Glicose hipertónica",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipoglicemia",
+    "Fármaco / produto": "Glucagon",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Diabetes insípida",
+    "Fármaco / produto": "Desmopressina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Diabetes insípida",
+    "Fármaco / produto": "Vasopressina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipercalcemia",
+    "Fármaco / produto": "Calcitonina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipercalcemia",
+    "Fármaco / produto": "Ácido zoledrónico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipercalcemia",
+    "Fármaco / produto": "Pamidronato",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipercalcemia — alternativas",
+    "Fármaco / produto": "Denosumab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipercalcemia — alternativas",
+    "Fármaco / produto": "Hidrocortisona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipercalcemia — alternativas",
+    "Fármaco / produto": "Prednisolona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipocalcemia/hipoparatiroidismo",
+    "Fármaco / produto": "Gluconato de cálcio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipocalcemia/hipoparatiroidismo",
+    "Fármaco / produto": "Cloreto de cálcio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipocalcemia/hipoparatiroidismo",
+    "Fármaco / produto": "Calcitriol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Crise de feocromocitoma",
+    "Fármaco / produto": "Fentolamina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Crise de feocromocitoma",
+    "Fármaco / produto": "Fenoxibenzamina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Crise de feocromocitoma",
+    "Fármaco / produto": "Nicardipina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Crise de feocromocitoma",
+    "Fármaco / produto": "Esmolol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipertermia/hiperactividade simpática endócrina",
+    "Fármaco / produto": "Propranolol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipertermia/hiperactividade simpática endócrina",
+    "Fármaco / produto": "Esmolol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "EN",
+    "Categoria": "Endocrinologia e corticoterapia",
+    "Subcategoria": "Hipertermia/hiperactividade simpática endócrina",
+    "Fármaco / produto": "Dexametasona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Beta-2 agonistas",
+    "Fármaco / produto": "Salbutamol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Beta-2 agonistas",
+    "Fármaco / produto": "Terbutalina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Anticolinérgicos inalados",
+    "Fármaco / produto": "Ipratrópio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Anticolinérgicos de longa acção",
+    "Fármaco / produto": "Tiotrópio",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Metilxantinas",
+    "Fármaco / produto": "Aminofilina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Metilxantinas",
+    "Fármaco / produto": "Teofilina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Adjuvantes na broncoconstrição grave",
+    "Fármaco / produto": "Sulfato de magnésio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Adjuvantes na broncoconstrição grave",
+    "Fármaco / produto": "Adrenalina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Corticoterapia respiratória",
+    "Fármaco / produto": "Metilprednisolona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Corticoterapia respiratória",
+    "Fármaco / produto": "Hidrocortisona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Corticoterapia respiratória",
+    "Fármaco / produto": "Dexametasona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Edema da via aérea/estridor",
+    "Fármaco / produto": "Dexametasona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Edema da via aérea/estridor",
+    "Fármaco / produto": "Adrenalina nebulizada",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Mucolíticos e secreções",
+    "Fármaco / produto": "N-acetilcisteína nebulizada",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Mucolíticos e secreções",
+    "Fármaco / produto": "Cloreto de sódio hipertónico nebulizado",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Mucolíticos e secreções",
+    "Fármaco / produto": "Dornase alfa",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Vasodilatadores pulmonares inalados",
+    "Fármaco / produto": "Óxido nítrico inalado",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Vasodilatadores pulmonares inalados",
+    "Fármaco / produto": "Epoprostenol inalado",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Vasodilatadores pulmonares inalados",
+    "Fármaco / produto": "Iloprost inalado",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Prostaciclinas sistémicas/inaladas",
+    "Fármaco / produto": "Epoprostenol",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Prostaciclinas sistémicas/inaladas",
+    "Fármaco / produto": "Treprostinil",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Prostaciclinas sistémicas/inaladas",
+    "Fármaco / produto": "Iloprost",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Inibidores PDE5",
+    "Fármaco / produto": "Sildenafil",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Inibidores PDE5",
+    "Fármaco / produto": "Tadalafil",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Antagonistas dos receptores da endotelina",
+    "Fármaco / produto": "Bosentano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Antagonistas dos receptores da endotelina",
+    "Fármaco / produto": "Ambrisentano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Antagonistas dos receptores da endotelina",
+    "Fármaco / produto": "Macitentano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "RP",
+    "Categoria": "Respiratório e circulação pulmonar",
+    "Subcategoria": "Estimulador da guanilato ciclase",
+    "Fármaco / produto": "Riociguat",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Osmoterapia",
+    "Fármaco / produto": "Manitol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Osmoterapia",
+    "Fármaco / produto": "Cloreto de sódio hipertónico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "AVC isquémico — trombólise",
+    "Fármaco / produto": "Alteplase",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "AVC isquémico — trombólise",
+    "Fármaco / produto": "Tenecteplase",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Hemorragia intracraniana — reversão",
+    "Fármaco / produto": "Concentrado de complexo protrombínico de 4 factores",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Hemorragia intracraniana — reversão",
+    "Fármaco / produto": "Vitamina K",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Hemorragia intracraniana — reversão",
+    "Fármaco / produto": "Idarucizumab",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Hemorragia intracraniana — reversão",
+    "Fármaco / produto": "Andexanet alfa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Hemorragia intracraniana — reversão",
+    "Fármaco / produto": "Protamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Hemorragia subaracnoideia — vasospasmo",
+    "Fármaco / produto": "Nimodipina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Vasospasmo refractário — seleccionado",
+    "Fármaco / produto": "Nicardipina intra-arterial",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Vasospasmo refractário — seleccionado",
+    "Fármaco / produto": "Milrinona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Profilaxia de crise após lesão cerebral",
+    "Fármaco / produto": "Levetiracetam",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Profilaxia de crise após lesão cerebral",
+    "Fármaco / produto": "Fenitoína",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Miastenia gravis",
+    "Fármaco / produto": "Piridostigmina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Miastenia gravis",
+    "Fármaco / produto": "Neostigmina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Miastenia gravis",
+    "Fármaco / produto": "Imunoglobulina humana intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Guillain-Barré/CIDP",
+    "Fármaco / produto": "Imunoglobulina humana intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Encefalite autoimune",
+    "Fármaco / produto": "Metilprednisolona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Encefalite autoimune",
+    "Fármaco / produto": "Imunoglobulina humana intravenosa",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Encefalite autoimune",
+    "Fármaco / produto": "Rituximab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Encefalite autoimune",
+    "Fármaco / produto": "Ciclofosfamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Parkinsonismo — continuidade/evitar suspensão",
+    "Fármaco / produto": "Levodopa/carbidopa",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Parkinsonismo — continuidade/evitar suspensão",
+    "Fármaco / produto": "Amantadina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Doação de órgãos/morte cerebral — suporte hormonal",
+    "Fármaco / produto": "Vasopressina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Doação de órgãos/morte cerebral — suporte hormonal",
+    "Fármaco / produto": "Levotiroxina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Doação de órgãos/morte cerebral — suporte hormonal",
+    "Fármaco / produto": "Hidrocortisona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NC",
+    "Categoria": "Neurocríticos",
+    "Subcategoria": "Doação de órgãos/morte cerebral — suporte hormonal",
+    "Fármaco / produto": "Insulina regular",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Hemocomponentes",
+    "Fármaco / produto": "Concentrado eritrocitário",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Hemocomponentes",
+    "Fármaco / produto": "Concentrado plaquetário",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Hemocomponentes",
+    "Fármaco / produto": "Plasma fresco congelado",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Hemocomponentes",
+    "Fármaco / produto": "Crioprecipitado",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Concentrados de factores/hemostáticos",
+    "Fármaco / produto": "Concentrado de fibrinogénio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Concentrados de factores/hemostáticos",
+    "Fármaco / produto": "Concentrado de complexo protrombínico de 4 factores",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Factores específicos",
+    "Fármaco / produto": "Factor VIII",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Factores específicos",
+    "Fármaco / produto": "Factor IX",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Factores específicos",
+    "Fármaco / produto": "Concentrado de factor von Willebrand",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Factores específicos",
+    "Fármaco / produto": "Factor XIII",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Bypass hemostático",
+    "Fármaco / produto": "Factor VIIa recombinante",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Bypass hemostático",
+    "Fármaco / produto": "Concentrado de complexo protrombínico activado",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Púrpura trombótica trombocitopénica",
+    "Fármaco / produto": "Caplacizumab",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Púrpura trombótica trombocitopénica",
+    "Fármaco / produto": "Metilprednisolona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Púrpura trombótica trombocitopénica",
+    "Fármaco / produto": "Rituximab",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Púrpura trombocitopénica imune",
+    "Fármaco / produto": "Imunoglobulina humana intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Púrpura trombocitopénica imune",
+    "Fármaco / produto": "Dexametasona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Púrpura trombocitopénica imune",
+    "Fármaco / produto": "Metilprednisolona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Púrpura trombocitopénica imune — segunda linha",
+    "Fármaco / produto": "Romiplostim",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Púrpura trombocitopénica imune — segunda linha",
+    "Fármaco / produto": "Eltrombopag",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Trombocitopenia induzida por heparina",
+    "Fármaco / produto": "Argatroban",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Trombocitopenia induzida por heparina",
+    "Fármaco / produto": "Bivalirudina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Trombocitopenia induzida por heparina",
+    "Fármaco / produto": "Fondaparinux",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Trombocitopenia induzida por heparina",
+    "Fármaco / produto": "Danaparóide",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Síndrome de lise tumoral",
+    "Fármaco / produto": "Rasburicase",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Síndrome de lise tumoral",
+    "Fármaco / produto": "Alopurinol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Síndrome de lise tumoral — alternativa",
+    "Fármaco / produto": "Febuxostat",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Hiperleucocitose",
+    "Fármaco / produto": "Hidroxiureia",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Neutropenia seleccionada",
+    "Fármaco / produto": "Filgrastim",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Anemia/deficiência seleccionada",
+    "Fármaco / produto": "Ferro intravenoso",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "HE",
+    "Categoria": "Hematologia, transfusão e hemostase",
+    "Subcategoria": "Anemia/deficiência seleccionada",
+    "Fármaco / produto": "Epoetina alfa",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Imunoglobulina",
+    "Fármaco / produto": "Imunoglobulina humana intravenosa",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Corticoterapia de pulso",
+    "Fármaco / produto": "Metilprednisolona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Corticoterapia de pulso",
+    "Fármaco / produto": "Dexametasona",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Depleção de células B",
+    "Fármaco / produto": "Rituximab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Citotóxicos/imunossupressores",
+    "Fármaco / produto": "Ciclofosfamida",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Citotóxicos/imunossupressores",
+    "Fármaco / produto": "Azatioprina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Citotóxicos/imunossupressores",
+    "Fármaco / produto": "Micofenolato de mofetil",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Inibidores da calcineurina",
+    "Fármaco / produto": "Tacrolímus",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Inibidores da calcineurina",
+    "Fármaco / produto": "Ciclosporina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Inibidores mTOR",
+    "Fármaco / produto": "Sirolímus",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Inibidores mTOR",
+    "Fármaco / produto": "Everolímus",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Inibição do complemento",
+    "Fármaco / produto": "Eculizumab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Inibição do complemento",
+    "Fármaco / produto": "Ravulizumab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Síndromes hiperinflamatórias",
+    "Fármaco / produto": "Anakinra",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Síndromes hiperinflamatórias",
+    "Fármaco / produto": "Tocilizumab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Biológicos seleccionados",
+    "Fármaco / produto": "Infliximab",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Biológicos seleccionados",
+    "Fármaco / produto": "Abatacept",
+    "Prioridade": "P3",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Rejeição de transplante",
+    "Fármaco / produto": "Basiliximab",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Rejeição de transplante",
+    "Fármaco / produto": "Globulina antitimócito",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Síndrome de activação macrofágica/HLH",
+    "Fármaco / produto": "Dexametasona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Síndrome de activação macrofágica/HLH",
+    "Fármaco / produto": "Etoposido",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "IM",
+    "Categoria": "Imunomodulação, autoimunidade e transplante",
+    "Subcategoria": "Síndrome de activação macrofágica/HLH",
+    "Fármaco / produto": "Anakinra",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Hemorragia pós-parto — uterotónicos",
+    "Fármaco / produto": "Oxitocina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Hemorragia pós-parto — uterotónicos",
+    "Fármaco / produto": "Carbetocina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Hemorragia pós-parto — uterotónicos",
+    "Fármaco / produto": "Metilergometrina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Hemorragia pós-parto — uterotónicos",
+    "Fármaco / produto": "Misoprostol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Hemorragia pós-parto — uterotónicos",
+    "Fármaco / produto": "Carboprost",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Hemorragia pós-parto — hemostase",
+    "Fármaco / produto": "Ácido tranexâmico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Hemorragia pós-parto — hemostase",
+    "Fármaco / produto": "Concentrado de fibrinogénio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Hemorragia pós-parto — hemostase",
+    "Fármaco / produto": "Concentrado de complexo protrombínico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Pré-eclâmpsia/eclâmpsia",
+    "Fármaco / produto": "Sulfato de magnésio",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Pré-eclâmpsia/eclâmpsia",
+    "Fármaco / produto": "Labetalol",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Pré-eclâmpsia/eclâmpsia",
+    "Fármaco / produto": "Hidralazina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Pré-eclâmpsia/eclâmpsia",
+    "Fármaco / produto": "Nifedipina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Maturação pulmonar fetal",
+    "Fármaco / produto": "Betametasona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Maturação pulmonar fetal",
+    "Fármaco / produto": "Dexametasona",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Tocólise",
+    "Fármaco / produto": "Atosibano",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Tocólise",
+    "Fármaco / produto": "Nifedipina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Tocólise",
+    "Fármaco / produto": "Terbutalina",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "OB",
+    "Categoria": "Obstetrícia crítica",
+    "Subcategoria": "Profilaxia Rh",
+    "Fármaco / produto": "Imunoglobulina anti-D",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas essenciais em UCI",
+    "Fármaco / produto": "Tiamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas essenciais em UCI",
+    "Fármaco / produto": "Ácido fólico",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas essenciais em UCI",
+    "Fármaco / produto": "Piridoxina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas essenciais em UCI",
+    "Fármaco / produto": "Cianocobalamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas essenciais em UCI",
+    "Fármaco / produto": "Hidroxocobalamina",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas lipossolúveis",
+    "Fármaco / produto": "Vitamina A",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas lipossolúveis",
+    "Fármaco / produto": "Vitamina D",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas lipossolúveis",
+    "Fármaco / produto": "Vitamina E",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitaminas lipossolúveis",
+    "Fármaco / produto": "Vitamina K",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Vitamina C",
+    "Fármaco / produto": "Ácido ascórbico",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Oligoelementos",
+    "Fármaco / produto": "Zinco",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Oligoelementos",
+    "Fármaco / produto": "Selénio",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Oligoelementos",
+    "Fármaco / produto": "Cobre",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Oligoelementos",
+    "Fármaco / produto": "Manganês",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Oligoelementos",
+    "Fármaco / produto": "Crómio",
+    "Prioridade": "P2",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Nutrição parentérica — macronutrientes",
+    "Fármaco / produto": "Soluções de aminoácidos",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Nutrição parentérica — macronutrientes",
+    "Fármaco / produto": "Emulsão lipídica de óleo de soja",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Nutrição parentérica — macronutrientes",
+    "Fármaco / produto": "Emulsão lipídica MCT/LCT",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Nutrição parentérica — macronutrientes",
+    "Fármaco / produto": "Emulsão lipídica com óleo de peixe",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Nutrição parentérica — macronutrientes",
+    "Fármaco / produto": "Glicose para nutrição parentérica",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Nutrição parentérica — aditivos",
+    "Fármaco / produto": "Electrólitos para nutrição parentérica",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Nutrição parentérica — aditivos",
+    "Fármaco / produto": "Multivitamínico intravenoso",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Nutrição parentérica — aditivos",
+    "Fármaco / produto": "Oligoelementos intravenosos",
+    "Prioridade": "P1",
+    "Notas de âmbito": null
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Suplementos seleccionados",
+    "Fármaco / produto": "Glutamina",
+    "Prioridade": "P3",
+    "Notas de âmbito": "Não incluir como terapêutica rotineira sem indicação específica."
+  },
+  {
+    "Código": "NU",
+    "Categoria": "Nutrição, vitaminas e micronutrientes",
+    "Subcategoria": "Suplementos seleccionados",
+    "Fármaco / produto": "L-carnitina",
+    "Prioridade": "P3",
+    "Notas de âmbito": "Não incluir como terapêutica rotineira sem indicação específica."
+  }
+]

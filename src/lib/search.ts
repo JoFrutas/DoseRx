@@ -14,7 +14,15 @@ export function getDrugSearchText(drug: Drug, categories: DrugCategory[]): strin
     .flatMap((category) => [category.name, category.shortName, ...category.searchTerms])
 
   return normalizeSearchText(
-    [drug.name, drug.drugClass, ...drug.aliases, ...drug.indications, ...categoryText].join(' '),
+    [
+      drug.name,
+      drug.drugClass,
+      drug.priority,
+      ...drug.aliases,
+      ...drug.subcategories,
+      ...drug.indications,
+      ...categoryText,
+    ].join(' '),
   )
 }
 

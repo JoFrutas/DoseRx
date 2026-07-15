@@ -2,6 +2,7 @@ import { ClinicalSection } from '../components/ClinicalSection'
 import { DoseAdjustmentList } from '../components/DoseAdjustmentList'
 import { Icon } from '../components/Icon'
 import { SafetyBanner } from '../components/SafetyBanner'
+import { SourceLinks } from '../components/SourceLinks'
 import { ValidationBadge } from '../components/ValidationBadge'
 import { getCategoryById } from '../data/categories'
 import { getDrugById } from '../data/drugs'
@@ -57,6 +58,8 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
             <span className="eyebrow">Resumo da ficha</span>
             <dl>
               <div><dt>Última revisão</dt><dd>{drug.lastReviewedAt ?? 'Nunca revista'}</dd></div>
+              <div><dt>Prioridade</dt><dd>{drug.priority}</dd></div>
+              <div><dt>Subcategorias</dt><dd>{drug.subcategories.join('; ') || '—'}</dd></div>
               <div><dt>Referências</dt><dd>{drug.references.length}</dd></div>
               <div><dt>Aliases</dt><dd>{drug.aliases.join(', ') || '—'}</dd></div>
               <div><dt>Vias</dt><dd>{drug.routes.join('; ')}</dd></div>
@@ -78,7 +81,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
           </ClinicalSection>
 
           <ClinicalSection title="Dose habitual no adulto" eyebrow="Posologia">
-            <DoseAdjustmentList items={drug.usualAdultDose} />
+            <DoseAdjustmentList items={drug.usualAdultDose} references={drug.references} />
           </ClinicalSection>
 
           <ClinicalSection title="Como prescrever" eyebrow="Exemplos práticos">
@@ -89,6 +92,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
                   <code>{example.prescription}</code>
                   {example.context && <p>{example.context}</p>}
                   {example.notes && <ul>{example.notes.map((note) => <li key={note}>{note}</li>)}</ul>}
+                  <SourceLinks sourceIds={example.sourceIds} references={drug.references} />
                 </article>
               ))}
             </div>
@@ -96,26 +100,26 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
 
           {drug.loadingDose && (
             <ClinicalSection title="Dose de carga" eyebrow="Se aplicável">
-              <DoseAdjustmentList items={[drug.loadingDose]} />
+              <DoseAdjustmentList items={[drug.loadingDose]} references={drug.references} />
             </ClinicalSection>
           )}
 
           <ClinicalSection title="Ajuste renal" eyebrow="ClCr / eGFR" tone="renal">
             <p className="section-summary">{drug.renalAdjustment.summary}</p>
-            <DoseAdjustmentList items={drug.renalAdjustment.byKidneyFunction} />
+            <DoseAdjustmentList items={drug.renalAdjustment.byKidneyFunction} references={drug.references} />
             <h3>Hemodiálise intermitente</h3>
             {drug.renalAdjustment.intermittentHemodialysis && (
-              <DoseAdjustmentList items={[drug.renalAdjustment.intermittentHemodialysis]} />
+              <DoseAdjustmentList items={[drug.renalAdjustment.intermittentHemodialysis]} references={drug.references} />
             )}
             <h3>Técnicas contínuas de substituição renal</h3>
             {drug.renalAdjustment.continuousKidneyReplacement && (
-              <DoseAdjustmentList items={[drug.renalAdjustment.continuousKidneyReplacement]} />
+              <DoseAdjustmentList items={[drug.renalAdjustment.continuousKidneyReplacement]} references={drug.references} />
             )}
           </ClinicalSection>
 
           <ClinicalSection title="Ajuste hepático" eyebrow="Função hepática" tone="hepatic">
             <p className="section-summary">{drug.hepaticAdjustment.summary}</p>
-            <DoseAdjustmentList items={drug.hepaticAdjustment.bySeverity} />
+            <DoseAdjustmentList items={drug.hepaticAdjustment.bySeverity} references={drug.references} />
           </ClinicalSection>
 
           <ClinicalSection title="Monitorização terapêutica" eyebrow="TDM e parâmetros">

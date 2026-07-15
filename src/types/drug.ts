@@ -2,6 +2,8 @@ export type ValidationStatus = 'not-validated' | 'in-review' | 'validated'
 
 export type ConfidenceLevel = 'unvalidated' | 'low' | 'moderate' | 'high'
 
+export type DrugPriority = 'P1' | 'P2' | 'P3'
+
 export interface DrugCategory {
   id: string
   name: string
@@ -62,6 +64,8 @@ export interface Drug {
   name: string
   aliases: string[]
   drugClass: string
+  priority: DrugPriority
+  subcategories: string[]
   categoryIds: string[]
   indications: string[]
   usualAdultDose: DoseAdjustment[]
