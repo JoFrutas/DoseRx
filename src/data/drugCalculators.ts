@@ -1,6 +1,65 @@
 import type { DrugCalculatorDefinition } from '../types/drug'
 
 export const drugCalculatorsByDrugId: Readonly<Record<string, DrugCalculatorDefinition[]>> = {
+  adrenalina: [
+    {
+      kind: 'infusion-rate',
+      id: 'epinephrine-septic-shock-infusion',
+      title: 'Perfusão de adrenalina no choque',
+      description: 'Converte mcg/kg/min em mL/h para a preparação confirmada.',
+      doseRateUnit: 'mcg/kg/min',
+      defaultDoseRate: 0.05,
+      minimumDoseRate: 0.05,
+      maximumDoseRate: 2,
+      preparation: { amount: 4, amountUnit: 'mg', volumeMl: 250, editable: true },
+      sourceIds: ['epinephrine-label', 'epinephrine-premix-label'],
+      notes: ['A preparação inicial reproduz uma apresentação oficial pré-misturada de 4 mg/250 mL; substitua pela concentração padronizada da unidade.', 'Esta calculadora destina-se à perfusão titulada no choque e não à dose IM da anafilaxia.'],
+    },
+  ],
+  dexmedetomidina: [
+    {
+      kind: 'infusion-rate',
+      id: 'dexmedetomidine-icu-infusion',
+      title: 'Perfusão para sedação em UCI',
+      description: 'Converte mcg/kg/h em mL/h.',
+      doseRateUnit: 'mcg/kg/h',
+      defaultDoseRate: 0.7,
+      minimumDoseRate: 0.2,
+      maximumDoseRate: 1.4,
+      preparation: { amount: 200, amountUnit: 'mcg', volumeMl: 50, editable: true },
+      sourceIds: ['dexmedetomidine-smpc'],
+      notes: ['A preparação inicial corresponde a 4 mcg/mL, uma das concentrações finais do RCM.', 'Na sedação em UCI não administrar dose de carga; titular ao RASS e reduzir na disfunção hepática.'],
+    },
+  ],
+  dobutamina: [
+    {
+      kind: 'infusion-rate',
+      id: 'dobutamine-infusion',
+      title: 'Perfusão de dobutamina',
+      description: 'Converte mcg/kg/min em mL/h.',
+      doseRateUnit: 'mcg/kg/min',
+      defaultDoseRate: 5,
+      minimumDoseRate: 2.5,
+      maximumDoseRate: 10,
+      preparation: { amount: 250, amountUnit: 'mg', volumeMl: 50, editable: true },
+      sourceIds: ['dobutamine-smpc'],
+      notes: ['A preparação inicial é a solução documentada de 250 mg/50 mL (5 mg/mL).', '2,5–10 mcg/kg/min é o intervalo habitual; o RCM refere doses até 40 mcg/kg/min apenas em casos individuais.'],
+    },
+  ],
+  vasopressina: [
+    {
+      kind: 'infusion-rate',
+      id: 'vasopressin-septic-shock-infusion',
+      title: 'Perfusão de vasopressina no choque séptico',
+      description: 'Converte unidades/min em mL/h.',
+      doseRateUnit: 'units/min',
+      defaultDoseRate: 0.01,
+      maximumDoseRate: 0.07,
+      preparation: { amount: 40, amountUnit: 'units', volumeMl: 100, editable: true },
+      sourceIds: ['vasopressin-label'],
+      notes: ['A preparação inicial reproduz uma bolsa oficial pré-misturada de 40 unidades/100 mL.', 'O rótulo indica dados limitados acima de 0,07 unidades/min no choque séptico.'],
+    },
+  ],
   meropenem: [
     {
       kind: 'volume-time',

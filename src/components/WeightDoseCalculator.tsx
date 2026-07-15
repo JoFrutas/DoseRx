@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { calculateWeightDose, formatCalculatorNumber } from '../lib/calculators'
+import { calculateWeightDose, formatCalculatorNumber, formatCalculatorUnit } from '../lib/calculators'
 import type { EvidenceReference, WeightDoseCalculatorDefinition } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
 
@@ -59,10 +59,10 @@ export function WeightDoseCalculator({ definition, references }: WeightDoseCalcu
       {result && option ? (
         <div className="calculator-result" aria-live="polite">
           <span>Dose matemática</span>
-          <strong>{formatCalculatorNumber(result.finalDose)} {option.amountUnit}</strong>
+          <strong>{formatCalculatorNumber(result.finalDose)} {formatCalculatorUnit(option.amountUnit)}</strong>
           <small>
-            {formatCalculatorNumber(Number(weightKg))} kg × {formatCalculatorNumber(option.dosePerKg)} {option.amountUnit}/kg
-            {result.capped ? `; limitado ao máximo de ${formatCalculatorNumber(option.maxDose as number)} ${option.amountUnit}` : ''}
+            {formatCalculatorNumber(Number(weightKg))} kg × {formatCalculatorNumber(option.dosePerKg)} {formatCalculatorUnit(option.amountUnit)}/kg
+            {result.capped ? `; limitado ao máximo de ${formatCalculatorNumber(option.maxDose as number)} ${formatCalculatorUnit(option.amountUnit)}` : ''}
           </small>
           {result.volumeMl !== null && definition.concentration && (
             <small>

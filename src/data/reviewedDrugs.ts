@@ -5,6 +5,7 @@ import {
   noRenalDoseAdjustment,
   prescription,
 } from './drugBuilders.ts'
+import { sourceVerifiedDrugsBatch2 } from './sourceVerifiedDrugsBatch2.ts'
 
 const REVIEW_DATE = '2026-07-16'
 
@@ -617,4 +618,5 @@ export const reviewedDrugs: Drug[] = [
   fomepizole,
   pantoprazole,
   hydrocortisone,
+  ...sourceVerifiedDrugsBatch2,
 ]

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { calculateInfusionRate, formatCalculatorNumber } from '../lib/calculators'
+import { calculateInfusionRate, formatCalculatorNumber, formatCalculatorUnit } from '../lib/calculators'
 import type { EvidenceReference, InfusionRateCalculatorDefinition } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
 
@@ -55,11 +55,11 @@ export function InfusionRateCalculator({ definition, references }: InfusionRateC
           </label>
         )}
         <label>
-          <span>Dose alvo ({definition.doseRateUnit})</span>
+          <span>Dose alvo ({formatCalculatorUnit(definition.doseRateUnit)})</span>
           <input type="number" min="0" step="any" inputMode="decimal" value={doseRate} onChange={(event) => setDoseRate(event.target.value)} />
         </label>
         <label>
-          <span>Quantidade na preparação ({definition.preparation.amountUnit})</span>
+          <span>Quantidade na preparação ({formatCalculatorUnit(definition.preparation.amountUnit)})</span>
           <input type="number" min="0" step="any" inputMode="decimal" value={preparationAmount} readOnly={!definition.preparation.editable} onChange={(event) => setPreparationAmount(event.target.value)} />
         </label>
         <label>
@@ -75,7 +75,7 @@ export function InfusionRateCalculator({ definition, references }: InfusionRateC
           <span>Velocidade calculada</span>
           <strong>{formatCalculatorNumber(rateMlHour)} mL/h</strong>
           <small>
-            Preparação: {formatCalculatorNumber(Number(preparationAmount))} {definition.preparation.amountUnit} em {formatCalculatorNumber(Number(preparationVolume))} mL
+            Preparação: {formatCalculatorNumber(Number(preparationAmount))} {formatCalculatorUnit(definition.preparation.amountUnit)} em {formatCalculatorNumber(Number(preparationVolume))} mL
           </small>
         </div>
       ) : (

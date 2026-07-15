@@ -8,12 +8,14 @@ export type DoseAmountUnit = 'mg' | 'mcg' | 'mEq' | 'units'
 
 export type DoseRateUnit =
   | 'mcg/kg/min'
+  | 'mcg/kg/h'
   | 'mcg/min'
   | 'mg/kg/h'
   | 'mg/h'
   | 'mg/min'
   | 'mEq/h'
   | 'units/kg/h'
+  | 'units/min'
   | 'units/h'
 
 export interface WeightDoseOption {

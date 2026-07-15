@@ -77,6 +77,26 @@ describe('infusion rate calculator', () => {
     }), 250)
   })
 
+  it('converts mcg/kg/h and units/min regimens', () => {
+    assert.equal(calculateInfusionRate({
+      doseRate: 0.7,
+      doseRateUnit: 'mcg/kg/h',
+      weightKg: 70,
+      preparationAmount: 200,
+      preparationAmountUnit: 'mcg',
+      preparationVolumeMl: 50,
+    }), 12.25)
+
+    const vasopressinRate = calculateInfusionRate({
+      doseRate: 0.01,
+      doseRateUnit: 'units/min',
+      preparationAmount: 40,
+      preparationAmountUnit: 'units',
+      preparationVolumeMl: 100,
+    })
+    assert.ok(Math.abs(vasopressinRate - 1.5) < Number.EPSILON * 4)
+  })
+
   it('rejects incompatible units and missing positive values', () => {
     assert.throws(() => calculateInfusionRate({
       doseRate: 10,

@@ -2,7 +2,7 @@
 
 Aplicação de consulta rápida de fármacos em Medicina Intensiva, integrada visualmente na família JoFrutas/ICU Tools Hub.
 
-> **Estado clínico:** o catálogo contém 550 fármacos. Nesta versão, 14 fichas prioritárias têm as fontes primárias verificadas; as restantes 536 apresentam placeholders explícitos e não validados. A aplicação distingue verificação documental de adopção pelo protocolo local.
+> **Estado clínico:** o catálogo contém 550 fármacos. Nesta versão, 18 fichas prioritárias têm as fontes primárias verificadas; as restantes 532 apresentam placeholders explícitos e não validados. A aplicação distingue verificação documental de adopção pelo protocolo local.
 
 ## Correr localmente
 

@@ -74,6 +74,8 @@ function dosePerHourInBaseUnit(
   switch (unit) {
     case 'mcg/kg/min':
       return doseRate * (weightKg as number) * 60
+    case 'mcg/kg/h':
+      return doseRate * (weightKg as number)
     case 'mcg/min':
       return doseRate * 60
     case 'mg/kg/h':
@@ -85,6 +87,8 @@ function dosePerHourInBaseUnit(
     case 'mEq/h':
     case 'units/h':
       return doseRate
+    case 'units/min':
+      return doseRate * 60
     case 'units/kg/h':
       return doseRate * (weightKg as number)
   }
@@ -120,4 +124,8 @@ export function calculateVolumeRate(volumeMl: number, durationMinutes: number): 
 
 export function formatCalculatorNumber(value: number): string {
   return new Intl.NumberFormat('pt-PT', { maximumFractionDigits: 2 }).format(value)
+}
+
+export function formatCalculatorUnit(unit: DoseAmountUnit | DoseRateUnit): string {
+  return unit.replace('units', 'unidades')
 }

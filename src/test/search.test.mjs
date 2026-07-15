@@ -40,9 +40,9 @@ describe('drug search', () => {
 describe('catalog integrity', () => {
   it('contains the consolidated catalog and the documented review batch', () => {
     assert.equal(catalogDrugCount, 550)
-    assert.equal(reviewedDrugCount, 14)
-    assert.equal(sourceVerifiedDrugCount, 14)
-    assert.equal(pendingDrugCount, 536)
+    assert.equal(reviewedDrugCount, 18)
+    assert.equal(sourceVerifiedDrugCount, 18)
+    assert.equal(pendingDrugCount, 532)
   })
 
   it('uses unique drug IDs and known category IDs', () => {
