@@ -154,6 +154,8 @@ img { display: block; max-width: 100%; }
 .validation-badge--not-validated > span { background: #f79009; }
 .validation-badge--in-review { color: #175cd3; background: #eff8ff; border: 1px solid #b9d7fe; }
 .validation-badge--in-review > span { background: #2e90fa; }
+.validation-badge--source-verified { color: var(--green); background: var(--green-bg); border: 1px solid #b7e7cc; }
+.validation-badge--source-verified > span { background: #12b76a; }
 .validation-badge--validated { color: var(--green); background: var(--green-bg); border: 1px solid #b7e7cc; }
 .validation-badge--validated > span { background: #12b76a; }
 
@@ -228,6 +230,30 @@ img { display: block; max-width: 100%; }
 .source-links { display: flex; align-items: center; flex-wrap: wrap; gap: 5px 8px; margin-top: 10px; color: var(--muted); font-size: 10px; }
 .source-links > span:first-child { font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
 .source-links a { color: var(--primary); font-weight: 800; text-decoration: underline; text-underline-offset: 2px; }
+.calculator-intro { margin: 0 0 14px; color: var(--mid); font-size: 12px; line-height: 1.55; }
+.calculator-grid { display: grid; gap: 12px; }
+.calculator-card { overflow: hidden; background: #f8fbfc; border: 1px solid #bfdde2; border-radius: var(--radius-md); }
+.calculator-card > header { padding: 15px 16px; background: linear-gradient(135deg, #eaf8f7, #f4f9ff); border-bottom: 1px solid #cce4e7; }
+.calculator-card__kind { color: var(--primary); font-size: 9px; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
+.calculator-card h3 { margin: 4px 0 0; color: var(--dark); font-size: 15px; }
+.calculator-card header p { margin: 5px 0 0; color: var(--mid); font-size: 11px; line-height: 1.45; }
+.calculator-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; padding: 14px 16px 0; }
+.calculator-fields--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.calculator-fields label { display: grid; align-content: start; gap: 6px; min-width: 0; }
+.calculator-fields label > span { color: var(--mid); font-size: 10px; font-weight: 800; line-height: 1.35; }
+.calculator-fields input, .calculator-fields select { width: 100%; min-height: 42px; padding: 8px 10px; color: var(--dark); background: #fff; border: 1px solid var(--border-strong); border-radius: 8px; outline: none; font-size: 13px; }
+.calculator-fields input:focus, .calculator-fields select:focus { border-color: var(--aqua); box-shadow: 0 0 0 3px rgba(11, 166, 181, .13); }
+.calculator-fields input[readonly] { color: var(--mid); background: #eef2f5; }
+.calculator-result { display: grid; gap: 3px; margin: 14px 16px 0; padding: 13px 14px; color: #075f46; background: var(--green-bg); border: 1px solid #a9dfc3; border-radius: var(--radius-sm); }
+.calculator-result > span { font-size: 9px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.calculator-result > strong { font-size: 23px; letter-spacing: -.035em; }
+.calculator-result small { color: #166c51; font-size: 10px; line-height: 1.45; }
+.calculator-placeholder, .calculator-warning { margin: 14px 16px 0; padding: 10px 12px; border-radius: 8px; font-size: 11px; line-height: 1.45; }
+.calculator-placeholder { color: var(--mid); background: #f2f4f7; border: 1px dashed var(--border-strong); }
+.calculator-warning { color: var(--danger); background: var(--danger-bg); border: 1px solid #f7c6c2; font-weight: 700; }
+.calculator-notes { padding: 0 32px; margin: 13px 0 0; }
+.calculator-notes li { margin: 5px 0; color: var(--mid); font-size: 10px; line-height: 1.45; }
+.calculator-card > .source-links { margin: 11px 16px 15px; }
 .two-column-list { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .two-column-list > div { padding: 13px; background: var(--danger-bg); border: 1px solid #f7c6c2; border-radius: var(--radius-sm); }
 .two-column-list h3 { margin: 0 0 9px; color: var(--danger); }
@@ -284,6 +310,7 @@ img { display: block; max-width: 100%; }
   .drug-hero__back { grid-column: 1 / -1; justify-self: start; }
   .detail-summary { grid-template-columns: 1fr; }
   .two-column-list { grid-template-columns: 1fr; }
+  .calculator-fields { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 430px) {
@@ -302,6 +329,7 @@ img { display: block; max-width: 100%; }
   .category-hero > strong, .drug-hero__back { grid-column: auto; }
   .clinical-section__content { padding: 14px; }
   .adjustment-item__top { align-items: flex-start; flex-direction: column; }
+  .calculator-fields, .calculator-fields--two { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

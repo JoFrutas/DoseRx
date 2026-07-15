@@ -28,7 +28,7 @@ export function dose(
   recommendation: string,
   sourceIds: string[],
   notes?: string[],
-  validationStatus: ValidationStatus = 'in-review',
+  validationStatus: ValidationStatus = 'source-verified',
 ): DoseAdjustment {
   return { context, recommendation, sourceIds, notes, validationStatus }
 }
@@ -39,7 +39,7 @@ export function prescription(
   sourceIds: string[],
   context?: string,
   notes?: string[],
-  validationStatus: ValidationStatus = 'in-review',
+  validationStatus: ValidationStatus = 'source-verified',
 ): PrescriptionExample {
   return {
     title,
@@ -117,7 +117,7 @@ export function noRenalDoseAdjustment(
     intermittentHemodialysis: dose('Hemodiálise intermitente', 'Sem regime específico estabelecido na fonte consultada; confirmar protocolo local.', sourceIds),
     continuousKidneyReplacement: dose('Técnicas contínuas', 'Sem regime específico estabelecido na fonte consultada; titular por resposta clínica e protocolo local.', sourceIds),
     monitoring,
-    validationStatus: 'in-review',
+    validationStatus: 'source-verified',
   }
 }
 
@@ -130,6 +130,6 @@ export function noHepaticDoseAdjustment(
     summary: note,
     bySeverity: [dose('Disfunção hepática', note, sourceIds)],
     monitoring,
-    validationStatus: 'in-review',
+    validationStatus: 'source-verified',
   }
 }

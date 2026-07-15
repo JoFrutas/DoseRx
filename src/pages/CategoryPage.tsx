@@ -15,6 +15,9 @@ export function CategoryPage({ categoryId }: CategoryPageProps) {
   if (!category) return <NotFoundPage />
 
   const categoryDrugs = drugs.filter((drug) => drug.categoryIds.includes(category.id))
+  const pendingCategoryDrugs = categoryDrugs.filter((drug) => (
+    drug.validationStatus !== 'source-verified' && drug.validationStatus !== 'validated'
+  )).length
 
   return (
     <main className="content-width page-content">
@@ -33,7 +36,7 @@ export function CategoryPage({ categoryId }: CategoryPageProps) {
         <strong>{categoryDrugs.length} {categoryDrugs.length === 1 ? 'ficha' : 'fichas'}</strong>
       </section>
 
-      <SafetyBanner compact />
+      {pendingCategoryDrugs > 0 && <SafetyBanner compact pendingCount={pendingCategoryDrugs} />}
 
       <section className="category-list-section">
         <div className="section-heading">

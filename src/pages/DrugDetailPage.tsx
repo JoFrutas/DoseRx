@@ -1,5 +1,6 @@
 import { ClinicalSection } from '../components/ClinicalSection'
 import { DoseAdjustmentList } from '../components/DoseAdjustmentList'
+import { DrugCalculators } from '../components/DrugCalculators'
 import { Icon } from '../components/Icon'
 import { SafetyBanner } from '../components/SafetyBanner'
 import { SourceLinks } from '../components/SourceLinks'
@@ -50,7 +51,9 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
         </a>
       </section>
 
-      <SafetyBanner />
+      {drug.validationStatus !== 'source-verified' && drug.validationStatus !== 'validated' && (
+        <SafetyBanner />
+      )}
 
       <div className="detail-layout">
         <aside className="detail-summary">
@@ -66,7 +69,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
             </dl>
           </section>
           <section className="review-note">
-            <strong>Antes de validar</strong>
+            <strong>Notas de revisão</strong>
             <ul>
               {drug.reviewNotes.map((note) => <li key={note}>{note}</li>)}
             </ul>
@@ -74,6 +77,16 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
         </aside>
 
         <div className="detail-sections">
+          {drug.calculators && drug.calculators.length > 0 && (
+            <ClinicalSection title="Calculadoras documentadas" eyebrow="Cálculo assistido">
+              <p className="calculator-intro">
+                Resultados matemáticos baseados nos parâmetros introduzidos. A calculadora não selecciona
+                a indicação, o peso de dose, a função orgânica nem a preparação local.
+              </p>
+              <DrugCalculators calculators={drug.calculators} references={drug.references} />
+            </ClinicalSection>
+          )}
+
           <ClinicalSection title="Indicações comuns em UCI" eyebrow="Enquadramento">
             <ul className="plain-list">
               {drug.indications.map((indication) => <li key={indication}>{indication}</li>)}
@@ -155,7 +168,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
             ) : (
               <div className="empty-reference">
                 <Icon name="book" />
-                <div><strong>Nenhuma fonte associada</strong><p>A ficha não pode avançar para validação sem referências documentais.</p></div>
+                <div><strong>Nenhuma fonte associada</strong><p>Esta ficha ainda não tem referências documentais e não deve ser usada para prescrição.</p></div>
               </div>
             )}
           </ClinicalSection>

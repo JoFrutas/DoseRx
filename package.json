@@ -8,10 +8,11 @@
   },
   "scripts": {
     "catalog:generate": "node scripts/generate-catalog.mjs",
+    "clinical:audit": "node scripts/audit-clinical-data.mjs",
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
     "lint": "tsc --noEmit",
-    "test": "node --test src/test/search.test.mjs",
+    "test": "node --test src/test/search.test.mjs src/test/calculators.test.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

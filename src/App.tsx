@@ -37,8 +37,8 @@ export function App() {
       <footer className="app-footer">
         <div className="content-width">
           <strong>DoseRx</strong>
-          <span>Ferramenta de apoio · conteúdo clínico sujeito a validação local</span>
-          <span>v0.1 estrutural</span>
+          <span>Ferramenta de apoio · confirmar indicação, preparação e protocolo local</span>
+          <span>v0.2</span>
         </div>
       </footer>
     </div>

@@ -1,7 +1,13 @@
 import assert from 'node:assert/strict'
 import { describe, it } from 'node:test'
 import { drugCategories } from '../data/categories.ts'
-import { catalogDrugCount, drugs, reviewedDrugCount } from '../data/drugs.ts'
+import {
+  catalogDrugCount,
+  drugs,
+  pendingDrugCount,
+  reviewedDrugCount,
+  sourceVerifiedDrugCount,
+} from '../data/drugs.ts'
 import { normalizeSearchText, searchDrugs } from '../lib/search.ts'
 
 describe('drug search', () => {
@@ -35,6 +41,8 @@ describe('catalog integrity', () => {
   it('contains the consolidated catalog and the documented review batch', () => {
     assert.equal(catalogDrugCount, 550)
     assert.equal(reviewedDrugCount, 14)
+    assert.equal(sourceVerifiedDrugCount, 14)
+    assert.equal(pendingDrugCount, 536)
   })
 
   it('uses unique drug IDs and known category IDs', () => {
@@ -49,8 +57,8 @@ describe('catalog integrity', () => {
     }
   })
 
-  it('keeps every in-review dose and prescription traceable to a reference', () => {
-    for (const drug of drugs.filter((candidate) => candidate.validationStatus === 'in-review')) {
+  it('keeps every source-verified recommendation and calculator traceable to a reference', () => {
+    for (const drug of drugs.filter((candidate) => candidate.validationStatus === 'source-verified')) {
       const referenceIds = new Set(drug.references.map((reference) => reference.id))
       assert.ok(referenceIds.size > 0, `${drug.id} has no references`)
 
@@ -71,6 +79,13 @@ describe('catalog integrity', () => {
         assert.ok(item.sourceIds.length > 0, `${drug.id}: ${item.context ?? item.title} has no source`)
         for (const sourceId of item.sourceIds) {
           assert.ok(referenceIds.has(sourceId), `${drug.id} references missing source ${sourceId}`)
+        }
+      }
+
+      for (const calculator of drug.calculators ?? []) {
+        assert.ok(calculator.sourceIds.length > 0, `${drug.id}: calculator ${calculator.id} has no source`)
+        for (const sourceId of calculator.sourceIds) {
+          assert.ok(referenceIds.has(sourceId), `${drug.id}: calculator missing source ${sourceId}`)
         }
       }
     }

@@ -1,4 +1,5 @@
 import { homeHref } from '../lib/routes'
+import { pendingDrugCount } from '../data/drugs'
 import { LogoMark } from './LogoMark'
 
 export function AppHeader() {
@@ -12,10 +13,12 @@ export function AppHeader() {
             <small>Medicina Intensiva</small>
           </span>
         </a>
-        <div className="header-status">
-          <span className="status-dot" />
-          Validação local obrigatória
-        </div>
+        {pendingDrugCount > 0 && (
+          <div className="header-status">
+            <span className="status-dot" />
+            {pendingDrugCount} fichas em preparação
+          </div>
+        )}
       </div>
     </header>
   )
