@@ -4,9 +4,13 @@ import { drugCategories } from '../data/categories.ts'
 import {
   catalogDrugCount,
   drugs,
+  multiSourceValidatedDrugCount,
   pendingDrugCount,
+  placeholderDrugCount,
+  reviewInProgressDrugCount,
   reviewedDrugCount,
   sourceVerifiedDrugCount,
+  structuredDrugCount,
 } from '../data/drugs.ts'
 import { normalizeSearchText, searchDrugs } from '../lib/search.ts'
 
@@ -41,7 +45,11 @@ describe('catalog integrity', () => {
   it('contains the consolidated catalog and the documented review batch', () => {
     assert.equal(catalogDrugCount, 550)
     assert.equal(reviewedDrugCount, 18)
+    assert.equal(structuredDrugCount, 103)
     assert.equal(sourceVerifiedDrugCount, 18)
+    assert.equal(multiSourceValidatedDrugCount, 6)
+    assert.equal(reviewInProgressDrugCount, 85)
+    assert.equal(placeholderDrugCount, 447)
     assert.equal(pendingDrugCount, 532)
   })
 
@@ -58,7 +66,7 @@ describe('catalog integrity', () => {
   })
 
   it('keeps every source-verified recommendation and calculator traceable to a reference', () => {
-    for (const drug of drugs.filter((candidate) => candidate.validationStatus === 'source-verified')) {
+    for (const drug of drugs.filter((candidate) => candidate.validationStatus !== 'not-validated')) {
       const referenceIds = new Set(drug.references.map((reference) => reference.id))
       assert.ok(referenceIds.size > 0, `${drug.id} has no references`)
 
@@ -89,5 +97,17 @@ describe('catalog integrity', () => {
         }
       }
     }
+  })
+
+  it('records multi-source consensus and preserves contextual discrepancies', () => {
+    for (const drug of drugs.filter((candidate) => candidate.validationStatus === 'validated')) {
+      assert.equal(drug.verification?.status, 'consensus', `${drug.id} has no consensus record`)
+      assert.ok((drug.verification?.comparedSourceIds.length ?? 0) >= 4, `${drug.id} compares too few sources`)
+      assert.deepEqual(drug.verification?.discrepancies, [], `${drug.id} has unresolved discrepancies`)
+    }
+
+    const enoxaparin = drugs.find((drug) => drug.id === 'enoxaparin')
+    assert.equal(enoxaparin?.verification?.status, 'context-dependent')
+    assert.ok((enoxaparin?.verification?.discrepancies.length ?? 0) > 0)
   })
 })

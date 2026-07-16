@@ -4,6 +4,8 @@ export type ConfidenceLevel = 'unvalidated' | 'low' | 'moderate' | 'high'
 
 export type DrugPriority = 'P1' | 'P2' | 'P3'
 
+export type CrossSourceStatus = 'not-compared' | 'consensus' | 'context-dependent' | 'conflict'
+
 export type DoseAmountUnit = 'mg' | 'mcg' | 'mEq' | 'units'
 
 export type DoseRateUnit =
@@ -101,6 +103,15 @@ export interface EvidenceReference {
   accessedAt?: string
 }
 
+export interface DrugVerification {
+  status: CrossSourceStatus
+  reviewedAt: string
+  scope: string
+  comparedSourceIds: string[]
+  summary: string
+  discrepancies: string[]
+}
+
 export interface DoseAdjustment {
   context: string
   recommendation: string
@@ -158,5 +169,6 @@ export interface Drug {
   validationStatus: ValidationStatus
   confidence: ConfidenceLevel
   reviewNotes: string[]
+  verification?: DrugVerification
   calculators?: DrugCalculatorDefinition[]
 }

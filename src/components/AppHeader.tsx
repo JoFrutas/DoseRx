@@ -1,5 +1,5 @@
 import { homeHref } from '../lib/routes'
-import { pendingDrugCount } from '../data/drugs'
+import { placeholderDrugCount, reviewInProgressDrugCount } from '../data/drugs'
 import { LogoMark } from './LogoMark'
 
 export function AppHeader() {
@@ -13,10 +13,10 @@ export function AppHeader() {
             <small>Medicina Intensiva</small>
           </span>
         </a>
-        {pendingDrugCount > 0 && (
+        {(placeholderDrugCount > 0 || reviewInProgressDrugCount > 0) && (
           <div className="header-status">
             <span className="status-dot" />
-            {pendingDrugCount} fichas em preparação
+            {placeholderDrugCount} por preencher · {reviewInProgressDrugCount} em revisão
           </div>
         )}
       </div>

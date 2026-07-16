@@ -21,6 +21,12 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
   const categories = drug.categoryIds
     .map((categoryId) => getCategoryById(categoryId))
     .filter((category) => category !== undefined)
+  const verificationLabels = {
+    'not-compared': 'Comparação ainda não realizada',
+    consensus: 'Consenso entre fontes',
+    'context-dependent': 'Diferença dependente do contexto',
+    conflict: 'Discrepância por resolver',
+  }
 
   return (
     <main className="content-width page-content drug-detail">
@@ -74,6 +80,19 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
               {drug.reviewNotes.map((note) => <li key={note}>{note}</li>)}
             </ul>
           </section>
+          {drug.verification && (
+            <section className={`verification-note verification-note--${drug.verification.status}`}>
+              <strong>{verificationLabels[drug.verification.status]}</strong>
+              <span>{drug.verification.comparedSourceIds.length} fontes comparadas · {drug.verification.reviewedAt}</span>
+              <p><b>Âmbito:</b> {drug.verification.scope}</p>
+              <p>{drug.verification.summary}</p>
+              {drug.verification.discrepancies.length > 0 && (
+                <ul>
+                  {drug.verification.discrepancies.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              )}
+            </section>
+          )}
         </aside>
 
         <div className="detail-sections">

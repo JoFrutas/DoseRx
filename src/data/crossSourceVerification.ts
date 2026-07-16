@@ -1,0 +1,208 @@
+import type {
+  ConfidenceLevel,
+  DrugVerification,
+  EvidenceReference,
+  ValidationStatus,
+} from '../types/drug.ts'
+
+const REVIEW_DATE = '2026-07-16'
+
+interface CrossSourceVerificationPatch {
+  references: EvidenceReference[]
+  verification: DrugVerification
+  validationStatus?: ValidationStatus
+  confidence?: ConfidenceLevel
+  reviewNotes?: string[]
+}
+
+const localClinicalCatalogReference: EvidenceReference = {
+  id: 'local-clinical-catalog',
+  title: 'Catálogo clínico estruturado fornecido para DoseRx (drugs.ts)',
+  source: 'Fonte clínica local incorporada em expandedClinicalDrugs.ts',
+  year: 2026,
+  accessedAt: REVIEW_DATE,
+}
+
+const webReference = (
+  id: string,
+  title: string,
+  source: string,
+  url: string,
+): EvidenceReference => ({
+  id,
+  title,
+  source,
+  year: 2026,
+  url,
+  accessedAt: REVIEW_DATE,
+})
+
+const consensus = (
+  primarySourceId: string,
+  medscape: EvidenceReference,
+  drugsCom: EvidenceReference,
+  scope: string,
+  summary: string,
+): CrossSourceVerificationPatch => ({
+  references: [localClinicalCatalogReference, medscape, drugsCom],
+  validationStatus: 'validated',
+  confidence: 'high',
+  verification: {
+    status: 'consensus',
+    reviewedAt: REVIEW_DATE,
+    scope,
+    comparedSourceIds: [
+      'local-clinical-catalog',
+      medscape.id,
+      drugsCom.id,
+      primarySourceId,
+    ],
+    summary,
+    discrepancies: [],
+  },
+  reviewNotes: [
+    'Conteúdo comparado com a fonte clínica local, Medscape, Drugs.com e uma fonte primária independente.',
+    'Não foram identificadas discrepâncias materiais dentro do âmbito explicitado na comparação.',
+    'Formulação, concentração padronizada e protocolos institucionais continuam a ser confirmados no ponto de utilização.',
+  ],
+})
+
+export const crossSourceVerificationByDrugId: Readonly<
+  Partial<Record<string, CrossSourceVerificationPatch>>
+> = {
+  meropenem: consensus(
+    'meropenem-smpc',
+    webReference(
+      'medscape-meropenem',
+      'Meropenem dosing, indications and dose modifications',
+      'Medscape Drug Reference',
+      'https://reference.medscape.com/drug/meropenem-342565',
+    ),
+    webReference(
+      'drugscom-meropenem',
+      'Meropenem Dosage Guide',
+      'Drugs.com',
+      'https://www.drugs.com/dosage/meropenem.html',
+    ),
+    'Dose adulta por indicação, intervalos por ClCr e administração IV intermitente; regimes HD/CRRT mantêm fonte institucional própria.',
+    'As quatro fontes concordam nos regimes adultos principais e na redução progressiva por função renal.',
+  ),
+  fluconazole: consensus(
+    'fluconazole-dailymed',
+    webReference(
+      'medscape-fluconazole',
+      'Diflucan (fluconazole) dosing and dose modifications',
+      'Medscape Drug Reference',
+      'https://reference.medscape.com/drug/diflucan-fluconazole-342587',
+    ),
+    webReference(
+      'drugscom-fluconazole',
+      'Fluconazole Dosage Guide',
+      'Drugs.com',
+      'https://www.drugs.com/dosage/fluconazole.html',
+    ),
+    'Carga e manutenção na candidíase invasiva, redução da manutenção por ClCr e administração após hemodiálise; CVVHD excluída da comparação genérica.',
+    'As fontes concordam na carga plena, manutenção habitual e redução para 50% quando ClCr é igual ou inferior a 50 mL/min sem diálise.',
+  ),
+  acyclovir: consensus(
+    'acyclovir-dailymed',
+    webReference(
+      'medscape-acyclovir',
+      'Zovirax (acyclovir) dosing and dose modifications',
+      'Medscape Drug Reference',
+      'https://reference.medscape.com/drug/zovirax-acyclovir-342601',
+    ),
+    webReference(
+      'drugscom-acyclovir',
+      'Acyclovir Dosage Guide',
+      'Drugs.com',
+      'https://www.drugs.com/dosage/acyclovir.html',
+    ),
+    'Dose IV adulta para HSV/VZV e encefalite, intervalo por função renal e duração mínima da perfusão; HD/CRRT mantêm fonte institucional própria.',
+    'As fontes concordam nas doses de 5 e 10 mg/kg, na perfusão durante pelo menos uma hora e no alargamento do intervalo com disfunção renal.',
+  ),
+  propofol: consensus(
+    'propofol-label',
+    webReference(
+      'medscape-propofol',
+      'Diprivan (propofol) dosing and administration',
+      'Medscape Drug Reference',
+      'https://reference.medscape.com/drug/diprivan-propofol-343100',
+    ),
+    webReference(
+      'drugscom-propofol',
+      'Propofol Dosage Guide',
+      'Drugs.com',
+      'https://www.drugs.com/dosage/propofol.html',
+    ),
+    'Início, titulação e intervalo habitual da perfusão para sedação de adulto ventilado em UCI.',
+    'As fontes concordam no início a 5 mcg/kg/min, incrementos graduais e manutenção habitual entre 5 e 50 mcg/kg/min.',
+  ),
+  norepinephrine: consensus(
+    'norepinephrine-label',
+    webReference(
+      'medscape-norepinephrine',
+      'Levophed (norepinephrine) dosing and administration',
+      'Medscape Drug Reference',
+      'https://reference.medscape.com/drug/levarterenol-levophed-norepinephrine-342443',
+    ),
+    webReference(
+      'drugscom-norepinephrine',
+      'Norepinephrine Dosage Guide',
+      'Drugs.com',
+      'https://www.drugs.com/dosage/norepinephrine.html',
+    ),
+    'Dose inicial de referência e titulação contínua da perfusão vasoactiva; concentração final excluída porque deve ser institucional.',
+    'As fontes concordam na dose inicial de referência de 8–12 mcg/min e na titulação ao alvo hemodinâmico.',
+  ),
+  amiodarone: consensus(
+    'amiodarone-label',
+    webReference(
+      'medscape-amiodarone',
+      'Cordarone/Pacerone (amiodarone) dosing and administration',
+      'Medscape Drug Reference',
+      'https://reference.medscape.com/drug/pacerone-cordarone-amiodarone-342296',
+    ),
+    webReference(
+      'drugscom-amiodarone',
+      'Amiodarone Dosage Guide',
+      'Drugs.com',
+      'https://www.drugs.com/dosage/amiodarone.html',
+    ),
+    'Carga IV para taquicardia ventricular, sequência de 1 mg/min e 0,5 mg/min e ausência de ajuste renal.',
+    'As fontes concordam no esquema de 150 mg em 10 minutos, seguido de 1 mg/min durante 6 horas e 0,5 mg/min.',
+  ),
+  enoxaparin: {
+    references: [
+      localClinicalCatalogReference,
+      webReference(
+        'medscape-enoxaparin',
+        'Lovenox (enoxaparin) dosing and dose modifications',
+        'Medscape Drug Reference',
+        'https://reference.medscape.com/drug/lovenox-enoxaparin-342174',
+      ),
+      webReference(
+        'drugscom-enoxaparin',
+        'Enoxaparin Dosage Guide',
+        'Drugs.com',
+        'https://www.drugs.com/dosage/enoxaparin.html',
+      ),
+    ],
+    verification: {
+      status: 'context-dependent',
+      reviewedAt: REVIEW_DATE,
+      scope: 'Profilaxia e tratamento no adulto, incluindo insuficiência renal grave.',
+      comparedSourceIds: [
+        'local-clinical-catalog',
+        'medscape-enoxaparin',
+        'drugscom-enoxaparin',
+        'enoxaparin-eu-smpc',
+      ],
+      summary: 'A dose terapêutica por peso é concordante; a profilaxia na ClCr 15–30 mL/min diverge entre a informação europeia e norte-americana.',
+      discrepancies: [
+        'O RCM europeu usa 20 mg SC de 24/24 h para profilaxia na ClCr 15–30 mL/min; as fontes norte-americanas usam habitualmente 30 mg SC de 24/24 h.',
+        'A aplicação mantém o regime europeu/português e apresenta a diferença de jurisdição em vez de aplicar uma votação simples.',
+      ],
+    },
+  },
+}

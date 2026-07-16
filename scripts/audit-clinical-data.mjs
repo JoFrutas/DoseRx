@@ -9,6 +9,7 @@ const sourceVerified = drugs.filter((drug) => (
 for (const drug of drugs) {
   const referenceIds = new Set(drug.references.map((reference) => reference.id))
   const isSourceVerified = drug.validationStatus === 'source-verified' || drug.validationStatus === 'validated'
+  const hasStructuredContent = drug.validationStatus !== 'not-validated'
 
   if (isSourceVerified && referenceIds.size === 0) issues.push(`${drug.id}: ficha verificada sem referências`)
   if (!isSourceVerified && (drug.calculators?.length ?? 0) > 0) issues.push(`${drug.id}: calculadora em ficha não verificada`)
@@ -23,12 +24,25 @@ for (const drug of drugs) {
     ...drug.prescriptionExamples,
   ]
 
-  if (isSourceVerified) {
+  if (hasStructuredContent) {
     for (const item of adjustments) {
       if (item.sourceIds.length === 0) issues.push(`${drug.id}: recomendação sem fonte (${item.context ?? item.title})`)
       for (const sourceId of item.sourceIds) {
         if (!referenceIds.has(sourceId)) issues.push(`${drug.id}: referência inexistente ${sourceId}`)
       }
+    }
+  }
+
+  if (drug.validationStatus === 'validated') {
+    if (!drug.verification) issues.push(`${drug.id}: consenso multiponto sem registo de comparação`)
+    if (drug.verification?.status !== 'consensus') issues.push(`${drug.id}: ficha promovida sem consenso`)
+    if ((drug.verification?.comparedSourceIds.length ?? 0) < 4) issues.push(`${drug.id}: comparação com menos de quatro fontes`)
+    if ((drug.verification?.discrepancies.length ?? 0) > 0) issues.push(`${drug.id}: consenso com discrepâncias por resolver`)
+  }
+
+  if (drug.verification) {
+    for (const sourceId of drug.verification.comparedSourceIds) {
+      if (!referenceIds.has(sourceId)) issues.push(`${drug.id}: comparação usa fonte inexistente ${sourceId}`)
     }
   }
 

@@ -198,6 +198,16 @@ img { display: block; max-width: 100%; }
 .review-note strong { font-size: 12px; }
 .review-note ul { padding-left: 16px; margin: 8px 0 0; }
 .review-note li { margin: 5px 0; font-size: 11px; line-height: 1.45; }
+.verification-note { color: #175cd3; background: #eff8ff !important; border-color: #b9d7fe !important; }
+.verification-note--consensus { color: #05603a; background: var(--green-bg) !important; border-color: #b7e7cc !important; }
+.verification-note--context-dependent { color: #7a2e0e; background: var(--warning-bg) !important; border-color: #f6d9a5 !important; }
+.verification-note--conflict { color: var(--danger); background: var(--danger-bg) !important; border-color: #f7c6c2 !important; }
+.verification-note strong, .verification-note span { display: block; }
+.verification-note strong { font-size: 12px; }
+.verification-note span { margin-top: 4px; opacity: .78; font-size: 10px; font-weight: 700; }
+.verification-note p { margin: 9px 0 0; font-size: 11px; line-height: 1.5; }
+.verification-note ul { padding-left: 16px; margin: 8px 0 0; }
+.verification-note li { margin: 5px 0; font-size: 10px; line-height: 1.45; }
 .detail-sections { display: grid; gap: 12px; min-width: 0; }
 .clinical-section { overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); }
 .clinical-section > header { padding: 15px 18px 13px; border-bottom: 1px solid var(--border); background: #fbfcfd; }

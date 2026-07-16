@@ -2,7 +2,7 @@
 
 Aplicação de consulta rápida de fármacos em Medicina Intensiva, integrada visualmente na família JoFrutas/ICU Tools Hub.
 
-> **Estado clínico:** o catálogo contém 550 fármacos. Nesta versão, 18 fichas prioritárias têm as fontes primárias verificadas; as restantes 532 apresentam placeholders explícitos e não validados. A aplicação distingue verificação documental de adopção pelo protocolo local.
+> **Estado clínico:** o catálogo contém 550 fármacos. Nesta versão existem 103 fichas clínicas estruturadas: 6 com consenso multiponto, 12 adicionais com fontes primárias verificadas e 85 em revisão documental. Permanecem 447 entradas com placeholders explícitos.
 
 ## Correr localmente
 
@@ -27,6 +27,8 @@ O teste unitário usa o runner nativo e o suporte TypeScript do Node 22 ou super
 - `src/data/sources/catalogo-farmacos.json` — transcrição estruturada das 714 linhas do catálogo fornecido.
 - `src/data/catalog.generated.ts` — 550 entradas únicas geradas a partir do catálogo; não editar manualmente.
 - `src/data/reviewedDrugs.ts` — fichas clínicas com fontes primárias verificadas.
+- `src/data/expandedClinicalDrugs.ts` — 102 fichas estruturadas importadas da fonte clínica local; as sobreposições são substituídas pelas fichas primárias já revistas.
+- `src/data/crossSourceVerification.ts` — comparação rastreável entre a fonte local, Medscape, Drugs.com e fontes primárias, incluindo discrepâncias dependentes da jurisdição.
 - `src/data/drugCalculators.ts` — calculadoras activadas apenas nas fichas com fontes verificadas.
 - `src/lib/calculators.ts` — fórmulas puras de dose por peso, velocidade de perfusão e volume/tempo.
 - `src/data/drugBuilders.ts` — geradores dos placeholders não validados.
@@ -43,14 +45,14 @@ npm run catalog:generate
 
 ## Política de fontes
 
-O Medscape pode ser usado como comparador, mas não como única base de validação. As fichas devem privilegiar:
+O Medscape e o Drugs.com são comparadores clínicos rápidos, mas não constituem isoladamente uma validação independente. As fichas devem privilegiar:
 
 1. RCM/SmPC europeu ou português e documentação INFARMED;
 2. rotulagem oficial DailyMed/FDA quando acrescenta informação relevante;
 3. guidelines de sociedades científicas;
 4. protocolos institucionais específicos para hemodiálise e técnicas contínuas.
 
-Quando fontes válidas divergem, a ficha deve identificar a diferença e privilegiar o contexto europeu/português. Doses, diluições, velocidades, formulações e ajustes dependentes da modalidade devem ser confirmados localmente.
+O estado de consenso multiponto exige concordância da fonte local, Medscape, Drugs.com e pelo menos uma fonte primária independente no âmbito explicitado. Uma maioria numérica não resolve diferenças de formulação, indicação off-label, modalidade de substituição renal ou jurisdição. Quando fontes válidas divergem, a ficha identifica a diferença e privilegia o contexto europeu/português.
 
 ## Adicionar ou validar um fármaco
 

@@ -12,8 +12,8 @@ export function SafetyBanner({ compact = false, pendingCount }: SafetyBannerProp
       <div>
         {!compact && <strong>Ficha clínica ainda não documentada</strong>}
         <p>
-          {pendingCount ? `${pendingCount} entradas do catálogo ainda não têm ficha documental. ` : ''}
-          Não utilize conteúdo assinalado como não validado para prescrever.
+          {pendingCount ? `${pendingCount} entradas do catálogo ainda não têm ficha clínica estruturada. ` : ''}
+          Não use entradas sem ficha como suporte à prescrição.
         </p>
       </div>
     </aside>

@@ -5,7 +5,14 @@ import { LogoMark } from '../components/LogoMark'
 import { SafetyBanner } from '../components/SafetyBanner'
 import { SearchBar } from '../components/SearchBar'
 import { drugCategories } from '../data/categories'
-import { catalogDrugCount, drugs, pendingDrugCount, sourceVerifiedDrugCount } from '../data/drugs'
+import {
+  catalogDrugCount,
+  drugs,
+  multiSourceValidatedDrugCount,
+  placeholderDrugCount,
+  reviewInProgressDrugCount,
+  sourceVerifiedDrugCount,
+} from '../data/drugs'
 import { searchDrugs } from '../lib/search'
 
 export function HomePage() {
@@ -38,7 +45,7 @@ export function HomePage() {
       </section>
 
       <div className="content-width home-content">
-        {pendingDrugCount > 0 && <SafetyBanner compact pendingCount={pendingDrugCount} />}
+        {placeholderDrugCount > 0 && <SafetyBanner compact pendingCount={placeholderDrugCount} />}
 
         {isSearching ? (
           <section className="search-results" aria-live="polite">
@@ -67,8 +74,9 @@ export function HomePage() {
                 <span className="eyebrow">Catálogo de Medicina Intensiva</span>
                 <h2>Explorar por categoria</h2>
                 <p>
-                  {sourceVerifiedDrugCount} fichas com fontes verificadas; {pendingDrugCount} entradas
-                  mantêm placeholders explícitos até revisão documental.
+                  {multiSourceValidatedDrugCount} fichas com consenso multiponto;{' '}
+                  {sourceVerifiedDrugCount - multiSourceValidatedDrugCount} com fontes primárias verificadas;{' '}
+                  {reviewInProgressDrugCount} em revisão e {placeholderDrugCount} ainda por preencher.
                 </p>
               </div>
               <span className="record-count">{catalogDrugCount} fármacos</span>

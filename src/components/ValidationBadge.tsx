@@ -6,10 +6,10 @@ interface ValidationBadgeProps {
 }
 
 const statusLabels: Record<ValidationStatus, string> = {
-  'not-validated': 'Não validado',
-  'in-review': 'Em revisão',
-  'source-verified': 'Fontes verificadas',
-  validated: 'Validado',
+  'not-validated': 'Sem ficha',
+  'in-review': 'Fontes em revisão',
+  'source-verified': 'Fontes primárias verificadas',
+  validated: 'Consenso multiponto',
 }
 
 const confidenceLabels: Record<ConfidenceLevel, string> = {
