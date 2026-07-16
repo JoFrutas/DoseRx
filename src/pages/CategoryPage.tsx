@@ -1,5 +1,6 @@
 import { DrugCard } from '../components/DrugCard'
 import { Icon } from '../components/Icon'
+import { SafetyBanner } from '../components/SafetyBanner'
 import { getCategoryById } from '../data/categories'
 import { drugs } from '../data/drugs'
 import { homeHref } from '../lib/routes'
@@ -14,6 +15,12 @@ export function CategoryPage({ categoryId }: CategoryPageProps) {
   if (!category) return <NotFoundPage />
 
   const categoryDrugs = drugs.filter((drug) => drug.categoryIds.includes(category.id))
+  const inReviewCount = categoryDrugs.filter((drug) => (
+    drug.validationStatus === 'in-review'
+  )).length
+  const notValidatedCount = categoryDrugs.filter((drug) => (
+    drug.validationStatus === 'not-validated'
+  )).length
 
   return (
     <main className="content-width page-content">
@@ -31,6 +38,14 @@ export function CategoryPage({ categoryId }: CategoryPageProps) {
         </div>
         <strong>{categoryDrugs.length} {categoryDrugs.length === 1 ? 'ficha' : 'fichas'}</strong>
       </section>
+
+      {(inReviewCount > 0 || notValidatedCount > 0) && (
+        <SafetyBanner
+          compact
+          inReviewCount={inReviewCount}
+          notValidatedCount={notValidatedCount}
+        />
+      )}
 
       <section className="category-list-section">
         <div className="section-heading">

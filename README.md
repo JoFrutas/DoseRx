@@ -2,7 +2,7 @@
 
 Aplicação de consulta rápida de fármacos em Medicina Intensiva, integrada visualmente na família JoFrutas/ICU Tools Hub.
 
-> **Estado do catálogo:** as 552 entradas têm ficha estruturada e aprovação clínica registada. O `drugs.ts` actualizado fornece 141 monografias completas; o documento clínico complementar contém 185 blocos mapeados para 190 entradas. Nas restantes, os campos estão preenchidos sem inventar uma posologia numérica e remetem para o RCM/SmPC e para o protocolo específico da indicação.
+> **Estado do catálogo:** existem 552 entradas pesquisáveis. Destas, 6 têm consenso multiponto, 15 têm fontes primárias verificadas, 173 estão em revisão e 358 ainda não têm validação clínica. Os estados são mostrados na interface e as fichas em revisão ou não validadas não devem ser usadas como suporte autónomo à prescrição.
 
 ## Correr localmente
 
@@ -30,7 +30,7 @@ O teste unitário usa o runner nativo e o suporte TypeScript do Node 22 ou super
 - `src/data/catalog.generated.ts` — 552 entradas únicas geradas a partir do catálogo; não editar manualmente.
 - `src/data/catalogReviewedDrugs.ts` — constrói as fichas restantes, usando as notas revistas quando existem e evitando doses numéricas não documentadas.
 - `src/data/reviewedDrugs.ts` — fichas clínicas com fontes primárias verificadas.
-- `src/data/expandedClinicalDrugs.ts` — 141 fichas estruturadas no modelo clínico completo usado, por exemplo, na vasopressina; as sobreposições são substituídas pelas fichas primárias já revistas.
+- `src/data/expandedClinicalDrugs.ts` — 141 rascunhos estruturados no modelo clínico completo; permanecem `in-review` até revisão médica e farmacêutica individual. As sobreposições são substituídas pelas fichas com fontes primárias verificadas.
 - `src/data/crossSourceVerification.ts` — comparação rastreável entre Medscape, Drugs.com e fontes primárias/regulatórias, incluindo discrepâncias dependentes da jurisdição.
 - `src/data/drugCalculators.ts` — calculadoras activadas apenas nas fichas com fontes verificadas.
 - `src/lib/calculators.ts` — fórmulas puras de dose por peso, velocidade de perfusão e volume/tempo.
@@ -64,6 +64,13 @@ O Medscape e o Drugs.com são comparadores clínicos rápidos, mas não constitu
 4. protocolos institucionais específicos para hemodiálise e técnicas contínuas.
 
 O estado de consenso multiponto exige concordância entre Medscape, Drugs.com e pelo menos uma fonte primária, regulatória ou guideline independente no âmbito explicitado. Uma maioria numérica não resolve diferenças de formulação, indicação off-label, modalidade de substituição renal ou jurisdição. Quando fontes válidas divergem, a ficha identifica a diferença e privilegia o contexto europeu/português.
+
+Estados documentais:
+
+- `validated` — consenso multiponto sem discrepâncias materiais no âmbito definido;
+- `source-verified` — recomendações ligadas a fontes primárias, regulatórias ou guidelines específicas;
+- `in-review` — rascunho clínico estruturado ainda sem validação médica e farmacêutica completa;
+- `not-validated` — entrada de catálogo ou conteúdo genérico, sem bibliografia clínica específica.
 
 ## Adicionar ou rever um fármaco
 

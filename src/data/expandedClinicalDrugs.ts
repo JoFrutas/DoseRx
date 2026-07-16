@@ -12,13 +12,14 @@ export type ExpandedClinicalDrug = Omit<Drug, 'priority' | 'subcategories'>
 
 /**
  * ATENÇÃO CLÍNICA
- * As fichas abaixo foram preenchidas a partir de referências padrão de Medicina
- * Intensiva (ver `referenceLibrary`). O conteúdo foi revisto e aceite para
- * integração. A utilização assistencial continua a exigir confirmação da
- * indicação, apresentação, preparação e protocolo local.
+ * As fichas abaixo são rascunhos estruturados a partir do documento clínico
+ * interno e de referências padrão de Medicina Intensiva (ver
+ * `referenceLibrary`). Não existe registo de validação médica e farmacêutica
+ * individual de cada recomendação. A utilização assistencial exige revisão das
+ * fontes específicas, da apresentação, da preparação e do protocolo local.
  */
 
-const REVIEW: ValidationStatus = 'source-verified'
+const REVIEW: ValidationStatus = 'in-review'
 const REVIEW_DATE = '2026-07-16'
 
 // ---------------------------------------------------------------------------
@@ -185,6 +186,26 @@ export const referenceLibrary: Record<string, EvidenceReference> = {
     year: 2015,
     doi: '10.1161/CIR.0000000000000296',
     url: 'https://doi.org/10.1161/CIR.0000000000000296',
+    accessedAt: REVIEW_DATE,
+  },
+  vancomycin2020: {
+    id: 'vancomycin2020',
+    title: 'Therapeutic Monitoring of Vancomycin for Serious MRSA Infections — Revised Consensus Guideline',
+    authors: 'Rybak MJ, Le J, Lodise TP, et al.',
+    source: 'ASHP/PIDS/SIDP/IDSA; Am J Health-Syst Pharm 2020;77:835–864',
+    year: 2020,
+    doi: '10.1093/ajhp/zxaa036',
+    url: 'https://www.idsociety.org/practice-guideline/vancomycin/',
+    accessedAt: REVIEW_DATE,
+  },
+  cdi2021: {
+    id: 'cdi2021',
+    title: 'SHEA/IDSA 2021 Focused Update for Management of Clostridioides difficile Infection in Adults',
+    authors: 'Johnson S, Lavergne V, Skinner AM, et al.',
+    source: 'Clinical Infectious Diseases 2021;73:e1029–e1044',
+    year: 2021,
+    doi: '10.1093/cid/ciab549',
+    url: 'https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/',
     accessedAt: REVIEW_DATE,
   },
   reversal2016: {
@@ -365,8 +386,8 @@ const refsFor = (ids: string[]): EvidenceReference[] =>
   ids.map((id) => referenceLibrary[id]).filter((r): r is EvidenceReference => Boolean(r))
 
 const REVIEW_NOTES = [
-  'Ficha preenchida a partir de referências padrão de Medicina Intensiva e revista para integração.',
-  'Confirmar RCM/SmPC, apresentação disponível e protocolo local antes da utilização assistencial.',
+  'Rascunho estruturado a partir de uma referência clínica interna; não constitui validação clínica ou farmacêutica.',
+  'Requer confirmação em fonte específica, revisão médica e farmacêutica e adequação ao protocolo local antes da utilização assistencial.',
 ]
 
 // ---------------------------------------------------------------------------
@@ -1779,18 +1800,34 @@ export const expandedClinicalDrugs: ExpandedClinicalDrug[] = [
       d(
         'Adulto em Medicina Intensiva (IV)',
         'Carga 25–30 mg/kg (máx ~3 g), depois 15–20 mg/kg 8/8h–12/12h, ajustado por níveis/AUC.',
-        ['endocarditis2015', 'sanford'],
+        ['vancomycin2020', 'sanford'],
       ),
-      d('Colite por C. difficile', '125 mg PO 6/6h (grave 500 mg PO 6/6h); via oral não atinge níveis sistémicos.', ['sanford']),
+      d(
+        'C. difficile — episódio inicial não fulminante',
+        'Vancomicina 125 mg PO 6/6h durante 10 dias é uma alternativa aceite; a guideline SHEA/IDSA 2021 prefere fidaxomicina quando disponível.',
+        ['cdi2021'],
+      ),
+      d(
+        'C. difficile fulminante',
+        'Vancomicina 500 mg PO/SNG 6/6h; se houver íleo, considerar administração rectal e metronidazol IV segundo protocolo.',
+        ['cdi2021'],
+      ),
     ],
-    loadingDose: d('Carga IV no doente crítico', '25–30 mg/kg IV (máx ~3 g).', ['sanford']),
+    loadingDose: d(
+      'Carga IV no doente crítico',
+      '25–30 mg/kg IV (máx ~3 g).',
+      ['vancomycin2020', 'sanford'],
+    ),
     prescriptionExamples: [
       rx(
-        'MRSA — dose guiada por níveis',
-        'Vancomicina: carga 25 mg/kg IV, depois 15–20 mg/kg 12/12h; ajustar por AUC/MIC (400–600) ou vale 15–20 mg/L.',
-        ['endocarditis2015'],
+        'MRSA invasivo — dose guiada por AUC',
+        'Vancomicina: carga 25 mg/kg IV, depois regime de manutenção individualizado para atingir AUC24/MIC 400–600.',
+        ['vancomycin2020'],
         'Perfundir ≥ 1h por grama (síndrome do homem vermelho).',
-        ['Nefrotoxicidade aumentada com piperacilina-tazobactam.'],
+        [
+          'Atingir o alvo nas primeiras 24–48h.',
+          'Não usar um vale isolado de 15–20 mg/L como alvo rotineiro em infeção grave por MRSA.',
+        ],
       ),
     ],
     renalAdjustment: renal(
@@ -1799,18 +1836,27 @@ export const expandedClinicalDrugs: ExpandedClinicalDrug[] = [
         d('Função renal preservada', '15–20 mg/kg 8/8h–12/12h, ajustar por níveis.', ['sanford']),
         d('DRC moderada-grave', 'Manter carga; espaçar manutenção conforme níveis.', ['renalHandbook']),
       ],
-      ['Níveis (AUC preferível ao vale)', 'Função renal', 'Sinais de nefrotoxicidade'],
+      ['AUC24/MIC nas primeiras 24–48h', 'Função renal', 'Sinais de nefrotoxicidade'],
       {
         intermittentHemodialysis: d('Hemodiálise intermitente', 'Carga 20–25 mg/kg; redosing guiado por níveis pós-diálise (é removida por filtros de alto fluxo).', ['renalHandbook']),
         continuousKidneyReplacement: d('CRRT', 'Carga 20–25 mg/kg, depois 10–15 mg/kg 24/24h guiado por níveis.', ['renalHandbook']),
       },
     ),
     hepaticAdjustment: hepatic('Sem ajuste por função hepática.', [d('Disfunção hepática', 'Sem ajuste.', ['lexicomp'])], ['Níveis séricos']),
-    therapeuticDrugMonitoring: ['Alvo AUC/MIC 400–600; vale 15–20 mg/L em infeção grave (transição para AUC).'],
+    therapeuticDrugMonitoring: [
+      'Em infeção invasiva por MRSA, alvo AUC24/MIC 400–600, idealmente nas primeiras 24–48h.',
+      'A monitorização apenas por vale com alvo 15–20 mg/L deixou de ser recomendada para infeção grave por MRSA por maior risco de nefrotoxicidade.',
+    ],
     contraindications: ['Hipersensibilidade a vancomicina'],
     interactions: ['Nefrotoxicidade aditiva (piperacilina-tazobactam, aminoglicosídeos, contraste); ototoxicidade aditiva.'],
     practicalNotes: ['Reação de perfusão (homem vermelho) mediada por histamina — abrandar perfusão/anti-histamínico.'],
-    references: refsFor(['endocarditis2015', 'sanford', 'renalHandbook', 'lexicomp']),
+    references: refsFor([
+      'vancomycin2020',
+      'cdi2021',
+      'sanford',
+      'renalHandbook',
+      'lexicomp',
+    ]),
     lastReviewedAt: REVIEW_DATE,
     validationStatus: REVIEW,
     confidence: 'moderate',

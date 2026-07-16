@@ -15,6 +15,12 @@ const forbiddenBibliographicIds = new Set([
   'reviewed-clinical-reference',
   'local-clinical-catalog',
 ])
+const validationRank = {
+  'not-validated': 0,
+  'in-review': 1,
+  'source-verified': 2,
+  validated: 3,
+}
 const forbiddenBibliographicText = [
   /DoseRx\s+—\s+Lista de referência de fármacos/iu,
   /Catálogo de fármacos de Medicina Intensiva/iu,
@@ -33,12 +39,26 @@ if (reviewedClinicalUnmappedNoteCount > 0) {
 for (const drug of drugs) {
   const referenceIds = new Set(drug.references.map((reference) => reference.id))
   const isSourceVerified = drug.validationStatus === 'source-verified' || drug.validationStatus === 'validated'
-  const hasStructuredContent = drug.validationStatus !== 'not-validated'
 
   if (isSourceVerified && referenceIds.size === 0) issues.push(`${drug.id}: ficha verificada sem referências`)
   if (!isSourceVerified && (drug.calculators?.length ?? 0) > 0) issues.push(`${drug.id}: calculadora em ficha não verificada`)
   if (drug.validationStatus === 'validated' && drug.confidence !== 'high') issues.push(`${drug.id}: aprovação total sem confiança elevada`)
   if (drug.validationStatus === 'validated' && !drug.lastReviewedAt) issues.push(`${drug.id}: aprovação total sem data de revisão`)
+  if (drug.validationStatus === 'validated' && drug.verification?.status !== 'consensus') {
+    issues.push(`${drug.id}: aprovação total sem consenso multiponto`)
+  }
+  if (drug.validationStatus === 'source-verified' && ['unvalidated', 'low'].includes(drug.confidence)) {
+    issues.push(`${drug.id}: ficha verificada com confiança insuficiente`)
+  }
+  if (drug.validationStatus === 'not-validated' && drug.confidence !== 'unvalidated') {
+    issues.push(`${drug.id}: ficha não validada com confiança atribuída`)
+  }
+  if (
+    drug.validationStatus === 'validated'
+    && ['context-dependent', 'conflict'].includes(drug.verification?.status)
+  ) {
+    issues.push(`${drug.id}: discrepância contextual marcada como aprovação total`)
+  }
 
   for (const reference of drug.references) {
     const searchableReference = [reference.title, reference.source, reference.url].filter(Boolean).join(' ')
@@ -60,13 +80,19 @@ for (const drug of drugs) {
     ...drug.prescriptionExamples,
   ]
 
-  if (hasStructuredContent) {
+  if (isSourceVerified) {
     for (const item of adjustments) {
       if (item.sourceIds.length === 0) issues.push(`${drug.id}: recomendação sem fonte (${item.context ?? item.title})`)
       for (const sourceId of item.sourceIds) {
         if (forbiddenBibliographicIds.has(sourceId)) issues.push(`${drug.id}: recomendação usa documento interno ${sourceId}`)
         if (!referenceIds.has(sourceId)) issues.push(`${drug.id}: referência inexistente ${sourceId}`)
       }
+    }
+  }
+
+  for (const item of adjustments) {
+    if (validationRank[item.validationStatus] > validationRank[drug.validationStatus]) {
+      issues.push(`${drug.id}: recomendação mais validada do que a ficha (${item.context ?? item.title})`)
     }
   }
 

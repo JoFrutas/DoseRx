@@ -1,7 +1,6 @@
 import type {
   DoseAdjustment,
   Drug,
-  EvidenceReference,
   PrescriptionExample,
   ValidationStatus,
 } from '../types/drug'
@@ -28,7 +27,6 @@ interface ReviewedNotesSource {
 }
 
 const reviewedNotes = reviewedNotesSource as ReviewedNotesSource
-const REVIEWED: ValidationStatus = 'source-verified'
 
 const notesByCatalogId = new Map<string, ReviewedClinicalNote[]>()
 for (const note of reviewedNotes.notes) {
@@ -101,19 +99,21 @@ const adjustment = (
   context: string,
   recommendation: string,
   sourceIds: string[],
+  validationStatus: ValidationStatus,
   notes?: string[],
 ): DoseAdjustment => ({
   context,
   recommendation,
   sourceIds,
   notes,
-  validationStatus: REVIEWED,
+  validationStatus,
 })
 
 const prescription = (
   prescriptionText: string,
   sourceIds: string[],
   hasNumericRegime: boolean,
+  validationStatus: ValidationStatus,
 ): PrescriptionExample => ({
   title: hasNumericRegime
     ? 'Exemplo prático de prescrição'
@@ -127,35 +127,8 @@ const prescription = (
     'Não extrapolar entre apresentações, indicações ou vias diferentes.',
   ],
   sourceIds,
-  validationStatus: REVIEWED,
+  validationStatus,
 })
-
-const referencesFor = (seed: PlaceholderDrugSeed): EvidenceReference[] => {
-  const query = encodeURIComponent(seed.aliases[0] ?? seed.name)
-  return [
-    {
-      id: 'infarmed-rcm',
-      title: `INFOMED — RCM/SmPC: ${seed.name}`,
-      source: 'INFARMED',
-      url: 'https://extranet.infarmed.pt/INFOMED-fo/',
-      accessedAt: reviewedNotes.reviewedAt,
-    },
-    {
-      id: 'medscape-reference',
-      title: `Medscape Drug Reference — ${seed.name}`,
-      source: 'Medscape',
-      url: 'https://reference.medscape.com/drugs',
-      accessedAt: reviewedNotes.reviewedAt,
-    },
-    {
-      id: 'drugs-com-reference',
-      title: `Drugs.com Drug Information — ${seed.name}`,
-      source: 'Drugs.com',
-      url: `https://www.drugs.com/search.php?searchterm=${query}`,
-      accessedAt: reviewedNotes.reviewedAt,
-    },
-  ]
-}
 
 const defaultMonitoringByCategory: Readonly<Record<string, string[]>> = {
   antibiotics: ['Função renal e hepática durante a terapêutica', 'Resposta clínica, culturas, susceptibilidade e duração'],
@@ -199,7 +172,8 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
   const notes = notesByCatalogId.get(seed.id) ?? []
   const noteLines = unique(notes.flatMap((note) => [note.summary, ...note.bullets]))
   const hasClinicalNote = notes.length > 0
-  const sourceIds = ['infarmed-rcm', 'medscape-reference', 'drugs-com-reference']
+  const validationStatus: ValidationStatus = hasClinicalNote ? 'in-review' : 'not-validated'
+  const sourceIds: string[] = []
 
   const renalLines = noteLines.filter((line) => includesAny(line, renalPatterns))
   const hepaticLines = noteLines.filter((line) => includesAny(line, hepaticPatterns))
@@ -219,8 +193,13 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
   const fallbackDose =
     'Não existe um regime posológico único para esta entrada. Seleccionar dose, intervalo, via e duração pelo RCM/SmPC da apresentação local e pelo protocolo da indicação.'
   const usualAdultDose = doseLines.length > 0
-    ? doseLines.slice(0, 8).map((line) => adjustment(contextForDoseLine(line), line, sourceIds))
-    : [adjustment('Adulto em Medicina Intensiva', fallbackDose, sourceIds)]
+    ? doseLines.slice(0, 8).map((line) => adjustment(
+        contextForDoseLine(line),
+        line,
+        sourceIds,
+        validationStatus,
+      ))
+    : [adjustment('Adulto em Medicina Intensiva', fallbackDose, sourceIds, validationStatus)]
 
   const intermittentLine = renalLines.find((line) => includesAny(line, intermittentDialysisPatterns))
   const continuousLine = renalLines.find((line) => includesAny(line, continuousDialysisPatterns))
@@ -258,40 +237,59 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
       : ['Via dependente da indicação e da apresentação autorizada localmente'],
     usualAdultDose,
     loadingDose: loadingLines.length > 0
-      ? adjustment('Dose de carga', loadingLines.join(' '), sourceIds)
+      ? adjustment('Dose de carga', loadingLines.join(' '), sourceIds, validationStatus)
       : undefined,
-    prescriptionExamples: [prescription(prescriptionText, sourceIds, doseLines.length > 0)],
+    prescriptionExamples: [
+      prescription(prescriptionText, sourceIds, doseLines.length > 0, validationStatus),
+    ],
     renalAdjustment: {
       summary: renalLines.length > 0 ? renalLines.join(' ') : renalFallback,
       byKidneyFunction: renalLines.length > 0
-        ? renalLines.map((line) => adjustment('Função renal — contexto documentado', line, sourceIds))
-        : [adjustment('Função renal / ClCr / eGFR', renalFallback, sourceIds)],
+        ? renalLines.map((line) => adjustment(
+            'Função renal — contexto documentado',
+            line,
+            sourceIds,
+            validationStatus,
+          ))
+        : [adjustment(
+            'Função renal / ClCr / eGFR',
+            renalFallback,
+            sourceIds,
+            validationStatus,
+          )],
       intermittentHemodialysis: adjustment(
         'Hemodiálise intermitente',
         intermittentLine ?? renalFallback,
         sourceIds,
+        validationStatus,
       ),
       continuousKidneyReplacement: adjustment(
         'Técnicas contínuas de substituição renal',
         continuousLine ?? renalFallback,
         sourceIds,
+        validationStatus,
       ),
       monitoring: unique([
         'Reavaliar função renal e diurese perante alterações clínicas agudas.',
         ...monitoringLines,
       ]),
-      validationStatus: REVIEWED,
+      validationStatus,
     },
     hepaticAdjustment: {
       summary: hepaticLines.length > 0 ? hepaticLines.join(' ') : hepaticFallback,
       bySeverity: hepaticLines.length > 0
-        ? hepaticLines.map((line) => adjustment('Disfunção hepática — contexto documentado', line, sourceIds))
-        : [adjustment('Disfunção hepática', hepaticFallback, sourceIds)],
+        ? hepaticLines.map((line) => adjustment(
+            'Disfunção hepática — contexto documentado',
+            line,
+            sourceIds,
+            validationStatus,
+          ))
+        : [adjustment('Disfunção hepática', hepaticFallback, sourceIds, validationStatus)],
       monitoring: unique([
         'Reavaliar função hepática e sinais de toxicidade quando clinicamente indicado.',
         ...monitoringLines,
       ]),
-      validationStatus: REVIEWED,
+      validationStatus,
     },
     therapeuticDrugMonitoring: unique([
       ...(defaultMonitoringByCategory[drugSeed.categoryIds[0]] ?? ['Resposta clínica e toxicidade']),
@@ -307,18 +305,19 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
       ? interactionLines
       : ['Rever interacções farmacológicas no RCM e na medicação activa antes da prescrição.'],
     practicalNotes,
-    references: referencesFor(seed),
-    lastReviewedAt: reviewedNotes.reviewedAt,
-    validationStatus: REVIEWED,
-    confidence: hasClinicalNote ? 'moderate' : 'low',
+    references: [],
+    lastReviewedAt: hasClinicalNote ? reviewedNotes.reviewedAt : null,
+    validationStatus,
+    confidence: hasClinicalNote ? 'moderate' : 'unvalidated',
     reviewNotes: hasClinicalNote
       ? [
-          'Conteúdo clínico revisto para integração.',
-          'Os campos dependentes da apresentação remetem para o RCM e para o protocolo da indicação.',
+          'Conteúdo importado de uma nota clínica interna e mantido em revisão.',
+          'Ainda não existem fontes externas específicas associadas a cada recomendação.',
+          'Confirmar RCM/SmPC, formulação e protocolo local antes da utilização assistencial.',
         ]
       : [
-          'Entrada, prioridade e âmbito revistos.',
-          'Sem regime numérico universal; a ficha mantém essa limitação de forma explícita.',
+          'Apenas a entrada, prioridade e âmbito do catálogo estão registados.',
+          'Não existe revisão clínica nem bibliografia específica para esta ficha.',
         ],
   }
 }

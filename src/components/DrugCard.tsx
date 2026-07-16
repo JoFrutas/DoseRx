@@ -2,6 +2,7 @@ import { getCategoryById } from '../data/categories'
 import { drugHref } from '../lib/routes'
 import type { Drug } from '../types/drug'
 import { Icon } from './Icon'
+import { ValidationBadge } from './ValidationBadge'
 
 interface DrugCardProps {
   drug: Drug
@@ -18,6 +19,7 @@ export function DrugCard({ drug }: DrugCardProps) {
       <span className="drug-card__body">
         <span className="drug-card__heading">
           <strong>{drug.name}</strong>
+          <ValidationBadge status={drug.validationStatus} />
         </span>
         <span className="drug-card__class">{drug.drugClass}</span>
         <span className="drug-card__tags">

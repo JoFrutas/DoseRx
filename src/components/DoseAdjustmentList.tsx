@@ -1,5 +1,6 @@
 import type { DoseAdjustment, EvidenceReference } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
+import { ValidationBadge } from './ValidationBadge'
 
 interface DoseAdjustmentListProps {
   items: DoseAdjustment[]
@@ -13,6 +14,7 @@ export function DoseAdjustmentList({ items, references }: DoseAdjustmentListProp
         <article className="adjustment-item" key={item.context}>
           <div className="adjustment-item__top">
             <strong>{item.context}</strong>
+            <ValidationBadge status={item.validationStatus} />
           </div>
           <p>{item.recommendation}</p>
           {item.notes && (

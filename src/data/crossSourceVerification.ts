@@ -63,7 +63,7 @@ export const crossSourceVerificationByDrugId: Readonly<
 > = {
   amoxicilina: {
     references: [],
-    validationStatus: 'validated',
+    validationStatus: 'source-verified',
     confidence: 'high',
     verification: {
       status: 'context-dependent',
@@ -88,7 +88,7 @@ export const crossSourceVerificationByDrugId: Readonly<
   },
   'amoxicilina-acido-clavulanico': {
     references: [],
-    validationStatus: 'validated',
+    validationStatus: 'source-verified',
     confidence: 'high',
     verification: {
       status: 'context-dependent',

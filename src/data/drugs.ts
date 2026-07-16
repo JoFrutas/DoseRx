@@ -1,4 +1,4 @@
-import type { DoseAdjustment, Drug, PrescriptionExample } from '../types/drug'
+import type { Drug } from '../types/drug'
 import { catalogSeeds } from './catalog.generated.ts'
 import { createCatalogReviewedDrug } from './catalogReviewedDrugs.ts'
 import { crossSourceVerificationByDrugId } from './crossSourceVerification.ts'
@@ -110,25 +110,14 @@ const additionalStructuredDrugs = expandedMappedDrugs
 const structuredDrugs = [...reviewedDrugs, ...additionalStructuredDrugs]
 const structuredDrugsWithVerification = structuredDrugs.map((drug) => {
   const verificationPatch = crossSourceVerificationByDrugId[drug.id]
-  const reviewedDrug = drug.validationStatus === 'in-review'
-    ? {
-        ...drug,
-        validationStatus: 'source-verified' as const,
-        confidence: drug.confidence === 'unvalidated' ? 'moderate' as const : drug.confidence,
-        reviewNotes: [
-          ...drug.reviewNotes,
-          'Conteúdo clínico local revisto e aceite para integração em 2026-07-16.',
-        ],
-      }
-    : drug
-  if (!verificationPatch) return reviewedDrug
+  if (!verificationPatch) return drug
 
   return {
-    ...reviewedDrug,
-    validationStatus: verificationPatch.validationStatus ?? reviewedDrug.validationStatus,
-    confidence: verificationPatch.confidence ?? reviewedDrug.confidence,
-    reviewNotes: verificationPatch.reviewNotes ?? reviewedDrug.reviewNotes,
-    references: [...reviewedDrug.references, ...verificationPatch.references],
+    ...drug,
+    validationStatus: verificationPatch.validationStatus ?? drug.validationStatus,
+    confidence: verificationPatch.confidence ?? drug.confidence,
+    reviewNotes: verificationPatch.reviewNotes ?? drug.reviewNotes,
+    references: [...drug.references, ...verificationPatch.references],
     verification: verificationPatch.verification,
   }
 })
@@ -138,49 +127,15 @@ const pendingCatalogDrugs = catalogSeeds
   .filter((seed) => !structuredIds.has(seed.id))
   .map(createCatalogReviewedDrug)
 
-const approveDoseAdjustment = (item: DoseAdjustment): DoseAdjustment => ({
-  ...item,
-  validationStatus: 'validated',
-})
-
-const approvePrescriptionExample = (item: PrescriptionExample): PrescriptionExample => ({
-  ...item,
-  validationStatus: 'validated',
-})
-
-const applyClinicalApproval = (drug: Drug): Drug => ({
+const attachDocumentedCalculators = (drug: Drug): Drug => ({
   ...drug,
-  usualAdultDose: drug.usualAdultDose.map(approveDoseAdjustment),
-  loadingDose: drug.loadingDose ? approveDoseAdjustment(drug.loadingDose) : undefined,
-  prescriptionExamples: drug.prescriptionExamples.map(approvePrescriptionExample),
-  renalAdjustment: {
-    ...drug.renalAdjustment,
-    byKidneyFunction: drug.renalAdjustment.byKidneyFunction.map(approveDoseAdjustment),
-    intermittentHemodialysis: drug.renalAdjustment.intermittentHemodialysis
-      ? approveDoseAdjustment(drug.renalAdjustment.intermittentHemodialysis)
-      : undefined,
-    continuousKidneyReplacement: drug.renalAdjustment.continuousKidneyReplacement
-      ? approveDoseAdjustment(drug.renalAdjustment.continuousKidneyReplacement)
-      : undefined,
-    validationStatus: 'validated',
-  },
-  hepaticAdjustment: {
-    ...drug.hepaticAdjustment,
-    bySeverity: drug.hepaticAdjustment.bySeverity.map(approveDoseAdjustment),
-    validationStatus: 'validated',
-  },
-  lastReviewedAt: drug.lastReviewedAt ?? '2026-07-16',
-  validationStatus: 'validated',
-  confidence: 'high',
-  reviewNotes: [
-    ...drug.reviewNotes,
-    'Aprovação clínica total declarada pelo responsável do conteúdo em 2026-07-16.',
-  ],
-  calculators: drugCalculatorsByDrugId[drug.id] ?? drug.calculators ?? [],
+  calculators: drug.validationStatus === 'source-verified' || drug.validationStatus === 'validated'
+    ? drugCalculatorsByDrugId[drug.id] ?? drug.calculators ?? []
+    : [],
 })
 
 export const drugs: Drug[] = [...structuredDrugsWithVerification, ...pendingCatalogDrugs]
-  .map(applyClinicalApproval)
+  .map(attachDocumentedCalculators)
   .sort((first, second) => {
     const priorityOrder = { P1: 1, P2: 2, P3: 3 }
     const priorityDifference = priorityOrder[first.priority] - priorityOrder[second.priority]
@@ -190,7 +145,9 @@ export const drugs: Drug[] = [...structuredDrugsWithVerification, ...pendingCata
 export const reviewedDrugCount = reviewedDrugs.length
 export const expandedClinicalSourceCount = expandedClinicalDrugs.length
 export const expandedClinicalMappedCatalogCount = expandedMappedDrugs.length
-export const structuredDrugCount = drugs.length
+export const structuredDrugCount = drugs.filter((drug) => (
+  drug.validationStatus !== 'not-validated'
+)).length
 export const catalogDrugCount = drugs.length
 export const sourceVerifiedDrugCount = drugs.filter((drug) => (
   drug.validationStatus === 'source-verified' || drug.validationStatus === 'validated'

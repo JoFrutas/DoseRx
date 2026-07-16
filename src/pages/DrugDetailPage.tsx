@@ -2,7 +2,9 @@ import { ClinicalSection } from '../components/ClinicalSection'
 import { DoseAdjustmentList } from '../components/DoseAdjustmentList'
 import { DrugCalculators } from '../components/DrugCalculators'
 import { Icon } from '../components/Icon'
+import { SafetyBanner } from '../components/SafetyBanner'
 import { SourceLinks } from '../components/SourceLinks'
+import { ValidationBadge } from '../components/ValidationBadge'
 import { getCategoryById } from '../data/categories'
 import { getDrugById } from '../data/drugs'
 import { categoryHref, homeHref } from '../lib/routes'
@@ -19,6 +21,13 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
   const categories = drug.categoryIds
     .map((categoryId) => getCategoryById(categoryId))
     .filter((category) => category !== undefined)
+  const verificationLabels = {
+    'not-compared': 'Comparação ainda não realizada',
+    consensus: 'Consenso entre fontes',
+    'context-dependent': 'Diferença dependente do contexto',
+    conflict: 'Discrepância por resolver',
+  }
+
   return (
     <main className="content-width page-content drug-detail">
       <nav className="breadcrumbs" aria-label="Navegação hierárquica">
@@ -32,6 +41,9 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
       <section className="drug-hero">
         <div className="drug-hero__mark">Rx</div>
         <div className="drug-hero__main">
+          <div className="drug-hero__status">
+            <ValidationBadge status={drug.validationStatus} confidence={drug.confidence} />
+          </div>
           <h1>{drug.name}</h1>
           <p>{drug.drugClass}</p>
           <div className="drug-hero__tags">
@@ -44,6 +56,9 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
           <Icon name="arrow-left" size={18} /> Voltar
         </a>
       </section>
+
+      {drug.validationStatus === 'in-review' && <SafetyBanner status="in-review" />}
+      {drug.validationStatus === 'not-validated' && <SafetyBanner status="not-validated" />}
 
       <div className="detail-layout">
         <aside className="detail-summary">
@@ -58,6 +73,25 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
               <div><dt>Vias</dt><dd>{drug.routes.join('; ')}</dd></div>
             </dl>
           </section>
+          <section className="review-note">
+            <strong>Notas de revisão</strong>
+            <ul>
+              {drug.reviewNotes.map((note) => <li key={note}>{note}</li>)}
+            </ul>
+          </section>
+          {drug.verification && (
+            <section className={`verification-note verification-note--${drug.verification.status}`}>
+              <strong>{verificationLabels[drug.verification.status]}</strong>
+              <span>{drug.verification.comparedSourceIds.length} fontes comparadas · {drug.verification.reviewedAt}</span>
+              <p><b>Âmbito:</b> {drug.verification.scope}</p>
+              <p>{drug.verification.summary}</p>
+              {drug.verification.discrepancies.length > 0 && (
+                <ul>
+                  {drug.verification.discrepancies.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              )}
+            </section>
+          )}
         </aside>
 
         <div className="detail-sections">
@@ -85,7 +119,10 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
             <div className="prescription-list">
               {drug.prescriptionExamples.map((example) => (
                 <article key={example.title}>
-                  <div><strong>{example.title}</strong></div>
+                  <div>
+                    <strong>{example.title}</strong>
+                    <ValidationBadge status={example.validationStatus} />
+                  </div>
                   <code>{example.prescription}</code>
                   {example.context && <p>{example.context}</p>}
                   {example.notes && <ul>{example.notes.map((note) => <li key={note}>{note}</li>)}</ul>}
