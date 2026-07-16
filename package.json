@@ -8,6 +8,7 @@
   },
   "scripts": {
     "catalog:generate": "node scripts/generate-catalog.mjs",
+    "clinical:notes:generate": "node scripts/generate-reviewed-notes.mjs",
     "clinical:audit": "node scripts/audit-clinical-data.mjs",
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

@@ -1,0 +1,2077 @@
+{
+  "reviewedAt": "2026-07-16",
+  "sourceFile": "reviewed-clinical-reference.md",
+  "notes": [
+    {
+      "title": "Piperacilina-tazobactam",
+      "summary": "Penicilina de largo espectro + inibidor de beta-lactamase",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 4,5 g IV 8/8h; em infeção grave/Pseudomonas 4,5 g 6/6h. **Perfusão prolongada** 4h melhora atingimento de alvo PK/PD.",
+        "Carga: 4,5 g em bólus/30 min antes de iniciar perfusão prolongada/contínua.",
+        "Renal: ClCr 20–40 → 4,5 g 8/8h; ClCr <20 → 4,5 g 12/12h. HDi 2,25 g 12/12h (+ 0,75 g pós-diálise). CRRT 4,5 g 8/8h (ou 6/6h se perfusão prolongada e sépsis).",
+        "Hepático: sem ajuste habitual.",
+        "Notas: falso-positivo galactomanano; sinergismo nefrotóxico com vancomicina (vigiar AKI). Cobre anaeróbios."
+      ],
+      "catalogIds": [
+        "piperacilina-tazobactam"
+      ]
+    },
+    {
+      "title": "Amoxicilina-ácido clavulânico",
+      "summary": "Aminopenicilina + inibidor",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 1,2 g IV 8/8h (grave 6/6h).",
+        "Renal: ClCr 10–30 → 1,2 g 12/12h; <10 → 1,2 g 24/24h. HDi dose pós-diálise.",
+        "Hepático: risco de hepatotoxicidade colestática (clavulânico); vigiar."
+      ],
+      "catalogIds": [
+        "amoxicilina-acido-clavulanico"
+      ]
+    },
+    {
+      "title": "Flucloxacilina",
+      "summary": "Penicilina antiestafilocócica",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2 g IV 6/6h; endocardite/infeção grave por MSSA 2 g 4/4h (até 8–12 g/dia).",
+        "Renal: ajuste só em ClCr <10. Hepático: hepatite colestática rara."
+      ],
+      "catalogIds": [
+        "flucloxacilina"
+      ]
+    },
+    {
+      "title": "Ampicilina",
+      "summary": "Aminopenicilina",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2 g IV 4/4h–6/6h. Listeria/meningite 2 g 4/4h. Enterococcus (com gentamicina/ceftriaxona).",
+        "Renal: ClCr <10 → 2 g 12/12h. HDi pós-diálise."
+      ],
+      "catalogIds": [
+        "ampicilina"
+      ]
+    },
+    {
+      "title": "Penicilina G (benzilpenicilina)",
+      "summary": "Penicilina natural",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2–4 milhões U IV 4/4h; meningite/neurossífilis 4 MU 4/4h (18–24 MU/dia).",
+        "Renal: reduzir em ClCr <10 (risco de neurotoxicidade/convulsões com doses altas)."
+      ],
+      "catalogIds": [
+        "benzilpenicilina"
+      ]
+    },
+    {
+      "title": "Ceftriaxona",
+      "summary": "Cefalosporina 3.ª geração",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2 g IV 24/24h; meningite 2 g 12/12h.",
+        "Renal: sem ajuste (excreção biliar+renal). Hepático+renal graves: máx 2 g/dia.",
+        "Notas: não co-administrar com soluções com cálcio (precipitação, sobretudo neonatos); pseudolitíase biliar."
+      ],
+      "catalogIds": [
+        "ceftriaxona"
+      ]
+    },
+    {
+      "title": "Cefotaxima",
+      "summary": "Cefalosporina 3.ª geração",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2 g IV 6/6h–8/8h; meningite 2 g 4/4h–6/6h.",
+        "Renal: ClCr <20 → reduzir 50%."
+      ],
+      "catalogIds": [
+        "cefotaxima"
+      ]
+    },
+    {
+      "title": "Ceftazidima",
+      "summary": "Cefalosporina 3.ª geração anti-Pseudomonas",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2 g IV 8/8h (perfusão prolongada útil). Carga 2 g.",
+        "Renal: ClCr 30–50 → 2 g 12/12h; 15–30 → 2 g 24/24h; <15 → 1 g 24/24h. CRRT 2 g 12/12h."
+      ],
+      "catalogIds": [
+        "ceftazidima"
+      ]
+    },
+    {
+      "title": "Cefepima",
+      "summary": "Cefalosporina 4.ª geração",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2 g IV 8/8h (Pseudomonas/neutropenia febril). Carga 2 g; perfusão prolongada.",
+        "Renal: ClCr 30–60 → 2 g 12/12h; 11–29 → 2 g 24/24h; <11 → 1 g 24/24h. CRRT 2 g 12/12h.",
+        "Notas: **neurotoxicidade/encefalopatia** com acumulação renal (mioclonias, estado confusional, convulsões não-convulsivas) — vigiar EEG."
+      ],
+      "catalogIds": [
+        "cefepima"
+      ]
+    },
+    {
+      "title": "Cefuroxima",
+      "summary": "Cefalosporina 2.ª geração",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 1,5 g IV 8/8h. Renal: ClCr <20 ajustar."
+      ],
+      "catalogIds": [
+        "cefuroxima"
+      ]
+    },
+    {
+      "title": "Ceftarolina",
+      "summary": "Cefalosporina anti-MRSA",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 600 mg IV 8/8h–12/12h (grave 8/8h). Renal: ajuste em ClCr <50."
+      ],
+      "catalogIds": [
+        "ceftarolina"
+      ]
+    },
+    {
+      "title": "Ceftolozano-tazobactam",
+      "summary": "Cefalosporina anti-Pseudomonas (MDR) + inibidor",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 1,5 g IV 8/8h; pneumonia nosocomial/VAP 3 g 8/8h.",
+        "Renal: ClCr 30–50 → 750 mg 8/8h; 15–29 → 375 mg 8/8h; ajustar em HDi."
+      ],
+      "catalogIds": [
+        "ceftolozano-tazobactam"
+      ]
+    },
+    {
+      "title": "Ceftazidima-avibactam",
+      "summary": "Anti-Gram-negativo MDR (incl. KPC, OXA-48)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2,5 g IV 8/8h (perfusão 2h).",
+        "Renal: ajuste escalonado a partir de ClCr <50 (dose e/ou intervalo)."
+      ],
+      "catalogIds": [
+        "ceftazidima-avibactam"
+      ]
+    },
+    {
+      "title": "Meropenem",
+      "summary": "Carbapenemo",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 1 g IV 8/8h; meningite/Pseudomonas/infeção grave 2 g 8/8h. Perfusão prolongada 3h. Carga 1–2 g.",
+        "Renal: ClCr 25–50 → 1 g 12/12h; 10–25 → 500 mg 12/12h; <10 → 500 mg 24/24h. HDi 500 mg 24h (pós-diálise). CRRT 1 g 8/8h–12/12h.",
+        "Notas: reduz níveis de **valproato** (perda de controlo de crises — evitar associação)."
+      ],
+      "catalogIds": [
+        "meropenem"
+      ]
+    },
+    {
+      "title": "Imipenem-cilastatina",
+      "summary": "Carbapenemo",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 500 mg–1 g IV 6/6h–8/8h.",
+        "Renal: ajuste marcado (risco convulsivo por acumulação). CRRT 500 mg 6/6h–8/8h."
+      ],
+      "catalogIds": [
+        "imipenem-cilastatina"
+      ]
+    },
+    {
+      "title": "Ertapenem",
+      "summary": "Carbapenemo (sem cobertura de Pseudomonas/Acinetobacter)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 1 g IV 24/24h. Renal: ClCr <30 → 500 mg 24/24h."
+      ],
+      "catalogIds": [
+        "ertapenem"
+      ]
+    },
+    {
+      "title": "Aztreonam",
+      "summary": "Monobactâmico (alternativa em alergia a beta-lactâmicos; Gram-negativo)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 2 g IV 8/8h. Renal: reduzir 50% em ClCr 10–30; 75% em <10."
+      ],
+      "catalogIds": [
+        "aztreonam"
+      ]
+    },
+    {
+      "title": "Vancomicina",
+      "summary": "Glicopéptido (MRSA, Gram+)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Carga: 25–30 mg/kg IV (máx ~3 g). Manutenção 15–20 mg/kg 8/8h–12/12h.",
+        "**TDM**: alvo AUC/MIC 400–600; vale 15–20 mg/L em infeção grave (método por vale a descontinuar a favor de AUC).",
+        "Renal: ajustar por níveis/ClCr. CRRT 15–20 mg/kg carga + 10–15 mg/kg 24/24h guiado por níveis.",
+        "Notas: nefrotoxicidade (↑ com piperacilina-tazobactam), síndrome do homem vermelho (perfundir ≥1h/g)."
+      ],
+      "catalogIds": [
+        "vancomicina"
+      ]
+    },
+    {
+      "title": "Teicoplanina",
+      "summary": "Glicopéptido",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Carga: 6–12 mg/kg 12/12h × 3–5 doses; manutenção 6–12 mg/kg 24/24h. TDM vale >15–20 (grave >20–30).",
+        "Renal: reduzir intervalo a partir do 4.º dia em ClCr <50."
+      ],
+      "catalogIds": [
+        "teicoplanina"
+      ]
+    },
+    {
+      "title": "Daptomicina",
+      "summary": "Lipopéptido (não usar em pneumonia — inativado pelo surfactante)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 8–10 mg/kg IV 24/24h (bacteriémia/endocardite MRSA/enterococo).",
+        "Renal: ClCr <30 ou diálise → 24/24h a cada 48h. **CK** semanal (rabdomiólise)."
+      ],
+      "catalogIds": [
+        "daptomicina"
+      ]
+    },
+    {
+      "title": "Gentamicina",
+      "summary": "Aminoglicosídeo",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 5–7 mg/kg IV 24/24h (dose única diária); sinergia endocardite 3 mg/kg/dia div. TDM: pico e vale (<1 mg/L em dose única diária).",
+        "Renal: prolongar intervalo por níveis. Oto/nefrotoxicidade."
+      ],
+      "catalogIds": [
+        "gentamicina"
+      ]
+    },
+    {
+      "title": "Amicacina",
+      "summary": "Aminoglicosídeo",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 15–20 mg/kg IV 24/24h. TDM pico 60–80, vale <4. Renal: intervalo por níveis."
+      ],
+      "catalogIds": [
+        "amicacina"
+      ]
+    },
+    {
+      "title": "Tobramicina",
+      "summary": "Aminoglicosídeo (Pseudomonas)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 5–7 mg/kg 24/24h. TDM idêntico a gentamicina."
+      ],
+      "catalogIds": [
+        "tobramicina"
+      ]
+    },
+    {
+      "title": "Ciprofloxacina",
+      "summary": "Fluoroquinolona (Gram-negativo/Pseudomonas)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 400 mg IV 8/8h–12/12h. Renal: ClCr <30 → 400 mg 24/24h.",
+        "Notas: prolongamento QT, tendinopatia, ↑ níveis de teofilina; interação com múltiplos fármacos (CYP1A2)."
+      ],
+      "catalogIds": [
+        "ciprofloxacina"
+      ]
+    },
+    {
+      "title": "Levofloxacina",
+      "summary": "Fluoroquinolona respiratória",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 750 mg IV 24/24h. Renal: ClCr <50 ajustar."
+      ],
+      "catalogIds": [
+        "levofloxacina"
+      ]
+    },
+    {
+      "title": "Moxifloxacina",
+      "summary": "Fluoroquinolona respiratória (cobre anaeróbios)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 400 mg IV 24/24h. Sem ajuste renal. Maior risco de QT."
+      ],
+      "catalogIds": [
+        "moxifloxacina"
+      ]
+    },
+    {
+      "title": "Metronidazol",
+      "summary": "Nitroimidazol (anaeróbios, C. difficile)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 500 mg IV 8/8h. Renal: sem ajuste (metabolitos acumulam em CRRT — vigiar). Hepático: reduzir em disfunção grave.",
+        "Notas: neuropatia periférica em uso prolongado; efeito dissulfiram com álcool."
+      ],
+      "catalogIds": [
+        "metronidazol"
+      ]
+    },
+    {
+      "title": "Clindamicina",
+      "summary": "Lincosamida (anti-toxina em choque tóxico/fasceíte)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 600–900 mg IV 8/8h. Sem ajuste renal. Risco de C. difficile."
+      ],
+      "catalogIds": [
+        "clindamicina"
+      ]
+    },
+    {
+      "title": "Linezolida",
+      "summary": "Oxazolidinona (MRSA, VRE)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 600 mg IV 12/12h. Sem ajuste renal (metabolitos acumulam).",
+        "Notas: **trombocitopenia/mielossupressão** (uso >10–14 dias), acidose láctica, neuropatia; IMAO fraco (síndrome serotoninérgico com ISRS/petidina)."
+      ],
+      "catalogIds": [
+        "linezolida"
+      ]
+    },
+    {
+      "title": "Tigeciclina",
+      "summary": "Glicilciclina (MDR; NÃO em bacteriémia primária)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: carga 100 mg, depois 50 mg IV 12/12h (doses altas 100 mg 12/12h em alguns MDR).",
+        "Hepático: Child-Pugh C → 100 mg carga + 25 mg 12/12h. Náusea marcada; ↑ mortalidade em algumas indicações."
+      ],
+      "catalogIds": [
+        "tigeciclina"
+      ]
+    },
+    {
+      "title": "Colistina (colistimetato de sódio)",
+      "summary": "Polimixina (Gram-negativo MDR/XDR)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Carga: 9 milhões UI (≈300 mg base) IV. Manutenção 4,5 MUI 12/12h.",
+        "Renal: ajustar manutenção por ClCr. Nefro e neurotoxicidade dependentes da dose. Nebulizada como adjuvante em VAP."
+      ],
+      "catalogIds": [
+        "colistimetato-de-sodio-colistina"
+      ]
+    },
+    {
+      "title": "Cotrimoxazol (trimetoprim-sulfametoxazol)",
+      "summary": "(Pneumocystis, Stenotrophomonas, Nocardia)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "PJP: 15–20 mg/kg/dia de trimetoprim IV div 6/6h–8/8h.",
+        "Renal: ClCr 15–30 → reduzir 50%; <15 evitar. Hipercaliémia, mielossupressão, AKI."
+      ],
+      "catalogIds": [
+        "trimetoprim-sulfametoxazol"
+      ]
+    },
+    {
+      "title": "Fosfomicina IV",
+      "summary": "(adjuvante MDR)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 4–8 g IV 8/8h (até 24 g/dia). Carga de sódio elevada (vigiar Na⁺/insuf. cardíaca)."
+      ],
+      "catalogIds": [
+        "fosfomicina-intravenosa"
+      ]
+    },
+    {
+      "title": "Doxiciclina",
+      "summary": "Tetraciclina (atípicas, riquétsias)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 100 mg IV/PO 12/12h. Sem ajuste renal."
+      ],
+      "catalogIds": [
+        "doxiciclina"
+      ]
+    },
+    {
+      "title": "Azitromicina",
+      "summary": "Macrólido (PAC atípica, imunomodulação)",
+      "categoryId": "antibiotics",
+      "bullets": [
+        "Habitual: 500 mg IV 24/24h. Prolongamento QT."
+      ],
+      "catalogIds": [
+        "azitromicina"
+      ]
+    },
+    {
+      "title": "Fluconazol",
+      "summary": "Triazol",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Carga: 12 mg/kg (≈800 mg) IV. Manutenção 6 mg/kg (≈400 mg) 24/24h; candidémia 400–800 mg/dia.",
+        "Renal: ClCr <50 → reduzir manutenção 50%. HDi/CRRT dose pós-diálise / manter dose plena em CRRT (é dialisável).",
+        "Notas: inibe CYP2C9/3A4 (↑ varfarina, ↑ QT com outros); hepatotoxicidade."
+      ],
+      "catalogIds": [
+        "fluconazole"
+      ]
+    },
+    {
+      "title": "Voriconazol",
+      "summary": "Triazol (Aspergillus)",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Carga: 6 mg/kg IV 12/12h × 2 doses. Manutenção 4 mg/kg 12/12h.",
+        "**TDM**: vale 1–5,5 mg/L. Hepático: Child-Pugh A/B → carga igual, manutenção metade.",
+        "Renal: veículo (SBECD) acumula em ClCr <50 — preferir via oral ou vigiar. Alucinações visuais, hepatotoxicidade, QT, múltiplas interações CYP."
+      ],
+      "catalogIds": [
+        "voriconazol"
+      ]
+    },
+    {
+      "title": "Posaconazol",
+      "summary": "Triazol (profilaxia/mucormicose)",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Habitual (comp. libertação retardada/IV): carga 300 mg 12/12h dia 1, depois 300 mg 24/24h. TDM: profilaxia >0,7; tratamento >1,0–1,25 mg/L.",
+        "Veículo IV (SBECD) — cautela renal como voriconazol."
+      ],
+      "catalogIds": [
+        "posaconazol"
+      ]
+    },
+    {
+      "title": "Isavuconazol",
+      "summary": "Triazol (Aspergillus, mucormicose; sem veículo SBECD)",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Carga: 200 mg 8/8h × 6 doses (48h). Manutenção 200 mg 24/24h. Sem ajuste renal; **encurta** QT."
+      ],
+      "catalogIds": [
+        "isavuconazol"
+      ]
+    },
+    {
+      "title": "Anidulafungina",
+      "summary": "Equinocandina (1.ª linha candidémia/UCI)",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Carga: 200 mg IV. Manutenção 100 mg 24/24h. Sem ajuste renal nem hepático. Não dialisável."
+      ],
+      "catalogIds": [
+        "anidulafungina"
+      ]
+    },
+    {
+      "title": "Caspofungina",
+      "summary": "Equinocandina",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Carga: 70 mg IV. Manutenção 50 mg 24/24h; Child-Pugh B → 35 mg/dia. Sem ajuste renal."
+      ],
+      "catalogIds": [
+        "caspofungina"
+      ]
+    },
+    {
+      "title": "Micafungina",
+      "summary": "Equinocandina",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Habitual: 100 mg IV 24/24h (candidémia); profilaxia 50 mg/dia. Sem ajuste renal."
+      ],
+      "catalogIds": [
+        "micafungina"
+      ]
+    },
+    {
+      "title": "Anfotericina B lipossómica",
+      "summary": "Poliénico (mucormicose, candidíase/aspergilose grave, leishmaniose)",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Habitual: 3–5 mg/kg IV 24/24h (mucormicose 5–10 mg/kg). Perfusão lenta.",
+        "Notas: nefrotoxicidade, hipocaliémia/hipomagnesémia, reações infusionais (pré-medicar). Formulação lipídica menos nefrotóxica que a convencional (deoxicolato)."
+      ],
+      "catalogIds": [
+        "anfotericina-b-lipossomica"
+      ]
+    },
+    {
+      "title": "Flucitosina (5-FC)",
+      "summary": "(associada a anfotericina na meningite criptocócica)",
+      "categoryId": "antifungals",
+      "bullets": [
+        "Habitual: 25 mg/kg PO/IV 6/6h. **Ajuste renal marcado** por níveis (mielossupressão). TDM pico 30–80 mg/L."
+      ],
+      "catalogIds": [
+        "flucitosina"
+      ]
+    },
+    {
+      "title": "Aciclovir",
+      "summary": "(HSV/VZV; encefalite herpética)",
+      "categoryId": "antivirals",
+      "bullets": [
+        "Habitual: encefalite HSV 10 mg/kg IV 8/8h (usar **peso ideal**); VZV grave 10 mg/kg 8/8h.",
+        "Renal: ajuste marcado por ClCr (ex.: ClCr 25–50 → 10 mg/kg 12/12h; 10–25 → 24/24h; <10 → 5 mg/kg 24/24h). HDi pós-diálise.",
+        "Notas: nefrotoxicidade cristalúrica (**hidratar bem**, perfundir ≥1h); neurotoxicidade em acumulação."
+      ],
+      "catalogIds": [
+        "acyclovir"
+      ]
+    },
+    {
+      "title": "Ganciclovir",
+      "summary": "(CMV)",
+      "categoryId": "antivirals",
+      "bullets": [
+        "Indução: 5 mg/kg IV 12/12h × 14–21 dias; manutenção 5 mg/kg 24/24h.",
+        "Renal: ajuste marcado por ClCr. Mielossupressão (neutropenia) — vigiar hemograma."
+      ],
+      "catalogIds": [
+        "ganciclovir"
+      ]
+    },
+    {
+      "title": "Valganciclovir",
+      "summary": "pró-fármaco oral de ganciclovir",
+      "categoryId": "antivirals",
+      "bullets": [
+        "Indução 900 mg PO 12/12h; manutenção 900 mg/dia. Ajuste renal."
+      ],
+      "catalogIds": [
+        "valganciclovir"
+      ]
+    },
+    {
+      "title": "Oseltamivir",
+      "summary": "(Influenza)",
+      "categoryId": "antivirals",
+      "bullets": [
+        "Habitual: 75 mg PO 12/12h × 5 dias (grave/imunodeprimido prolongar; alguns usam 150 mg 12/12h).",
+        "Renal: ClCr 30–60 → 30 mg 12/12h; <30 ajustar mais. Via SNG possível."
+      ],
+      "catalogIds": [
+        "oseltamivir"
+      ]
+    },
+    {
+      "title": "Remdesivir",
+      "summary": "(COVID-19)",
+      "categoryId": "antivirals",
+      "bullets": [
+        "Carga: 200 mg IV dia 1; depois 100 mg 24/24h × 4–9 dias.",
+        "Renal: cautela em ClCr <30 (veículo SBECD); vigiar transaminases/ALT (suspender se >5× ou hepatite)."
+      ],
+      "catalogIds": [
+        "remdesivir"
+      ]
+    },
+    {
+      "title": "Foscarnet",
+      "summary": "(CMV/HSV resistente)",
+      "categoryId": "antivirals",
+      "bullets": [
+        "Indução 60 mg/kg 8/8h ou 90 mg/kg 12/12h. **Ajuste renal marcado**; nefrotoxicidade, distúrbios de Ca²⁺/Mg²⁺/P (hidratar)."
+      ],
+      "catalogIds": [
+        "foscarnet"
+      ]
+    },
+    {
+      "title": "Lorazepam",
+      "summary": "Benzodiazepina (1.ª linha EME)",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "EME: 0,1 mg/kg IV (máx 4 mg/dose), repetir 1× após 5–10 min. Ver também secção 5."
+      ],
+      "catalogIds": [
+        "lorazepam"
+      ]
+    },
+    {
+      "title": "Diazepam",
+      "summary": "Benzodiazepina",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "EME: 0,15–0,2 mg/kg IV (máx 10 mg), repetível; ou 10–20 mg retal se sem acesso."
+      ],
+      "catalogIds": [
+        "diazepam"
+      ]
+    },
+    {
+      "title": "Midazolam",
+      "summary": "Benzodiazepina (também perfusão em EME refratário)",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "EME pré-hospitalar: 10 mg IM. Refratário: carga 0,2 mg/kg IV depois 0,05–2 mg/kg/h. Ver secção 5."
+      ],
+      "catalogIds": [
+        "midazolam"
+      ]
+    },
+    {
+      "title": "Levetiracetam",
+      "summary": "2.ª linha EME",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "Carga: 60 mg/kg IV (máx 4,5 g). Manutenção 1000–1500 mg IV 12/12h.",
+        "Renal: ClCr 50–80 → 1000 mg 12/12h; 30–50 → 750 mg 12/12h; <30 → 500–750 mg 12/12h; HDi 500–1000 mg/dia + suplemento pós-diálise.",
+        "Notas: perfil de interação favorável; alterações comportamentais/agitação."
+      ],
+      "catalogIds": [
+        "levetiracetam"
+      ]
+    },
+    {
+      "title": "Fenitoína",
+      "summary": "2.ª linha EME",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "Carga: 20 mg/kg IV a ≤50 mg/min (monitorizar ECG/PA — hipotensão, bradiarritmia). Adicional 5–10 mg/kg se persiste. Manutenção 100 mg 8/8h.",
+        "**TDM**: total 10–20 mg/L; livre 1–2 mg/L (usar livre se hipoalbuminémia/urémia — comum em UCI). Cinética de saturação. Extravasamento → *purple glove syndrome*."
+      ],
+      "catalogIds": [
+        "fenitoina"
+      ]
+    },
+    {
+      "title": "Fosfenitoína",
+      "summary": "pró-fármaco (expresso em equivalentes de fenitoína, PE)",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "Carga: 20 mg PE/kg IV a ≤150 mg PE/min (menos hipotensão/flebite que fenitoína)."
+      ],
+      "catalogIds": [
+        "fosfenitoina"
+      ]
+    },
+    {
+      "title": "Valproato de sódio",
+      "summary": "2.ª linha EME",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "Carga: 40 mg/kg IV (máx 3 g). Manutenção 1–2 mg/kg/h ou 500 mg 8/8h.",
+        "Notas: **hiperamoniémia/encefalopatia** (vigiar amónia), hepatotoxicidade, trombocitopenia; **carbapenemos reduzem drasticamente os níveis**. Evitar na gravidez."
+      ],
+      "catalogIds": [
+        "valproato-de-sodio"
+      ]
+    },
+    {
+      "title": "Lacosamida",
+      "summary": "2.ª/3.ª linha EME",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "Carga: 200–400 mg IV. Manutenção 200 mg 12/12h. Vigiar PR/QT. Ajuste renal ligeiro em ClCr <30."
+      ],
+      "catalogIds": [
+        "lacosamida"
+      ]
+    },
+    {
+      "title": "Fenobarbital",
+      "summary": "2.ª/3.ª linha EME",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "Carga: 15–20 mg/kg IV a ≤50–100 mg/min. Sedação e depressão respiratória (preparar via aérea)."
+      ],
+      "catalogIds": [
+        "fenobarbital"
+      ]
+    },
+    {
+      "title": "Brivaracetam",
+      "summary": "alternativa a levetiracetam",
+      "categoryId": "antiepileptics",
+      "bullets": [
+        "Carga 100–200 mg IV; manutenção 50–100 mg 12/12h."
+      ],
+      "catalogIds": [
+        "brivaracetam"
+      ]
+    },
+    {
+      "title": "Propofol",
+      "summary": "Sedativo-hipnótico (perfusão)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "Sedação UCI: 5–50 mcg/kg/min (0,3–3 mg/kg/h), titular. Indução IOT 1–2,5 mg/kg.",
+        "Notas: hipotensão, depressão respiratória; **síndrome de perfusão do propofol (PRIS)** com doses >4–5 mg/kg/h prolongadas (acidose láctica, rabdomiólise, IC — vigiar CK/lactato/triglicéridos); fornece calorias lipídicas (1,1 kcal/mL). Sem ajuste renal/hepático."
+      ],
+      "catalogIds": [
+        "propofol"
+      ]
+    },
+    {
+      "title": "Midazolam",
+      "summary": "Benzodiazepina (perfusão)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "Sedação: carga 0,01–0,05 mg/kg; perfusão 0,02–0,2 mg/kg/h, titular.",
+        "Renal: metabolito ativo (α-hidroximidazolam) acumula em disfunção renal → sedação prolongada. Associado a mais delirium."
+      ],
+      "catalogIds": [
+        "midazolam"
+      ]
+    },
+    {
+      "title": "Dexmedetomidina",
+      "summary": "Agonista α2 (sedação ligeira/cooperante, sem depressão respiratória)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "Perfusão: 0,2–1,4 mcg/kg/h (habitual sem bólus em UCI).",
+        "Notas: bradicardia e hipotensão (evitar bólus); reduz delirium vs benzodiazepinas."
+      ],
+      "catalogIds": [
+        "dexmedetomidina"
+      ]
+    },
+    {
+      "title": "Clonidina",
+      "summary": "Agonista α2 (adjuvante sedação/abstinência)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "0,5–2 mcg/kg IV lento ou perfusão; PO/transdérmico. Bradicardia/hipotensão; rebound hipertensivo na suspensão brusca."
+      ],
+      "catalogIds": [
+        "clonidina"
+      ]
+    },
+    {
+      "title": "Cetamina",
+      "summary": "Anestésico dissociativo (analgo-sedação, broncospasmo, IOT com estabilidade hemodinâmica)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "Indução 1–2 mg/kg IV. Perfusão analgésica 0,1–0,5 mg/kg/h; sedação 0,5–2 mg/kg/h.",
+        "Notas: preserva drive respiratório e PA; sialorreia, fenómenos de emergência; útil em choque."
+      ],
+      "catalogIds": [
+        "cetamina"
+      ]
+    },
+    {
+      "title": "Tiopental",
+      "summary": "Barbitúrico (EME refratário, hipertensão intracraniana)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "EME/HIC: carga 3–5 mg/kg, perfusão 1–5 mg/kg/h (guiar por EEG *burst-suppression*). Hipotensão, imunossupressão, acumulação."
+      ],
+      "catalogIds": [
+        "tiopental"
+      ]
+    },
+    {
+      "title": "Etomidato",
+      "summary": "Hipnótico de indução (estabilidade hemodinâmica)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "Indução IOT: 0,3 mg/kg IV. **Supressão adrenal** com dose única (evitar perfusão; cautela em sépsis)."
+      ],
+      "catalogIds": [
+        "etomidato"
+      ]
+    },
+    {
+      "title": "Fentanil",
+      "summary": "Opióide (perfusão, analgo-sedação)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "Bólus 0,5–1 mcg/kg; perfusão 0,5–3 mcg/kg/h (25–200 mcg/h típico). Sem metabolitos ativos relevantes (útil na DRC). Rigidez torácica em bólus rápido."
+      ],
+      "catalogIds": [
+        "fentanilo"
+      ]
+    },
+    {
+      "title": "Morfina",
+      "summary": "Opióide",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "Bólus 2–4 mg IV; perfusão 1–10 mg/h. Renal: metabolito ativo (M6G) acumula → evitar/reduzir na DRC. Libertação de histamina/hipotensão."
+      ],
+      "catalogIds": [
+        "morfina"
+      ]
+    },
+    {
+      "title": "Remifentanil",
+      "summary": "Opióide ultracurto (perfusão)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "0,05–0,2 mcg/kg/min. Metabolismo por esterases plasmáticas (sem acumulação renal/hepática); despertar rápido; hiperalgesia/rigidez."
+      ],
+      "catalogIds": [
+        "remifentanilo"
+      ]
+    },
+    {
+      "title": "Hidromorfona",
+      "summary": "Opióide",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "Bólus 0,2–0,5 mg IV; perfusão titulável. Alternativa na intolerância à morfina."
+      ],
+      "catalogIds": [
+        "hidromorfona"
+      ]
+    },
+    {
+      "title": "Petidina (meperidina)",
+      "summary": "Opióide (uso restrito — arrepios/tiritação pós-op)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "12,5–25 mg IV para tiritação. Evitar em DRC/uso prolongado (normeperidina → convulsões); síndrome serotoninérgico com IMAO/linezolida."
+      ],
+      "catalogIds": [
+        "petidina-meperidina"
+      ]
+    },
+    {
+      "title": "Paracetamol IV",
+      "summary": "Analgésico/antipirético não-opióide",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "1 g IV 6/6h (máx 4 g/dia; 3 g se <50 kg, hepatopatia, desnutrição, álcool). Hepatotoxicidade em sobredosagem."
+      ],
+      "catalogIds": [
+        "paracetamol"
+      ]
+    },
+    {
+      "title": "Haloperidol",
+      "summary": "Antipsicótico (agitação/delirium hiperativo)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "2–5 mg IV/IM, repetível. **Vigiar QT** (torsades), distonia/SEP. Não previne delirium — usar sintomático."
+      ],
+      "catalogIds": [
+        "haloperidol"
+      ]
+    },
+    {
+      "title": "Quetiapina",
+      "summary": "Antipsicótico atípico (delirium)",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "25–50 mg PO/SNG 12/12h, titular. Sedação, hipotensão, QT."
+      ],
+      "catalogIds": [
+        "quetiapina"
+      ]
+    },
+    {
+      "title": "Olanzapina",
+      "summary": "Antipsicótico atípico",
+      "categoryId": "sedation-analgesia",
+      "bullets": [
+        "5–10 mg IM/PO. Sedação, QT."
+      ],
+      "catalogIds": [
+        "olanzapina"
+      ]
+    },
+    {
+      "title": "Rocurónio",
+      "summary": "BNM não-despolarizante (aminosteroide)",
+      "categoryId": "neuromuscular-blockers",
+      "bullets": [
+        "IOT (sequência rápida): 1,2 mg/kg IV; intubação padrão 0,6 mg/kg. Perfusão SDRA 0,3–0,6 mg/kg/h (ou bólus).",
+        "Reversão: **sugammadex** 16 mg/kg (imediata) / 2–4 mg/kg. Renal/hepático: duração prolongada."
+      ],
+      "catalogIds": [
+        "rocuronium"
+      ]
+    },
+    {
+      "title": "Cisatracúrio",
+      "summary": "BNM não-despolarizante (benzilisoquinolínico)",
+      "categoryId": "neuromuscular-blockers",
+      "bullets": [
+        "Perfusão SDRA: bólus 0,15–0,2 mg/kg, depois 1–3 mcg/kg/min.",
+        "Notas: **eliminação de Hofmann** (independente de função renal/hepática) → preferido em falência de órgão. Sem libertação de histamina significativa."
+      ],
+      "catalogIds": [
+        "cisatracurio"
+      ]
+    },
+    {
+      "title": "Atracúrio",
+      "summary": "BNM não-despolarizante",
+      "categoryId": "neuromuscular-blockers",
+      "bullets": [
+        "Bólus 0,5 mg/kg; perfusão 5–10 mcg/kg/min. Eliminação de Hofmann; libertação de histamina (hipotensão); metabolito laudanosina (convulsivante em doses altas)."
+      ],
+      "catalogIds": [
+        "atracurio"
+      ]
+    },
+    {
+      "title": "Vecurónio",
+      "summary": "BNM não-despolarizante",
+      "categoryId": "neuromuscular-blockers",
+      "bullets": [
+        "Bólus 0,1 mg/kg; perfusão 0,8–1,2 mcg/kg/min. Acumula na disfunção renal/hepática."
+      ],
+      "catalogIds": [
+        "vecuronio"
+      ]
+    },
+    {
+      "title": "Succinilcolina",
+      "summary": "BNM despolarizante (só para IOT rápida)",
+      "categoryId": "neuromuscular-blockers",
+      "bullets": [
+        "1–1,5 mg/kg IV. **Contraindicada**: hipercaliémia, queimados/lesão medular/desnervação >48–72h, história de hipertermia maligna, deficiência de pseudocolinesterase. Bradicardia (sobretudo em crianças/repetição).",
+        "**Sugammadex** — reverte rocurónio/vecurónio: 2–4 mg/kg (bloqueio moderado/profundo) ou 16 mg/kg (reversão imediata).",
+        "**Neostigmina + atropina/glicopirrolato** — reversão de não-despolarizantes: neostigmina 0,04–0,07 mg/kg com anticolinérgico para bradicardia/secreções."
+      ],
+      "catalogIds": [
+        "suxametonio-succinilcolina"
+      ]
+    },
+    {
+      "title": "Noradrenalina (norepinefrina)",
+      "summary": "Vasopressor de 1.ª linha no choque séptico",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "0,01–0,5 mcg/kg/min (titular; sem teto rígido — em doses altas associar 2.º agente). α1 > β1.",
+        "Notas: extravasamento → necrose (antídoto fentolamina); reflexo bradicárdico possível."
+      ],
+      "catalogIds": [
+        "norepinephrine"
+      ]
+    },
+    {
+      "title": "Adrenalina (epinefrina)",
+      "summary": "Vasopressor/inotrópico (anafilaxia, choque, PCR)",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "PCR: 1 mg IV 3–5/3–5 min. Anafilaxia: 0,5 mg IM (0,3–0,5); perfusão 0,05–0,5 mcg/kg/min. Choque: 0,01–0,5 mcg/kg/min.",
+        "Notas: taquiarritmias, hiperglicémia, ↑ lactato (metabólico, não hipoperfusão obrigatória)."
+      ],
+      "catalogIds": [
+        "adrenalina"
+      ]
+    },
+    {
+      "title": "Vasopressina",
+      "summary": "Vasopressor não-catecolaminérgico (adjuvante no choque séptico)",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "Dose fixa 0,03 U/min (até 0,04) — **não titular como catecolamina**. Poupa catecolaminas. Isquémia digital/mesentérica em doses altas."
+      ],
+      "catalogIds": [
+        "vasopressina"
+      ]
+    },
+    {
+      "title": "Fenilefrina",
+      "summary": "Vasopressor α1 puro (bólus/perfusão; útil se taquicardia)",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "Bólus 50–200 mcg IV; perfusão 0,1–1,4 mcg/kg/min. Bradicardia reflexa."
+      ],
+      "catalogIds": [
+        "fenilefrina"
+      ]
+    },
+    {
+      "title": "Dopamina",
+      "summary": "Vasopressor/inotrópico dependente da dose",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "5–20 mcg/kg/min (>10 predomínio α). Mais arritmias que noradrenalina; \"dose renal\" abandonada."
+      ],
+      "catalogIds": [
+        "dopamina"
+      ]
+    },
+    {
+      "title": "Dobutamina",
+      "summary": "Inotrópico (β1) — choque cardiogénico/disfunção miocárdica na sépsis",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "2,5–20 mcg/kg/min. Taquicardia, hipotensão (vasodilatação β2), arritmias."
+      ],
+      "catalogIds": [
+        "dobutamina"
+      ]
+    },
+    {
+      "title": "Milrinona",
+      "summary": "Inodilatador (inibidor da PDE3) — IC/HT pulmonar",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "0,125–0,75 mcg/kg/min (evitar bólus em hipotensão). Renal: **acumula em DRC** — reduzir. Hipotensão, arritmias."
+      ],
+      "catalogIds": [
+        "milrinona"
+      ]
+    },
+    {
+      "title": "Levosimendan",
+      "summary": "Sensibilizador do cálcio (inotrópico)",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "0,05–0,2 mcg/kg/min × 24h (carga 6–12 mcg/kg opcional, evitar se hipotenso). Metabolito ativo de longa duração; hipotensão."
+      ],
+      "catalogIds": [
+        "levosimendano"
+      ]
+    },
+    {
+      "title": "Isoprenalina (isoproterenol)",
+      "summary": "β-agonista (bradicardia/BAV como ponte para pacing)",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "0,02–0,06 mcg/kg/min ou 2–10 mcg/min, titular à FC."
+      ],
+      "catalogIds": [
+        "isoprenalina"
+      ]
+    },
+    {
+      "title": "Angiotensina II",
+      "summary": "Vasopressor (choque vasodilatador refratário)",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "Início 20 ng/kg/min, titular. Risco trombótico (tromboprofilaxia)."
+      ],
+      "catalogIds": [
+        "angiotensina-ii"
+      ]
+    },
+    {
+      "title": "Efedrina",
+      "summary": "Vasopressor de ação mista (bólus, hipotensão transitória)",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "5–10 mg IV bólus."
+      ],
+      "catalogIds": [
+        "efedrina"
+      ]
+    },
+    {
+      "title": "Azul de metileno",
+      "summary": "(choque vasoplégico refratário — inibe guanilato-ciclase)",
+      "categoryId": "vasopressors-inotropes",
+      "bullets": [
+        "1–2 mg/kg IV em 20–30 min. Interfere com oximetria; contraindicado com serotoninérgicos (síndrome serotoninérgico) e défice de G6PD."
+      ],
+      "catalogIds": [
+        "azul-de-metileno"
+      ]
+    },
+    {
+      "title": "Amiodarona",
+      "summary": "Classe III (FA, TV/FV, tempestade elétrica)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "PCR (FV/TV sem pulso): 300 mg IV bólus, depois 150 mg.",
+        "Estável: carga 150 mg IV em 10 min, depois 1 mg/min × 6h, depois 0,5 mg/min × 18h (≈1 g/24h).",
+        "Notas: hipotensão/bradicardia (perfusão lenta), flebite (via central), QT; toxicidade crónica (tiroide, pulmão, fígado, córnea). Muitas interações (↑ varfarina, digoxina)."
+      ],
+      "catalogIds": [
+        "amiodarone"
+      ]
+    },
+    {
+      "title": "Lidocaína",
+      "summary": "Classe Ib (TV/FV, alternativa à amiodarona)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "Carga 1–1,5 mg/kg IV, repetir 0,5–0,75 mg/kg; perfusão 1–4 mg/min. Neurotoxicidade (acumula na disfunção hepática/IC — reduzir)."
+      ],
+      "catalogIds": [
+        "lidocaina"
+      ]
+    },
+    {
+      "title": "Adenosina",
+      "summary": "(TSV paroxística/reentrada nodal — diagnóstica e terapêutica)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "6 mg IV bólus rápido + flush; repetir 12 mg (e 12 mg). Assistolia transitória/rubor/dispneia. Semivida segundos."
+      ],
+      "catalogIds": [
+        "adenosina"
+      ]
+    },
+    {
+      "title": "Diltiazem",
+      "summary": "Bloqueador dos canais de cálcio (controlo de frequência na FA)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "Bólus 0,25 mg/kg IV (≈15–20 mg) em 2 min; repetir 0,35 mg/kg; perfusão 5–15 mg/h. Evitar em IC sistólica/pré-excitação."
+      ],
+      "catalogIds": [
+        "diltiazem"
+      ]
+    },
+    {
+      "title": "Verapamil",
+      "summary": "BCC (TSV, controlo de frequência)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "2,5–5 mg IV em 2 min, repetível. Inotrópico negativo — evitar em IC/betabloqueio."
+      ],
+      "catalogIds": [
+        "verapamilo"
+      ]
+    },
+    {
+      "title": "Metoprolol",
+      "summary": "Betabloqueante (controlo de frequência, isquémia, tempestade elétrica)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "2,5–5 mg IV em 2 min, repetir até 15 mg. Broncospasmo, hipotensão, bradicardia."
+      ],
+      "catalogIds": [
+        "metoprolol"
+      ]
+    },
+    {
+      "title": "Esmolol",
+      "summary": "Betabloqueante ultracurto (perfusão)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "Carga 500 mcg/kg em 1 min; perfusão 50–200 mcg/kg/min. Titulável, semivida ~9 min."
+      ],
+      "catalogIds": [
+        "esmolol"
+      ]
+    },
+    {
+      "title": "Digoxina",
+      "summary": "Glicosídeo (controlo de frequência na FA, sobretudo com IC/hipotensão)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "Digitalização: 0,25 mg IV 2/2h até 1–1,5 mg. Manutenção 0,125–0,25 mg/dia.",
+        "Renal: **reduzir marcadamente** (eliminação renal). TDM 0,5–2 ng/mL (IC alvo <1). Toxicidade ↑ com hipocaliémia/hipomagnesémia; antídoto **fragmentos Fab antidigoxina**."
+      ],
+      "catalogIds": [
+        "digoxina"
+      ]
+    },
+    {
+      "title": "Sulfato de magnésio",
+      "summary": "(torsades de pointes, FA, adjuvante)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "Torsades: 2 g IV em 1–2 min. Ver também secção 11."
+      ],
+      "catalogIds": [
+        "sulfato-de-magnesio"
+      ]
+    },
+    {
+      "title": "Procainamida",
+      "summary": "Classe Ia (FA com pré-excitação/WPW, TV estável)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "20–50 mg/min até 17 mg/kg (parar se hipotensão, QRS alarga >50%, arritmia resolve). Vigiar QT/QRS. Ajuste renal."
+      ],
+      "catalogIds": [
+        "procainamida"
+      ]
+    },
+    {
+      "title": "Isoprenalina",
+      "summary": "ver secção 7 (bradiarritmias).",
+      "categoryId": "antiarrhythmics",
+      "bullets": [],
+      "catalogIds": [
+        "isoprenalina"
+      ]
+    },
+    {
+      "title": "Atropina",
+      "summary": "(bradicardia sintomática)",
+      "categoryId": "antiarrhythmics",
+      "bullets": [
+        "0,5–1 mg IV 3–5/3–5 min (máx 3 mg). <0,5 mg pode causar bradicardia paradoxal."
+      ],
+      "catalogIds": [
+        "atropina"
+      ]
+    },
+    {
+      "title": "Heparina não fracionada (HNF)",
+      "summary": "Anticoagulante (perfusão)",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "TEV/SCA: bólus 60–80 U/kg, perfusão 12–18 U/kg/h, ajustar por **aPTT (1,5–2,5×)** ou anti-Xa (0,3–0,7). Circuito CRRT/ECMO doses próprias.",
+        "Reversão: **protamina** 1 mg por 100 U de heparina das últimas ~2–3h. Vigiar plaquetas (**HIT** — trombocitopenia induzida por heparina)."
+      ],
+      "catalogIds": [
+        "heparina-nao-fraccionada"
+      ]
+    },
+    {
+      "title": "Enoxaparina",
+      "summary": "HBPM",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "Profilaxia: 40 mg SC 24/24h (obesidade/alto risco ajustar). Terapêutica: 1 mg/kg SC 12/12h ou 1,5 mg/kg 24/24h.",
+        "Renal: **ClCr <30 → 1 mg/kg 24/24h** (terapêutica) / 30 mg 24/24h (profilaxia); em UCI/DRC preferir HNF ou monitorizar **anti-Xa** (alvo 0,5–1,0; pico 4h pós-dose)."
+      ],
+      "catalogIds": [
+        "enoxaparin"
+      ]
+    },
+    {
+      "title": "Dalteparina / Tinzaparina",
+      "summary": "HBPM (alternativas; tinzaparina menos acumulação renal)",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "Dalteparina profilaxia 5000 U SC/dia; terapêutica 200 U/kg/dia ou 100 U/kg 12/12h."
+      ],
+      "catalogIds": [
+        "dalteparina",
+        "tinzaparina"
+      ]
+    },
+    {
+      "title": "Fondaparinux",
+      "summary": "Inibidor indireto do Xa",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "Profilaxia 2,5 mg SC/dia; terapêutica 5–10 mg/dia por peso. Evitar em ClCr <30 (acumulação; sem antídoto específico). Alternativa na HIT."
+      ],
+      "catalogIds": [
+        "fondaparinux"
+      ]
+    },
+    {
+      "title": "Argatrobano",
+      "summary": "Inibidor direto da trombina (HIT)",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "Perfusão 0,5–2 mcg/kg/min (reduzir em disfunção hepática 0,5), ajustar por aPTT 1,5–3×. Prolonga INR."
+      ],
+      "catalogIds": [
+        "argatroban"
+      ]
+    },
+    {
+      "title": "Bivalirudina",
+      "summary": "Inibidor direto da trombina (HIT, ICP)",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "Perfusão 0,15–0,2 mg/kg/h ajustada por aPTT. Ajuste renal (eliminação renal parcial)."
+      ],
+      "catalogIds": [
+        "bivalirudina"
+      ]
+    },
+    {
+      "title": "Varfarina",
+      "summary": "Antagonista da vitamina K",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "Dose individual por INR (alvo 2–3 na maioria). Muitas interações.",
+        "Reversão: **vitamina K** 5–10 mg IV + **CCP (concentrado de complexo protrombínico) 25–50 U/kg** na hemorragia grave; PFC se CCP indisponível."
+      ],
+      "catalogIds": [
+        "varfarina"
+      ]
+    },
+    {
+      "title": "Apixabano / Rivaroxabano",
+      "summary": "DOAC anti-Xa",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "Reversão: **andexanet alfa** (específico) ou CCP 50 U/kg se indisponível. Ajuste renal (rivaroxabano evitar ClCr <15)."
+      ],
+      "catalogIds": [
+        "apixabano",
+        "rivaroxabano"
+      ]
+    },
+    {
+      "title": "Dabigatrano",
+      "summary": "DOAC anti-trombina",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "Reversão: **idarucizumab** 5 g IV (específico). Dialisável. Ajuste/contra-indicação renal."
+      ],
+      "catalogIds": [
+        "dabigatrano"
+      ]
+    },
+    {
+      "title": "Ácido acetilsalicílico (AAS)",
+      "summary": "75–300 mg (carga 150–300 mg no SCA).",
+      "categoryId": "antithrombotics",
+      "bullets": [],
+      "catalogIds": [
+        "acido-acetilsalicilico"
+      ]
+    },
+    {
+      "title": "Clopidogrel",
+      "summary": "carga 300–600 mg, manutenção 75 mg/dia.",
+      "categoryId": "antithrombotics",
+      "bullets": [],
+      "catalogIds": [
+        "clopidogrel"
+      ]
+    },
+    {
+      "title": "Ticagrelor",
+      "summary": "carga 180 mg, 90 mg 12/12h. **Prasugrel** — carga 60 mg, 10 mg/dia.",
+      "categoryId": "antithrombotics",
+      "bullets": [],
+      "catalogIds": [
+        "ticagrelor"
+      ]
+    },
+    {
+      "title": "Tirofibano / Eptifibatida",
+      "summary": "inibidores GP IIb/IIIa em perfusão (ICP); ajuste renal.",
+      "categoryId": "antithrombotics",
+      "bullets": [],
+      "catalogIds": [
+        "tirofibano",
+        "eptifibatida"
+      ]
+    },
+    {
+      "title": "Alteplase (rtPA)",
+      "summary": "(EAM, AVC isquémico, TEP maciço)",
+      "categoryId": "antithrombotics",
+      "bullets": [
+        "TEP maciço: 100 mg IV em 2h (ou 0,6 mg/kg em 15 min em PCR). AVC: 0,9 mg/kg (máx 90 mg), 10% em bólus. Risco hemorrágico major — critérios rigorosos."
+      ],
+      "catalogIds": [
+        "alteplase"
+      ]
+    },
+    {
+      "title": "Tenecteplase",
+      "summary": "bólus único ajustado ao peso (EAM; usado em TEP/AVC em protocolos).",
+      "categoryId": "antithrombotics",
+      "bullets": [],
+      "catalogIds": [
+        "tenecteplase"
+      ]
+    },
+    {
+      "title": "Protamina, Vitamina K, CCP, Andexanet, Idarucizumab",
+      "summary": "ver acima.",
+      "categoryId": "antithrombotics",
+      "bullets": [],
+      "catalogIds": [
+        "protamina",
+        "vitamina-k",
+        "concentrado-de-complexo-protrombinico",
+        "andexanet-alfa",
+        "idarucizumab"
+      ]
+    },
+    {
+      "title": "Ácido tranexâmico",
+      "summary": "antifibrinolítico: 1 g IV em 10 min + 1 g em 8h (trauma <3h/hemorragia); ajuste renal.",
+      "categoryId": "antithrombotics",
+      "bullets": [],
+      "catalogIds": [
+        "acido-tranexamico"
+      ]
+    },
+    {
+      "title": "Furosemida",
+      "summary": "Diurético da ansa",
+      "categoryId": "diuretics",
+      "bullets": [
+        "Bólus 20–80 mg IV (naive) até 200 mg em DRC/resistência; **perfusão** 5–20 mg/h (carga antes da perfusão). Regra: dose IV ≈ dose oral prévia.",
+        "Notas: ototoxicidade (bólus rápido/doses altas — perfundir ≤4 mg/min), hipocaliémia/hipomagnesémia/alcalose, hipovolémia."
+      ],
+      "catalogIds": [
+        "furosemide"
+      ]
+    },
+    {
+      "title": "Bumetanida",
+      "summary": "Diurético da ansa (1 mg ≈ 40 mg furosemida)",
+      "categoryId": "diuretics",
+      "bullets": [
+        "0,5–2 mg IV; perfusão 0,5–2 mg/h. Melhor biodisponibilidade oral."
+      ],
+      "catalogIds": [
+        "bumetanida"
+      ]
+    },
+    {
+      "title": "Torasemida",
+      "summary": "Diurético da ansa (10–20 mg IV/PO; boa absorção oral).",
+      "categoryId": "diuretics",
+      "bullets": [],
+      "catalogIds": [
+        "torasemida"
+      ]
+    },
+    {
+      "title": "Tiazidas / Metolazona",
+      "summary": "Bloqueio sequencial do nefrónio (resistência a diuréticos)",
+      "categoryId": "diuretics",
+      "bullets": [
+        "Metolazona 2,5–10 mg PO ou hidroclorotiazida/clorotiazida IV **antes** da dose de ansa. Vigiar depleção electrolítica marcada."
+      ],
+      "catalogIds": [
+        "metolazona"
+      ]
+    },
+    {
+      "title": "Espironolactona / Eplerenona",
+      "summary": "Antagonistas da aldosterona (poupadores de potássio)",
+      "categoryId": "diuretics",
+      "bullets": [
+        "Espironolactona 25–100 mg/dia PO. **Hipercaliémia** (cautela em DRC/IECA). Efeito diurético lento."
+      ],
+      "catalogIds": [
+        "espironolactona",
+        "eplerenona"
+      ]
+    },
+    {
+      "title": "Acetazolamida",
+      "summary": "Inibidor da anidrase carbónica (alcalose metabólica associada a diuréticos, diurese)",
+      "categoryId": "diuretics",
+      "bullets": [
+        "250–500 mg IV 12/12h–24/24h. Acidose metabólica hiperclorémica; cautela em DPOC/retentores."
+      ],
+      "catalogIds": [
+        "acetazolamida"
+      ]
+    },
+    {
+      "title": "Manitol",
+      "summary": "Diurético osmótico (HIC, edema cerebral; não é diurético \"de volume\")",
+      "categoryId": "diuretics",
+      "bullets": [
+        "0,25–1 g/kg IV em 15–20 min. Vigiar osmolaridade/gap osmolar, natrémia, função renal; evitar se anúria/IC descompensada."
+      ],
+      "catalogIds": [
+        "manitol"
+      ]
+    },
+    {
+      "title": "Tolvaptano",
+      "summary": "Antagonista V2 (hiponatrémia euvolémica/hipervolémica)",
+      "categoryId": "diuretics",
+      "bullets": [
+        "15 mg/dia PO, titular. **Corrigir Na⁺ devagar** (risco de mielinólise); hepatotoxicidade."
+      ],
+      "catalogIds": [
+        "tolvaptano"
+      ]
+    },
+    {
+      "title": "Cloreto de potássio (KCl)",
+      "summary": "Reposição de potássio",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "IV periférico ≤10 mEq/h (≤40 mEq/L); central ≤20 mEq/h com **monitorização ECG**. Regra prática: 10 mEq elevam K⁺ ~0,1 mEq/L. Corrigir Mg²⁺ concomitante.",
+        "Renal: cautela extrema em oligúria/DRC (hipercaliémia)."
+      ],
+      "catalogIds": [
+        "potassium-chloride"
+      ]
+    },
+    {
+      "title": "Fosfato (de potássio ou sódio)",
+      "summary": "Reposição de fósforo",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "Hipofosfatémia grave (<0,3 mmol/L): 0,3–0,6 mmol/kg IV em 6h. Escolher sal (K vs Na) conforme potássio. Vigiar Ca²⁺ (precipitação), função renal."
+      ],
+      "catalogIds": [
+        "fosfato-de-potassio",
+        "fosfato-de-sodio"
+      ]
+    },
+    {
+      "title": "Sulfato / cloreto de magnésio",
+      "summary": "Reposição de magnésio",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "Repleção: 2–4 g IV em 1–2h. Torsades/eclâmpsia/asma grave: 2 g IV. Vigiar reflexos/PA/FR em doses altas; ajuste renal (acumula)."
+      ],
+      "catalogIds": [
+        "sulfato-de-magnesio",
+        "cloreto-de-magnesio"
+      ]
+    },
+    {
+      "title": "Gluconato / cloreto de cálcio",
+      "summary": "Reposição de cálcio / hipercaliémia / toxicidade por BCC",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "Gluconato de cálcio 10% 10–30 mL IV; **cloreto de cálcio 10% 10 mL** (3× mais cálcio elementar — via central, cardioestabilizador na hipercaliémia).",
+        "Notas: não co-administrar com bicarbonato/fosfato/ceftriaxona (precipitação)."
+      ],
+      "catalogIds": [
+        "gluconato-de-calcio",
+        "cloreto-de-calcio"
+      ]
+    },
+    {
+      "title": "Cloreto de sódio hipertónico (NaCl 3% / 7,5% / 20%)",
+      "summary": "Hiponatrémia sintomática, HIC",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "Hiponatrémia sintomática grave: bólus 100–150 mL de NaCl 3% IV, repetível; **limitar correção a 6–8 mEq/L/24h** (risco de mielinólise pontina). HIC: 2–5 mL/kg de 3% ou bólus de 20% conforme protocolo. Vigiar Na⁺ seriado."
+      ],
+      "catalogIds": [
+        "cloreto-de-sodio-hipertonico"
+      ]
+    },
+    {
+      "title": "Bicarbonato de sódio",
+      "summary": "Acidose metabólica grave, hipercaliémia, alcalinização urinária",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "Acidose grave (pH <7,1–7,2)/hipercaliémia: 50–100 mEq IV (1 mEq/kg). Vigiar Na⁺, pCO₂ (necessita ventilação), Ca²⁺ ionizado, K⁺."
+      ],
+      "catalogIds": [
+        "bicarbonato-de-sodio"
+      ]
+    },
+    {
+      "title": "Insulina + glicose",
+      "summary": "Hipercaliémia (desvio intracelular)",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "10 U de insulina rápida IV + 25 g de glicose (D50 50 mL); vigiar glicémia (hipoglicémia tardia). Ver secção 14."
+      ],
+      "catalogIds": [
+        "insulina-regular",
+        "glicose"
+      ]
+    },
+    {
+      "title": "Glucagom",
+      "summary": "(hipoglicémia sem acesso; sobredosagem de betabloqueante/BCC)",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "Hipoglicémia 1 mg IM/IV. Toxicidade BB/BCC: 3–10 mg IV bólus + perfusão."
+      ],
+      "catalogIds": [
+        "glucagon"
+      ]
+    },
+    {
+      "title": "Tiamina (vitamina B1)",
+      "summary": "(encefalopatia de Wernicke, alcoolismo, refeeding, antes de glicose)",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [
+        "200–500 mg IV 8/8h na suspeita de Wernicke; 100–250 mg/dia profilático. Administrar **antes** de cargas de glicose."
+      ],
+      "catalogIds": [
+        "tiamina"
+      ]
+    },
+    {
+      "title": "Fosfato/Potássio/Magnésio no refeeding",
+      "summary": "repor proativamente na síndrome de realimentação.",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [],
+      "catalogIds": [
+        "fosfato-de-potassio",
+        "fosfato-de-sodio",
+        "potassium-chloride",
+        "sulfato-de-magnesio",
+        "cloreto-de-magnesio"
+      ]
+    },
+    {
+      "title": "Cloreto de amónio / Acetazolamida",
+      "summary": "correções de alcalose (ver secção 10).",
+      "categoryId": "electrolytes-metabolic",
+      "bullets": [],
+      "catalogIds": [
+        "acetazolamida"
+      ]
+    },
+    {
+      "title": "N-acetilcisteína (NAC)",
+      "summary": "Antídoto do paracetamol",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "Regime 21h IV: 150 mg/kg em 1h → 50 mg/kg em 4h → 100 mg/kg em 16h (ou regime 2 sacos). Reações anafilactóides (abrandar). Iniciar por nomograma/tempo."
+      ],
+      "catalogIds": [
+        "n-acetilcisteina"
+      ]
+    },
+    {
+      "title": "Naloxona",
+      "summary": "Antagonista opióide",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "0,04–0,4 mg IV titulado (evitar abstinência abrupta); perfusão 2/3 da dose de reversão/h. Semivida curta — repetir/perfundir."
+      ],
+      "catalogIds": [
+        "naloxona"
+      ]
+    },
+    {
+      "title": "Flumazenil",
+      "summary": "Antagonista de benzodiazepinas",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "0,2 mg IV, repetir até 1 mg. **Cautela**: pode precipitar convulsões (uso crónico/co-ingestão de pró-convulsivantes)."
+      ],
+      "catalogIds": [
+        "flumazenilo"
+      ]
+    },
+    {
+      "title": "Fomepizol",
+      "summary": "Inibidor da álcool-desidrogenase (metanol, etilenoglicol)",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "Carga 15 mg/kg IV, depois 10 mg/kg 12/12h × 4, depois 15 mg/kg 12/12h. **Aumentar frequência durante hemodiálise**. Considerar HD para eliminação do tóxico/acidose grave."
+      ],
+      "catalogIds": [
+        "fomepizole"
+      ]
+    },
+    {
+      "title": "Etanol",
+      "summary": "alternativa ao fomepizol se indisponível (perfusão para nível ~100–150 mg/dL).",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [],
+      "catalogIds": [
+        "etanol-intravenoso"
+      ]
+    },
+    {
+      "title": "Hidroxocobalamina",
+      "summary": "Antídoto do cianeto (inalação de fumo)",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "5 g IV em 15 min (repetir até 10 g). Colore urina/pele de vermelho; interfere com colorimetrias."
+      ],
+      "catalogIds": [
+        "hidroxocobalamina"
+      ]
+    },
+    {
+      "title": "Tiossulfato de sódio / Nitrito de sódio",
+      "summary": "kit clássico do cianeto (adjuvante).",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [],
+      "catalogIds": [
+        "tiossulfato-de-sodio"
+      ]
+    },
+    {
+      "title": "Emulsão lipídica IV 20% (ILE)",
+      "summary": "Toxicidade por anestésico local / lipofílicos (BCC, TCA)",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "1,5 mL/kg em bólus + 0,25 mL/kg/min; repetir bólus se instável (máx ~10–12 mL/kg)."
+      ],
+      "catalogIds": [
+        "emulsao-lipidica-intravenosa"
+      ]
+    },
+    {
+      "title": "Glucagom + Cálcio + Insulina em alta dose (HIET)",
+      "summary": "Toxicidade betabloqueante / BCC",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "HIET: insulina 1 U/kg bólus + 0,5–1 U/kg/h (com glicose e monitorização de K⁺/glicémia). Glucagom e cálcio conforme secção 11."
+      ],
+      "catalogIds": [
+        "glucagon",
+        "gluconato-de-calcio",
+        "cloreto-de-calcio",
+        "insulina-em-alta-dose-com-euglicemia"
+      ]
+    },
+    {
+      "title": "Bicarbonato de sódio",
+      "summary": "Antidepressivos tricíclicos (QRS largo), alcalinização (salicilatos, fenobarbital).",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [],
+      "catalogIds": [
+        "bicarbonato-de-sodio"
+      ]
+    },
+    {
+      "title": "Fragmentos Fab antidigoxina (DigiFab)",
+      "summary": "Intoxicação digitálica",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "Dose por carga corporal/nível ou empírica (10–20 frascos em intoxicação aguda com risco de vida)."
+      ],
+      "catalogIds": [
+        "fragmentos-fab-antidigoxina"
+      ]
+    },
+    {
+      "title": "Sulfato de protamina",
+      "summary": "reversão de heparina (secção 9).",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [],
+      "catalogIds": [
+        "protamina"
+      ]
+    },
+    {
+      "title": "Vitamina K / CCP / Andexanet / Idarucizumab",
+      "summary": "reversão de anticoagulantes (secção 9).",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [],
+      "catalogIds": [
+        "vitamina-k",
+        "concentrado-de-complexo-protrombinico",
+        "andexanet-alfa",
+        "idarucizumab"
+      ]
+    },
+    {
+      "title": "Azul de metileno",
+      "summary": "metahemoglobinémia: 1–2 mg/kg IV (evitar em défice de G6PD).",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [],
+      "catalogIds": [
+        "azul-de-metileno"
+      ]
+    },
+    {
+      "title": "Fisostigmina",
+      "summary": "síndrome anticolinérgico central: 0,5–2 mg IV lento (monitorização — bradicardia/convulsões).",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [],
+      "catalogIds": [
+        "fisostigmina"
+      ]
+    },
+    {
+      "title": "Atropina + Pralidoxima",
+      "summary": "Organofosforados/carbamatos",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "Atropina 2–5 mg IV a duplicar até secura de secreções brônquicas; pralidoxima 30 mg/kg carga + perfusão."
+      ],
+      "catalogIds": [
+        "atropina",
+        "pralidoxima"
+      ]
+    },
+    {
+      "title": "Octreotido",
+      "summary": "Hipoglicémia por sulfonilureias",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [
+        "50 mcg SC/IV 6/6h–12/12h (além de glicose)."
+      ],
+      "catalogIds": [
+        "octreotido"
+      ]
+    },
+    {
+      "title": "Carvão ativado",
+      "summary": "descontaminação GI: 1 g/kg PO/SNG (via aérea protegida; até 1h pós-ingestão / substâncias selecionadas).",
+      "categoryId": "antidotes-toxicology",
+      "bullets": [],
+      "catalogIds": [
+        "carvao-activado"
+      ]
+    },
+    {
+      "title": "Pantoprazol",
+      "summary": "IBP (profilaxia de úlcera de stress, hemorragia digestiva alta)",
+      "categoryId": "gastrointestinal",
+      "bullets": [
+        "Profilaxia 40 mg IV/dia. **HDA (úlcera péptica)**: bólus 80 mg IV + perfusão 8 mg/h × 72h. Sem ajuste renal; cautela hepática grave."
+      ],
+      "catalogIds": [
+        "pantoprazole"
+      ]
+    },
+    {
+      "title": "Esomeprazol / Omeprazol",
+      "summary": "IBP (mesma lógica de HDA que o pantoprazol).",
+      "categoryId": "gastrointestinal",
+      "bullets": [],
+      "catalogIds": [
+        "esomeprazol",
+        "omeprazol"
+      ]
+    },
+    {
+      "title": "Ranitidina/Famotidina (anti-H2)",
+      "summary": "Famotidina 20 mg IV 12/12h (alternativa/profilaxia stress). Ajuste renal da famotidina.",
+      "categoryId": "gastrointestinal",
+      "bullets": [],
+      "catalogIds": [
+        "famotidina"
+      ]
+    },
+    {
+      "title": "Metoclopramida",
+      "summary": "Procinético/antiemético",
+      "categoryId": "gastrointestinal",
+      "bullets": [
+        "10 mg IV 8/8h. SEP/distonia, QT; reduzir em DRC. Evitar uso prolongado (discinesia tardia)."
+      ],
+      "catalogIds": [
+        "metoclopramida"
+      ]
+    },
+    {
+      "title": "Eritromicina",
+      "summary": "Procinético (agonista da motilina; gastroparésia/intolerância entérica)",
+      "categoryId": "gastrointestinal",
+      "bullets": [
+        "3 mg/kg IV 8/8h ou 250 mg. Taquifilaxia, QT, interações."
+      ],
+      "catalogIds": [
+        "eritromicina"
+      ]
+    },
+    {
+      "title": "Ondansetrom",
+      "summary": "Antiemético 5-HT3",
+      "categoryId": "gastrointestinal",
+      "bullets": [
+        "4–8 mg IV 8/8h. **QT** (evitar doses únicas altas)."
+      ],
+      "catalogIds": [
+        "ondansetrom"
+      ]
+    },
+    {
+      "title": "Octreotido",
+      "summary": "Análogo da somatostatina (hemorragia varicosa, fístulas de alto débito)",
+      "categoryId": "gastrointestinal",
+      "bullets": [
+        "Varizes: 50 mcg IV bólus + 50 mcg/h × 3–5 dias."
+      ],
+      "catalogIds": [
+        "octreotido"
+      ]
+    },
+    {
+      "title": "Terlipressina",
+      "summary": "(hemorragia varicosa, síndrome hepatorrenal)",
+      "categoryId": "gastrointestinal",
+      "bullets": [
+        "Varizes 1–2 mg IV 4/4h–6/6h; SHR 0,5–1 mg 4/4h–6/6h ou perfusão. Isquémia periférica/mesentérica, hiponatrémia."
+      ],
+      "catalogIds": [
+        "terlipressina"
+      ]
+    },
+    {
+      "title": "Lactulose",
+      "summary": "(encefalopatia hepática)",
+      "categoryId": "gastrointestinal",
+      "bullets": [
+        "20–30 g PO/SNG a titular para 2–3 dejeções moles/dia; enema se necessário."
+      ],
+      "catalogIds": [
+        "lactulose"
+      ]
+    },
+    {
+      "title": "Rifaximina",
+      "summary": "(encefalopatia hepática, adjuvante) 550 mg PO 12/12h.",
+      "categoryId": "gastrointestinal",
+      "bullets": [],
+      "catalogIds": [
+        "rifaximina"
+      ]
+    },
+    {
+      "title": "Loperamida / Colestiramina",
+      "summary": "controlo de diarreia (após excluir C. difficile).",
+      "categoryId": "gastrointestinal",
+      "bullets": [],
+      "catalogIds": [
+        "loperamida",
+        "colestiramina"
+      ]
+    },
+    {
+      "title": "Sucralfato",
+      "summary": "proteção da mucosa 1 g SNG 6/6h (reduz absorção de outros fármacos).",
+      "categoryId": "gastrointestinal",
+      "bullets": [],
+      "catalogIds": [
+        "sucralfato"
+      ]
+    },
+    {
+      "title": "Glicopirrónio / Butilescopolamina",
+      "summary": "antissecretor/antiespasmódico (secreções, cólica).",
+      "categoryId": "gastrointestinal",
+      "bullets": [],
+      "catalogIds": [
+        "glicopirrolato"
+      ]
+    },
+    {
+      "title": "Insulina rápida (regular) IV",
+      "summary": "Controlo glicémico / CAD-EHH / hipercaliémia",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [
+        "Perfusão UCI: 0,05–0,1 U/kg/h titulada a protocolo (alvo 140–180 mg/dL).",
+        "**CAD/EHH**: perfusão 0,1 U/kg/h (± bólus 0,1 U/kg); baixar glicémia ~50–70 mg/dL/h; adicionar glicose quando <200–250; **repor K⁺** e só iniciar insulina se K⁺ >3,3.",
+        "Hipercaliémia: 10 U + glicose (secção 11)."
+      ],
+      "catalogIds": [
+        "insulina-regular",
+        "insulina-humana-regular"
+      ]
+    },
+    {
+      "title": "Glucose hipertónica (D30/D50)",
+      "summary": "hipoglicémia: 10–25 g IV; reavaliar.",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "glicose-hipertonica",
+        "glicose-30",
+        "glicose-50"
+      ]
+    },
+    {
+      "title": "Glucagom",
+      "summary": "hipoglicémia sem acesso / toxicidade BB-BCC (secção 11/12).",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "glucagon"
+      ]
+    },
+    {
+      "title": "Hidrocortisona",
+      "summary": "Glucocorticoide (choque séptico refratário, insuficiência adrenal)",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [
+        "Choque séptico: **50 mg IV 6/6h** (200 mg/dia) ou perfusão 200 mg/24h. Crise adrenal: 100 mg IV bólus + 50 mg 6/6h ou 200 mg/24h. Tem atividade mineralocorticoide."
+      ],
+      "catalogIds": [
+        "hydrocortisone"
+      ]
+    },
+    {
+      "title": "Metilprednisolona",
+      "summary": "Glucocorticoide (asma, SDRA, imunomediado, transplante)",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [
+        "Asma grave 40–125 mg IV 6/6h–8/8h; pulsos 0,5–1 g/dia em doença imunomediada."
+      ],
+      "catalogIds": [
+        "metilprednisolona"
+      ]
+    },
+    {
+      "title": "Dexametasona",
+      "summary": "Glucocorticoide (edema cerebral por tumor, COVID-19, antiemético, laringe)",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [
+        "COVID-19 (O₂): 6 mg IV/PO/dia × ≤10 dias. Edema cerebral (tumoral): 10 mg IV + 4 mg 6/6h. Sem mineralocorticoide."
+      ],
+      "catalogIds": [
+        "dexametasona"
+      ]
+    },
+    {
+      "title": "Prednisolona",
+      "summary": "oral equivalente (asma/DPOC: 40–50 mg/dia).",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "prednisolona"
+      ]
+    },
+    {
+      "title": "Fludrocortisona",
+      "summary": "mineralocorticoide (0,05–0,1 mg/dia PO; adjuvante na insuficiência adrenal — alguns protocolos de choque séptico).",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "fludrocortisona"
+      ]
+    },
+    {
+      "title": "Levotiroxina (T4)",
+      "summary": "coma mixedematoso: 200–400 mcg IV carga, depois 50–100 mcg/dia (com hidrocortisona antes, e ± liotironina T3).",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "levotiroxina"
+      ]
+    },
+    {
+      "title": "Tiamazol/Propiltiouracilo + Lugol + betabloqueante + hidrocortisona",
+      "summary": "tempestade tiroideia.",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "tiamazol-metimazol",
+        "propiltiouracilo",
+        "iodeto-de-potassio",
+        "hydrocortisone"
+      ]
+    },
+    {
+      "title": "Octreotido",
+      "summary": "acromegalia/hemorragia (secção 13).",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "octreotido"
+      ]
+    },
+    {
+      "title": "Desmopressina (DDAVP)",
+      "summary": "diabetes insípida central: 1–2 mcg IV/SC 12/12h titulado; também disfunção plaquetária urémica 0,3 mcg/kg.",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "desmopressina"
+      ]
+    },
+    {
+      "title": "Vasopressina",
+      "summary": "diabetes insípida (além do uso vasopressor, secção 7).",
+      "categoryId": "endocrine-corticosteroids",
+      "bullets": [],
+      "catalogIds": [
+        "vasopressina"
+      ]
+    }
+  ],
+  "stats": {
+    "noteCount": 185,
+    "mappedCatalogEntries": 190,
+    "unmappedNoteTitles": []
+  }
+}

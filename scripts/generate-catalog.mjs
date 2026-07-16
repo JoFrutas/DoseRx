@@ -42,6 +42,7 @@ const idOverrides = {
   Fomepizol: 'fomepizole',
   Pantoprazol: 'pantoprazole',
   Hidrocortisona: 'hydrocortisone',
+  'Petidina (meperidina)': 'petidina-meperidina',
 }
 
 const aliases = {
@@ -58,6 +59,7 @@ const aliases = {
   Hidrocortisona: ['hydrocortisone'],
   Levetiracetam: ['LEV'],
   Propofol: ['2,6-diisopropilfenol'],
+  'Petidina (meperidina)': ['pethidine', 'meperidina', 'meperidine'],
 }
 
 const slugify = (value) => value
@@ -82,13 +84,16 @@ for (const record of records) {
     subcategories: [],
     categoryIds: [],
     indications: [],
-    routes: ['Vias de administração por validar'],
+    routes: [],
+    scopeNotes: [],
   }
 
   const categoryId = categoryIds[record.Código]
   const subcategory = String(record.Subcategoria).trim()
   if (categoryId && !existing.categoryIds.includes(categoryId)) existing.categoryIds.push(categoryId)
   if (subcategory && !existing.subcategories.includes(subcategory)) existing.subcategories.push(subcategory)
+  const scopeNote = record['Notas de âmbito'] ? String(record['Notas de âmbito']).trim() : ''
+  if (scopeNote && !existing.scopeNotes.includes(scopeNote)) existing.scopeNotes.push(scopeNote)
   if (priorityRank[record.Prioridade] < priorityRank[existing.priority]) existing.priority = record.Prioridade
   grouped.set(key, existing)
 }
@@ -96,7 +101,7 @@ for (const record of records) {
 const seeds = [...grouped.values()]
   .map((seed) => ({
     ...seed,
-    indications: seed.subcategories.map((subcategory) => `${subcategory} — contexto do catálogo; conteúdo clínico por validar`),
+    indications: seed.subcategories.map((subcategory) => `Utilização em UCI no contexto de ${subcategory.toLocaleLowerCase('pt-PT')}.`),
   }))
   .sort((a, b) => {
     const priorityDifference = priorityRank[a.priority] - priorityRank[b.priority]

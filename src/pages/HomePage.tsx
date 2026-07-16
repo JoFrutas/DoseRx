@@ -2,17 +2,9 @@ import { useState } from 'react'
 import { CategoryCard } from '../components/CategoryCard'
 import { DrugCard } from '../components/DrugCard'
 import { LogoMark } from '../components/LogoMark'
-import { SafetyBanner } from '../components/SafetyBanner'
 import { SearchBar } from '../components/SearchBar'
 import { drugCategories } from '../data/categories'
-import {
-  catalogDrugCount,
-  drugs,
-  multiSourceValidatedDrugCount,
-  placeholderDrugCount,
-  reviewInProgressDrugCount,
-  sourceVerifiedDrugCount,
-} from '../data/drugs'
+import { catalogDrugCount, drugs } from '../data/drugs'
 import { searchDrugs } from '../lib/search'
 
 export function HomePage() {
@@ -45,8 +37,6 @@ export function HomePage() {
       </section>
 
       <div className="content-width home-content">
-        {placeholderDrugCount > 0 && <SafetyBanner compact pendingCount={placeholderDrugCount} />}
-
         {isSearching ? (
           <section className="search-results" aria-live="polite">
             <div className="section-heading">
@@ -74,9 +64,9 @@ export function HomePage() {
                 <span className="eyebrow">Catálogo de Medicina Intensiva</span>
                 <h2>Explorar por categoria</h2>
                 <p>
-                  {multiSourceValidatedDrugCount} fichas com consenso multiponto;{' '}
-                  {sourceVerifiedDrugCount - multiSourceValidatedDrugCount} com fontes primárias verificadas;{' '}
-                  {reviewInProgressDrugCount} em revisão e {placeholderDrugCount} ainda por preencher.
+                  As {catalogDrugCount} fichas estão estruturadas e pesquisáveis. Quando a fonte
+                  revista não define uma posologia única, a ficha remete para o RCM e para o
+                  protocolo específico da indicação.
                 </p>
               </div>
               <span className="record-count">{catalogDrugCount} fármacos</span>

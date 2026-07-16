@@ -38,7 +38,7 @@ export function App() {
         <div className="content-width">
           <strong>DoseRx</strong>
           <span>Ferramenta de apoio · confirmar indicação, preparação e protocolo local</span>
-          <span>v0.2</span>
+          <span>v0.3</span>
         </div>
       </footer>
     </div>

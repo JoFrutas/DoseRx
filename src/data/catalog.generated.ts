@@ -17,11 +17,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Antagonistas da vitamina K — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas da vitamina k."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acetato-de-potassio",
@@ -36,11 +35,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Potássio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de potássio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acetazolamida",
@@ -59,13 +57,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Insuficiência cardíaca — adjuvantes seleccionados — contexto do catálogo; conteúdo clínico por validar",
-      "Inibidor da anidrase carbónica — contexto do catálogo; conteúdo clínico por validar",
-      "Alcalose metabólica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insuficiência cardíaca — adjuvantes seleccionados.",
+      "Utilização em UCI no contexto de inibidor da anidrase carbónica.",
+      "Utilização em UCI no contexto de alcalose metabólica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acyclovir",
@@ -82,11 +79,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Herpes simplex e varicela-zoster — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de herpes simplex e varicela-zoster."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-acetilsalicilico",
@@ -103,12 +99,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Pericardite/inflamação — contexto do catálogo; conteúdo clínico por validar",
-      "Antiagregantes orais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de pericardite/inflamação.",
+      "Utilização em UCI no contexto de antiagregantes orais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-ascorbico",
@@ -125,12 +120,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Meta-hemoglobinemia — contexto do catálogo; conteúdo clínico por validar",
-      "Vitamina C — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de meta-hemoglobinemia.",
+      "Utilização em UCI no contexto de vitamina c."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-folico",
@@ -145,11 +139,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Vitaminas essenciais em UCI — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vitaminas essenciais em uci."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-folinico-leucovorina",
@@ -164,11 +157,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Metotrexato — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de metotrexato."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-tranexamico",
@@ -185,12 +177,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Antifibrinolíticos/hemostáticos — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia pós-parto — hemostase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antifibrinolíticos/hemostáticos.",
+      "Utilização em UCI no contexto de hemorragia pós-parto — hemostase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-zoledronico",
@@ -205,11 +196,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Hipercalcemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercalcemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "adenosina",
@@ -224,11 +214,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Taquicardia supraventricular — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de taquicardia supraventricular."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "adrenalina",
@@ -247,13 +236,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Vasopressores de primeira linha — contexto do catálogo; conteúdo clínico por validar",
-      "Bradicardia — contexto do catálogo; conteúdo clínico por validar",
-      "Adjuvantes na broncoconstrição grave — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasopressores de primeira linha.",
+      "Utilização em UCI no contexto de bradicardia.",
+      "Utilização em UCI no contexto de adjuvantes na broncoconstrição grave."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "adrenalina-nebulizada",
@@ -268,11 +256,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Edema da via aérea/estridor — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de edema da via aérea/estridor."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "albumina-humana-20",
@@ -287,11 +274,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Albumina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de albumina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "albumina-humana-25",
@@ -306,11 +292,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Albumina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de albumina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "albumina-humana-5",
@@ -325,11 +310,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Albumina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de albumina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "alopurinol",
@@ -344,11 +328,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Síndrome de lise tumoral — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndrome de lise tumoral."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "alteplase",
@@ -365,12 +348,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Fibrinolíticos — contexto do catálogo; conteúdo clínico por validar",
-      "AVC isquémico — trombólise — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fibrinolíticos.",
+      "Utilização em UCI no contexto de avc isquémico — trombólise."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "amantadina",
@@ -387,12 +369,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Síndrome neuroléptica maligna — contexto do catálogo; conteúdo clínico por validar",
-      "Parkinsonismo — continuidade/evitar suspensão — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndrome neuroléptica maligna.",
+      "Utilização em UCI no contexto de parkinsonismo — continuidade/evitar suspensão."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "amicacina",
@@ -407,11 +388,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminoglicosídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminoglicosídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "amiodarone",
@@ -429,12 +409,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Fibrilhação/flutter auricular — contexto do catálogo; conteúdo clínico por validar",
-      "Arritmia ventricular — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fibrilhação/flutter auricular.",
+      "Utilização em UCI no contexto de arritmia ventricular."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "amoxicilina",
@@ -449,11 +428,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminopenicilinas e combinações — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminopenicilinas e combinações."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "amoxicilina-acido-clavulanico",
@@ -468,11 +446,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminopenicilinas e combinações — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminopenicilinas e combinações."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ampicilina",
@@ -487,11 +464,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminopenicilinas e combinações — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminopenicilinas e combinações."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ampicilina-sulbactam",
@@ -506,11 +482,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminopenicilinas e combinações — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminopenicilinas e combinações."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "andexanet-alfa",
@@ -527,12 +502,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Reversão de inibidores do factor Xa — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia intracraniana — reversão — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão de inibidores do factor xa.",
+      "Utilização em UCI no contexto de hemorragia intracraniana — reversão."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "anfotericina-b-desoxicolato",
@@ -547,11 +521,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Polienos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de polienos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "anfotericina-b-lipossomica",
@@ -568,12 +541,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Polienos — contexto do catálogo; conteúdo clínico por validar",
-      "Leishmaniose — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de polienos.",
+      "Utilização em UCI no contexto de leishmaniose."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "anidulafungina",
@@ -588,11 +560,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Equinocandinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de equinocandinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "apixabano",
@@ -607,11 +578,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Anticoagulantes orais directos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anticoagulantes orais directos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "argatroban",
@@ -628,12 +598,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Inibidores directos da trombina parenterais — contexto do catálogo; conteúdo clínico por validar",
-      "Trombocitopenia induzida por heparina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores directos da trombina parenterais.",
+      "Utilização em UCI no contexto de trombocitopenia induzida por heparina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "artesunato-intravenoso",
@@ -648,11 +617,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Malária grave — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de malária grave."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "atracurio",
@@ -667,11 +635,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Não despolarizantes — início rápido/intermédio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de não despolarizantes — início rápido/intermédio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "atropina",
@@ -690,13 +657,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Reversão por anticolinesterásico — contexto do catálogo; conteúdo clínico por validar",
-      "Bradicardia — contexto do catálogo; conteúdo clínico por validar",
-      "Organofosforados/carbamatos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão por anticolinesterásico.",
+      "Utilização em UCI no contexto de bradicardia.",
+      "Utilização em UCI no contexto de organofosforados/carbamatos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "azitromicina",
@@ -711,11 +677,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Macrólidos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de macrólidos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "aztreonam",
@@ -730,11 +695,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Monobactâmicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de monobactâmicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "azul-de-metileno",
@@ -751,11 +715,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Vasoplegia refractária — adjuvantes — contexto do catálogo; conteúdo clínico por validar",
-      "Meta-hemoglobinemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasoplegia refractária — adjuvantes.",
+      "Utilização em UCI no contexto de meta-hemoglobinemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Utilização off-label/seleccionada; remeter também para Toxicologia."
     ]
   },
   {
@@ -771,11 +736,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Cogumelos amatoxínicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cogumelos amatoxínicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "benzilpenicilina-penicilina-g",
@@ -790,11 +754,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Penicilinas naturais e antiestafilocócicas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de penicilinas naturais e antiestafilocócicas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bicarbonato-de-sodio",
@@ -812,13 +775,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Correcção de acidose — contexto do catálogo; conteúdo clínico por validar",
-      "Hipercaliemia — estabilização/desvio — contexto do catálogo; conteúdo clínico por validar",
-      "Antidepressivos tricíclicos/bloqueio de canais de sódio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de correcção de acidose.",
+      "Utilização em UCI no contexto de hipercaliemia — estabilização/desvio.",
+      "Utilização em UCI no contexto de antidepressivos tricíclicos/bloqueio de canais de sódio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bisacodilo",
@@ -833,11 +795,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Laxantes estimulantes/rectais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de laxantes estimulantes/rectais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bivalirudina",
@@ -854,12 +815,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Inibidores directos da trombina parenterais — contexto do catálogo; conteúdo clínico por validar",
-      "Trombocitopenia induzida por heparina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores directos da trombina parenterais.",
+      "Utilização em UCI no contexto de trombocitopenia induzida por heparina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bromocriptina",
@@ -874,11 +834,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Síndrome neuroléptica maligna — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndrome neuroléptica maligna."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bumetanida",
@@ -893,11 +852,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Diuréticos de ansa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de diuréticos de ansa."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "calcitonina",
@@ -912,11 +870,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Hipercalcemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercalcemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "calcitriol",
@@ -931,11 +888,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Hipocalcemia/hipoparatiroidismo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipocalcemia/hipoparatiroidismo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cangrelor",
@@ -950,11 +906,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Antiagregante P2Y12 intravenoso — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiagregante p2y12 intravenoso."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "caplacizumab",
@@ -969,11 +924,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Púrpura trombótica trombocitopénica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de púrpura trombótica trombocitopénica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "carbetocina",
@@ -988,11 +942,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Hemorragia pós-parto — uterotónicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemorragia pós-parto — uterotónicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "carboprost",
@@ -1007,10 +960,29 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Hemorragia pós-parto — uterotónicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemorragia pós-parto — uterotónicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": []
+  },
+  {
+    "id": "carvao-activado",
+    "name": "Carvão activado",
+    "aliases": [],
+    "drugClass": "Descontaminação gastrointestinal",
+    "priority": "P1",
+    "subcategories": [
+      "Descontaminação gastrointestinal"
+    ],
+    "categoryIds": [
+      "antidotes-toxicology"
+    ],
+    "indications": [
+      "Utilização em UCI no contexto de descontaminação gastrointestinal."
+    ],
+    "routes": [],
+    "scopeNotes": [
+      "Usar apenas em intoxicações seleccionadas e com via aérea protegida quando existe risco de aspiração."
     ]
   },
   {
@@ -1026,11 +998,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Equinocandinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de equinocandinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cefazolina",
@@ -1045,11 +1016,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 1.ª/2.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 1.ª/2.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cefepima",
@@ -1064,11 +1034,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 4.ª/5.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 4.ª/5.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cefiderocol",
@@ -1083,11 +1052,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Sideróforo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sideróforo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cefotaxima",
@@ -1102,11 +1070,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 3.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 3.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cefoxitina",
@@ -1121,11 +1088,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 1.ª/2.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 1.ª/2.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ceftarolina",
@@ -1140,11 +1106,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 4.ª/5.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 4.ª/5.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ceftazidima",
@@ -1159,11 +1124,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 3.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 3.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ceftazidima-avibactam",
@@ -1178,11 +1142,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas/inibidores para multirresistência — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas/inibidores para multirresistência."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ceftobiprole",
@@ -1197,11 +1160,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 4.ª/5.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 4.ª/5.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ceftolozano-tazobactam",
@@ -1216,11 +1178,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas/inibidores para multirresistência — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas/inibidores para multirresistência."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ceftriaxona",
@@ -1235,11 +1196,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 3.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 3.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cefuroxima",
@@ -1254,11 +1214,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas de 1.ª/2.ª geração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas de 1.ª/2.ª geração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cetamina",
@@ -1275,12 +1234,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Estado de mal refractário — anestésicos — contexto do catálogo; conteúdo clínico por validar",
-      "Sedativos principais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de estado de mal refractário — anestésicos.",
+      "Utilização em UCI no contexto de sedativos principais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cianocobalamina",
@@ -1295,11 +1253,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Vitaminas essenciais em UCI — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vitaminas essenciais em uci."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ciclosporina",
@@ -1316,12 +1273,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Colite grave/doença inflamatória — contexto do catálogo; conteúdo clínico por validar",
-      "Inibidores da calcineurina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de colite grave/doença inflamatória.",
+      "Utilização em UCI no contexto de inibidores da calcineurina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ciclossilicato-de-zirconio-sodico",
@@ -1336,11 +1292,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Hipercaliemia — remoção gastrointestinal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercaliemia — remoção gastrointestinal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cipro-heptadina",
@@ -1355,11 +1310,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Síndrome serotoninérgica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndrome serotoninérgica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ciprofloxacina",
@@ -1374,11 +1328,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Fluoroquinolonas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fluoroquinolonas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cisatracurio",
@@ -1393,11 +1346,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Não despolarizantes — início rápido/intermédio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de não despolarizantes — início rápido/intermédio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "claritromicina",
@@ -1412,11 +1364,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Macrólidos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de macrólidos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clevidipina",
@@ -1431,11 +1382,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Emergência hipertensiva — bloqueadores dos canais de cálcio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de emergência hipertensiva — bloqueadores dos canais de cálcio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clindamicina",
@@ -1453,13 +1403,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Lincosamidas — contexto do catálogo; conteúdo clínico por validar",
-      "Malária — tratamento complementar — contexto do catálogo; conteúdo clínico por validar",
-      "Toxoplasmose — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de lincosamidas.",
+      "Utilização em UCI no contexto de malária — tratamento complementar.",
+      "Utilização em UCI no contexto de toxoplasmose."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clonidina",
@@ -1474,11 +1423,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Abstinência alcoólica/simpática — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de abstinência alcoólica/simpática."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clopidogrel",
@@ -1493,11 +1441,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Antiagregantes orais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiagregantes orais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloranfenicol",
@@ -1512,11 +1459,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Outros antibacterianos sistémicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de outros antibacterianos sistémicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloreto-de-calcio",
@@ -1536,14 +1482,13 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Cálcio — contexto do catálogo; conteúdo clínico por validar",
-      "Hipercaliemia — estabilização/desvio — contexto do catálogo; conteúdo clínico por validar",
-      "Bloqueadores dos canais de cálcio — contexto do catálogo; conteúdo clínico por validar",
-      "Hipocalcemia/hipoparatiroidismo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cálcio.",
+      "Utilização em UCI no contexto de hipercaliemia — estabilização/desvio.",
+      "Utilização em UCI no contexto de bloqueadores dos canais de cálcio.",
+      "Utilização em UCI no contexto de hipocalcemia/hipoparatiroidismo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloreto-de-magnesio",
@@ -1558,11 +1503,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Magnésio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de magnésio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "potassium-chloride",
@@ -1581,12 +1525,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Potássio — contexto do catálogo; conteúdo clínico por validar",
-      "Alcalose metabólica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de potássio.",
+      "Utilização em UCI no contexto de alcalose metabólica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloreto-de-sodio-0-9",
@@ -1603,12 +1546,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Cristalóide não balanceado — contexto do catálogo; conteúdo clínico por validar",
-      "Crise adrenal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cristalóide não balanceado.",
+      "Utilização em UCI no contexto de crise adrenal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloreto-de-sodio-23-4",
@@ -1623,11 +1565,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Sódio hipertónico — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sódio hipertónico."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloreto-de-sodio-3",
@@ -1642,11 +1583,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Sódio hipertónico — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sódio hipertónico."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloreto-de-sodio-7-5",
@@ -1661,11 +1601,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Sódio hipertónico — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sódio hipertónico."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloreto-de-sodio-hipertonico",
@@ -1682,12 +1621,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Hiponatremia/SIADH — contexto do catálogo; conteúdo clínico por validar",
-      "Osmoterapia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hiponatremia/siadh.",
+      "Utilização em UCI no contexto de osmoterapia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clorotiazida",
@@ -1702,11 +1640,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Tiazidas e semelhantes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tiazidas e semelhantes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clortalidona",
@@ -1721,11 +1658,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Tiazidas e semelhantes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tiazidas e semelhantes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "colestiramina",
@@ -1742,12 +1678,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Diarreia não infecciosa seleccionada — contexto do catálogo; conteúdo clínico por validar",
-      "Tempestade tiroideia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de diarreia não infecciosa seleccionada.",
+      "Utilização em UCI no contexto de tempestade tiroideia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "colistimetato-de-sodio-colistina",
@@ -1762,11 +1697,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Polimixinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de polimixinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "concentrado-de-complexo-protrombinico",
@@ -1781,11 +1715,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Hemorragia pós-parto — hemostase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemorragia pós-parto — hemostase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "concentrado-de-complexo-protrombinico-de-4-factores",
@@ -1805,14 +1738,13 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Reversão de antagonistas da vitamina K — contexto do catálogo; conteúdo clínico por validar",
-      "Reversão de inibidores do factor Xa — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia intracraniana — reversão — contexto do catálogo; conteúdo clínico por validar",
-      "Concentrados de factores/hemostáticos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão de antagonistas da vitamina k.",
+      "Utilização em UCI no contexto de reversão de inibidores do factor xa.",
+      "Utilização em UCI no contexto de hemorragia intracraniana — reversão.",
+      "Utilização em UCI no contexto de concentrados de factores/hemostáticos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "concentrado-de-fibrinogenio",
@@ -1829,12 +1761,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Concentrados de factores/hemostáticos — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia pós-parto — hemostase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de concentrados de factores/hemostáticos.",
+      "Utilização em UCI no contexto de hemorragia pós-parto — hemostase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "concentrado-eritrocitario",
@@ -1849,11 +1780,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Hemocomponentes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemocomponentes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "concentrado-plaquetario",
@@ -1868,11 +1798,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Hemocomponentes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemocomponentes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "crioprecipitado",
@@ -1887,11 +1816,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Hemocomponentes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemocomponentes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dabigatrano",
@@ -1906,11 +1834,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Anticoagulantes orais directos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anticoagulantes orais directos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dalteparina",
@@ -1925,11 +1852,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Heparinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de heparinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "danaparoide",
@@ -1946,12 +1872,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Anticoagulantes alternativos na HIT — contexto do catálogo; conteúdo clínico por validar",
-      "Trombocitopenia induzida por heparina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anticoagulantes alternativos na hit.",
+      "Utilização em UCI no contexto de trombocitopenia induzida por heparina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dantroleno",
@@ -1967,12 +1892,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Síndrome neuroléptica maligna — contexto do catálogo; conteúdo clínico por validar",
-      "Hipertermia maligna — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndrome neuroléptica maligna.",
+      "Utilização em UCI no contexto de hipertermia maligna."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "daptomicina",
@@ -1987,11 +1911,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Lipopeptídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de lipopeptídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "desferroxamina",
@@ -2006,11 +1929,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Ferro — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de ferro."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "desmopressina",
@@ -2027,12 +1949,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Antifibrinolíticos/hemostáticos — contexto do catálogo; conteúdo clínico por validar",
-      "Diabetes insípida — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antifibrinolíticos/hemostáticos.",
+      "Utilização em UCI no contexto de diabetes insípida."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dexametasona",
@@ -2058,18 +1979,17 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Corticóides sistémicos — contexto do catálogo; conteúdo clínico por validar",
-      "Hipertermia/hiperactividade simpática endócrina — contexto do catálogo; conteúdo clínico por validar",
-      "Corticoterapia respiratória — contexto do catálogo; conteúdo clínico por validar",
-      "Edema da via aérea/estridor — contexto do catálogo; conteúdo clínico por validar",
-      "Púrpura trombocitopénica imune — contexto do catálogo; conteúdo clínico por validar",
-      "Corticoterapia de pulso — contexto do catálogo; conteúdo clínico por validar",
-      "Síndrome de activação macrofágica/HLH — contexto do catálogo; conteúdo clínico por validar",
-      "Maturação pulmonar fetal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de corticóides sistémicos.",
+      "Utilização em UCI no contexto de hipertermia/hiperactividade simpática endócrina.",
+      "Utilização em UCI no contexto de corticoterapia respiratória.",
+      "Utilização em UCI no contexto de edema da via aérea/estridor.",
+      "Utilização em UCI no contexto de púrpura trombocitopénica imune.",
+      "Utilização em UCI no contexto de corticoterapia de pulso.",
+      "Utilização em UCI no contexto de síndrome de activação macrofágica/hlh.",
+      "Utilização em UCI no contexto de maturação pulmonar fetal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dexmedetomidina",
@@ -2085,12 +2005,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Sedativos principais — contexto do catálogo; conteúdo clínico por validar",
-      "Abstinência alcoólica/simpática — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sedativos principais.",
+      "Utilização em UCI no contexto de abstinência alcoólica/simpática."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "diazepam",
@@ -2107,12 +2026,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Benzodiazepinas para crise/estado de mal — contexto do catálogo; conteúdo clínico por validar",
-      "Abstinência alcoólica/simpática — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de benzodiazepinas para crise/estado de mal.",
+      "Utilização em UCI no contexto de abstinência alcoólica/simpática."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "digoxina",
@@ -2127,11 +2045,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Fibrilhação/flutter auricular — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fibrilhação/flutter auricular."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "diltiazem",
@@ -2147,12 +2064,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Taquicardia supraventricular — contexto do catálogo; conteúdo clínico por validar",
-      "Fibrilhação/flutter auricular — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de taquicardia supraventricular.",
+      "Utilização em UCI no contexto de fibrilhação/flutter auricular."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dinitrato-de-isossorbida",
@@ -2167,11 +2083,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Nitratos e vasodilatadores — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nitratos e vasodilatadores."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dobutamina",
@@ -2188,12 +2103,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Inotrópicos — contexto do catálogo; conteúdo clínico por validar",
-      "Insuficiência cardíaca aguda — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inotrópicos.",
+      "Utilização em UCI no contexto de insuficiência cardíaca aguda."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dopamina",
@@ -2210,12 +2124,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Vasopressores alternativos/resgate — contexto do catálogo; conteúdo clínico por validar",
-      "Bradicardia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasopressores alternativos/resgate.",
+      "Utilização em UCI no contexto de bradicardia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "doxiciclina",
@@ -2232,12 +2145,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Tetraciclinas — contexto do catálogo; conteúdo clínico por validar",
-      "Malária — tratamento complementar — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tetraciclinas.",
+      "Utilização em UCI no contexto de malária — tratamento complementar."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "edoxabano",
@@ -2252,11 +2164,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Anticoagulantes orais directos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anticoagulantes orais directos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "efedrina",
@@ -2271,11 +2182,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "vasopressors-inotropes"
     ],
     "indications": [
-      "Cronotrópicos/suporte peri-intubação — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cronotrópicos/suporte peri-intubação."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "electrolitos-para-nutricao-parenterica",
@@ -2290,11 +2200,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Nutrição parentérica — aditivos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nutrição parentérica — aditivos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "emulsao-lipidica-com-oleo-de-peixe",
@@ -2309,11 +2218,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Nutrição parentérica — macronutrientes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nutrição parentérica — macronutrientes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "emulsao-lipidica-de-oleo-de-soja",
@@ -2328,11 +2236,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Nutrição parentérica — macronutrientes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nutrição parentérica — macronutrientes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "emulsao-lipidica-intravenosa",
@@ -2349,13 +2256,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Beta-bloqueadores — contexto do catálogo; conteúdo clínico por validar",
-      "Bloqueadores dos canais de cálcio — contexto do catálogo; conteúdo clínico por validar",
-      "Anestésicos locais e fármacos lipofílicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de beta-bloqueadores.",
+      "Utilização em UCI no contexto de bloqueadores dos canais de cálcio.",
+      "Utilização em UCI no contexto de anestésicos locais e fármacos lipofílicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "emulsao-lipidica-mct-lct",
@@ -2370,11 +2276,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Nutrição parentérica — macronutrientes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nutrição parentérica — macronutrientes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "enoxaparin",
@@ -2393,11 +2298,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Heparinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de heparinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "eplerenona",
@@ -2412,11 +2316,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Antagonistas da aldosterona — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas da aldosterona."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "epoprostenol-inalado",
@@ -2431,11 +2334,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Vasodilatadores pulmonares inalados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasodilatadores pulmonares inalados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "eritromicina",
@@ -2452,12 +2354,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Macrólidos — contexto do catálogo; conteúdo clínico por validar",
-      "Procinéticos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de macrólidos.",
+      "Utilização em UCI no contexto de procinéticos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ertapenem",
@@ -2472,11 +2373,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Carbapenemes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de carbapenemes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "esmolol",
@@ -2499,17 +2399,16 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Taquicardia supraventricular — contexto do catálogo; conteúdo clínico por validar",
-      "Fibrilhação/flutter auricular — contexto do catálogo; conteúdo clínico por validar",
-      "Emergência hipertensiva — beta/bloqueio misto — contexto do catálogo; conteúdo clínico por validar",
-      "Síndrome coronária aguda — anti-isquémicos — contexto do catálogo; conteúdo clínico por validar",
-      "Tempestade tiroideia — contexto do catálogo; conteúdo clínico por validar",
-      "Crise de feocromocitoma — contexto do catálogo; conteúdo clínico por validar",
-      "Hipertermia/hiperactividade simpática endócrina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de taquicardia supraventricular.",
+      "Utilização em UCI no contexto de fibrilhação/flutter auricular.",
+      "Utilização em UCI no contexto de emergência hipertensiva — beta/bloqueio misto.",
+      "Utilização em UCI no contexto de síndrome coronária aguda — anti-isquémicos.",
+      "Utilização em UCI no contexto de tempestade tiroideia.",
+      "Utilização em UCI no contexto de crise de feocromocitoma.",
+      "Utilização em UCI no contexto de hipertermia/hiperactividade simpática endócrina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "esomeprazol",
@@ -2524,11 +2423,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Inibidores da bomba de protões — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores da bomba de protões."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "espironolactona",
@@ -2543,11 +2441,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Antagonistas da aldosterona — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas da aldosterona."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "etanol-intravenoso",
@@ -2562,11 +2459,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Álcoois tóxicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de álcoois tóxicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "etomidato",
@@ -2581,11 +2477,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Sedativos/indutores para procedimentos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sedativos/indutores para procedimentos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fenilefrina",
@@ -2600,11 +2495,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "vasopressors-inotropes"
     ],
     "indications": [
-      "Vasopressores alternativos/resgate — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasopressores alternativos/resgate."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fenitoina",
@@ -2621,12 +2515,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Segunda linha no estado de mal — contexto do catálogo; conteúdo clínico por validar",
-      "Profilaxia de crise após lesão cerebral — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de segunda linha no estado de mal.",
+      "Utilização em UCI no contexto de profilaxia de crise após lesão cerebral."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fenobarbital",
@@ -2643,12 +2536,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Segunda linha/alternativas intravenosas — contexto do catálogo; conteúdo clínico por validar",
-      "Abstinência alcoólica/simpática — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de segunda linha/alternativas intravenosas.",
+      "Utilização em UCI no contexto de abstinência alcoólica/simpática."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fentanilo",
@@ -2663,11 +2555,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides de perfusão/uso frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides de perfusão/uso frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fidaxomicina",
@@ -2682,11 +2573,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Clostridioides difficile — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de clostridioides difficile."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "flucitosina",
@@ -2701,11 +2591,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Antimetabolitos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antimetabolitos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "flucloxacilina",
@@ -2720,11 +2609,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Penicilinas naturais e antiestafilocócicas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de penicilinas naturais e antiestafilocócicas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fluconazole",
@@ -2741,11 +2629,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Azóis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de azóis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fludrocortisona",
@@ -2760,11 +2647,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Corticóide mineralocorticóide — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de corticóide mineralocorticóide."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "flumazenilo",
@@ -2779,10 +2665,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Benzodiazepinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de benzodiazepinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Uso seleccionado devido ao risco de convulsões/abstinência."
     ]
   },
   {
@@ -2801,11 +2688,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Álcoois tóxicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de álcoois tóxicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fondaparinux",
@@ -2822,12 +2708,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Inibidor indirecto do factor Xa — contexto do catálogo; conteúdo clínico por validar",
-      "Trombocitopenia induzida por heparina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidor indirecto do factor xa.",
+      "Utilização em UCI no contexto de trombocitopenia induzida por heparina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "foscarnet",
@@ -2842,11 +2727,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Citomegalovírus — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de citomegalovírus."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fosfato-de-potassio",
@@ -2862,12 +2746,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Potássio — contexto do catálogo; conteúdo clínico por validar",
-      "Fósforo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de potássio.",
+      "Utilização em UCI no contexto de fósforo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fosfato-de-sodio",
@@ -2882,11 +2765,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Fósforo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fósforo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fosfenitoina",
@@ -2901,11 +2783,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Segunda linha no estado de mal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de segunda linha no estado de mal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fosfomicina-intravenosa",
@@ -2920,11 +2801,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Outros antibacterianos sistémicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de outros antibacterianos sistémicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fragmentos-fab-antidigoxina",
@@ -2939,11 +2819,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Digoxina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de digoxina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "furosemide",
@@ -2962,12 +2841,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Insuficiência cardíaca aguda — contexto do catálogo; conteúdo clínico por validar",
-      "Diuréticos de ansa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insuficiência cardíaca aguda.",
+      "Utilização em UCI no contexto de diuréticos de ansa."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ganciclovir",
@@ -2982,11 +2860,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Citomegalovírus — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de citomegalovírus."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "gentamicina",
@@ -3001,11 +2878,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminoglicosídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminoglicosídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicerina",
@@ -3020,11 +2896,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Laxantes estimulantes/rectais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de laxantes estimulantes/rectais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicopirrolato",
@@ -3039,11 +2914,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Reversão por anticolinesterásico — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão por anticolinesterásico."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicose",
@@ -3062,13 +2936,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Hipercaliemia — estabilização/desvio — contexto do catálogo; conteúdo clínico por validar",
-      "Sulfonilureias — contexto do catálogo; conteúdo clínico por validar",
-      "Crise adrenal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercaliemia — estabilização/desvio.",
+      "Utilização em UCI no contexto de sulfonilureias.",
+      "Utilização em UCI no contexto de crise adrenal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicose-10",
@@ -3083,11 +2956,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Glicose hipertónica/hipoglicemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicose hipertónica/hipoglicemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicose-20",
@@ -3102,11 +2974,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Glicose hipertónica/hipoglicemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicose hipertónica/hipoglicemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicose-30",
@@ -3121,11 +2992,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Glicose hipertónica/hipoglicemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicose hipertónica/hipoglicemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicose-50",
@@ -3140,11 +3010,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Glicose hipertónica/hipoglicemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicose hipertónica/hipoglicemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicose-hipertonica",
@@ -3159,11 +3028,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Hipoglicemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipoglicemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glicose-para-nutricao-parenterica",
@@ -3178,11 +3046,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Nutrição parentérica — macronutrientes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nutrição parentérica — macronutrientes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glucagon",
@@ -3199,12 +3066,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Beta-bloqueadores — contexto do catálogo; conteúdo clínico por validar",
-      "Hipoglicemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de beta-bloqueadores.",
+      "Utilização em UCI no contexto de hipoglicemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "glucarpidase",
@@ -3219,11 +3085,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Metotrexato — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de metotrexato."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "gluconato-de-calcio",
@@ -3243,14 +3108,13 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Cálcio — contexto do catálogo; conteúdo clínico por validar",
-      "Hipercaliemia — estabilização/desvio — contexto do catálogo; conteúdo clínico por validar",
-      "Bloqueadores dos canais de cálcio — contexto do catálogo; conteúdo clínico por validar",
-      "Hipocalcemia/hipoparatiroidismo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cálcio.",
+      "Utilização em UCI no contexto de hipercaliemia — estabilização/desvio.",
+      "Utilização em UCI no contexto de bloqueadores dos canais de cálcio.",
+      "Utilização em UCI no contexto de hipocalcemia/hipoparatiroidismo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "granisetrom",
@@ -3265,11 +3129,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Antieméticos 5-HT3 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antieméticos 5-ht3."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "haloperidol",
@@ -3286,12 +3149,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Agitação e delirium — contexto do catálogo; conteúdo clínico por validar",
-      "Antieméticos alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de agitação e delirium.",
+      "Utilização em UCI no contexto de antieméticos alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "heparina-nao-fraccionada",
@@ -3306,11 +3168,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Heparinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de heparinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "hidralazina",
@@ -3327,12 +3188,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Emergência hipertensiva — outros — contexto do catálogo; conteúdo clínico por validar",
-      "Pré-eclâmpsia/eclâmpsia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de emergência hipertensiva — outros.",
+      "Utilização em UCI no contexto de pré-eclâmpsia/eclâmpsia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "hidroclorotiazida",
@@ -3347,11 +3207,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Tiazidas e semelhantes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tiazidas e semelhantes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "hydrocortisone",
@@ -3376,17 +3235,16 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Corticóides sistémicos — contexto do catálogo; conteúdo clínico por validar",
-      "Crise adrenal — contexto do catálogo; conteúdo clínico por validar",
-      "Tempestade tiroideia — contexto do catálogo; conteúdo clínico por validar",
-      "Coma mixedematoso — contexto do catálogo; conteúdo clínico por validar",
-      "Hipercalcemia — alternativas — contexto do catálogo; conteúdo clínico por validar",
-      "Corticoterapia respiratória — contexto do catálogo; conteúdo clínico por validar",
-      "Doação de órgãos/morte cerebral — suporte hormonal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de corticóides sistémicos.",
+      "Utilização em UCI no contexto de crise adrenal.",
+      "Utilização em UCI no contexto de tempestade tiroideia.",
+      "Utilização em UCI no contexto de coma mixedematoso.",
+      "Utilização em UCI no contexto de hipercalcemia — alternativas.",
+      "Utilização em UCI no contexto de corticoterapia respiratória.",
+      "Utilização em UCI no contexto de doação de órgãos/morte cerebral — suporte hormonal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "hidroxiureia",
@@ -3401,11 +3259,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Hiperleucocitose — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hiperleucocitose."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "hidroxocobalamina",
@@ -3424,12 +3281,13 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Vasoplegia refractária — adjuvantes — contexto do catálogo; conteúdo clínico por validar",
-      "Cianeto — contexto do catálogo; conteúdo clínico por validar",
-      "Vitaminas essenciais em UCI — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasoplegia refractária — adjuvantes.",
+      "Utilização em UCI no contexto de cianeto.",
+      "Utilização em UCI no contexto de vitaminas essenciais em uci."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Utilização off-label/seleccionada; remeter também para Toxicologia."
     ]
   },
   {
@@ -3447,12 +3305,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Reversão de dabigatrano — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia intracraniana — reversão — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão de dabigatrano.",
+      "Utilização em UCI no contexto de hemorragia intracraniana — reversão."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "iloprost-inalado",
@@ -3467,11 +3324,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Vasodilatadores pulmonares inalados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasodilatadores pulmonares inalados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "imipenem-cilastatina",
@@ -3486,11 +3342,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Carbapenemes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de carbapenemes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "imipenem-cilastatina-relebactam",
@@ -3505,11 +3360,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Carbapenemes/inibidores — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de carbapenemes/inibidores."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "imunoglobulina-humana-antitetanica",
@@ -3524,11 +3378,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Tétano — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tétano."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "imunoglobulina-humana-intravenosa",
@@ -3549,15 +3402,14 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Miastenia gravis — contexto do catálogo; conteúdo clínico por validar",
-      "Guillain-Barré/CIDP — contexto do catálogo; conteúdo clínico por validar",
-      "Encefalite autoimune — contexto do catálogo; conteúdo clínico por validar",
-      "Púrpura trombocitopénica imune — contexto do catálogo; conteúdo clínico por validar",
-      "Imunoglobulina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de miastenia gravis.",
+      "Utilização em UCI no contexto de guillain-barré/cidp.",
+      "Utilização em UCI no contexto de encefalite autoimune.",
+      "Utilização em UCI no contexto de púrpura trombocitopénica imune.",
+      "Utilização em UCI no contexto de imunoglobulina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-aspart",
@@ -3572,11 +3424,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Insulinas rápidas subcutâneas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insulinas rápidas subcutâneas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-degludec",
@@ -3591,11 +3442,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Insulinas basais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insulinas basais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-detemir",
@@ -3610,11 +3460,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Insulinas basais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insulinas basais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-em-alta-dose-com-euglicemia",
@@ -3630,12 +3479,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Beta-bloqueadores — contexto do catálogo; conteúdo clínico por validar",
-      "Bloqueadores dos canais de cálcio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de beta-bloqueadores.",
+      "Utilização em UCI no contexto de bloqueadores dos canais de cálcio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-glargina",
@@ -3650,11 +3498,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Insulinas basais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insulinas basais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-glulisina",
@@ -3669,11 +3516,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Insulinas rápidas subcutâneas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insulinas rápidas subcutâneas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-humana-regular",
@@ -3688,11 +3534,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Insulina intravenosa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insulina intravenosa."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-lispro",
@@ -3707,11 +3552,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Insulinas rápidas subcutâneas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insulinas rápidas subcutâneas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "insulina-regular",
@@ -3728,12 +3572,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Hipercaliemia — estabilização/desvio — contexto do catálogo; conteúdo clínico por validar",
-      "Doação de órgãos/morte cerebral — suporte hormonal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercaliemia — estabilização/desvio.",
+      "Utilização em UCI no contexto de doação de órgãos/morte cerebral — suporte hormonal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "iodeto-de-potassio",
@@ -3750,12 +3593,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Radionuclídeos — contexto do catálogo; conteúdo clínico por validar",
-      "Tempestade tiroideia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de radionuclídeos.",
+      "Utilização em UCI no contexto de tempestade tiroideia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ipratropio",
@@ -3770,11 +3612,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Anticolinérgicos inalados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anticolinérgicos inalados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "isavuconazol",
@@ -3789,11 +3630,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Azóis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de azóis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "isoprenalina",
@@ -3810,12 +3650,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Cronotrópicos/suporte peri-intubação — contexto do catálogo; conteúdo clínico por validar",
-      "Bradicardia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cronotrópicos/suporte peri-intubação.",
+      "Utilização em UCI no contexto de bradicardia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ivermectina",
@@ -3830,11 +3669,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Estrongiloidíase/hiperinfecção — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de estrongiloidíase/hiperinfecção."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "l-carnitina",
@@ -3851,11 +3689,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Valproato — contexto do catálogo; conteúdo clínico por validar",
-      "Suplementos seleccionados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de valproato.",
+      "Utilização em UCI no contexto de suplementos seleccionados."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Não incluir como terapêutica rotineira sem indicação específica."
     ]
   },
   {
@@ -3873,12 +3712,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Emergência hipertensiva — beta/bloqueio misto — contexto do catálogo; conteúdo clínico por validar",
-      "Pré-eclâmpsia/eclâmpsia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de emergência hipertensiva — beta/bloqueio misto.",
+      "Utilização em UCI no contexto de pré-eclâmpsia/eclâmpsia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lacosamida",
@@ -3893,11 +3731,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Segunda linha/alternativas intravenosas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de segunda linha/alternativas intravenosas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lactato-de-ringer",
@@ -3912,11 +3749,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Cristalóides balanceados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cristalóides balanceados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lactulose",
@@ -3932,12 +3768,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Laxantes osmóticos — contexto do catálogo; conteúdo clínico por validar",
-      "Encefalopatia hepática — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de laxantes osmóticos.",
+      "Utilização em UCI no contexto de encefalopatia hepática."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lansoprazol",
@@ -3952,11 +3787,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Inibidores da bomba de protões — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores da bomba de protões."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "levetiracetam",
@@ -3975,12 +3809,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Segunda linha no estado de mal — contexto do catálogo; conteúdo clínico por validar",
-      "Profilaxia de crise após lesão cerebral — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de segunda linha no estado de mal.",
+      "Utilização em UCI no contexto de profilaxia de crise após lesão cerebral."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "levofloxacina",
@@ -3995,11 +3828,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Fluoroquinolonas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fluoroquinolonas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "levotiroxina-intravenosa",
@@ -4014,11 +3846,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Coma mixedematoso — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de coma mixedematoso."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lidocaina",
@@ -4035,12 +3866,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Anestésicos locais e analgesia regional — contexto do catálogo; conteúdo clínico por validar",
-      "Arritmia ventricular — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anestésicos locais e analgesia regional.",
+      "Utilização em UCI no contexto de arritmia ventricular."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "linezolida",
@@ -4055,11 +3885,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Oxazolidinonas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de oxazolidinonas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "liotironina",
@@ -4074,11 +3903,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Coma mixedematoso — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de coma mixedematoso."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lorazepam",
@@ -4095,12 +3923,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Benzodiazepinas para crise/estado de mal — contexto do catálogo; conteúdo clínico por validar",
-      "Abstinência alcoólica/simpática — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de benzodiazepinas para crise/estado de mal.",
+      "Utilização em UCI no contexto de abstinência alcoólica/simpática."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "macrogol-polietilenoglicol",
@@ -4115,11 +3942,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Laxantes osmóticos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de laxantes osmóticos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "manitol",
@@ -4136,12 +3962,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Diurético osmótico — contexto do catálogo; conteúdo clínico por validar",
-      "Osmoterapia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de diurético osmótico.",
+      "Utilização em UCI no contexto de osmoterapia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "meropenem",
@@ -4156,11 +3981,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Carbapenemes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de carbapenemes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "meropenem-vaborbactam",
@@ -4175,11 +3999,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Carbapenemes/inibidores — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de carbapenemes/inibidores."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metamizol",
@@ -4194,11 +4017,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Analgésicos não opióides — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de analgésicos não opióides."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metilergometrina",
@@ -4213,11 +4035,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Hemorragia pós-parto — uterotónicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemorragia pós-parto — uterotónicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metilprednisolona",
@@ -4243,17 +4064,16 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Colite grave/doença inflamatória — contexto do catálogo; conteúdo clínico por validar",
-      "Corticóides sistémicos — contexto do catálogo; conteúdo clínico por validar",
-      "Corticoterapia respiratória — contexto do catálogo; conteúdo clínico por validar",
-      "Encefalite autoimune — contexto do catálogo; conteúdo clínico por validar",
-      "Púrpura trombótica trombocitopénica — contexto do catálogo; conteúdo clínico por validar",
-      "Púrpura trombocitopénica imune — contexto do catálogo; conteúdo clínico por validar",
-      "Corticoterapia de pulso — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de colite grave/doença inflamatória.",
+      "Utilização em UCI no contexto de corticóides sistémicos.",
+      "Utilização em UCI no contexto de corticoterapia respiratória.",
+      "Utilização em UCI no contexto de encefalite autoimune.",
+      "Utilização em UCI no contexto de púrpura trombótica trombocitopénica.",
+      "Utilização em UCI no contexto de púrpura trombocitopénica imune.",
+      "Utilização em UCI no contexto de corticoterapia de pulso."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metoclopramida",
@@ -4268,11 +4088,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Procinéticos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de procinéticos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metolazona",
@@ -4287,11 +4106,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Tiazidas e semelhantes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tiazidas e semelhantes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metoprolol",
@@ -4309,13 +4127,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Taquicardia supraventricular — contexto do catálogo; conteúdo clínico por validar",
-      "Fibrilhação/flutter auricular — contexto do catálogo; conteúdo clínico por validar",
-      "Síndrome coronária aguda — anti-isquémicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de taquicardia supraventricular.",
+      "Utilização em UCI no contexto de fibrilhação/flutter auricular.",
+      "Utilização em UCI no contexto de síndrome coronária aguda — anti-isquémicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metronidazol",
@@ -4332,12 +4149,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Nitroimidazóis — contexto do catálogo; conteúdo clínico por validar",
-      "Amebíase e giardíase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nitroimidazóis.",
+      "Utilização em UCI no contexto de amebíase e giardíase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "micafungina",
@@ -4352,11 +4168,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Equinocandinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de equinocandinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "midazolam",
@@ -4375,14 +4190,13 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Benzodiazepinas para crise/estado de mal — contexto do catálogo; conteúdo clínico por validar",
-      "Estado de mal refractário — anestésicos — contexto do catálogo; conteúdo clínico por validar",
-      "Sedativos principais — contexto do catálogo; conteúdo clínico por validar",
-      "Abstinência alcoólica/simpática — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de benzodiazepinas para crise/estado de mal.",
+      "Utilização em UCI no contexto de estado de mal refractário — anestésicos.",
+      "Utilização em UCI no contexto de sedativos principais.",
+      "Utilização em UCI no contexto de abstinência alcoólica/simpática."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "milrinona",
@@ -4401,13 +4215,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Inotrópicos — contexto do catálogo; conteúdo clínico por validar",
-      "Insuficiência cardíaca aguda — contexto do catálogo; conteúdo clínico por validar",
-      "Vasospasmo refractário — seleccionado — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inotrópicos.",
+      "Utilização em UCI no contexto de insuficiência cardíaca aguda.",
+      "Utilização em UCI no contexto de vasospasmo refractário — seleccionado."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "minociclina",
@@ -4422,11 +4235,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tetraciclinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tetraciclinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "misoprostol",
@@ -4441,11 +4253,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Hemorragia pós-parto — uterotónicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemorragia pós-parto — uterotónicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "morfina",
@@ -4460,11 +4271,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides de perfusão/uso frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides de perfusão/uso frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "moxifloxacina",
@@ -4479,11 +4289,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Fluoroquinolonas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fluoroquinolonas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "multivitaminico-intravenoso",
@@ -4498,11 +4307,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Nutrição parentérica — aditivos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nutrição parentérica — aditivos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "n-acetilcisteina",
@@ -4520,13 +4328,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Paracetamol — contexto do catálogo; conteúdo clínico por validar",
-      "Cogumelos amatoxínicos — contexto do catálogo; conteúdo clínico por validar",
-      "Falência hepática aguda — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de paracetamol.",
+      "Utilização em UCI no contexto de cogumelos amatoxínicos.",
+      "Utilização em UCI no contexto de falência hepática aguda."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "naloxona",
@@ -4541,11 +4348,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Opióides — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "neostigmina",
@@ -4564,13 +4370,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Reversão por anticolinesterásico — contexto do catálogo; conteúdo clínico por validar",
-      "Procinéticos/íleo — contexto do catálogo; conteúdo clínico por validar",
-      "Miastenia gravis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão por anticolinesterásico.",
+      "Utilização em UCI no contexto de procinéticos/íleo.",
+      "Utilização em UCI no contexto de miastenia gravis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nicardipina",
@@ -4587,12 +4392,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Emergência hipertensiva — bloqueadores dos canais de cálcio — contexto do catálogo; conteúdo clínico por validar",
-      "Crise de feocromocitoma — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de emergência hipertensiva — bloqueadores dos canais de cálcio.",
+      "Utilização em UCI no contexto de crise de feocromocitoma."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nifedipina",
@@ -4608,12 +4412,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Pré-eclâmpsia/eclâmpsia — contexto do catálogo; conteúdo clínico por validar",
-      "Tocólise — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de pré-eclâmpsia/eclâmpsia.",
+      "Utilização em UCI no contexto de tocólise."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nimodipina",
@@ -4628,11 +4431,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Hemorragia subaracnoideia — vasospasmo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemorragia subaracnoideia — vasospasmo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nirmatrelvir-ritonavir",
@@ -4647,11 +4449,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "SARS-CoV-2 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sars-cov-2."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nitroglicerina",
@@ -4668,13 +4469,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Nitratos e vasodilatadores — contexto do catálogo; conteúdo clínico por validar",
-      "Síndrome coronária aguda — anti-isquémicos — contexto do catálogo; conteúdo clínico por validar",
-      "Insuficiência cardíaca aguda — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nitratos e vasodilatadores.",
+      "Utilização em UCI no contexto de síndrome coronária aguda — anti-isquémicos.",
+      "Utilização em UCI no contexto de insuficiência cardíaca aguda."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nitroprussiato-de-sodio",
@@ -4689,11 +4489,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Nitratos e vasodilatadores — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nitratos e vasodilatadores."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "norepinephrine",
@@ -4711,11 +4510,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "vasopressors-inotropes"
     ],
     "indications": [
-      "Vasopressores de primeira linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasopressores de primeira linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "obidoxima",
@@ -4730,11 +4528,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Organofosforados/carbamatos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de organofosforados/carbamatos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "octreotido",
@@ -4751,12 +4548,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Sulfonilureias — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia varicosa/hipertensão portal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sulfonilureias.",
+      "Utilização em UCI no contexto de hemorragia varicosa/hipertensão portal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "olanzapina",
@@ -4771,11 +4567,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Agitação e delirium — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de agitação e delirium."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "oligoelementos-intravenosos",
@@ -4790,11 +4585,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Nutrição parentérica — aditivos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nutrição parentérica — aditivos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "omeprazol",
@@ -4809,11 +4603,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Inibidores da bomba de protões — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores da bomba de protões."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ondansetrom",
@@ -4828,11 +4621,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Antieméticos 5-HT3 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antieméticos 5-ht3."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "oseltamivir",
@@ -4847,11 +4639,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Influenza — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de influenza."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "oxido-nitrico-inalado",
@@ -4868,12 +4659,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Choque obstrutivo/hipertensão pulmonar — contexto do catálogo; conteúdo clínico por validar",
-      "Vasodilatadores pulmonares inalados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de choque obstrutivo/hipertensão pulmonar.",
+      "Utilização em UCI no contexto de vasodilatadores pulmonares inalados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "oxitocina",
@@ -4888,11 +4678,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Hemorragia pós-parto — uterotónicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hemorragia pós-parto — uterotónicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "palonossetrom",
@@ -4907,11 +4696,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Antieméticos 5-HT3 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antieméticos 5-ht3."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pamidronato",
@@ -4926,11 +4714,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Hipercalcemia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercalcemia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pantoprazole",
@@ -4947,11 +4734,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Inibidores da bomba de protões — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores da bomba de protões."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "paracetamol",
@@ -4966,11 +4752,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Analgésicos não opióides — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de analgésicos não opióides."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "patiromer",
@@ -4985,11 +4770,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Hipercaliemia — remoção gastrointestinal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercaliemia — remoção gastrointestinal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pentamidina",
@@ -5004,11 +4788,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Pneumocystis jirovecii — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de pneumocystis jirovecii."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "picossulfato-de-sodio",
@@ -5023,11 +4806,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Laxantes estimulantes/rectais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de laxantes estimulantes/rectais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "piperacilina-tazobactam",
@@ -5042,11 +4824,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Penicilinas antipseudomonas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de penicilinas antipseudomonas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "piridostigmina",
@@ -5061,11 +4842,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Miastenia gravis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de miastenia gravis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "piridoxina",
@@ -5082,12 +4862,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Isoniazida — contexto do catálogo; conteúdo clínico por validar",
-      "Vitaminas essenciais em UCI — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de isoniazida.",
+      "Utilização em UCI no contexto de vitaminas essenciais em uci."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "plasma-fresco-congelado",
@@ -5104,12 +4883,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Reversão de antagonistas da vitamina K — contexto do catálogo; conteúdo clínico por validar",
-      "Hemocomponentes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão de antagonistas da vitamina k.",
+      "Utilização em UCI no contexto de hemocomponentes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "plasma-lyte",
@@ -5124,11 +4902,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Cristalóides balanceados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cristalóides balanceados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "polimixina-b",
@@ -5143,11 +4920,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Polimixinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de polimixinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "posaconazol",
@@ -5162,11 +4938,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Azóis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de azóis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pralidoxima",
@@ -5181,11 +4956,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Organofosforados/carbamatos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de organofosforados/carbamatos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "prasugrel",
@@ -5200,11 +4974,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Antiagregantes orais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiagregantes orais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "prednisolona",
@@ -5220,12 +4993,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Corticóides sistémicos — contexto do catálogo; conteúdo clínico por validar",
-      "Hipercalcemia — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de corticóides sistémicos.",
+      "Utilização em UCI no contexto de hipercalcemia — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "procainamida",
@@ -5240,11 +5012,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Arritmia ventricular — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de arritmia ventricular."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "propiltiouracilo",
@@ -5259,11 +5030,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Tempestade tiroideia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tempestade tiroideia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "propofol",
@@ -5282,12 +5052,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Estado de mal refractário — anestésicos — contexto do catálogo; conteúdo clínico por validar",
-      "Sedativos principais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de estado de mal refractário — anestésicos.",
+      "Utilização em UCI no contexto de sedativos principais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "propranolol",
@@ -5303,12 +5072,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Tempestade tiroideia — contexto do catálogo; conteúdo clínico por validar",
-      "Hipertermia/hiperactividade simpática endócrina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tempestade tiroideia.",
+      "Utilização em UCI no contexto de hipertermia/hiperactividade simpática endócrina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "protamina",
@@ -5325,12 +5093,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Reversão de heparina — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia intracraniana — reversão — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão de heparina.",
+      "Utilização em UCI no contexto de hemorragia intracraniana — reversão."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "quetiapina",
@@ -5345,11 +5112,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Agitação e delirium — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de agitação e delirium."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "quinina",
@@ -5364,11 +5130,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Malária grave — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de malária grave."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rasburicase",
@@ -5383,11 +5148,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Síndrome de lise tumoral — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndrome de lise tumoral."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "remdesivir",
@@ -5402,11 +5166,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "SARS-CoV-2 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sars-cov-2."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "remifentanilo",
@@ -5421,11 +5184,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides de perfusão/uso frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides de perfusão/uso frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rifampicina",
@@ -5441,12 +5203,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Rifamicinas — contexto do catálogo; conteúdo clínico por validar",
-      "Tuberculostáticos de primeira linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de rifamicinas.",
+      "Utilização em UCI no contexto de tuberculostáticos de primeira linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rifaximina",
@@ -5461,11 +5222,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Encefalopatia hepática — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de encefalopatia hepática."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rituximab",
@@ -5484,13 +5244,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Encefalite autoimune — contexto do catálogo; conteúdo clínico por validar",
-      "Púrpura trombótica trombocitopénica — contexto do catálogo; conteúdo clínico por validar",
-      "Depleção de células B — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de encefalite autoimune.",
+      "Utilização em UCI no contexto de púrpura trombótica trombocitopénica.",
+      "Utilização em UCI no contexto de depleção de células b."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rivaroxabano",
@@ -5505,11 +5264,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Anticoagulantes orais directos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anticoagulantes orais directos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rocuronium",
@@ -5526,11 +5284,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Não despolarizantes — início rápido/intermédio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de não despolarizantes — início rápido/intermédio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "salbutamol",
@@ -5547,12 +5304,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Hipercaliemia — estabilização/desvio — contexto do catálogo; conteúdo clínico por validar",
-      "Beta-2 agonistas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercaliemia — estabilização/desvio.",
+      "Utilização em UCI no contexto de beta-2 agonistas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sene",
@@ -5567,11 +5323,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Laxantes estimulantes/rectais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de laxantes estimulantes/rectais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "silibinina",
@@ -5586,11 +5341,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Cogumelos amatoxínicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cogumelos amatoxínicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "solucao-de-hartmann",
@@ -5605,11 +5359,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Cristalóides balanceados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cristalóides balanceados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "solucao-de-lugol",
@@ -5624,11 +5377,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Tempestade tiroideia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tempestade tiroideia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "solucoes-de-aminoacidos",
@@ -5643,11 +5395,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Nutrição parentérica — macronutrientes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nutrição parentérica — macronutrientes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sugamadex",
@@ -5662,11 +5413,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Reversão específica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão específica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sulfato-de-magnesio",
@@ -5687,14 +5437,13 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Arritmia ventricular — contexto do catálogo; conteúdo clínico por validar",
-      "Magnésio — contexto do catálogo; conteúdo clínico por validar",
-      "Adjuvantes na broncoconstrição grave — contexto do catálogo; conteúdo clínico por validar",
-      "Pré-eclâmpsia/eclâmpsia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de arritmia ventricular.",
+      "Utilização em UCI no contexto de magnésio.",
+      "Utilização em UCI no contexto de adjuvantes na broncoconstrição grave.",
+      "Utilização em UCI no contexto de pré-eclâmpsia/eclâmpsia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "suxametonio-succinilcolina",
@@ -5709,11 +5458,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Despolarizante — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de despolarizante."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tacrolimus",
@@ -5728,11 +5476,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Inibidores da calcineurina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores da calcineurina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "teicoplanina",
@@ -5747,11 +5494,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Glicopeptídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicopeptídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tenecteplase",
@@ -5768,12 +5514,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Fibrinolíticos — contexto do catálogo; conteúdo clínico por validar",
-      "AVC isquémico — trombólise — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fibrinolíticos.",
+      "Utilização em UCI no contexto de avc isquémico — trombólise."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "terbutalina",
@@ -5790,12 +5535,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Beta-2 agonistas — contexto do catálogo; conteúdo clínico por validar",
-      "Tocólise — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de beta-2 agonistas.",
+      "Utilização em UCI no contexto de tocólise."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "terlipressina",
@@ -5812,12 +5556,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Vasopressores alternativos/resgate — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia varicosa/hipertensão portal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasopressores alternativos/resgate.",
+      "Utilização em UCI no contexto de hemorragia varicosa/hipertensão portal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tiamazol-metimazol",
@@ -5832,11 +5575,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Tempestade tiroideia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tempestade tiroideia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tiamina",
@@ -5853,12 +5595,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Abstinência alcoólica/simpática — contexto do catálogo; conteúdo clínico por validar",
-      "Vitaminas essenciais em UCI — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de abstinência alcoólica/simpática.",
+      "Utilização em UCI no contexto de vitaminas essenciais em uci."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ticagrelor",
@@ -5873,11 +5614,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Antiagregantes orais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiagregantes orais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tigeciclina",
@@ -5892,11 +5632,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Glicilciclinas e derivados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicilciclinas e derivados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tinzaparina",
@@ -5911,11 +5650,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Heparinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de heparinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tiopental",
@@ -5932,12 +5670,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Estado de mal refractário — anestésicos — contexto do catálogo; conteúdo clínico por validar",
-      "Sedativos/indutores para procedimentos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de estado de mal refractário — anestésicos.",
+      "Utilização em UCI no contexto de sedativos/indutores para procedimentos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tiossulfato-de-sodio",
@@ -5952,11 +5689,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Cianeto — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cianeto."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tobramicina",
@@ -5971,11 +5707,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminoglicosídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminoglicosídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "torasemida",
@@ -5990,11 +5725,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Diuréticos de ansa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de diuréticos de ansa."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "trimetoprim-sulfametoxazol",
@@ -6011,12 +5745,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Antifolatos — contexto do catálogo; conteúdo clínico por validar",
-      "Pneumocystis jirovecii — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antifolatos.",
+      "Utilização em UCI no contexto de pneumocystis jirovecii."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ureia-oral",
@@ -6033,12 +5766,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Osmótico para hiponatremia — contexto do catálogo; conteúdo clínico por validar",
-      "Hiponatremia/SIADH — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de osmótico para hiponatremia.",
+      "Utilização em UCI no contexto de hiponatremia/siadh."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "valaciclovir",
@@ -6053,11 +5785,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Herpes simplex e varicela-zoster — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de herpes simplex e varicela-zoster."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "valganciclovir",
@@ -6072,11 +5803,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Citomegalovírus — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de citomegalovírus."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "valproato-de-sodio",
@@ -6091,11 +5821,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Segunda linha no estado de mal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de segunda linha no estado de mal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vancomicina",
@@ -6110,11 +5839,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Glicopeptídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicopeptídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vancomicina-oral-enterica",
@@ -6129,11 +5857,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Clostridioides difficile — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de clostridioides difficile."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "varfarina",
@@ -6148,11 +5875,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Antagonistas da vitamina K — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas da vitamina k."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vasopressina",
@@ -6171,13 +5897,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Vasopressores de primeira linha — contexto do catálogo; conteúdo clínico por validar",
-      "Diabetes insípida — contexto do catálogo; conteúdo clínico por validar",
-      "Doação de órgãos/morte cerebral — suporte hormonal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasopressores de primeira linha.",
+      "Utilização em UCI no contexto de diabetes insípida.",
+      "Utilização em UCI no contexto de doação de órgãos/morte cerebral — suporte hormonal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "verapamilo",
@@ -6193,12 +5918,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Taquicardia supraventricular — contexto do catálogo; conteúdo clínico por validar",
-      "Fibrilhação/flutter auricular — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de taquicardia supraventricular.",
+      "Utilização em UCI no contexto de fibrilhação/flutter auricular."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vitamina-k",
@@ -6217,13 +5941,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Reversão de antagonistas da vitamina K — contexto do catálogo; conteúdo clínico por validar",
-      "Hemorragia intracraniana — reversão — contexto do catálogo; conteúdo clínico por validar",
-      "Vitaminas lipossolúveis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de reversão de antagonistas da vitamina k.",
+      "Utilização em UCI no contexto de hemorragia intracraniana — reversão.",
+      "Utilização em UCI no contexto de vitaminas lipossolúveis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "voriconazol",
@@ -6238,11 +5961,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Azóis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de azóis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "zanamivir",
@@ -6257,11 +5979,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Influenza — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de influenza."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "abacavir",
@@ -6276,11 +5997,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — análogos nucleós(t)idos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — análogos nucleós(t)idos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "abciximab",
@@ -6295,11 +6015,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Inibidores GP IIb/IIIa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores gp iib/iiia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-aminocaproico",
@@ -6314,11 +6033,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Antifibrinolíticos/hemostáticos especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antifibrinolíticos/hemostáticos especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-folinico",
@@ -6333,11 +6051,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Toxoplasmose — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de toxoplasmose."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "albendazol",
@@ -6352,11 +6069,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Helmintas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de helmintas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "alfentanilo",
@@ -6371,11 +6087,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ambrisentano",
@@ -6390,11 +6105,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Antagonistas dos receptores da endotelina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas dos receptores da endotelina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "amilorida",
@@ -6409,11 +6123,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Poupadores de potássio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de poupadores de potássio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "aminofilina",
@@ -6428,11 +6141,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Metilxantinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de metilxantinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "anakinra",
@@ -6448,12 +6160,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Síndromes hiperinflamatórias — contexto do catálogo; conteúdo clínico por validar",
-      "Síndrome de activação macrofágica/HLH — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndromes hiperinflamatórias.",
+      "Utilização em UCI no contexto de síndrome de activação macrofágica/hlh."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "angiotensina-ii",
@@ -6468,11 +6179,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "vasopressors-inotropes"
     ],
     "indications": [
-      "Vasopressores alternativos/resgate — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasopressores alternativos/resgate."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "antitoxina-botulinica",
@@ -6487,11 +6197,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Botulismo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de botulismo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "antiveneno-especifico-regional",
@@ -6507,12 +6216,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Envenenamento por serpente — contexto do catálogo; conteúdo clínico por validar",
-      "Envenenamentos marinhos/aranhas/escorpiões — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de envenenamento por serpente.",
+      "Utilização em UCI no contexto de envenenamentos marinhos/aranhas/escorpiões."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "antiveneno-polivalente",
@@ -6527,11 +6235,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Envenenamento por serpente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de envenenamento por serpente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "aripiprazol",
@@ -6546,11 +6253,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Agitação e delirium — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de agitação e delirium — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "artemeter-lumefantrina",
@@ -6565,11 +6271,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Malária — tratamento complementar — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de malária — tratamento complementar."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "atosibano",
@@ -6584,11 +6289,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Tocólise — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tocólise."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "atovaquona-proguanil",
@@ -6603,11 +6307,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Malária — tratamento complementar — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de malária — tratamento complementar."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "azatioprina",
@@ -6622,11 +6325,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Citotóxicos/imunossupressores — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de citotóxicos/imunossupressores."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "aztreonam-avibactam",
@@ -6641,10 +6343,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Monobactâmicos/inibidores — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de monobactâmicos/inibidores."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Importante para metalo-beta-lactamases; disponibilidade local variável."
     ]
   },
   {
@@ -6660,11 +6363,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Tálio e césio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tálio e césio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "baloxavir-marboxil",
@@ -6679,11 +6381,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Influenza — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de influenza."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "basiliximab",
@@ -6698,11 +6399,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Rejeição de transplante — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de rejeição de transplante."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "betametasona",
@@ -6717,11 +6417,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Maturação pulmonar fetal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de maturação pulmonar fetal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bezlotoxumab",
@@ -6736,10 +6435,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Clostridioides difficile — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de clostridioides difficile."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Bezlotoxumab é um anticorpo monoclonal adjuvante, não um antibiótico."
     ]
   },
   {
@@ -6755,11 +6455,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — inibidores da integrase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — inibidores da integrase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bosentano",
@@ -6774,11 +6473,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Antagonistas dos receptores da endotelina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas dos receptores da endotelina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "brivaracetam",
@@ -6793,11 +6491,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Alternativas intravenosas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de alternativas intravenosas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bupivacaina",
@@ -6812,11 +6509,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Anestésicos locais e analgesia regional — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anestésicos locais e analgesia regional."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "buprenorfina",
@@ -6831,11 +6527,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "carbamazepina",
@@ -6850,11 +6545,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Manutenção oral/entérica frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de manutenção oral/entérica frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cefepima-enmetazobactam",
@@ -6869,10 +6563,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas/inibidores especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas/inibidores especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Disponibilidade regulamentar/local variável."
     ]
   },
   {
@@ -6888,10 +6583,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Cefalosporinas/inibidores especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cefalosporinas/inibidores especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Disponibilidade regulamentar/local variável."
     ]
   },
   {
@@ -6907,11 +6603,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "AINE e adjuvantes analgésicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aine e adjuvantes analgésicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ciclizina",
@@ -6926,11 +6621,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Antieméticos alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antieméticos alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ciclofosfamida",
@@ -6947,12 +6641,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Encefalite autoimune — contexto do catálogo; conteúdo clínico por validar",
-      "Citotóxicos/imunossupressores — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de encefalite autoimune.",
+      "Utilização em UCI no contexto de citotóxicos/imunossupressores."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cidofovir",
@@ -6967,11 +6660,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Citomegalovírus — resistência/profilaxia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de citomegalovírus — resistência/profilaxia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clobazam",
@@ -6986,11 +6678,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Benzodiazepinas de manutenção/adjuntas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de benzodiazepinas de manutenção/adjuntas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clonazepam",
@@ -7005,11 +6696,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Benzodiazepinas de manutenção/adjuntas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de benzodiazepinas de manutenção/adjuntas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cloreto-de-sodio-hipertonico-nebulizado",
@@ -7024,11 +6714,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Mucolíticos e secreções — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de mucolíticos e secreções."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cobre",
@@ -7043,11 +6732,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Oligoelementos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de oligoelementos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "colchicina",
@@ -7062,11 +6750,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Pericardite/inflamação — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de pericardite/inflamação."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "complexo-lipidico-de-anfotericina-b",
@@ -7081,11 +6768,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Polienos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de polienos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "concentrado-de-complexo-protrombinico-activado",
@@ -7102,12 +6788,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Antifibrinolíticos/hemostáticos especiais — contexto do catálogo; conteúdo clínico por validar",
-      "Bypass hemostático — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antifibrinolíticos/hemostáticos especiais.",
+      "Utilização em UCI no contexto de bypass hemostático."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "concentrado-de-factor-von-willebrand",
@@ -7122,11 +6807,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Factores específicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de factores específicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "conivaptano",
@@ -7143,12 +6827,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Antagonistas da vasopressina — contexto do catálogo; conteúdo clínico por validar",
-      "Hiponatremia/SIADH — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas da vasopressina.",
+      "Utilização em UCI no contexto de hiponatremia/siadh."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cromio",
@@ -7163,11 +6846,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Oligoelementos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de oligoelementos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dalbavancina",
@@ -7182,11 +6864,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Lipoglicopeptídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de lipoglicopeptídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "denosumab",
@@ -7201,11 +6882,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Hipercalcemia — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercalcemia — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dexketoprofeno",
@@ -7220,11 +6900,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "AINE e adjuvantes analgésicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aine e adjuvantes analgésicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "diclofenac",
@@ -7239,11 +6918,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "AINE e adjuvantes analgésicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aine e adjuvantes analgésicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dimenidrinato",
@@ -7258,11 +6936,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Antieméticos alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antieméticos alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dimercaprol",
@@ -7277,11 +6954,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Metais pesados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de metais pesados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dolutegravir",
@@ -7296,11 +6972,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — inibidores da integrase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — inibidores da integrase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "domperidona",
@@ -7315,11 +6990,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Procinéticos/íleo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de procinéticos/íleo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dornase-alfa",
@@ -7334,11 +7008,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Mucolíticos e secreções — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de mucolíticos e secreções."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "droperidol",
@@ -7355,12 +7028,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Agitação e delirium — alternativas — contexto do catálogo; conteúdo clínico por validar",
-      "Antieméticos alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de agitação e delirium — alternativas.",
+      "Utilização em UCI no contexto de antieméticos alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "eculizumab",
@@ -7375,11 +7047,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Inibição do complemento — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibição do complemento."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "edetato-de-calcio-dissodico",
@@ -7394,11 +7065,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Metais pesados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de metais pesados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "eltrombopag",
@@ -7413,11 +7083,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Púrpura trombocitopénica imune — segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de púrpura trombocitopénica imune — segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "emtricitabina",
@@ -7432,11 +7101,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — análogos nucleós(t)idos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — análogos nucleós(t)idos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "enalaprilato",
@@ -7451,11 +7119,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Emergência hipertensiva — outros — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de emergência hipertensiva — outros."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "enoximona",
@@ -7470,11 +7137,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "vasopressors-inotropes"
     ],
     "indications": [
-      "Inotrópicos de uso seleccionado — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inotrópicos de uso seleccionado."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "entecavir",
@@ -7489,11 +7155,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Hepatite B — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hepatite b."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "epoprostenol",
@@ -7510,12 +7175,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Choque obstrutivo/hipertensão pulmonar — contexto do catálogo; conteúdo clínico por validar",
-      "Prostaciclinas sistémicas/inaladas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de choque obstrutivo/hipertensão pulmonar.",
+      "Utilização em UCI no contexto de prostaciclinas sistémicas/inaladas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "eptifibatida",
@@ -7530,11 +7194,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Inibidores GP IIb/IIIa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores gp iib/iiia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "eravaciclina",
@@ -7549,11 +7212,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Glicilciclinas e derivados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicilciclinas e derivados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "eslicarbazepina",
@@ -7568,11 +7230,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Manutenção oral/entérica frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de manutenção oral/entérica frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "estreptomicina",
@@ -7587,11 +7248,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminoglicosídeos especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminoglicosídeos especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "etambutol",
@@ -7606,11 +7266,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de primeira linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de primeira linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "etoposido",
@@ -7625,11 +7284,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Síndrome de activação macrofágica/HLH — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndrome de activação macrofágica/hlh."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "everolimus",
@@ -7644,11 +7302,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Inibidores mTOR — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores mtor."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "factor-ix",
@@ -7663,11 +7320,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Factores específicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de factores específicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "factor-viia-recombinante",
@@ -7682,11 +7338,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Bypass hemostático — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de bypass hemostático."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "factor-viii",
@@ -7701,11 +7356,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Factores específicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de factores específicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "factor-xiii",
@@ -7720,11 +7374,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Factores específicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de factores específicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "famotidina",
@@ -7739,11 +7392,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Antagonistas H2 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas h2."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "febuxostat",
@@ -7758,11 +7410,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Síndrome de lise tumoral — alternativa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndrome de lise tumoral — alternativa."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fenoldopam",
@@ -7777,11 +7428,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Emergência hipertensiva — outros — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de emergência hipertensiva — outros."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fenoxibenzamina",
@@ -7796,11 +7446,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Crise de feocromocitoma — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de crise de feocromocitoma."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fentolamina",
@@ -7815,11 +7464,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "endocrine-corticosteroids"
     ],
     "indications": [
-      "Crise de feocromocitoma — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de crise de feocromocitoma."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "filgrastim",
@@ -7834,11 +7482,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Neutropenia seleccionada — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de neutropenia seleccionada."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "fisostigmina",
@@ -7853,11 +7500,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Anticolinérgicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anticolinérgicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "flecainida",
@@ -7872,11 +7518,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Cardioversão farmacológica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cardioversão farmacológica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "gabapentina",
@@ -7891,11 +7536,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Manutenção oral/entérica frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de manutenção oral/entérica frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "globulina-antitimocito",
@@ -7910,11 +7554,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Rejeição de transplante — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de rejeição de transplante."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "hidromorfona",
@@ -7929,11 +7572,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ibuprofeno",
@@ -7950,12 +7592,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "AINE e adjuvantes analgésicos — contexto do catálogo; conteúdo clínico por validar",
-      "Pericardite/inflamação — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aine e adjuvantes analgésicos.",
+      "Utilização em UCI no contexto de pericardite/inflamação."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ibutilida",
@@ -7970,11 +7611,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Cardioversão farmacológica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cardioversão farmacológica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "iloprost",
@@ -7991,12 +7631,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Choque obstrutivo/hipertensão pulmonar — contexto do catálogo; conteúdo clínico por validar",
-      "Prostaciclinas sistémicas/inaladas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de choque obstrutivo/hipertensão pulmonar.",
+      "Utilização em UCI no contexto de prostaciclinas sistémicas/inaladas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "imunoglobulina-anti-d",
@@ -8011,11 +7650,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "critical-obstetrics"
     ],
     "indications": [
-      "Profilaxia Rh — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de profilaxia rh."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "indapamida",
@@ -8030,11 +7668,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Tiazidas e semelhantes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tiazidas e semelhantes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "infliximab",
@@ -8051,12 +7688,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Colite grave/doença inflamatória — contexto do catálogo; conteúdo clínico por validar",
-      "Biológicos seleccionados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de colite grave/doença inflamatória.",
+      "Utilização em UCI no contexto de biológicos seleccionados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "isoflurano",
@@ -8073,12 +7709,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Estado de mal super-refractário — contexto do catálogo; conteúdo clínico por validar",
-      "Sedação inalatória — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de estado de mal super-refractário.",
+      "Utilização em UCI no contexto de sedação inalatória."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "isoniazida",
@@ -8093,11 +7728,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de primeira linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de primeira linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "itraconazol",
@@ -8112,11 +7746,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Azóis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de azóis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "l-ornitina-l-aspartato",
@@ -8131,11 +7764,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Encefalopatia hepática — adjuvante — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de encefalopatia hepática — adjuvante."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lamivudina",
@@ -8151,12 +7783,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Hepatite B — contexto do catálogo; conteúdo clínico por validar",
-      "Antirretrovirais — análogos nucleós(t)idos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hepatite b.",
+      "Utilização em UCI no contexto de antirretrovirais — análogos nucleós(t)idos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lamotrigina",
@@ -8171,11 +7802,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Manutenção oral/entérica frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de manutenção oral/entérica frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "letermovir",
@@ -8190,11 +7820,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Citomegalovírus — resistência/profilaxia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de citomegalovírus — resistência/profilaxia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "levobupivacaina",
@@ -8209,11 +7838,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Anestésicos locais e analgesia regional — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anestésicos locais e analgesia regional."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "levodopa-carbidopa",
@@ -8228,11 +7856,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Parkinsonismo — continuidade/evitar suspensão — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de parkinsonismo — continuidade/evitar suspensão."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "levosimendano",
@@ -8249,12 +7876,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Inotrópicos de uso seleccionado — contexto do catálogo; conteúdo clínico por validar",
-      "Insuficiência cardíaca — adjuvantes seleccionados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inotrópicos de uso seleccionado.",
+      "Utilização em UCI no contexto de insuficiência cardíaca — adjuvantes seleccionados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "levotiroxina",
@@ -8269,11 +7895,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Doação de órgãos/morte cerebral — suporte hormonal — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de doação de órgãos/morte cerebral — suporte hormonal."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "lidocaina-intravenosa",
@@ -8288,11 +7913,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "AINE e adjuvantes analgésicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aine e adjuvantes analgésicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "loperamida",
@@ -8307,11 +7931,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Diarreia não infecciosa seleccionada — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de diarreia não infecciosa seleccionada."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "macitentano",
@@ -8326,11 +7949,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Antagonistas dos receptores da endotelina — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antagonistas dos receptores da endotelina."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "manganes",
@@ -8345,11 +7967,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Oligoelementos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de oligoelementos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "maribavir",
@@ -8364,11 +7985,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Citomegalovírus — resistência/profilaxia — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de citomegalovírus — resistência/profilaxia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "mebendazol",
@@ -8383,11 +8003,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Helmintas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de helmintas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "melatonina",
@@ -8402,11 +8021,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Sono e ritmo circadiano — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sono e ritmo circadiano."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metadona",
@@ -8421,11 +8039,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metaraminol",
@@ -8440,11 +8057,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "vasopressors-inotropes"
     ],
     "indications": [
-      "Vasopressores alternativos/resgate — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasopressores alternativos/resgate."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metilnaltrexona",
@@ -8459,11 +8075,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Obstipação induzida por opióides — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de obstipação induzida por opióides."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "metronidazol-oral-enterico",
@@ -8478,10 +8093,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Clostridioides difficile — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de clostridioides difficile."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Bezlotoxumab é um anticorpo monoclonal adjuvante, não um antibiótico."
     ]
   },
   {
@@ -8497,11 +8113,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Arritmia ventricular — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de arritmia ventricular — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "micofenolato-de-mofetil",
@@ -8516,11 +8131,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Citotóxicos/imunossupressores — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de citotóxicos/imunossupressores."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "mivacurio",
@@ -8535,11 +8149,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Não despolarizantes — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de não despolarizantes — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "n-acetilcisteina-nebulizada",
@@ -8554,11 +8167,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Mucolíticos e secreções — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de mucolíticos e secreções."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nafcilina",
@@ -8573,10 +8185,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Penicilinas especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de penicilinas especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Disponibilidade e preferência variam por país."
     ]
   },
   {
@@ -8592,11 +8205,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Obstipação induzida por opióides — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de obstipação induzida por opióides."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "naloxegol",
@@ -8611,11 +8223,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Obstipação induzida por opióides — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de obstipação induzida por opióides."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nefopam",
@@ -8630,11 +8241,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "AINE e adjuvantes analgésicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aine e adjuvantes analgésicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nicardipina-intra-arterial",
@@ -8649,11 +8259,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neurocritical"
     ],
     "indications": [
-      "Vasospasmo refractário — seleccionado — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vasospasmo refractário — seleccionado."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "omadaciclina",
@@ -8668,11 +8277,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Glicilciclinas e derivados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de glicilciclinas e derivados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "oritavancina",
@@ -8687,11 +8295,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Lipoglicopeptídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de lipoglicopeptídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "oxacilina",
@@ -8706,10 +8313,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Penicilinas especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de penicilinas especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Disponibilidade e preferência variam por país."
     ]
   },
   {
@@ -8725,11 +8333,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Manutenção oral/entérica frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de manutenção oral/entérica frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "oxicodona",
@@ -8744,11 +8351,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pancuronio",
@@ -8763,11 +8369,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Não despolarizantes — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de não despolarizantes — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "paromomicina",
@@ -8782,11 +8387,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Amebíase e giardíase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de amebíase e giardíase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "penicilamina",
@@ -8801,11 +8405,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Metais pesados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de metais pesados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pentobarbital",
@@ -8820,11 +8423,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Estado de mal super-refractário — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de estado de mal super-refractário."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "peramivir",
@@ -8839,10 +8441,33 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Influenza — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de influenza."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": []
+  },
+  {
+    "id": "petidina-meperidina",
+    "name": "Petidina (meperidina)",
+    "aliases": [
+      "pethidine",
+      "meperidina",
+      "meperidine"
+    ],
+    "drugClass": "Opióides alternativos",
+    "priority": "P2",
+    "subcategories": [
+      "Opióides alternativos"
+    ],
+    "categoryIds": [
+      "sedation-analgesia"
+    ],
+    "indications": [
+      "Utilização em UCI no contexto de opióides alternativos."
+    ],
+    "routes": [],
+    "scopeNotes": [
+      "Uso restrito, sobretudo para calafrios; evitar utilização repetida por acumulação de normeperidina."
     ]
   },
   {
@@ -8858,11 +8483,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de primeira linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de primeira linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pirimetamina",
@@ -8877,11 +8501,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Toxoplasmose — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de toxoplasmose."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "plazomicina",
@@ -8896,11 +8519,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Aminoglicosídeos especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de aminoglicosídeos especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "poliestireno-sulfonato-de-calcio",
@@ -8915,11 +8537,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Hipercaliemia — resinas antigas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercaliemia — resinas antigas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "poliestireno-sulfonato-de-sodio",
@@ -8934,11 +8555,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Hipercaliemia — resinas antigas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hipercaliemia — resinas antigas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "praziquantel",
@@ -8953,11 +8573,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Helmintas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de helmintas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pregabalina",
@@ -8972,11 +8591,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Manutenção oral/entérica frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de manutenção oral/entérica frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "primaquina",
@@ -8991,11 +8609,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Malária — tratamento complementar — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de malária — tratamento complementar."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "proclorperazina",
@@ -9010,11 +8627,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Antieméticos alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antieméticos alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "propafenona",
@@ -9029,11 +8645,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Cardioversão farmacológica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cardioversão farmacológica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "prucaloprida",
@@ -9048,11 +8663,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Procinéticos/íleo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de procinéticos/íleo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "racecadotril",
@@ -9067,11 +8681,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Diarreia não infecciosa seleccionada — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de diarreia não infecciosa seleccionada."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "raltegravir",
@@ -9086,11 +8699,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — inibidores da integrase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — inibidores da integrase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ramelteona",
@@ -9105,11 +8717,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Sono e ritmo circadiano — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sono e ritmo circadiano."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ravulizumab",
@@ -9124,11 +8735,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Inibição do complemento — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibição do complemento."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "reteplase",
@@ -9143,11 +8753,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Fibrinolíticos alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fibrinolíticos alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rezafungina",
@@ -9162,11 +8771,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Equinocandinas de longa duração — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de equinocandinas de longa duração."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ribavirina",
@@ -9181,11 +8789,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Vírus sincicial respiratório — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vírus sincicial respiratório."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rifabutina",
@@ -9200,11 +8807,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Rifamicinas especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de rifamicinas especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rifapentina",
@@ -9219,11 +8825,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Rifamicinas especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de rifamicinas especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "risperidona",
@@ -9238,11 +8843,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Agitação e delirium — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de agitação e delirium — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "romiplostim",
@@ -9257,11 +8861,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Púrpura trombocitopénica imune — segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de púrpura trombocitopénica imune — segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ropivacaina",
@@ -9276,11 +8879,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Anestésicos locais e analgesia regional — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anestésicos locais e analgesia regional."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "selenio",
@@ -9295,11 +8897,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Oligoelementos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de oligoelementos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sevoflurano",
@@ -9316,12 +8917,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Estado de mal super-refractário — contexto do catálogo; conteúdo clínico por validar",
-      "Sedação inalatória — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de estado de mal super-refractário.",
+      "Utilização em UCI no contexto de sedação inalatória."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sildenafil",
@@ -9336,11 +8936,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Inibidores PDE5 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores pde5."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sirolimus",
@@ -9355,11 +8954,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Inibidores mTOR — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores mtor."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sotalol",
@@ -9374,11 +8972,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Arritmia ventricular — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de arritmia ventricular — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "succimero",
@@ -9393,11 +8990,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Metais pesados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de metais pesados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sucralfato",
@@ -9412,11 +9008,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "gastrointestinal"
     ],
     "indications": [
-      "Protecção da mucosa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de protecção da mucosa."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sufentanilo",
@@ -9431,11 +9026,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Opióides alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de opióides alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "sulfadiazina",
@@ -9450,11 +9044,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Toxoplasmose — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de toxoplasmose."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tadalafil",
@@ -9469,11 +9062,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Inibidores PDE5 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores pde5."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tedizolida",
@@ -9488,11 +9080,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Oxazolidinonas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de oxazolidinonas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "telavancina",
@@ -9507,11 +9098,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Lipoglicopeptídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de lipoglicopeptídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "temocilina",
@@ -9526,10 +9116,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Penicilinas especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de penicilinas especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Disponibilidade e preferência variam por país."
     ]
   },
   {
@@ -9546,12 +9137,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Hepatite B — contexto do catálogo; conteúdo clínico por validar",
-      "Antirretrovirais — análogos nucleós(t)idos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hepatite b.",
+      "Utilização em UCI no contexto de antirretrovirais — análogos nucleós(t)idos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tenofovir-disoproxil-fumarato",
@@ -9567,12 +9157,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Hepatite B — contexto do catálogo; conteúdo clínico por validar",
-      "Antirretrovirais — análogos nucleós(t)idos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de hepatite b.",
+      "Utilização em UCI no contexto de antirretrovirais — análogos nucleós(t)idos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "teofilina",
@@ -9587,11 +9176,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Metilxantinas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de metilxantinas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tinidazol",
@@ -9608,12 +9196,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Nitroimidazóis especiais — contexto do catálogo; conteúdo clínico por validar",
-      "Amebíase e giardíase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nitroimidazóis especiais.",
+      "Utilização em UCI no contexto de amebíase e giardíase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tiotropio",
@@ -9628,11 +9215,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Anticolinérgicos de longa acção — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anticolinérgicos de longa acção."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tirofibano",
@@ -9647,11 +9233,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Inibidores GP IIb/IIIa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de inibidores gp iib/iiia."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tocilizumab",
@@ -9666,11 +9251,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Síndromes hiperinflamatórias — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de síndromes hiperinflamatórias."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tolvaptano",
@@ -9689,13 +9273,12 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Insuficiência cardíaca — adjuvantes seleccionados — contexto do catálogo; conteúdo clínico por validar",
-      "Antagonistas da vasopressina — contexto do catálogo; conteúdo clínico por validar",
-      "Hiponatremia/SIADH — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de insuficiência cardíaca — adjuvantes seleccionados.",
+      "Utilização em UCI no contexto de antagonistas da vasopressina.",
+      "Utilização em UCI no contexto de hiponatremia/siadh."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "topiramato",
@@ -9710,11 +9293,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Manutenção oral/entérica frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de manutenção oral/entérica frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "trazodona",
@@ -9729,11 +9311,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Sono e ritmo circadiano — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sono e ritmo circadiano."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "treprostinil",
@@ -9748,11 +9329,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Prostaciclinas sistémicas/inaladas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de prostaciclinas sistémicas/inaladas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "triamtereno",
@@ -9767,11 +9347,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Poupadores de potássio — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de poupadores de potássio."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "trimetoprim",
@@ -9786,11 +9365,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Antifolatos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antifolatos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "trometamol-tham",
@@ -9805,11 +9383,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "electrolytes-metabolic"
     ],
     "indications": [
-      "Correcção de acidose — alternativa — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de correcção de acidose — alternativa."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "urapidil",
@@ -9824,11 +9401,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "acute-cardiology"
     ],
     "indications": [
-      "Emergência hipertensiva — outros — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de emergência hipertensiva — outros."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "uroquinase",
@@ -9843,11 +9419,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antithrombotics"
     ],
     "indications": [
-      "Fibrinolíticos alternativos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fibrinolíticos alternativos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vecuronio",
@@ -9862,11 +9437,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "neuromuscular-blockers"
     ],
     "indications": [
-      "Não despolarizantes — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de não despolarizantes — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vernakalant",
@@ -9881,11 +9455,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiarrhythmics"
     ],
     "indications": [
-      "Cardioversão farmacológica — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de cardioversão farmacológica."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vitamina-a",
@@ -9900,11 +9473,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Vitaminas lipossolúveis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vitaminas lipossolúveis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vitamina-d",
@@ -9919,11 +9491,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Vitaminas lipossolúveis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vitaminas lipossolúveis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "vitamina-e",
@@ -9938,11 +9509,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Vitaminas lipossolúveis — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de vitaminas lipossolúveis."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "zidovudina",
@@ -9957,11 +9527,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — análogos nucleós(t)idos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — análogos nucleós(t)idos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "zinco",
@@ -9976,11 +9545,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Oligoelementos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de oligoelementos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ziprasidona",
@@ -9995,11 +9563,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "sedation-analgesia"
     ],
     "indications": [
-      "Agitação e delirium — alternativas — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de agitação e delirium — alternativas."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "zonisamida",
@@ -10014,11 +9581,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Manutenção oral/entérica frequente — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de manutenção oral/entérica frequente."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "abatacept",
@@ -10033,11 +9599,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "immunomodulation-transplant"
     ],
     "indications": [
-      "Biológicos seleccionados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de biológicos seleccionados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-etacrinico",
@@ -10052,11 +9617,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "diuretics"
     ],
     "indications": [
-      "Diurético de ansa alternativo — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de diurético de ansa alternativo."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "acido-para-aminossalicilico",
@@ -10071,11 +9635,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "antimoniato-de-meglumina",
@@ -10090,11 +9653,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Leishmaniose — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de leishmaniose."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "atazanavir",
@@ -10109,11 +9671,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — inibidores da protease/boosters — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — inibidores da protease/boosters."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "bedaquilina",
@@ -10128,11 +9689,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "benznidazol",
@@ -10147,11 +9707,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Tripanossomíase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tripanossomíase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "brincidofovir",
@@ -10166,11 +9725,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Mpox/orthopoxvírus — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de mpox/orthopoxvírus."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cenobamato",
@@ -10185,11 +9743,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Antiepilépticos especializados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiepilépticos especializados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cicloserina",
@@ -10204,11 +9761,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "clofazimina",
@@ -10223,11 +9779,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "cobicistato",
@@ -10242,11 +9797,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — inibidores da protease/boosters — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — inibidores da protease/boosters."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "darunavir",
@@ -10261,11 +9815,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — inibidores da protease/boosters — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — inibidores da protease/boosters."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "delafloxacina",
@@ -10280,11 +9833,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Fluoroquinolonas especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de fluoroquinolonas especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "delamanid",
@@ -10299,11 +9851,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "dextrano",
@@ -10318,10 +9869,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Colóides sintéticos — evitar/uso muito restrito — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de colóides sintéticos — evitar/uso muito restrito."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Devem existir na base para alertas de segurança e restrições, não como escolha preferencial."
     ]
   },
   {
@@ -10337,11 +9889,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — não nucleósidos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — não nucleósidos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "doripenem",
@@ -10356,10 +9907,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Carbapenemes especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de carbapenemes especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Uso e disponibilidade limitados."
     ]
   },
   {
@@ -10375,11 +9927,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — não nucleósidos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — não nucleósidos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "eflornitina",
@@ -10394,11 +9945,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Tripanossomíase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tripanossomíase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "epoetina-alfa",
@@ -10413,11 +9963,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Anemia/deficiência seleccionada — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anemia/deficiência seleccionada."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "espiramicina",
@@ -10432,11 +9981,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Macrólidos especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de macrólidos especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "etionamida",
@@ -10451,11 +9999,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "etossuximida",
@@ -10470,11 +10017,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Antiepilépticos especializados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiepilépticos especializados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "felbamato",
@@ -10489,11 +10035,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Antiepilépticos especializados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiepilépticos especializados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ferro-intravenoso",
@@ -10508,11 +10053,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "hematology-transfusion"
     ],
     "indications": [
-      "Anemia/deficiência seleccionada — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de anemia/deficiência seleccionada."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "gelatina-modificada",
@@ -10527,10 +10071,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Colóides sintéticos — evitar/uso muito restrito — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de colóides sintéticos — evitar/uso muito restrito."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Devem existir na base para alertas de segurança e restrições, não como escolha preferencial."
     ]
   },
   {
@@ -10546,10 +10091,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "nutrition-micronutrients"
     ],
     "indications": [
-      "Suplementos seleccionados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de suplementos seleccionados."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Não incluir como terapêutica rotineira sem indicação específica."
     ]
   },
   {
@@ -10565,10 +10111,11 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "resuscitation-fluids"
     ],
     "indications": [
-      "Colóides sintéticos — evitar/uso muito restrito — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de colóides sintéticos — evitar/uso muito restrito."
     ],
-    "routes": [
-      "Vias de administração por validar"
+    "routes": [],
+    "scopeNotes": [
+      "Devem existir na base para alertas de segurança e restrições, não como escolha preferencial."
     ]
   },
   {
@@ -10584,11 +10131,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Outros antibacterianos sistémicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de outros antibacterianos sistémicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "miltefosina",
@@ -10603,11 +10149,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Leishmaniose — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de leishmaniose."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "molnupiravir",
@@ -10622,11 +10167,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "SARS-CoV-2 — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de sars-cov-2."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nifurtimox",
@@ -10641,11 +10185,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Tripanossomíase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tripanossomíase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "nistatina",
@@ -10660,11 +10203,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antifungals"
     ],
     "indications": [
-      "Tópicos/entéricos relevantes — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tópicos/entéricos relevantes."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ornidazol",
@@ -10679,11 +10221,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Nitroimidazóis especiais — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de nitroimidazóis especiais."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pentetato-de-calcio-trissodico",
@@ -10698,11 +10239,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Radionuclídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de radionuclídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pentetato-de-zinco-trissodico",
@@ -10717,11 +10257,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antidotes-toxicology"
     ],
     "indications": [
-      "Radionuclídeos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de radionuclídeos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "perampanel",
@@ -10736,11 +10275,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Antiepilépticos especializados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiepilépticos especializados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "pretomanid",
@@ -10755,11 +10293,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Tuberculostáticos de segunda linha — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tuberculostáticos de segunda linha."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "primidona",
@@ -10774,11 +10311,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Antiepilépticos especializados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiepilépticos especializados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "quinupristina-dalfopristina",
@@ -10793,11 +10329,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antibiotics"
     ],
     "indications": [
-      "Outros antibacterianos sistémicos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de outros antibacterianos sistémicos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rilpivirina",
@@ -10812,11 +10347,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — não nucleósidos — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — não nucleósidos."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "riociguat",
@@ -10831,11 +10365,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "respiratory-pulmonary"
     ],
     "indications": [
-      "Estimulador da guanilato ciclase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de estimulador da guanilato ciclase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "ritonavir",
@@ -10850,11 +10383,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Antirretrovirais — inibidores da protease/boosters — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antirretrovirais — inibidores da protease/boosters."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "rufinamida",
@@ -10869,11 +10401,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Antiepilépticos especializados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiepilépticos especializados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "stiripentol",
@@ -10888,11 +10419,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiepileptics"
     ],
     "indications": [
-      "Antiepilépticos especializados — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de antiepilépticos especializados."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "suramina",
@@ -10907,11 +10437,10 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antiparasitics"
     ],
     "indications": [
-      "Tripanossomíase — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de tripanossomíase."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   },
   {
     "id": "tecovirimat",
@@ -10926,10 +10455,9 @@ export const catalogSeeds: PlaceholderDrugSeed[] = [
       "antivirals"
     ],
     "indications": [
-      "Mpox/orthopoxvírus — contexto do catálogo; conteúdo clínico por validar"
+      "Utilização em UCI no contexto de mpox/orthopoxvírus."
     ],
-    "routes": [
-      "Vias de administração por validar"
-    ]
+    "routes": [],
+    "scopeNotes": []
   }
 ]

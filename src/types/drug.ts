@@ -6,7 +6,7 @@ export type DrugPriority = 'P1' | 'P2' | 'P3'
 
 export type CrossSourceStatus = 'not-compared' | 'consensus' | 'context-dependent' | 'conflict'
 
-export type DoseAmountUnit = 'mg' | 'mcg' | 'mEq' | 'units'
+export type DoseAmountUnit = 'g' | 'mg' | 'mcg' | 'mEq' | 'units'
 
 export type DoseRateUnit =
   | 'mcg/kg/min'

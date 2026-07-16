@@ -45,7 +45,7 @@ export function calculateWeightDose(
 }
 
 function amountFamily(unit: DoseAmountUnit): 'mass' | 'electrolyte' | 'units' {
-  if (unit === 'mg' || unit === 'mcg') return 'mass'
+  if (unit === 'g' || unit === 'mg' || unit === 'mcg') return 'mass'
   if (unit === 'mEq') return 'electrolyte'
   return 'units'
 }
@@ -57,6 +57,7 @@ function rateFamily(unit: DoseRateUnit): 'mass' | 'electrolyte' | 'units' {
 }
 
 function preparationAmountInBaseUnit(amount: number, unit: DoseAmountUnit): number {
+  if (unit === 'g') return amount * 1_000_000
   return unit === 'mg' ? amount * 1000 : amount
 }
 

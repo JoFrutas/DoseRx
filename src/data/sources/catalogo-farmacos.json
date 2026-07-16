@@ -1659,6 +1659,14 @@
     "Código": "SA",
     "Categoria": "Sedação, analgesia e delirium",
     "Subcategoria": "Opióides alternativos",
+    "Fármaco / produto": "Petidina (meperidina)",
+    "Prioridade": "P2",
+    "Notas de âmbito": "Uso restrito, sobretudo para calafrios; evitar utilização repetida por acumulação de normeperidina."
+  },
+  {
+    "Código": "SA",
+    "Categoria": "Sedação, analgesia e delirium",
+    "Subcategoria": "Opióides alternativos",
     "Fármaco / produto": "Oxicodona",
     "Prioridade": "P2",
     "Notas de âmbito": null
@@ -3422,6 +3430,14 @@
     "Fármaco / produto": "Flumazenilo",
     "Prioridade": "P1",
     "Notas de âmbito": "Uso seleccionado devido ao risco de convulsões/abstinência."
+  },
+  {
+    "Código": "TX",
+    "Categoria": "Antídotos e toxicologia",
+    "Subcategoria": "Descontaminação gastrointestinal",
+    "Fármaco / produto": "Carvão activado",
+    "Prioridade": "P1",
+    "Notas de âmbito": "Usar apenas em intoxicações seleccionadas e com via aérea protegida quando existe risco de aspiração."
   },
   {
     "Código": "TX",

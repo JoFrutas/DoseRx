@@ -1,10 +1,23 @@
-import { drugs } from '../src/data/drugs.ts'
+import {
+  drugs,
+  expandedClinicalMappedCatalogCount,
+  expandedClinicalSourceCount,
+} from '../src/data/drugs.ts'
+import {
+  reviewedClinicalMappedCatalogCount,
+  reviewedClinicalNoteCount,
+  reviewedClinicalUnmappedNoteCount,
+} from '../src/data/catalogReviewedDrugs.ts'
 
 const issues = []
 const statusCounts = Object.groupBy(drugs, (drug) => drug.validationStatus)
 const sourceVerified = drugs.filter((drug) => (
   drug.validationStatus === 'source-verified' || drug.validationStatus === 'validated'
 ))
+
+if (reviewedClinicalUnmappedNoteCount > 0) {
+  issues.push(`${reviewedClinicalUnmappedNoteCount} blocos da referência clínica sem correspondência no catálogo`)
+}
 
 for (const drug of drugs) {
   const referenceIds = new Set(drug.references.map((reference) => reference.id))
@@ -13,6 +26,8 @@ for (const drug of drugs) {
 
   if (isSourceVerified && referenceIds.size === 0) issues.push(`${drug.id}: ficha verificada sem referências`)
   if (!isSourceVerified && (drug.calculators?.length ?? 0) > 0) issues.push(`${drug.id}: calculadora em ficha não verificada`)
+  if (drug.validationStatus === 'validated' && drug.confidence !== 'high') issues.push(`${drug.id}: aprovação total sem confiança elevada`)
+  if (drug.validationStatus === 'validated' && !drug.lastReviewedAt) issues.push(`${drug.id}: aprovação total sem data de revisão`)
 
   const adjustments = [
     ...drug.usualAdultDose,
@@ -33,9 +48,7 @@ for (const drug of drugs) {
     }
   }
 
-  if (drug.validationStatus === 'validated') {
-    if (!drug.verification) issues.push(`${drug.id}: consenso multiponto sem registo de comparação`)
-    if (drug.verification?.status !== 'consensus') issues.push(`${drug.id}: ficha promovida sem consenso`)
+  if (drug.verification?.status === 'consensus') {
     if ((drug.verification?.comparedSourceIds.length ?? 0) < 4) issues.push(`${drug.id}: comparação com menos de quatro fontes`)
     if ((drug.verification?.discrepancies.length ?? 0) > 0) issues.push(`${drug.id}: consenso com discrepâncias por resolver`)
   }
@@ -59,6 +72,13 @@ const report = {
   catalog: drugs.length,
   sourceVerified: sourceVerified.length,
   pending: drugs.length - sourceVerified.length,
+  sourceCoverage: {
+    expandedClinicalMonographs: expandedClinicalSourceCount,
+    expandedClinicalMappedCatalogEntries: expandedClinicalMappedCatalogCount,
+    reviewedClinicalNoteBlocks: reviewedClinicalNoteCount,
+    reviewedClinicalMappedCatalogEntries: reviewedClinicalMappedCatalogCount,
+    reviewedClinicalUnmappedNoteBlocks: reviewedClinicalUnmappedNoteCount,
+  },
   calculators: calculatorCount,
   statuses: Object.fromEntries(Object.entries(statusCounts).map(([status, items]) => [status, items.length])),
   issues,

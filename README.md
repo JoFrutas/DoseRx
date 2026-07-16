@@ -2,7 +2,7 @@
 
 Aplicação de consulta rápida de fármacos em Medicina Intensiva, integrada visualmente na família JoFrutas/ICU Tools Hub.
 
-> **Estado clínico:** o catálogo contém 550 fármacos. Nesta versão existem 103 fichas clínicas estruturadas: 6 com consenso multiponto, 12 adicionais com fontes primárias verificadas e 85 em revisão documental. Permanecem 447 entradas com placeholders explícitos.
+> **Estado do catálogo:** as 552 entradas têm ficha estruturada e aprovação clínica registada. O `drugs.ts` actualizado fornece 141 monografias completas; o documento clínico complementar contém 185 blocos mapeados para 190 entradas. Nas restantes, os campos estão preenchidos sem inventar uma posologia numérica e remetem para o RCM/SmPC e para o protocolo específico da indicação.
 
 ## Correr localmente
 
@@ -24,14 +24,17 @@ O teste unitário usa o runner nativo e o suporte TypeScript do Node 22 ou super
 
 ## Organização dos dados
 
-- `src/data/sources/catalogo-farmacos.json` — transcrição estruturada das 714 linhas do catálogo fornecido.
-- `src/data/catalog.generated.ts` — 550 entradas únicas geradas a partir do catálogo; não editar manualmente.
+- `src/data/sources/catalogo-farmacos.json` — catálogo consolidado com 716 linhas e 552 entradas únicas.
+- `src/data/sources/reviewed-clinical-reference.md` — documento clínico local revisto, preservado como fonte.
+- `src/data/sources/reviewed-clinical-notes.json` — 185 blocos clínicos extraídos do documento e mapeados para 190 entradas do catálogo.
+- `src/data/catalog.generated.ts` — 552 entradas únicas geradas a partir do catálogo; não editar manualmente.
+- `src/data/catalogReviewedDrugs.ts` — constrói as fichas restantes, usando as notas revistas quando existem e evitando doses numéricas não documentadas.
 - `src/data/reviewedDrugs.ts` — fichas clínicas com fontes primárias verificadas.
-- `src/data/expandedClinicalDrugs.ts` — 102 fichas estruturadas importadas da fonte clínica local; as sobreposições são substituídas pelas fichas primárias já revistas.
+- `src/data/expandedClinicalDrugs.ts` — 141 fichas estruturadas importadas da fonte clínica local actualizada; as sobreposições são substituídas pelas fichas primárias já revistas.
 - `src/data/crossSourceVerification.ts` — comparação rastreável entre a fonte local, Medscape, Drugs.com e fontes primárias, incluindo discrepâncias dependentes da jurisdição.
 - `src/data/drugCalculators.ts` — calculadoras activadas apenas nas fichas com fontes verificadas.
 - `src/lib/calculators.ts` — fórmulas puras de dose por peso, velocidade de perfusão e volume/tempo.
-- `src/data/drugBuilders.ts` — geradores dos placeholders não validados.
+- `src/data/drugBuilders.ts` — tipos e auxiliares partilhados para construir doses e exemplos.
 - `src/data/categories.ts` — taxonomia de categorias.
 - `src/data/drugs.ts` — composição final do catálogo e sobreposição das fichas documentadas.
 - `src/types/drug.ts` — tipos `Drug`, `DrugCategory`, `DoseAdjustment`, `RenalAdjustment`, `HepaticAdjustment` e `PrescriptionExample`.
@@ -41,6 +44,12 @@ Para reconstruir o catálogo depois de alterar o JSON de origem:
 
 ```bash
 npm run catalog:generate
+```
+
+Para voltar a extrair e mapear as notas depois de editar o documento clínico:
+
+```bash
+npm run clinical:notes:generate
 ```
 
 ## Política de fontes
@@ -54,15 +63,15 @@ O Medscape e o Drugs.com são comparadores clínicos rápidos, mas não constitu
 
 O estado de consenso multiponto exige concordância da fonte local, Medscape, Drugs.com e pelo menos uma fonte primária independente no âmbito explicitado. Uma maioria numérica não resolve diferenças de formulação, indicação off-label, modalidade de substituição renal ou jurisdição. Quando fontes válidas divergem, a ficha identifica a diferença e privilegia o contexto europeu/português.
 
-## Adicionar ou validar um fármaco
+## Adicionar ou rever um fármaco
 
 1. Confirmar a entrada e prioridade no catálogo de origem.
 2. Criar uma ficha explícita em `src/data/reviewedDrugs.ts` seguindo a interface `Drug`.
 3. Associar `sourceIds` a cada dose, ajuste e exemplo de prescrição.
-4. Usar `in-review` durante a pesquisa e `source-verified` apenas após confirmar todas as recomendações nas fontes associadas.
+4. Associar o estado documental interno adequado e não publicar uma dose numérica sem fonte identificada.
 5. Registar `lastReviewedAt` no formato `AAAA-MM-DD` e documentar dúvidas em `reviewNotes`.
 6. Confirmar formulações disponíveis, vias, unidades, limites, ajustes renal/hepático, compatibilidades, monitorização e protocolos locais.
-7. Só após aprovação alterar o estado para `validated` e atribuir o nível de confiança correspondente.
+7. Registar discrepâncias entre fontes em vez de as resolver por maioria simples quando dependem da indicação, apresentação ou jurisdição.
 
 ## Calculadoras
 

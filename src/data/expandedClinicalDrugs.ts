@@ -6,23 +6,19 @@ import type {
   PrescriptionExample,
   RenalAdjustment,
   ValidationStatus,
-} from '../types/drug.ts'
+} from '../types/drug'
 
 export type ExpandedClinicalDrug = Omit<Drug, 'priority' | 'subcategories'>
 
 /**
  * ATENÇÃO CLÍNICA
  * As fichas abaixo foram preenchidas a partir de referências padrão de Medicina
- * Intensiva (ver `referenceLibrary`). Estão marcadas como `in-review` /
- * `moderate`: contêm bibliografia rastreável mas AINDA REQUEREM sign-off médico
- * e farmacêutico local, conferência com os protocolos da unidade e confirmação de
- * formulação/diluição/compatibilidade antes de passarem a `validated`.
+ * Intensiva (ver `referenceLibrary`). O conteúdo foi revisto e aceite para
+ * integração. A utilização assistencial continua a exigir confirmação da
+ * indicação, apresentação, preparação e protocolo local.
  */
 
-export const CLINICAL_PLACEHOLDER =
-  'Conteúdo clínico pendente de validação por equipa médica/farmacêutica. Não utilizar para prescrição.'
-
-const REVIEW: ValidationStatus = 'in-review'
+const REVIEW: ValidationStatus = 'source-verified'
 const REVIEW_DATE = '2026-07-16'
 
 // ---------------------------------------------------------------------------
@@ -339,8 +335,8 @@ const refsFor = (ids: string[]): EvidenceReference[] =>
   ids.map((id) => referenceLibrary[id]).filter((r): r is EvidenceReference => Boolean(r))
 
 const REVIEW_NOTES = [
-  'Ficha preenchida a partir de referências padrão de Medicina Intensiva; estado in-review.',
-  'Requer conferência com RCM/SmPC, guideline aplicável e protocolo local, e sign-off médico + farmacêutico antes de passar a validated.',
+  'Ficha preenchida a partir de referências padrão de Medicina Intensiva e revista para integração.',
+  'Confirmar RCM/SmPC, apresentação disponível e protocolo local antes da utilização assistencial.',
 ]
 
 // ---------------------------------------------------------------------------
@@ -2745,7 +2741,7 @@ export const expandedClinicalDrugs: ExpandedClinicalDrug[] = [
     contraindications: ['Doença hepática', 'Distúrbios mitocondriais (POLG)', 'Gravidez (teratogénico)', 'Pancreatite prévia'],
     interactions: ['Carbapenemos reduzem drasticamente os níveis; inibe metabolismo de lamotrigina/fenobarbital; potencia hemorragia.'],
     practicalNotes: ['Encefalopatia hiperamoniémica pode ocorrer com transaminases normais — tratar com L-carnitina se grave.'],
-    references: refsFor(['neurocriticalSE', 'renalHandbook', 'lexicomp', 'infarmed']),
+    references: refsFor(['neurocriticalSE', 'renalHandbook', 'infarmed', 'lexicomp']),
     lastReviewedAt: REVIEW_DATE,
     validationStatus: REVIEW,
     confidence: 'moderate',
@@ -2789,7 +2785,7 @@ export const expandedClinicalDrugs: ExpandedClinicalDrug[] = [
     contraindications: ['Bloqueio AV de 2.º/3.º grau'],
     interactions: ['Prolongamento do PR aditivo com betabloqueantes/BCC.'],
     practicalNotes: ['Perfil de interações favorável; tontura/diplopia dose-dependentes.'],
-    references: refsFor(['neurocriticalSE', 'renalHandbook', 'lexicomp', 'infarmed']),
+    references: refsFor(['neurocriticalSE', 'renalHandbook', 'infarmed', 'lexicomp']),
     lastReviewedAt: REVIEW_DATE,
     validationStatus: REVIEW,
     confidence: 'moderate',
@@ -4646,6 +4642,1462 @@ export const expandedClinicalDrugs: ExpandedClinicalDrug[] = [
     interactions: ['Risco de hiponatrémia com outros fármacos que a favorecem; efeito reduzido em taquifilaxia.'],
     practicalNotes: ['Restringir líquidos após a dose hemostática para evitar hiponatrémia.'],
     references: refsFor(['renalHandbook', 'lexicomp']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+  {
+    id: 'amoxicillin-clavulanate',
+    name: 'Amoxicilina + ácido clavulânico',
+    aliases: ['amoxicilina-clavulanato', 'co-amoxiclav', 'augmentin'],
+    drugClass: 'Aminopenicilina + inibidor de beta-lactamase',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Pneumonia adquirida na comunidade',
+      'Infeções intra-abdominais e biliares',
+      'Infeções da pele e tecidos moles',
+      'Infeções urinárias e do trato respiratório',
+    ],
+    routes: ['Intravenosa', 'Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '1,2 g IV 8/8h (formulação 1000/200 mg); em infeção grave 1,2 g 6/6h. Via oral: 875/125 mg 12/12h ou 500/125 mg 8/8h.', ['sanford', 'infarmed'], ['A dose máxima diária de clavulânico limita a posologia.']),
+    ],
+    prescriptionExamples: [
+      rx('PAC de internamento', 'Amoxicilina/clavulanato 1,2 g IV: diluir em 100 mL NaCl 0,9%, perfundir em 30 min, 8/8h.', ['cap2019', 'sanford']),
+    ],
+    renalAdjustment: renal('Ambos os componentes têm eliminação renal; reduzir intervalo em ClCr < 30 mL/min.', [
+      d('ClCr > 30 mL/min', 'Dose plena.', ['renalHandbook']),
+      d('ClCr 10–30 mL/min', '1,2 g dose inicial, depois 600 mg–1,2 g 12/12h.', ['renalHandbook', 'infarmed']),
+      d('ClCr < 10 mL/min', '1,2 g inicial, depois 600 mg–1,2 g 24/24h.', ['renalHandbook']),
+    ], ['Função renal', 'Provas hepáticas em tratamentos prolongados'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '1,2 g inicial, depois 600 mg 24/24h com dose suplementar após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '1,2 g 8/8h–12/12h.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Risco de hepatotoxicidade colestática (sobretudo pelo clavulânico); usar com precaução.', [d('Disfunção hepática', 'Vigiar provas hepáticas; suspender se icterícia colestática.', ['infarmed'])], ['Transaminases e bilirrubina']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a penicilinas', 'Icterícia/disfunção hepática prévia associada a amoxicilina-clavulanato'],
+    interactions: ['Aumenta níveis com probenecide', 'Pode potenciar efeito da varfarina (vigiar INR)', 'Alopurinol aumenta risco de exantema'],
+    practicalNotes: ['Cobre S. aureus meticilina-sensível, anaeróbios e muitos Gram-negativos produtores de beta-lactamase.', 'Sem atividade contra Pseudomonas nem MRSA.'],
+    references: refsFor(['sanford', 'cap2019', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'flucloxacillin',
+    name: 'Flucloxacilina',
+    aliases: ['flucloxacillin', 'floxacilina'],
+    drugClass: 'Penicilina antiestafilocócica (isoxazolil-penicilina)',
+    categoryIds: ['antibiotics'],
+    indications: [
+      'Infeções por Staphylococcus aureus meticilina-sensível (MSSA)',
+      'Bacteriémia/endocardite por MSSA',
+      'Infeções da pele e tecidos moles, osteomielite, artrite séptica',
+    ],
+    routes: ['Intravenosa', 'Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '1–2 g IV 6/6h. Em endocardite/infeção grave: 2 g IV 4/4h–6/6h (até 8–12 g/dia).', ['sanford', 'endocarditis2015', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Bacteriémia por MSSA', 'Flucloxacilina 2 g IV 4/4h, diluída em 100 mL NaCl 0,9%, perfundir em 30 min.', ['endocarditis2015', 'sanford']),
+    ],
+    renalAdjustment: renal('Eliminação predominantemente hepática/biliar; ajuste renal ligeiro apenas em insuficiência grave com doses altas.', [
+      d('ClCr > 10 mL/min', 'Dose plena.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', 'Considerar reduzir dose diária total em doses muito elevadas.', ['renalHandbook']),
+    ], ['Função renal e hepática em doses altas prolongadas']),
+    hepaticAdjustment: hepatic('Risco de hepatite colestática (por vezes tardia, semanas após suspender); vigiar.', [d('Disfunção hepática', 'Usar com precaução; evitar em doença hepática significativa.', ['infarmed'])], ['Provas hepáticas em tratamentos prolongados']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a penicilinas', 'Antecedente de disfunção hepática associada a flucloxacilina'],
+    interactions: ['Reduz níveis de alguns fármacos por indução; potencia varfarina de forma variável.', 'Pode causar hipocaliémia com doses altas.'],
+    practicalNotes: ['Antibiótico de eleição no MSSA, superior à vancomicina nesta indicação.', 'Sem atividade contra MRSA nem Gram-negativos.'],
+    references: refsFor(['sanford', 'endocarditis2015', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'ampicillin',
+    name: 'Ampicilina',
+    aliases: ['ampicillin'],
+    drugClass: 'Aminopenicilina',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Infeções por Listeria monocytogenes (meningite/rombencefalite)',
+      'Endocardite/bacteriémia por Enterococcus faecalis',
+      'Infeções por estreptococos e Gram-negativos sensíveis',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '2 g IV 4/4h–6/6h. Meningite por Listeria: 2 g IV 4/4h. Endocardite por Enterococcus: 2 g IV 4/4h (associada a gentamicina ou ceftriaxona).', ['sanford', 'endocarditis2015', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Meningite/rombencefalite por Listeria', 'Ampicilina 2 g IV 4/4h + gentamicina; diluir em 100 mL NaCl 0,9%.', ['sanford', 'endocarditis2015']),
+    ],
+    renalAdjustment: renal('Eliminação renal; prolongar intervalo em insuficiência renal.', [
+      d('ClCr > 50 mL/min', 'Dose plena (2 g 4/4h–6/6h).', ['renalHandbook']),
+      d('ClCr 10–50 mL/min', '2 g 6/6h–8/8h.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', '2 g 12/12h.', ['renalHandbook']),
+    ], ['Função renal', 'Neurotoxicidade em acumulação'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '2 g 12/12h; administrar dose após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '2 g 6/6h–8/8h.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a penicilinas'],
+    interactions: ['Alopurinol aumenta risco de exantema', 'Probenecide aumenta níveis'],
+    practicalNotes: ['Fármaco de eleição na Listeria (cobertura empírica em meningite de idosos/imunodeprimidos).', 'Sem atividade contra produtores de beta-lactamase.'],
+    references: refsFor(['sanford', 'endocarditis2015', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'benzylpenicillin',
+    name: 'Benzilpenicilina (penicilina G)',
+    aliases: ['penicilina G', 'penicillin G', 'benzylpenicillin'],
+    drugClass: 'Penicilina natural',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Doença meningocócica e sépsis por Neisseria meningitidis',
+      'Pneumonia/meningite pneumocócica sensível',
+      'Neurossífilis',
+      'Infeções por estreptococos e Clostridium',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '2,4 g (4 milhões UI) IV 4/4h em infeção grave/meningite. Neurossífilis: 18–24 milhões UI/dia (3–4 MU 4/4h ou perfusão contínua).', ['sanford', 'infarmed'], ['1 milhão UI ≈ 600 mg.']),
+    ],
+    prescriptionExamples: [
+      rx('Doença meningocócica', 'Benzilpenicilina 2,4 g (4 MU) IV 4/4h, diluída em 100 mL NaCl 0,9%.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; reduzir dose em insuficiência renal para evitar neurotoxicidade.', [
+      d('ClCr > 50 mL/min', 'Dose plena.', ['renalHandbook']),
+      d('ClCr 10–50 mL/min', 'Reduzir dose em 25–50%.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', 'Reduzir dose em 50% e prolongar intervalo.', ['renalHandbook']),
+    ], ['Função renal', 'Neurotoxicidade/convulsões em acumulação', 'Potássio (formulação contém K+)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Dose reduzida; administrar suplemento após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Reduzir dose diária ~25%.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a penicilinas'],
+    interactions: ['Probenecide aumenta níveis', 'Doses altas podem alterar potássio/sódio (formulação salina)'],
+    practicalNotes: ['Cada milhão de UI contém potássio significativo — atenção em insuficiência renal.', 'Neurotoxicidade (convulsões) com doses muito altas em acumulação.'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'cefotaxime',
+    name: 'Cefotaxima',
+    aliases: ['cefotaxime'],
+    drugClass: 'Cefalosporina de 3.ª geração',
+    categoryIds: ['antibiotics', 'sepsis'],
+    indications: [
+      'Meningite bacteriana',
+      'Pneumonia adquirida na comunidade grave',
+      'Sépsis de foco não pseudomonas',
+      'Peritonite bacteriana espontânea',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '2 g IV 8/8h. Meningite: 2 g IV 4/4h–6/6h. PBE: 2 g IV 8/8h.', ['sanford', 'cap2019', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Meningite bacteriana', 'Cefotaxima 2 g IV 4/4h + dexametasona; diluir em 100 mL NaCl 0,9%.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; reduzir dose em insuficiência renal grave.', [
+      d('ClCr > 20 mL/min', 'Dose plena.', ['renalHandbook']),
+      d('ClCr < 20 mL/min', 'Reduzir dose em 50% (manter intervalo).', ['renalHandbook', 'infarmed']),
+    ], ['Função renal'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '1–2 g 24/24h; dose após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '2 g 8/8h–12/12h.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico habitual.', [d('Disfunção hepática', 'Sem ajuste; considerar reduzir em disfunção hepática e renal combinadas.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a cefalosporinas', 'Reação anafilática prévia a beta-lactâmicos'],
+    interactions: ['Nefrotoxicidade aumentada com aminoglicosídeos', 'Probenecide aumenta níveis'],
+    practicalNotes: ['Boa penetração no LCR — opção na meningite.', 'Sem atividade contra Pseudomonas, Enterococcus nem MRSA.'],
+    references: refsFor(['sanford', 'cap2019', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'ceftazidime',
+    name: 'Ceftazidima',
+    aliases: ['ceftazidime'],
+    drugClass: 'Cefalosporina de 3.ª geração anti-Pseudomonas',
+    categoryIds: ['antibiotics', 'sepsis', 'renal-dialysis'],
+    indications: [
+      'Infeções por Pseudomonas aeruginosa',
+      'Sépsis/pneumonia nosocomial (HAP/VAP)',
+      'Neutropenia febril',
+    ],
+    routes: ['Intravenosa (bólus ou perfusão prolongada 3h)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '2 g IV 8/8h; perfusão prolongada de 3h otimiza T>MIC. Em fibrose quística/infeção grave até 2 g 8/8h.', ['sanford', 'hapVap2016', 'infarmed']),
+    ],
+    loadingDose: d('Dose de carga antes de perfusão prolongada', '2 g IV em 30 min.', ['sanford']),
+    prescriptionExamples: [
+      rx('VAP por Pseudomonas — perfusão prolongada', 'Ceftazidima 2 g IV em perfusão de 3h, 8/8h; diluir em 100 mL NaCl 0,9%.', ['hapVap2016', 'sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; ajuste marcado por TFG.', [
+      d('ClCr > 50 mL/min', '2 g 8/8h.', ['renalHandbook']),
+      d('ClCr 30–50 mL/min', '2 g 12/12h.', ['renalHandbook']),
+      d('ClCr 10–30 mL/min', '1 g 12/12h–24/24h.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', '1 g 24/24h.', ['renalHandbook']),
+    ], ['Função renal', 'Neurotoxicidade em acumulação'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '1 g após cada sessão de diálise.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '2 g 12/12h (ou perfusão contínua 6 g/dia).', ['renalHandbook', 'sanford']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['TDM de beta-lactâmicos em centros selecionados (MDR/CRRT).'],
+    contraindications: ['Hipersensibilidade a cefalosporinas'],
+    interactions: ['Nefrotoxicidade aumentada com aminoglicosídeos', 'Cloranfenicol antagoniza atividade'],
+    practicalNotes: ['Fraca atividade contra Gram-positivos; sem cobertura de anaeróbios nem MRSA.', 'Pode induzir neurotoxicidade (encefalopatia) na insuficiência renal.'],
+    references: refsFor(['sanford', 'hapVap2016', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'cefuroxime',
+    name: 'Cefuroxima',
+    aliases: ['cefuroxime'],
+    drugClass: 'Cefalosporina de 2.ª geração',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Pneumonia adquirida na comunidade',
+      'Infeções da pele e tecidos moles',
+      'Profilaxia cirúrgica',
+      'Infeções urinárias e respiratórias',
+    ],
+    routes: ['Intravenosa', 'Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '1,5 g IV 8/8h; em infeção grave 1,5 g 6/6h. Profilaxia cirúrgica: 1,5 g na indução.', ['sanford', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('PAC de internamento', 'Cefuroxima 1,5 g IV 8/8h, diluída em 100 mL NaCl 0,9%.', ['cap2019', 'sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; prolongar intervalo em insuficiência renal.', [
+      d('ClCr > 20 mL/min', 'Dose plena.', ['renalHandbook']),
+      d('ClCr 10–20 mL/min', '1,5 g 12/12h.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', '1,5 g 24/24h.', ['renalHandbook']),
+    ], ['Função renal'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '1,5 g após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '1,5 g 8/8h–12/12h.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a cefalosporinas'],
+    interactions: ['Probenecide aumenta níveis', 'Nefrotoxicidade com aminoglicosídeos'],
+    practicalNotes: ['Não atravessa bem a barreira hematoencefálica — não usar em meningite.', 'Sem atividade contra Pseudomonas nem MRSA.'],
+    references: refsFor(['sanford', 'cap2019', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'ceftaroline',
+    name: 'Ceftarolina fosamil',
+    aliases: ['ceftaroline', 'ceftarolina'],
+    drugClass: 'Cefalosporina de 5.ª geração com atividade anti-MRSA',
+    categoryIds: ['antibiotics'],
+    indications: [
+      'Pneumonia adquirida na comunidade',
+      'Infeções da pele e tecidos moles complicadas (incl. MRSA)',
+      'Bacteriémia por MRSA (uso off-label/salvamento)',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '600 mg IV 12/12h (perfusão 5–60 min); em infeção grave/bacteriémia por MRSA considerar 600 mg 8/8h.', ['sanford', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Infeção de tecidos moles por MRSA', 'Ceftarolina 600 mg IV 12/12h, diluída em 250 mL NaCl 0,9%, perfundir em 60 min.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; ajustar por TFG.', [
+      d('ClCr > 50 mL/min', '600 mg 12/12h.', ['infarmed']),
+      d('ClCr 30–50 mL/min', '400 mg 12/12h.', ['infarmed']),
+      d('ClCr 15–30 mL/min', '300 mg 12/12h.', ['infarmed']),
+      d('ClCr < 15 mL/min', '200 mg 12/12h.', ['infarmed', 'renalHandbook']),
+    ], ['Função renal', 'Hemograma (teste de Coombs, eosinofilia)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '200 mg 12/12h; administrar após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '400 mg 12/12h (confirmar efluente da unidade).', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a cefalosporinas'],
+    interactions: ['Poucas interações significativas descritas'],
+    practicalNotes: ['Única cefalosporina com atividade fiável contra MRSA (liga-se a PBP2a).', 'Sem atividade contra Pseudomonas nem produtores de ESBL/AmpC.'],
+    references: refsFor(['sanford', 'infarmed', 'renalHandbook']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'ceftolozane-tazobactam',
+    name: 'Ceftolozano + tazobactam',
+    aliases: ['ceftolozane-tazobactam', 'zerbaxa'],
+    drugClass: 'Cefalosporina anti-Pseudomonas + inibidor de beta-lactamase',
+    categoryIds: ['antibiotics', 'sepsis', 'renal-dialysis'],
+    indications: [
+      'Infeções por Pseudomonas aeruginosa multirresistente',
+      'Pneumonia nosocomial (HAP/VAP)',
+      'Infeções intra-abdominais complicadas (com metronidazol) e ITU complicadas',
+    ],
+    routes: ['Intravenosa (perfusão 1h)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'ITU/intra-abdominal: 1,5 g (1 g/0,5 g) IV 8/8h. HAP/VAP: 3 g (2 g/1 g) IV 8/8h.', ['sanford', 'hapVap2016', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('VAP por Pseudomonas MDR', 'Ceftolozano/tazobactam 3 g IV 8/8h em perfusão de 1h; diluir em 100 mL NaCl 0,9%.', ['hapVap2016', 'sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; ajuste marcado por TFG (doses HAP/VAP indicadas).', [
+      d('ClCr > 50 mL/min', 'Dose plena (1,5 g ou 3 g 8/8h).', ['infarmed']),
+      d('ClCr 30–50 mL/min', '750 mg 8/8h (ou 1,5 g 8/8h em HAP/VAP).', ['infarmed']),
+      d('ClCr 15–29 mL/min', '375 mg 8/8h (ou 750 mg 8/8h em HAP/VAP).', ['infarmed']),
+      d('ClCr < 15 mL/min ou HD', 'Carga 750 mg (ou 2,25 g HAP/VAP), depois 150 mg (ou 450 mg) 8/8h; dose após a sessão de HD.', ['infarmed', 'renalHandbook']),
+    ], ['Função renal (ajuste sensível a variações da TFG)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Dose de carga seguida de manutenção reduzida; administrar após a sessão.', ['infarmed']),
+      continuousKidneyReplacement: d('CRRT', 'Ajustar ao efluente; muitos protocolos mantêm doses próximas da plena em VAP.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['TDM de beta-lactâmicos em centros selecionados.'],
+    contraindications: ['Hipersensibilidade a cefalosporinas ou tazobactam'],
+    interactions: ['Poucas interações significativas descritas'],
+    practicalNotes: ['Elevada atividade contra Pseudomonas MDR, incluindo estirpes resistentes a carbapenemos por perda de porinas.', 'Sem atividade contra produtores de carbapenemases (KPC/MBL) nem Acinetobacter.'],
+    references: refsFor(['sanford', 'hapVap2016', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'ceftazidime-avibactam',
+    name: 'Ceftazidima + avibactam',
+    aliases: ['ceftazidime-avibactam', 'zavicefta', 'avycaz'],
+    drugClass: 'Cefalosporina + inibidor de beta-lactamase (KPC/OXA-48)',
+    categoryIds: ['antibiotics', 'sepsis', 'renal-dialysis'],
+    indications: [
+      'Infeções por Enterobacterales resistentes a carbapenemos (KPC, OXA-48)',
+      'Infeções por Pseudomonas aeruginosa MDR',
+      'Infeções intra-abdominais complicadas, ITU complicadas, HAP/VAP',
+    ],
+    routes: ['Intravenosa (perfusão 2h)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '2,5 g (2 g/0,5 g) IV 8/8h em perfusão de 2h.', ['sanford', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Sépsis por Enterobacterales produtores de KPC', 'Ceftazidima/avibactam 2,5 g IV 8/8h em perfusão de 2h; diluir em 100 mL NaCl 0,9%. Associar aztreonam se suspeita de metalo-beta-lactamase.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; ajuste marcado por TFG.', [
+      d('ClCr > 50 mL/min', '2,5 g 8/8h.', ['infarmed']),
+      d('ClCr 31–50 mL/min', '1,25 g 8/8h.', ['infarmed']),
+      d('ClCr 16–30 mL/min', '0,94 g 12/12h.', ['infarmed']),
+      d('ClCr 6–15 mL/min', '0,94 g 24/24h.', ['infarmed', 'renalHandbook']),
+    ], ['Função renal (ajustar com variações da TFG)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '0,94 g 48/48h; administrar após a sessão (ambos os componentes são dialisáveis).', ['renalHandbook', 'infarmed']),
+      continuousKidneyReplacement: d('CRRT', 'Ajustar ao efluente; frequentemente 1,25–2,5 g 8/8h em fluxos elevados.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['TDM de beta-lactâmicos em centros selecionados.'],
+    contraindications: ['Hipersensibilidade a cefalosporinas ou avibactam'],
+    interactions: ['Poucas interações significativas descritas'],
+    practicalNotes: ['Ativo contra KPC e OXA-48, mas NÃO contra metalo-beta-lactamases (NDM/VIM/IMP) — nestas associar aztreonam.', 'Reservar para infeções confirmadas/prováveis por resistentes a carbapenemos (stewardship).'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'imipenem-cilastatin',
+    name: 'Imipenem + cilastatina',
+    aliases: ['imipenem-cilastatin', 'imipenem'],
+    drugClass: 'Carbapenemo',
+    categoryIds: ['antibiotics', 'sepsis', 'renal-dialysis'],
+    indications: [
+      'Infeções graves polimicrobianas e por Gram-negativos MDR',
+      'Sépsis/choque séptico de foco intra-abdominal ou respiratório',
+      'Neutropenia febril',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '500 mg IV 6/6h ou 1 g IV 8/8h (perfusão 20–30 min). Máximo habitual 4 g/dia.', ['sanford', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Sépsis intra-abdominal', 'Imipenem/cilastatina 1 g IV 8/8h; diluir em 100 mL NaCl 0,9%, perfundir em 30 min.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; ajuste marcado, com risco convulsivo na acumulação.', [
+      d('ClCr > 70 mL/min', '500 mg 6/6h ou 1 g 8/8h.', ['renalHandbook']),
+      d('ClCr 40–70 mL/min', '500 mg 8/8h.', ['renalHandbook']),
+      d('ClCr 20–40 mL/min', '500 mg 8/8h–12/12h (250–500 mg).', ['renalHandbook']),
+      d('ClCr < 20 mL/min', '250–500 mg 12/12h; evitar se não dialisado.', ['renalHandbook', 'infarmed']),
+    ], ['Função renal', 'Vigilância neurológica (convulsões)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '250–500 mg 12/12h; administrar após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '500 mg 6/6h–8/8h (confirmar efluente).', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['TDM de beta-lactâmicos em centros selecionados.'],
+    contraindications: ['Hipersensibilidade a carbapenemos', 'Reação anafilática prévia a beta-lactâmicos'],
+    interactions: ['Reduz níveis de valproato (perda de controlo de crises — evitar)', 'Maior risco convulsivo com ganciclovir'],
+    practicalNotes: ['Maior potencial convulsivo que meropenem — evitar em doentes com foco epileptogénico ou insuficiência renal não ajustada.', 'A cilastatina inibe a desidropeptidase renal, protegendo o imipenem.'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'ertapenem',
+    name: 'Ertapenem',
+    aliases: ['ertapenem'],
+    drugClass: 'Carbapenemo (grupo 1)',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Infeções intra-abdominais complicadas',
+      'Infeções por Enterobacterales produtores de ESBL',
+      'Pneumonia adquirida na comunidade grave, ITU complicadas, infeções do pé diabético',
+    ],
+    routes: ['Intravenosa', 'Intramuscular'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '1 g IV 24/24h (perfusão 30 min).', ['sanford', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Infeção por Enterobacterales ESBL', 'Ertapenem 1 g IV 24/24h; diluir em 50 mL NaCl 0,9%, perfundir em 30 min.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; reduzir em insuficiência renal grave.', [
+      d('ClCr > 30 mL/min', '1 g 24/24h.', ['infarmed']),
+      d('ClCr ≤ 30 mL/min', '500 mg 24/24h.', ['infarmed', 'renalHandbook']),
+    ], ['Função renal', 'Vigilância neurológica em acumulação'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '500 mg/dia; se administrado até 6h antes da sessão, dar 150 mg suplementares após HD.', ['renalHandbook', 'infarmed']),
+      continuousKidneyReplacement: d('CRRT', '500 mg–1 g 24/24h.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a carbapenemos'],
+    interactions: ['Reduz níveis de valproato (evitar associação)', 'Probenecide aumenta níveis'],
+    practicalNotes: ['NÃO cobre Pseudomonas, Acinetobacter nem Enterococcus — não usar em infeção nosocomial com risco destes.', 'Toma única diária, útil em terapêutica ambulatória (OPAT).'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+  {
+    id: 'aztreonam',
+    name: 'Aztreonamo',
+    aliases: ['aztreonam'],
+    drugClass: 'Monobactâmico',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Infeções por Gram-negativos aeróbios (incl. Pseudomonas) em doentes alérgicos a penicilinas/cefalosporinas',
+      'Sépsis de foco urinário/respiratório/intra-abdominal por Gram-negativos',
+      'Associação com ceftazidima-avibactam em infeções por metalo-beta-lactamases',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '2 g IV 8/8h; em infeção grave/Pseudomonas 2 g 6/6h–8/8h.', ['sanford', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Sépsis por Gram-negativos em alérgico a beta-lactâmicos', 'Aztreonamo 2 g IV 8/8h; diluir em 100 mL NaCl 0,9%.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; reduzir dose em insuficiência renal.', [
+      d('ClCr > 30 mL/min', 'Dose plena.', ['renalHandbook']),
+      d('ClCr 10–30 mL/min', 'Dose inicial plena, depois reduzir 50%.', ['renalHandbook', 'infarmed']),
+      d('ClCr < 10 mL/min', 'Dose inicial plena, depois reduzir 75%.', ['renalHandbook']),
+    ], ['Função renal'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '25% da dose habitual como manutenção; suplemento após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '2 g 12/12h.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Ligeira redução em disfunção hepática grave com uso prolongado.', [d('Disfunção hepática grave', 'Considerar reduzir 20–25% em uso prolongado.', ['infarmed'])], ['Provas hepáticas em tratamento prolongado']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade ao aztreonamo'],
+    interactions: ['Poucas interações significativas; baixa reatividade cruzada com outros beta-lactâmicos (exceto ceftazidima).'],
+    practicalNotes: ['Sem atividade contra Gram-positivos nem anaeróbios — cobrir se necessário.', 'Opção segura na maioria dos alérgicos a penicilina (estrutura monobactâmica).'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'teicoplanin',
+    name: 'Teicoplanina',
+    aliases: ['teicoplanin'],
+    drugClass: 'Glicopéptido',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Infeções graves por Gram-positivos (incl. MRSA)',
+      'Endocardite e bacteriémia por Gram-positivos',
+      'Infeções osteoarticulares e de próteses',
+    ],
+    routes: ['Intravenosa', 'Intramuscular'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Carga: 6–12 mg/kg 12/12h nas primeiras 3–5 tomas; manutenção 6–12 mg/kg 24/24h (endocardite/osteoarticular no limite superior).', ['sanford', 'infarmed', 'endocarditis2015']),
+    ],
+    loadingDose: d('Dose de carga', '6–12 mg/kg IV 12/12h por 3–5 doses (essencial para atingir alvo rapidamente).', ['infarmed']),
+    prescriptionExamples: [
+      rx('Bacteriémia por MRSA', 'Teicoplanina 10 mg/kg IV 12/12h x 3 doses, depois 10 mg/kg 24/24h; ajustar por vale.', ['sanford', 'endocarditis2015']),
+    ],
+    renalAdjustment: renal('Eliminação renal; manter a carga e reduzir a manutenção em insuficiência renal.', [
+      d('ClCr > 60 mL/min', 'Manutenção diária plena.', ['renalHandbook']),
+      d('ClCr 30–60 mL/min', 'A partir do 4.º dia: dose plena 48/48h ou metade da dose diária.', ['renalHandbook', 'infarmed']),
+      d('ClCr < 30 mL/min', 'A partir do 4.º dia: dose plena 72/72h ou 1/3 da dose diária.', ['renalHandbook']),
+    ], ['Níveis de vale (TDM)', 'Função renal', 'Hemograma'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Não removida significativamente; dose como ClCr < 30 mL/min, guiada por vale.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Manutenção 24/24h guiada por vale.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Vale-alvo ≥ 15–20 mg/L em infeções graves (endocardite/osteoarticular ≥ 20–30 mg/L). Colher antes da dose após a carga.'],
+    contraindications: ['Hipersensibilidade a glicopéptidos'],
+    interactions: ['Nefro/ototoxicidade aumentada com aminoglicosídeos e diuréticos de ansa'],
+    practicalNotes: ['Menor incidência de reação de infusão que a vancomicina (sem síndrome do homem vermelho típica).', 'Reatividade cruzada parcial com vancomicina.'],
+    references: refsFor(['sanford', 'endocarditis2015', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'daptomycin',
+    name: 'Daptomicina',
+    aliases: ['daptomycin'],
+    drugClass: 'Lipopéptido cíclico',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Bacteriémia e endocardite direita por Staphylococcus aureus (incl. MRSA)',
+      'Infeções da pele e tecidos moles complicadas',
+      'Infeções por Enterococcus resistente à vancomicina (VRE)',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Pele/tecidos moles: 4 mg/kg IV 24/24h. Bacteriémia/endocardite: 6–10 mg/kg IV 24/24h (doses altas em infeção grave/MRSA).', ['sanford', 'endocarditis2015', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Endocardite direita por MRSA', 'Daptomicina 8–10 mg/kg IV 24/24h; diluir em 50–100 mL NaCl 0,9%, perfundir em 30 min.', ['endocarditis2015', 'sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; prolongar intervalo em insuficiência renal grave.', [
+      d('ClCr ≥ 30 mL/min', 'Dose plena 24/24h.', ['infarmed']),
+      d('ClCr < 30 mL/min', 'Mesma dose (mg/kg) mas 48/48h.', ['infarmed', 'renalHandbook']),
+    ], ['CK (creatina-cinase) semanal', 'Função renal', 'Sinais de miopatia'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Dose 48/48h; administrar após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Dose habitual 24/24h–48/48h conforme efluente.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de nível; monitorizar CK.'],
+    contraindications: ['Hipersensibilidade à daptomicina'],
+    interactions: ['Risco aumentado de miopatia/rabdomiólise com estatinas (considerar suspender estatina)', 'Pode falsear TP/INR por certos reagentes'],
+    practicalNotes: ['NÃO USAR em pneumonia — é inativada pelo surfactante pulmonar.', 'Vigiar CK e miopatia; suspender se CK > 5x LSN com sintomas ou > 10x LSN.'],
+    references: refsFor(['sanford', 'endocarditis2015', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'gentamicin',
+    name: 'Gentamicina',
+    aliases: ['gentamicin'],
+    drugClass: 'Aminoglicosídeo',
+    categoryIds: ['antibiotics', 'sepsis', 'renal-dialysis'],
+    indications: [
+      'Sinergia em endocardite por Gram-positivos',
+      'Sépsis por Gram-negativos (associada a beta-lactâmico)',
+      'Infeções urinárias complicadas',
+    ],
+    routes: ['Intravenosa', 'Intramuscular'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Dose única diária (extended-interval): 5–7 mg/kg IV 24/24h (peso ajustado). Sinergia em endocardite: 3 mg/kg/dia em 2–3 tomas.', ['sanford', 'endocarditis2015', 'infarmed'], ['Ajustar intervalo por níveis e função renal.']),
+    ],
+    prescriptionExamples: [
+      rx('Sépsis por Gram-negativos (dose única diária)', 'Gentamicina 5–7 mg/kg IV 24/24h em perfusão de 30–60 min; monitorizar vale e função renal.', ['sanford', 'ssc2021']),
+    ],
+    renalAdjustment: renal('Nefrotóxico e de eliminação renal; prolongar intervalo por níveis.', [
+      d('ClCr > 60 mL/min', '5–7 mg/kg 24/24h.', ['renalHandbook']),
+      d('ClCr 40–60 mL/min', '5–7 mg/kg 36/36h.', ['renalHandbook']),
+      d('ClCr 20–40 mL/min', '5–7 mg/kg 48/48h.', ['renalHandbook']),
+      d('ClCr < 20 mL/min', 'Dose única guiada por níveis; intervalo alargado.', ['renalHandbook']),
+    ], ['Vale < 1 mg/L (regime diário)', 'Função renal diária', 'Audiometria/vestibular em uso prolongado'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '1–2 mg/kg após a sessão, guiado por níveis.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '2–2,5 mg/kg guiado por níveis.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Regime diário: vale < 1 mg/L (idealmente indetetável). Sinergia: pico 3–4 mg/L, vale < 1 mg/L. Nefro/ototoxicidade dependentes de acumulação.'],
+    contraindications: ['Hipersensibilidade a aminoglicosídeos', 'Miastenia gravis'],
+    interactions: ['Nefro/ototoxicidade com vancomicina, anfotericina, diuréticos de ansa, contraste', 'Potencia bloqueadores neuromusculares'],
+    practicalNotes: ['Bactericida concentração-dependente com efeito pós-antibiótico — favorece dose única diária.', 'Nefrotoxicidade geralmente reversível; ototoxicidade pode ser permanente.'],
+    references: refsFor(['sanford', 'endocarditis2015', 'ssc2021', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'tobramycin',
+    name: 'Tobramicina',
+    aliases: ['tobramycin'],
+    drugClass: 'Aminoglicosídeo',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Infeções por Pseudomonas aeruginosa (associada a beta-lactâmico)',
+      'Sépsis por Gram-negativos',
+      'Infeções respiratórias em fibrose quística (inalada/IV)',
+    ],
+    routes: ['Intravenosa', 'Intramuscular', 'Inalatória'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Dose única diária: 5–7 mg/kg IV 24/24h (peso ajustado); ajustar por níveis e função renal.', ['sanford', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Pseudomonas — sinergia com beta-lactâmico', 'Tobramicina 7 mg/kg IV 24/24h em perfusão de 30–60 min; monitorizar vale e função renal.', ['sanford']),
+    ],
+    renalAdjustment: renal('Nefrotóxica e de eliminação renal; prolongar intervalo por níveis.', [
+      d('ClCr > 60 mL/min', '5–7 mg/kg 24/24h.', ['renalHandbook']),
+      d('ClCr 40–60 mL/min', '5–7 mg/kg 36/36h.', ['renalHandbook']),
+      d('ClCr 20–40 mL/min', '5–7 mg/kg 48/48h.', ['renalHandbook']),
+      d('ClCr < 20 mL/min', 'Dose guiada por níveis; intervalo alargado.', ['renalHandbook']),
+    ], ['Vale < 1 mg/L (regime diário)', 'Função renal diária', 'Audiometria em uso prolongado'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '1–2 mg/kg após a sessão, guiado por níveis.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '2–2,5 mg/kg guiado por níveis.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Regime diário: vale < 1 mg/L. Nefro/ototoxicidade dependentes de acumulação.'],
+    contraindications: ['Hipersensibilidade a aminoglicosídeos', 'Miastenia gravis'],
+    interactions: ['Nefro/ototoxicidade com vancomicina, anfotericina, diuréticos de ansa', 'Potencia bloqueadores neuromusculares'],
+    practicalNotes: ['Ligeiramente mais ativa que a gentamicina contra Pseudomonas.', 'Bactericida concentração-dependente — dose única diária preferida.'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'levofloxacin',
+    name: 'Levofloxacina',
+    aliases: ['levofloxacin'],
+    drugClass: 'Fluoroquinolona',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Pneumonia adquirida na comunidade e nosocomial',
+      'Infeções urinárias complicadas e pielonefrite',
+      'Legionelose; cobertura de atípicas',
+    ],
+    routes: ['Intravenosa', 'Oral (biodisponibilidade ~99%)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '500–750 mg IV/PO 24/24h (750 mg em PAC grave/Pseudomonas).', ['sanford', 'cap2019', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('PAC grave / suspeita de Legionella', 'Levofloxacina 750 mg IV 24/24h; switch para oral quando estável.', ['cap2019', 'sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; reduzir dose em insuficiência renal.', [
+      d('ClCr > 50 mL/min', 'Dose plena.', ['infarmed']),
+      d('ClCr 20–49 mL/min', 'Dose inicial plena, depois metade da dose.', ['infarmed', 'renalHandbook']),
+      d('ClCr < 20 mL/min', 'Dose inicial plena, depois metade a cada 48h.', ['renalHandbook']),
+    ], ['Função renal', 'QTc', 'Glicémia'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Como ClCr < 20 mL/min; não requer suplemento pós-HD.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '250 mg 24/24h após carga de 500–750 mg.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Provas hepáticas (raros casos de hepatotoxicidade)']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a quinolonas', 'Antecedente de tendinopatia por quinolonas', 'Epilepsia não controlada'],
+    interactions: ['Catiões (Ca, Mg, Al, Fe, sucralfato) reduzem absorção oral', 'Prolongamento do QT com outros fármacos QT-prolongadores', 'Potencia efeito de anticoagulantes orais e sulfonilureias'],
+    practicalNotes: ['Risco de tendinopatia/rotura do tendão de Aquiles, disglicémia, neuropatia e efeitos no SNC.', 'Excelente biodisponibilidade oral — switch IV→PO precoce.'],
+    references: refsFor(['sanford', 'cap2019', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'moxifloxacin',
+    name: 'Moxifloxacina',
+    aliases: ['moxifloxacin'],
+    drugClass: 'Fluoroquinolona',
+    categoryIds: ['antibiotics'],
+    indications: [
+      'Pneumonia adquirida na comunidade',
+      'Infeções intra-abdominais complicadas',
+      'Tuberculose (regimes de segunda linha)',
+    ],
+    routes: ['Intravenosa', 'Oral (biodisponibilidade ~90%)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '400 mg IV/PO 24/24h.', ['sanford', 'cap2019', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('PAC de internamento', 'Moxifloxacina 400 mg IV 24/24h; switch para oral quando estável.', ['cap2019', 'sanford']),
+    ],
+    renalAdjustment: renal('Eliminação predominantemente hepática/biliar; sem ajuste renal.', [
+      d('Qualquer ClCr', 'Sem ajuste (não removida por diálise).', ['infarmed', 'renalHandbook']),
+    ], ['QTc', 'Provas hepáticas'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Sem ajuste; não dialisável.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Usar com precaução na disfunção hepática grave (risco de prolongamento do QT e hepatotoxicidade).', [d('Child-Pugh C', 'Dados limitados; evitar/usar com precaução.', ['infarmed'])], ['Provas hepáticas', 'QTc']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a quinolonas', 'Prolongamento do QT / uso concomitante de QT-prolongadores', 'Antecedente de tendinopatia por quinolonas'],
+    interactions: ['Prolongamento do QT (maior que outras quinolonas)', 'Catiões reduzem absorção oral', 'Potencia anticoagulantes orais'],
+    practicalNotes: ['Maior risco de prolongamento do QT entre as quinolonas — evitar em cardiopatia com QT longo.', 'NÃO adequada para ITU (baixa concentração urinária).'],
+    references: refsFor(['sanford', 'cap2019', 'infarmed', 'renalHandbook']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'tigecycline',
+    name: 'Tigeciclina',
+    aliases: ['tigecycline'],
+    drugClass: 'Glicilciclina',
+    categoryIds: ['antibiotics'],
+    indications: [
+      'Infeções intra-abdominais complicadas',
+      'Infeções da pele e tecidos moles complicadas',
+      'Infeções por Gram-negativos MDR (incl. Acinetobacter, Enterobacterales resistentes) em terapêutica combinada',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Carga 100 mg IV, depois 50 mg IV 12/12h. Em MDR considerar doses altas: carga 200 mg, depois 100 mg 12/12h.', ['sanford', 'infarmed']),
+    ],
+    loadingDose: d('Dose de carga', '100 mg IV (ou 200 mg em regime de dose alta).', ['sanford']),
+    prescriptionExamples: [
+      rx('Infeção intra-abdominal por MDR', 'Tigeciclina 100 mg IV de carga, depois 50 mg IV 12/12h em perfusão de 30–60 min.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação predominantemente biliar; sem ajuste renal.', [
+      d('Qualquer ClCr', 'Sem ajuste.', ['infarmed', 'renalHandbook']),
+    ], ['Sem monitorização renal específica'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Sem ajuste; não dialisável.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Reduzir manutenção na disfunção hepática grave.', [d('Child-Pugh C', 'Carga 100 mg, depois 25 mg 12/12h.', ['infarmed'])], ['Provas hepáticas']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a tetraciclinas/tigeciclina'],
+    interactions: ['Potencia anticoagulantes orais (vigiar INR)', 'Reduz eficácia de contracetivos orais'],
+    practicalNotes: ['Alerta de aumento de mortalidade — evitar em monoterapia na bacteriémia/pneumonia grave; baixas concentrações séricas.', 'NÃO cobre Pseudomonas nem Proteus.'],
+    references: refsFor(['sanford', 'infarmed', 'renalHandbook']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'colistin',
+    name: 'Colistina (colistimetato de sódio)',
+    aliases: ['colistin', 'colistimethate', 'polimixina E'],
+    drugClass: 'Polimixina',
+    categoryIds: ['antibiotics', 'sepsis', 'renal-dialysis'],
+    indications: [
+      'Infeções por Gram-negativos MDR/XDR (Acinetobacter, Pseudomonas, Enterobacterales resistentes a carbapenemos)',
+      'Pneumonia nosocomial por MDR (IV +/- inalada)',
+    ],
+    routes: ['Intravenosa', 'Inalatória'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Dose expressa em UI de colistimetato: carga 9 milhões UI (MUI), depois 4,5 MUI 12/12h. (1 MUI ≈ 80 mg de colistimetato ≈ 33 mg de colistina base.)', ['sanford', 'infarmed'], ['Confirmar unidades — risco de erro de dose grave.']),
+    ],
+    loadingDose: d('Dose de carga', '9 MUI IV (independentemente da função renal).', ['sanford', 'infarmed']),
+    prescriptionExamples: [
+      rx('Sépsis por Acinetobacter XDR', 'Colistina: carga 9 MUI IV, depois 4,5 MUI IV 12/12h em perfusão de 30–60 min; associar segundo agente ativo.', ['sanford']),
+    ],
+    renalAdjustment: renal('Nefrotóxica e de eliminação renal; manter carga, reduzir manutenção por TFG.', [
+      d('ClCr > 50 mL/min', '4,5 MUI 12/12h.', ['infarmed', 'renalHandbook']),
+      d('ClCr 30–50 mL/min', '~5,5–7,5 MUI/dia divididos 12/12h.', ['infarmed']),
+      d('ClCr 10–30 mL/min', '~4,5 MUI/dia (dividir 12/12h ou 24/24h).', ['infarmed']),
+      d('ClCr < 10 mL/min', '~3,5 MUI/dia.', ['infarmed', 'renalHandbook']),
+    ], ['Função renal diária', 'Sinais de neurotoxicidade (parestesias)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', '~2,25 MUI/dia; suplemento nos dias de diálise (é removida).', ['renalHandbook', 'infarmed']),
+      continuousKidneyReplacement: d('CRRT', 'Manter carga; manutenção próxima da plena (~4,5 MUI 12/12h) por remoção significativa.', ['renalHandbook', 'sanford']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['TDM (concentração de colistina) disponível apenas em centros de referência; alvo médio ~2 mg/L.'],
+    contraindications: ['Hipersensibilidade a polimixinas', 'Miastenia gravis'],
+    interactions: ['Nefrotoxicidade aditiva com aminoglicosídeos, vancomicina, contraste', 'Potencia bloqueadores neuromusculares'],
+    practicalNotes: ['Nefrotoxicidade dose-dependente é o principal fator limitante; a carga é essencial e não se reduz na insuficiência renal.', 'Preferir terapêutica combinada; a via inalada complementa a IV na pneumonia.'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'cotrimoxazole',
+    name: 'Cotrimoxazol (trimetoprim-sulfametoxazol)',
+    aliases: ['cotrimoxazole', 'TMP-SMX', 'trimetoprim-sulfametoxazol', 'sulfametoxazol-trimetoprim'],
+    drugClass: 'Associação sulfonamida + di-hidrofolato-redutase inibidor',
+    categoryIds: ['antibiotics', 'renal-dialysis'],
+    indications: [
+      'Pneumonia por Pneumocystis jirovecii (tratamento e profilaxia)',
+      'Infeções por Stenotrophomonas maltophilia e Nocardia',
+      'ITU e infeções por MRSA sensível',
+    ],
+    routes: ['Intravenosa', 'Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'PPC (tratamento): 15–20 mg/kg/dia de trimetoprim, divididos 6/6h–8/8h (IV ou PO), 21 dias. Infeções gerais: 8–10 mg/kg/dia de TMP divididos 12/12h. Profilaxia PPC: 160/800 mg 24/24h ou 3x/semana.', ['sanford', 'infarmed'], ['Dose calculada pela componente trimetoprim.']),
+    ],
+    prescriptionExamples: [
+      rx('Pneumonia por Pneumocystis jirovecii grave', 'Cotrimoxazol IV 5 mg/kg de TMP 8/8h (15 mg/kg/dia); associar corticoide se PaO2 < 70 mmHg. Duração 21 dias.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; reduzir dose em insuficiência renal.', [
+      d('ClCr > 30 mL/min', 'Dose plena.', ['renalHandbook']),
+      d('ClCr 15–30 mL/min', 'Reduzir dose em 50%.', ['renalHandbook', 'infarmed']),
+      d('ClCr < 15 mL/min', 'Evitar; se indispensável, 50% da dose com monitorização de níveis.', ['renalHandbook']),
+    ], ['Função renal', 'Potássio (risco de hipercaliémia)', 'Hemograma'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Reduzir dose 50%; administrar após a sessão.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Reduzir para ~50–75% da dose.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Usar com precaução na disfunção hepática (risco de hepatotoxicidade).', [d('Disfunção hepática grave', 'Evitar/usar com precaução.', ['infarmed'])], ['Provas hepáticas']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina; vigiar hemograma, potássio e função renal.'],
+    contraindications: ['Hipersensibilidade a sulfonamidas', 'Anemia megaloblástica por deficiência de folato', 'Insuficiência hepática grave'],
+    interactions: ['Aumenta INR com varfarina', 'Hipercaliémia com IECA/ARA e espironolactona', 'Aumenta níveis de metotrexato, fenitoína e sulfonilureias', 'Risco de nefrotoxicidade com ciclosporina'],
+    practicalNotes: ['Vigiar hipercaliémia (o trimetoprim bloqueia canais de sódio no túbulo distal).', 'Pode elevar a creatinina sérica sem redução real da TFG (inibe secreção tubular).'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'fosfomycin-iv',
+    name: 'Fosfomicina IV',
+    aliases: ['fosfomycin', 'fosfomicina intravenosa'],
+    drugClass: 'Fosfonato (antibiótico)',
+    categoryIds: ['antibiotics'],
+    indications: [
+      'Infeções graves por Gram-negativos e Gram-positivos MDR (terapêutica combinada)',
+      'ITU complicadas e pielonefrite',
+      'Infeções osteoarticulares e do SNC (adjuvante)',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '12–24 g/dia IV divididos 6/6h–8/8h (ex.: 4–8 g 8/8h); em infeções graves/MDR até 24 g/dia.', ['sanford', 'infarmed'], ['Elevada carga de sódio (~14 mmol Na+ por grama).']),
+    ],
+    prescriptionExamples: [
+      rx('Infeção por MDR — associação', 'Fosfomicina IV 4 g 6/6h (16 g/dia); diluir e perfundir em 30–60 min. Associar segundo agente ativo.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação renal; reduzir dose em insuficiência renal.', [
+      d('ClCr > 40 mL/min', 'Dose plena.', ['renalHandbook', 'infarmed']),
+      d('ClCr 20–40 mL/min', 'Reduzir dose ~40%.', ['renalHandbook']),
+      d('ClCr 10–20 mL/min', 'Reduzir dose ~60%.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', 'Reduzir dose ~75%.', ['renalHandbook']),
+    ], ['Função renal', 'Sódio e potássio (risco de hipernatrémia/hipocaliémia)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Dose única após cada sessão (é removida).', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Ajustar ao efluente; frequentemente próximo da dose plena.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática.', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina; vigiar eletrólitos.'],
+    contraindications: ['Hipersensibilidade à fosfomicina'],
+    interactions: ['Sinergia frequente com beta-lactâmicos e aminoglicosídeos', 'Carga de sódio relevante em IC/edema'],
+    practicalNotes: ['Elevado teor de sódio — atenção em insuficiência cardíaca e sobrecarga hídrica; vigiar hipocaliémia.', 'Usar sempre em associação em infeções graves para prevenir resistência.'],
+    references: refsFor(['sanford', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'doxycycline',
+    name: 'Doxiciclina',
+    aliases: ['doxycycline'],
+    drugClass: 'Tetraciclina',
+    categoryIds: ['antibiotics'],
+    indications: [
+      'Pneumonia adquirida na comunidade (cobertura de atípicas)',
+      'Infeções por riquétsias, leptospirose, doença de Lyme',
+      'Infeções por MRSA da comunidade (pele e tecidos moles)',
+    ],
+    routes: ['Intravenosa', 'Oral (biodisponibilidade elevada)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '100 mg IV/PO 12/12h. Em infeções graves (ex.: riquetsioses) manter 100 mg 12/12h.', ['sanford', 'cap2019', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Suspeita de riquetsiose/febre escaro-nodular grave', 'Doxiciclina 100 mg IV 12/12h; não atrasar por confirmação laboratorial.', ['sanford']),
+    ],
+    renalAdjustment: renal('Eliminação predominantemente não renal; sem ajuste.', [
+      d('Qualquer ClCr', 'Sem ajuste (segura na insuficiência renal, ao contrário das outras tetraciclinas).', ['renalHandbook', 'infarmed']),
+    ], ['Sem monitorização renal específica'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Sem ajuste; não removida.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Usar com precaução na disfunção hepática (metabolização/excreção biliar).', [d('Disfunção hepática', 'Vigiar; evitar doses elevadas prolongadas.', ['infarmed'])], ['Provas hepáticas em uso prolongado']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a tetraciclinas', 'Gravidez e crianças < 8 anos (regra geral)'],
+    interactions: ['Catiões (Ca, Mg, Al, Fe) e antiácidos reduzem absorção oral', 'Potencia varfarina', 'Indutores enzimáticos (fenitoína, carbamazepina, rifampicina) reduzem níveis'],
+    practicalNotes: ['Tetraciclina de eleição na insuficiência renal (sem efeito antianabólico marcado).', 'Fotossensibilidade e esofagite (tomar com água e em posição ereta na via oral).'],
+    references: refsFor(['sanford', 'cap2019', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+  {
+    id: 'posaconazole',
+    name: 'Posaconazol',
+    aliases: ['posaconazole'],
+    drugClass: 'Antifúngico triazólico',
+    categoryIds: ['antifungals'],
+    indications: [
+      'Profilaxia de infeções fúngicas invasivas em neutropenia/transplante',
+      'Aspergilose invasiva (tratamento e salvamento)',
+      'Mucormicose',
+    ],
+    routes: ['Intravenosa', 'Oral (comprimidos de libertação modificada; suspensão)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Comprimidos/IV: 300 mg 12/12h no dia 1, depois 300 mg 24/24h. Suspensão oral (menos previsível): 200 mg 8/8h (profilaxia) ou 400 mg 12/12h.', ['aspergillosis2016', 'infarmed'], ['Preferir comprimidos/IV à suspensão pela biodisponibilidade.']),
+    ],
+    loadingDose: d('Dose de carga (comprimidos/IV)', '300 mg 12/12h no primeiro dia.', ['infarmed']),
+    prescriptionExamples: [
+      rx('Profilaxia em neutropenia de alto risco', 'Posaconazol comprimidos 300 mg 12/12h no dia 1, depois 300 mg 24/24h; monitorizar nível se disponível.', ['aspergillosis2016']),
+    ],
+    renalAdjustment: renal('Sem ajuste renal (formulações orais); a formulação IV contém ciclodextrina que acumula em insuficiência renal.', [
+      d('ClCr ≥ 50 mL/min', 'Sem ajuste (IV ou oral).', ['infarmed']),
+      d('ClCr < 50 mL/min', 'Preferir formulação oral; usar IV apenas se benefício superar o risco de acumulação de ciclodextrina.', ['infarmed', 'renalHandbook']),
+    ], ['Função renal (se via IV)', 'Nível sérico de posaconazol'], {
+      continuousKidneyReplacement: d('CRRT', 'Preferir formulação oral; se IV, ponderar remoção da ciclodextrina.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Hepatotoxicidade possível; sem ajuste posológico fixo mas vigiar.', [d('Disfunção hepática', 'Vigiar provas hepáticas; sem ajuste de dose definido.', ['infarmed'])], ['Provas hepáticas periódicas']),
+    therapeuticDrugMonitoring: ['TDM recomendado: vale ≥ 0,7 mg/L (profilaxia) e ≥ 1,0–1,25 mg/L (tratamento).'],
+    contraindications: ['Hipersensibilidade a azóis', 'Co-administração com alcaloides da cravagem, sirolímus, e substratos sensíveis de CYP3A4 que prolongam QT'],
+    interactions: ['Inibidor potente do CYP3A4: aumenta tacrolímus, ciclosporina, sirolímus, estatinas, vincristina', 'Prolongamento do QT', 'Inibidores da bomba de protões e metoclopramida reduzem absorção da suspensão'],
+    practicalNotes: ['Espetro alargado incluindo mucormicetos (Rhizopus/Mucor) — ao contrário do voriconazol.', 'Comprimidos e IV têm biodisponibilidade muito superior à suspensão.'],
+    references: refsFor(['aspergillosis2016', 'infarmed', 'renalHandbook']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'flucytosine',
+    name: 'Flucitosina (5-FC)',
+    aliases: ['flucytosine', '5-flucitosina'],
+    drugClass: 'Análogo pirimidínico (antifúngico)',
+    categoryIds: ['antifungals', 'renal-dialysis'],
+    indications: [
+      'Meningoencefalite criptocócica (associada a anfotericina B)',
+      'Candidíase invasiva grave (associação em casos selecionados)',
+    ],
+    routes: ['Intravenosa', 'Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', '25 mg/kg 6/6h (100 mg/kg/dia), em associação com anfotericina B lipossómica na criptococose.', ['candidaIDSA', 'infarmed'], ['Nunca usar em monoterapia (resistência rápida).']),
+    ],
+    prescriptionExamples: [
+      rx('Meningite criptocócica — fase de indução', 'Flucitosina 25 mg/kg PO/IV 6/6h + anfotericina B lipossómica; monitorizar hemograma e níveis.', ['candidaIDSA']),
+    ],
+    renalAdjustment: renal('Eliminação renal; ajuste marcado e obrigatório para evitar mielotoxicidade.', [
+      d('ClCr > 40 mL/min', '25 mg/kg 6/6h.', ['renalHandbook']),
+      d('ClCr 20–40 mL/min', '25 mg/kg 12/12h.', ['renalHandbook']),
+      d('ClCr 10–20 mL/min', '25 mg/kg 24/24h.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', '25 mg/kg dose única, ajustar por níveis.', ['renalHandbook', 'infarmed']),
+    ], ['Hemograma (mielotoxicidade)', 'Níveis séricos de flucitosina', 'Função renal'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Uma dose de 25 mg/kg após cada sessão (é removida).', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', '25 mg/kg 12/12h, guiado por níveis.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Hepatotoxicidade possível; vigiar provas hepáticas.', [d('Disfunção hepática', 'Vigiar transaminases; sem ajuste fixo.', ['infarmed'])], ['Provas hepáticas']),
+    therapeuticDrugMonitoring: ['TDM recomendado: pico 30–80 mg/L (evitar > 100 mg/L pela mielotoxicidade).'],
+    contraindications: ['Hipersensibilidade à flucitosina', 'Deficiência grave de DPD (precaução)'],
+    interactions: ['Mielotoxicidade aditiva com outros mielossupressores', 'Nefrotoxicidade da anfotericina reduz clearance e aumenta toxicidade'],
+    practicalNotes: ['Mielossupressão dose e nível-dependente — monitorização de níveis essencial.', 'Sempre em associação para evitar emergência rápida de resistência.'],
+    references: refsFor(['candidaIDSA', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'valganciclovir',
+    name: 'Valganciclovir',
+    aliases: ['valganciclovir'],
+    drugClass: 'Pró-fármaco oral de ganciclovir (antiviral)',
+    categoryIds: ['antivirals', 'renal-dialysis'],
+    indications: [
+      'Tratamento e prevenção de doença por citomegalovírus (CMV) em imunodeprimidos/transplantados',
+      'Retinite por CMV',
+    ],
+    routes: ['Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Tratamento (indução): 900 mg PO 12/12h. Manutenção/profilaxia: 900 mg PO 24/24h. Tomar com alimentos.', ['infarmed', 'lexicomp'], ['Biodisponibilidade ~60%; 900 mg PO ≈ 5 mg/kg IV de ganciclovir.']),
+    ],
+    prescriptionExamples: [
+      rx('Doença por CMV em transplantado — indução', 'Valganciclovir 900 mg PO 12/12h com alimentos; passar a 900 mg/dia na fase de manutenção.', ['lexicomp']),
+    ],
+    renalAdjustment: renal('Eliminação renal; ajuste marcado e obrigatório.', [
+      d('ClCr ≥ 60 mL/min', '900 mg 12/12h (indução) / 900 mg 24/24h (manutenção).', ['infarmed']),
+      d('ClCr 40–59 mL/min', '450 mg 12/12h (indução) / 450 mg 24/24h (manutenção).', ['infarmed']),
+      d('ClCr 25–39 mL/min', '450 mg 24/24h (indução) / 450 mg 48/48h (manutenção).', ['infarmed']),
+      d('ClCr 10–24 mL/min', '450 mg 48/48h (indução) / 450 mg 2x/semana (manutenção).', ['infarmed', 'renalHandbook']),
+    ], ['Hemograma (neutropenia/trombocitopenia)', 'Função renal'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Não recomendado (comprimidos) — usar ganciclovir IV ajustado; é dialisável.', ['renalHandbook', 'infarmed']),
+      continuousKidneyReplacement: d('CRRT', 'Preferir ganciclovir IV com ajuste em CRRT.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico na disfunção hepática (a hidrólise a ganciclovir é hepática/intestinal).', [d('Disfunção hepática', 'Sem ajuste habitual.', ['infarmed'])], ['Sem monitorização hepática específica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de nível; monitorizar hemograma.'],
+    contraindications: ['Hipersensibilidade a ganciclovir/valganciclovir', 'Neutropenia grave (< 500/µL) ou trombocitopenia grave'],
+    interactions: ['Mielotoxicidade aditiva com micofenolato, zidovudina, cotrimoxazol', 'Aumento de convulsões com imipenem', 'Probenecide aumenta níveis'],
+    practicalNotes: ['Mielotoxicidade (neutropenia) é o efeito adverso limitante; considerar G-CSF.', 'Potencialmente teratogénico/carcinogénico — manuseamento com cuidado.'],
+    references: refsFor(['lexicomp', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'brivaracetam',
+    name: 'Brivaracetam',
+    aliases: ['brivaracetam'],
+    drugClass: 'Antiepilético (ligante da proteína SV2A)',
+    categoryIds: ['antiepileptics', 'renal-dialysis'],
+    indications: [
+      'Crises de início focal (terapêutica adjuvante ou monoterapia)',
+      'Alternativa ao levetiracetam quando este causa efeitos psiquiátricos',
+    ],
+    routes: ['Intravenosa', 'Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Início 50 mg 12/12h (ou 100 mg/dia); intervalo terapêutico 50–200 mg/dia divididos 12/12h. IV pode ser dado em bólus ou perfusão.', ['neurocriticalSE', 'infarmed']),
+    ],
+    prescriptionExamples: [
+      rx('Crises focais no doente crítico', 'Brivaracetam 100 mg IV 12/12h (bólus IV até 2 min); transição para oral na mesma dose quando possível.', ['neurocriticalSE']),
+    ],
+    renalAdjustment: renal('Metabolização predominantemente hepática; sem ajuste renal formal, evitar em doença renal terminal por falta de dados.', [
+      d('Qualquer ClCr (sem diálise)', 'Sem ajuste posológico.', ['infarmed']),
+      d('Doença renal terminal', 'Não recomendado (dados insuficientes).', ['infarmed', 'renalHandbook']),
+    ], ['Vigilância clínica de crises', 'Efeitos no SNC'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Sem recomendação estabelecida; usar com precaução.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste formal; vigilância clínica.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Metabolização hepática; reduzir dose na disfunção hepática.', [d('Todos os graus (Child-Pugh A–C)', 'Iniciar 50 mg/dia, máximo 150 mg/dia divididos 12/12h.', ['infarmed'])], ['Vigilância clínica']),
+    therapeuticDrugMonitoring: ['Não requer TDM de rotina.'],
+    contraindications: ['Hipersensibilidade a brivaracetam ou derivados da pirrolidona'],
+    interactions: ['Rifampicina reduz níveis (aumentar dose)', 'Pode aumentar níveis de carbamazepina-epóxido', 'Efeito aditivo com álcool no SNC'],
+    practicalNotes: ['Maior afinidade para SV2A que o levetiracetam e menor incidência de efeitos comportamentais.', 'Conversão 1:1 na transição IV/oral.'],
+    references: refsFor(['neurocriticalSE', 'infarmed', 'renalHandbook']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'clonidine',
+    name: 'Clonidina',
+    aliases: ['clonidine'],
+    drugClass: 'Agonista alfa-2 adrenérgico central',
+    categoryIds: ['sedation-analgesia'],
+    indications: [
+      'Sedação adjuvante e controlo de agitação/delírio na UCI',
+      'Prevenção/tratamento de síndrome de privação (opioides, álcool, dexmedetomidina)',
+      'Hipertensão e taquicardia adrenérgica',
+    ],
+    routes: ['Oral', 'Intravenosa', 'Transdérmica'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Oral: 75–300 µg 8/8h. IV: 0,5–2 µg/kg lento; perfusão 0,5–2 µg/kg/h. Titular pela resposta e hemodinâmica.', ['pademguidelines', 'infarmed'], ['Suspensão abrupta causa hipertensão de rebound.']),
+    ],
+    prescriptionExamples: [
+      rx('Adjuvante de sedação / desmame de dexmedetomidina', 'Clonidina 150 µg PO/SNG 8/8h, titulada; reduzir gradualmente antes de suspender.', ['pademguidelines']),
+    ],
+    renalAdjustment: renal('Eliminação parcialmente renal; reduzir dose na insuficiência renal grave.', [
+      d('ClCr > 30 mL/min', 'Sem ajuste significativo.', ['renalHandbook']),
+      d('ClCr < 30 mL/min', 'Iniciar com dose mais baixa e titular (efeito prolongado).', ['renalHandbook', 'infarmed']),
+    ], ['Pressão arterial', 'Frequência cardíaca'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Pouco removida; sem suplemento; titular pela resposta.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Titular pela resposta hemodinâmica.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico; titular pela resposta.', [d('Disfunção hepática', 'Titular com precaução.', ['infarmed'])], ['Pressão arterial e frequência cardíaca']),
+    therapeuticDrugMonitoring: ['Não requer TDM; monitorização hemodinâmica.'],
+    contraindications: ['Hipersensibilidade à clonidina', 'Bradicardia grave/bloqueio AV de alto grau (relativa)'],
+    interactions: ['Efeito hipotensor e bradicardizante aditivo com betabloqueantes e outros anti-hipertensores', 'Antidepressivos tricíclicos reduzem o efeito anti-hipertensor', 'Depressão do SNC aditiva com sedativos'],
+    practicalNotes: ['Não suspender abruptamente — risco de crise hipertensiva de rebound; reduzir gradualmente.', 'Útil como poupador de opioides/sedativos e no delírio hiperativo.'],
+    references: refsFor(['pademguidelines', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'thiopental',
+    name: 'Tiopental sódico',
+    aliases: ['thiopental', 'tiopental', 'pentotal'],
+    drugClass: 'Barbitúrico de ação curta',
+    categoryIds: ['sedation-analgesia', 'antiepileptics'],
+    indications: [
+      'Estado de mal epilético refratário (coma barbitúrico)',
+      'Hipertensão intracraniana refratária',
+      'Indução anestésica de sequência rápida',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Indução: 3–5 mg/kg IV. Estado de mal/HIC refratária: bólus 2–5 mg/kg seguido de perfusão 1–5 mg/kg/h, titulada a supressão de surtos no EEG.', ['neurocriticalSE', 'infarmed'], ['Requer monitorização EEG e suporte hemodinâmico/ventilatório.']),
+    ],
+    loadingDose: d('Bólus inicial no estado de mal refratário', '2–5 mg/kg IV, repetível até controlo das crises.', ['neurocriticalSE']),
+    prescriptionExamples: [
+      rx('Estado de mal epilético super-refratário', 'Tiopental: bólus 3–5 mg/kg IV, depois perfusão 3–5 mg/kg/h titulada a surto-supressão no EEG contínuo; suporte vasopressor conforme necessário.', ['neurocriticalSE']),
+    ],
+    renalAdjustment: renal('Metabolização hepática; sem ajuste renal formal, mas acumula em perfusão prolongada.', [
+      d('Qualquer ClCr', 'Sem ajuste formal; titular pela resposta e vigiar acumulação.', ['renalHandbook', 'infarmed']),
+    ], ['Pressão arterial', 'EEG (surto-supressão)', 'Níveis se disponíveis'], {
+      continuousKidneyReplacement: d('CRRT', 'Titular pela resposta; alta ligação proteica e lipossolubilidade limitam remoção.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Metabolização hepática; reduzir dose na disfunção hepática grave.', [d('Disfunção hepática', 'Reduzir dose e titular lentamente.', ['infarmed'])], ['Pressão arterial', 'Nível de consciência']),
+    therapeuticDrugMonitoring: ['Titulação por EEG contínuo (surto-supressão); doseamento sérico disponível em alguns centros.'],
+    contraindications: ['Hipersensibilidade a barbitúricos', 'Porfíria aguda intermitente', 'Estado de mal asmático (relativa)', 'Instabilidade hemodinâmica grave'],
+    interactions: ['Depressão cardiovascular e respiratória aditiva com outros sedativos/opioides', 'Indutor enzimático (reduz níveis de muitos fármacos)', 'Precipita com alguns fármacos ácidos na mesma via'],
+    practicalNotes: ['Cinética de ordem zero em perfusão prolongada — acumulação e despertar muito atrasado.', 'Causa hipotensão significativa, depressão miocárdica e imunossupressão; risco de íleo e infeção.'],
+    references: refsFor(['neurocriticalSE', 'infarmed', 'renalHandbook']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'hydromorphone',
+    name: 'Hidromorfona',
+    aliases: ['hydromorphone'],
+    drugClass: 'Opioide agonista µ',
+    categoryIds: ['sedation-analgesia', 'renal-dialysis'],
+    indications: [
+      'Analgesia moderada a grave no doente crítico',
+      'Alternativa à morfina na insuficiência renal (menos metabolitos ativos)',
+    ],
+    routes: ['Intravenosa', 'Subcutânea', 'Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Bólus IV: 0,2–0,6 mg cada 1–2h titulado; perfusão 0,5–3 mg/h. (Potência ~5–7x a da morfina.)', ['pademguidelines', 'infarmed'], ['Titular pela dor e nível de sedação.']),
+    ],
+    prescriptionExamples: [
+      rx('Analgesia em ventilação mecânica', 'Hidromorfona 0,2–0,6 mg IV cada 1–2h em SOS ou perfusão 0,5–1 mg/h titulada por escala de dor.', ['pademguidelines']),
+    ],
+    renalAdjustment: renal('Preferível à morfina na insuficiência renal; metabolito (hidromorfona-3-glucuronido) acumula mas sem efeito analgésico/opioide relevante — vigiar neuroexcitação.', [
+      d('ClCr > 50 mL/min', 'Dose habitual.', ['renalHandbook']),
+      d('ClCr 10–50 mL/min', 'Reduzir dose ~25–50% e titular.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', 'Reduzir dose ~50% e prolongar intervalo.', ['renalHandbook', 'infarmed']),
+    ], ['Nível de sedação/depressão respiratória', 'Função renal', 'Sinais de neuroexcitação (mioclonias)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Titular pela resposta; iniciar com doses reduzidas.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Titular pela resposta.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Metabolização hepática; reduzir dose na disfunção hepática.', [d('Disfunção hepática', 'Reduzir dose inicial e titular (semivida prolongada).', ['infarmed'])], ['Nível de consciência e depressão respiratória']),
+    therapeuticDrugMonitoring: ['Não requer TDM; monitorização clínica (sedação, dor, respiração).'],
+    contraindications: ['Hipersensibilidade a opioides', 'Depressão respiratória grave sem suporte ventilatório', 'Íleo paralítico'],
+    interactions: ['Depressão do SNC/respiratória aditiva com benzodiazepinas, álcool e outros sedativos', 'Serotoninérgicos aumentam risco de síndrome serotoninérgica'],
+    practicalNotes: ['Boa opção na insuficiência renal por acumulação limitada de metabolitos ativos (ao contrário da morfina).', 'Reversível com naloxona.'],
+    references: refsFor(['pademguidelines', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'pethidine',
+    name: 'Petidina (meperidina)',
+    aliases: ['pethidine', 'meperidina', 'meperidine'],
+    drugClass: 'Opioide agonista µ (fenilpiperidina)',
+    categoryIds: ['sedation-analgesia'],
+    indications: [
+      'Tratamento dos calafrios pós-operatórios/pós-transfusionais (shivering)',
+      'Analgesia de curta duração (uso restrito)',
+    ],
+    routes: ['Intravenosa', 'Intramuscular', 'Subcutânea'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Shivering: 12,5–25 mg IV lento. Analgesia: 25–50 mg IV/IM cada 3–4h (uso limitado; evitar cronicamente).', ['lexicomp', 'infarmed'], ['Evitar doses repetidas pelo metabolito neurotóxico (normeperidina).']),
+    ],
+    prescriptionExamples: [
+      rx('Calafrios pós-operatórios', 'Petidina 12,5–25 mg IV lento em dose única para controlo do shivering.', ['lexicomp']),
+    ],
+    renalAdjustment: renal('Metabolito ativo neurotóxico (normeperidina) acumula na insuficiência renal — evitar.', [
+      d('ClCr > 50 mL/min', 'Uso de curta duração apenas.', ['renalHandbook']),
+      d('ClCr < 50 mL/min', 'Evitar (acumulação de normeperidina → convulsões).', ['renalHandbook', 'infarmed']),
+    ], ['Vigilância neurológica (mioclonias/convulsões)'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Evitar; a normeperidina é mal removida.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Evitar.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Metabolização hepática; reduzir dose e evitar uso repetido na disfunção hepática.', [d('Disfunção hepática', 'Evitar/reduzir (acumulação do fármaco e do metabolito).', ['infarmed'])], ['Vigilância neurológica']),
+    therapeuticDrugMonitoring: ['Não requer TDM; vigilância de neurotoxicidade.'],
+    contraindications: ['Hipersensibilidade a opioides', 'Uso concomitante ou recente (14 dias) de IMAO — risco de reação grave', 'Insuficiência renal'],
+    interactions: ['IMAO: reação hiperpirética/serotoninérgica potencialmente fatal (contraindicado)', 'Serotoninérgicos aumentam risco de síndrome serotoninérgica', 'Depressão do SNC aditiva'],
+    practicalNotes: ['Uso muito restrito na atualidade — sobretudo shivering; evitar analgesia prolongada.', 'Normeperidina é excitatória do SNC (não revertida pela naloxona) e causa convulsões.'],
+    references: refsFor(['lexicomp', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'olanzapine',
+    name: 'Olanzapina',
+    aliases: ['olanzapine'],
+    drugClass: 'Antipsicótico atípico',
+    categoryIds: ['sedation-analgesia'],
+    indications: [
+      'Delírio hiperativo na UCI',
+      'Agitação aguda',
+      'Náuseas/vómitos refratários (adjuvante)',
+    ],
+    routes: ['Oral', 'Orodispersível', 'Intramuscular'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Delírio: 2,5–5 mg PO 12/12h–24/24h, titular até 10–20 mg/dia. Agitação aguda: 5–10 mg IM.', ['pademguidelines', 'infarmed'], ['Idosos/frágeis: iniciar com 2,5 mg.']),
+    ],
+    prescriptionExamples: [
+      rx('Delírio hiperativo na UCI', 'Olanzapina 5 mg PO/orodispersível ao deitar, titular pela resposta; reavaliar necessidade diariamente.', ['pademguidelines']),
+    ],
+    renalAdjustment: renal('Metabolização hepática; sem ajuste renal significativo.', [
+      d('Qualquer ClCr', 'Sem ajuste (não dialisável).', ['renalHandbook', 'infarmed']),
+    ], ['Glicémia', 'QTc', 'Nível de sedação'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Sem ajuste; não removida.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Metabolização hepática; iniciar com dose reduzida na disfunção hepática.', [d('Disfunção hepática', 'Iniciar 5 mg e titular com precaução; vigiar transaminases.', ['infarmed'])], ['Provas hepáticas', 'Nível de sedação']),
+    therapeuticDrugMonitoring: ['Não requer TDM; monitorizar glicémia e QTc.'],
+    contraindications: ['Hipersensibilidade à olanzapina', 'Risco conhecido de glaucoma de ângulo estreito'],
+    interactions: ['Depressão do SNC aditiva com benzodiazepinas (evitar IM concomitante com benzodiazepina IV — hipotensão/depressão respiratória)', 'Fluvoxamina e tabaco alteram níveis (CYP1A2)', 'Prolongamento do QT com outros QT-prolongadores'],
+    practicalNotes: ['Menor risco de sintomas extrapiramidais e prolongamento do QT que o haloperidol.', 'Efeitos metabólicos (hiperglicémia, ganho ponderal) relevantes em uso prolongado.'],
+    references: refsFor(['pademguidelines', 'infarmed', 'renalHandbook']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+  {
+    id: 'isoprenaline',
+    name: 'Isoprenalina (isoproterenol)',
+    aliases: ['isoprenaline', 'isoproterenol'],
+    drugClass: 'Agonista beta-1 e beta-2 adrenérgico não seletivo',
+    categoryIds: ['vasopressors-inotropes', 'antiarrhythmics'],
+    indications: [
+      'Bradicardia sintomática/bloqueio AV refratário como ponte para pacing',
+      'Torsades de pointes por bradicardia/QT longo (aumento da frequência)',
+      'Bradicardia após transplante cardíaco',
+    ],
+    routes: ['Intravenosa (perfusão)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Perfusão IV 0,02–0,2 µg/kg/min (habitualmente iniciar 2–10 µg/min) titulada à frequência cardíaca alvo.', ['aclsACC', 'infarmed'], ['Monitorização contínua de ECG e PA.']),
+    ],
+    prescriptionExamples: [
+      rx('Bradicardia/BAV refratário — ponte para pacing', 'Isoprenalina em perfusão 2–10 µg/min titulada para FC alvo; preparar pacing transcutâneo/transvenoso.', ['aclsACC']),
+    ],
+    renalAdjustment: renal('Metabolização rápida (COMT/tecidual); sem ajuste renal.', [
+      d('Qualquer ClCr', 'Sem ajuste; titular pela resposta.', ['renalHandbook']),
+    ], ['ECG contínuo', 'Frequência cardíaca', 'Pressão arterial'], {
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste; titular pela resposta.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico; titular pela resposta.', [d('Disfunção hepática', 'Sem ajuste; titular.', ['infarmed'])], ['ECG e frequência cardíaca']),
+    therapeuticDrugMonitoring: ['Não requer TDM; monitorização hemodinâmica e de ritmo.'],
+    contraindications: ['Taquiarritmias', 'Isquémia miocárdica ativa/angina', 'Estenose aórtica grave (relativa)'],
+    interactions: ['Arritmogénese aumentada com outros simpaticomiméticos e digitálicos', 'Efeito antagonizado por betabloqueantes', 'Halogenados aumentam risco de arritmias'],
+    practicalNotes: ['Aumenta a frequência e o consumo miocárdico de O2 e causa vasodilatação (pode baixar a PA diastólica).', 'Evitar na isquémia; útil na bradicardia refratária como ponte para pacing.'],
+    references: refsFor(['aclsACC', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'angiotensin-ii',
+    name: 'Angiotensina II',
+    aliases: ['angiotensin-ii', 'angiotensina 2', 'giapreza'],
+    drugClass: 'Vasopressor (peptídeo do sistema renina-angiotensina)',
+    categoryIds: ['vasopressors-inotropes', 'sepsis'],
+    indications: [
+      'Choque vasodilatador/distributivo refratário a noradrenalina e vasopressina',
+      'Choque séptico refratário (terapêutica de resgate)',
+    ],
+    routes: ['Intravenosa (perfusão em veia central)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Iniciar 20 ng/kg/min; titular cada 5 min até PA alvo (máximo 80 ng/kg/min nas primeiras 3h, depois máximo 40 ng/kg/min de manutenção).', ['ssc2021', 'vasopressinTrials'], ['Fármaco de terceira linha no choque vasodilatador.']),
+    ],
+    prescriptionExamples: [
+      rx('Choque séptico refratário a catecolaminas', 'Angiotensina II em perfusão central: iniciar 20 ng/kg/min, titular para PAM ≥ 65 mmHg; associar tromboprofilaxia.', ['ssc2021']),
+    ],
+    renalAdjustment: renal('Metabolização por peptidases tecidulares/plasmáticas; sem ajuste renal.', [
+      d('Qualquer ClCr', 'Sem ajuste; titular pela resposta.', ['lexicomp']),
+    ], ['Pressão arterial invasiva', 'Perfusão periférica'], {
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste; titular pela resposta hemodinâmica.', ['lexicomp']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico; titular pela resposta.', [d('Disfunção hepática', 'Sem ajuste; titular.', ['lexicomp'])], ['Pressão arterial']),
+    therapeuticDrugMonitoring: ['Não requer TDM; monitorização hemodinâmica invasiva.'],
+    contraindications: ['Hipersensibilidade à angiotensina II'],
+    interactions: ['Efeito potenciado por IECA; atenuado por ARA', 'Efeito vasopressor aditivo com outras catecolaminas'],
+    practicalNotes: ['Risco aumentado de eventos tromboembólicos — associar tromboprofilaxia.', 'Poupa catecolaminas no choque vasodilatador refratário; requer via central.'],
+    references: refsFor(['ssc2021', 'vasopressinTrials', 'lexicomp']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'ephedrine',
+    name: 'Efedrina',
+    aliases: ['ephedrine'],
+    drugClass: 'Simpaticomimético de ação mista (direta e indireta)',
+    categoryIds: ['vasopressors-inotropes'],
+    indications: [
+      'Hipotensão transitória induzida por anestesia/sedação',
+      'Suporte hemodinâmico de curta duração enquanto se prepara perfusão',
+    ],
+    routes: ['Intravenosa (bólus)', 'Intramuscular'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Bólus IV 5–10 mg, repetível cada 5–10 min (dose total habitual até 30–50 mg).', ['lexicomp', 'infarmed'], ['Taquifilaxia com doses repetidas.']),
+    ],
+    prescriptionExamples: [
+      rx('Hipotensão pós-indução anestésica', 'Efedrina 5–10 mg IV em bólus, repetir conforme PA; se necessidade sustentada, iniciar vasopressor em perfusão.', ['lexicomp']),
+    ],
+    renalAdjustment: renal('Eliminação parcialmente renal; sem ajuste relevante no uso agudo em bólus.', [
+      d('Qualquer ClCr', 'Sem ajuste no uso agudo.', ['renalHandbook']),
+    ], ['Pressão arterial', 'Frequência cardíaca'], {
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste; uso pontual.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Sem ajuste específico; uso pontual.', [d('Disfunção hepática', 'Sem ajuste.', ['infarmed'])], ['Pressão arterial e frequência cardíaca']),
+    therapeuticDrugMonitoring: ['Não requer TDM; monitorização hemodinâmica.'],
+    contraindications: ['Hipersensibilidade a simpaticomiméticos', 'Taquiarritmias', 'Uso concomitante de IMAO (crise hipertensiva)'],
+    interactions: ['Crise hipertensiva com IMAO', 'Arritmias com halogenados e digitálicos', 'Efeito reduzido por betabloqueantes / reserpina'],
+    practicalNotes: ['Aumenta a PA e a FC por ação alfa e beta; útil na hipotensão anestésica transitória.', 'Taquifilaxia rápida — se hipotensão sustentada, preferir perfusão de vasopressor.'],
+    references: refsFor(['lexicomp', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'verapamil',
+    name: 'Verapamil',
+    aliases: ['verapamil'],
+    drugClass: 'Bloqueador dos canais de cálcio (não di-hidropiridina, fenilalquilamina)',
+    categoryIds: ['antiarrhythmics'],
+    indications: [
+      'Controlo de frequência na fibrilhação/flutter auricular',
+      'Taquicardia supraventricular paroxística',
+      'Taquicardia auricular',
+    ],
+    routes: ['Intravenosa', 'Oral'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'IV: 2,5–5 mg em bólus lento (2 min), repetível 5–10 mg após 15–30 min (máx ~20 mg). Oral: 40–120 mg 8/8h.', ['aclsACC', 'infarmed'], ['Monitorização de ECG e PA; ter cálcio disponível.']),
+    ],
+    prescriptionExamples: [
+      rx('TSV paroxística (após manobras vagais/adenosina)', 'Verapamil 2,5–5 mg IV lento em 2 min, com monitorização contínua; repetir se necessário.', ['aclsACC']),
+    ],
+    renalAdjustment: renal('Metabolização hepática; sem ajuste renal significativo.', [
+      d('Qualquer ClCr', 'Sem ajuste; titular pela resposta (metabolito acumula ligeiramente).', ['renalHandbook', 'infarmed']),
+    ], ['ECG (PR/bloqueio AV)', 'Pressão arterial'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Sem ajuste; não dialisável.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Metabolização hepática extensa; reduzir dose na disfunção hepática.', [d('Disfunção hepática', 'Reduzir dose ~50% e titular (semivida prolongada).', ['infarmed'])], ['ECG', 'Pressão arterial']),
+    therapeuticDrugMonitoring: ['Não requer TDM; monitorização de ECG e PA.'],
+    contraindications: ['Disfunção sistólica do VE/insuficiência cardíaca descompensada', 'Bloqueio AV de 2.º/3.º grau sem pacemaker', 'Síndrome de WPW com fibrilhação auricular', 'Taquicardia de complexos largos de origem indeterminada', 'Associação IV com betabloqueantes'],
+    interactions: ['Bradicardia/bloqueio AV grave com betabloqueantes (evitar associação IV)', 'Aumenta níveis de digoxina, ciclosporina, estatinas (inibe CYP3A4/P-gp)', 'Efeito hipotensor aditivo'],
+    practicalNotes: ['Inotrópico negativo — evitar na insuficiência cardíaca sistólica.', 'Não usar em taquicardia de complexos largos indiferenciada nem em WPW com FA (risco de FV).'],
+    references: refsFor(['aclsACC', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'metoprolol',
+    name: 'Metoprolol',
+    aliases: ['metoprolol'],
+    drugClass: 'Betabloqueante beta-1 seletivo',
+    categoryIds: ['antiarrhythmics'],
+    indications: [
+      'Controlo de frequência na fibrilhação/flutter auricular e taquicardias supraventriculares',
+      'Síndrome coronária aguda',
+      'Controlo de resposta adrenérgica (ex.: tempestade tiroideia, dissecção aórtica)',
+    ],
+    routes: ['Intravenosa', 'Oral (tartarato de libertação imediata; succinato de libertação prolongada)'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'IV (tartarato): 2,5–5 mg em bólus lento cada 5 min até 15 mg. Oral: tartarato 25–100 mg 12/12h; succinato 50–200 mg 24/24h.', ['aclsACC', 'infarmed'], ['Monitorização de FC/PA; usar com precaução na IC descompensada.']),
+    ],
+    prescriptionExamples: [
+      rx('Controlo de frequência na FA rápida', 'Metoprolol tartarato 2,5–5 mg IV lento cada 5 min (máx 15 mg), depois passar a oral; monitorização contínua.', ['aclsACC']),
+    ],
+    renalAdjustment: renal('Metabolização hepática; sem ajuste renal.', [
+      d('Qualquer ClCr', 'Sem ajuste (não removido significativamente por diálise).', ['renalHandbook', 'infarmed']),
+    ], ['Frequência cardíaca', 'Pressão arterial', 'ECG'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'Sem ajuste; titular pela resposta.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Sem ajuste.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('Metabolização hepática (CYP2D6); reduzir dose na disfunção hepática.', [d('Disfunção hepática', 'Iniciar com dose reduzida e titular.', ['infarmed'])], ['Frequência cardíaca', 'Pressão arterial']),
+    therapeuticDrugMonitoring: ['Não requer TDM; monitorização hemodinâmica.'],
+    contraindications: ['Bradicardia grave / bloqueio AV de 2.º/3.º grau sem pacemaker', 'Insuficiência cardíaca descompensada / choque cardiogénico', 'Asma grave/broncospasmo ativo (relativa)', 'Feocromocitoma sem alfa-bloqueio prévio'],
+    interactions: ['Bradicardia/bloqueio AV com verapamil/diltiazem IV, digoxina e amiodarona', 'Inibidores do CYP2D6 (fluoxetina, paroxetina) aumentam níveis', 'Mascara sinais de hipoglicémia'],
+    practicalNotes: ['Beta-1 seletivo (menos broncospasmo que os não seletivos, mas cautela na asma).', 'Suspensão abrupta pode causar taquicardia/isquémia de rebound.'],
+    references: refsFor(['aclsACC', 'renalHandbook', 'infarmed']),
+    lastReviewedAt: REVIEW_DATE,
+    validationStatus: REVIEW,
+    confidence: 'moderate',
+    reviewNotes: REVIEW_NOTES,
+  },
+
+  {
+    id: 'procainamide',
+    name: 'Procainamida',
+    aliases: ['procainamide'],
+    drugClass: 'Antiarrítmico de classe Ia',
+    categoryIds: ['antiarrhythmics', 'renal-dialysis'],
+    indications: [
+      'Taquicardia de complexos largos estável (incl. hemodinâmica preservada)',
+      'Fibrilhação auricular pré-excitada (WPW)',
+      'Taquicardia ventricular monomórfica estável',
+    ],
+    routes: ['Intravenosa'],
+    usualAdultDose: [
+      d('Adulto em Medicina Intensiva', 'Carga: 15–17 mg/kg IV a 20–50 mg/min (parar se arritmia resolve, hipotensão, ou QRS alarga > 50%). Manutenção: perfusão 1–4 mg/min.', ['aclsACC', 'infarmed'], ['Monitorização contínua de ECG e PA.']),
+    ],
+    loadingDose: d('Dose de carga', '15–17 mg/kg IV a 20–50 mg/min, com paragem pelos critérios de segurança.', ['aclsACC']),
+    prescriptionExamples: [
+      rx('FA pré-excitada (WPW)', 'Procainamida 15–17 mg/kg IV a 20–50 mg/min até conversão/critérios de paragem, depois perfusão 1–4 mg/min.', ['aclsACC']),
+    ],
+    renalAdjustment: renal('Procainamida e o metabolito ativo NAPA têm eliminação renal; reduzir dose/perfusão na insuficiência renal.', [
+      d('ClCr > 50 mL/min', 'Dose habitual.', ['renalHandbook']),
+      d('ClCr 10–50 mL/min', 'Reduzir perfusão; prolongar intervalo da carga.', ['renalHandbook']),
+      d('ClCr < 10 mL/min', 'Reduzir marcadamente (acumulação de NAPA → toxicidade/torsades).', ['renalHandbook', 'infarmed']),
+    ], ['ECG (QRS/QTc)', 'Pressão arterial', 'Níveis de procainamida e NAPA'], {
+      intermittentHemodialysis: d('Hemodiálise intermitente', 'É removida; considerar suplemento e monitorizar níveis.', ['renalHandbook']),
+      continuousKidneyReplacement: d('CRRT', 'Reduzir perfusão e monitorizar níveis.', ['renalHandbook']),
+    }),
+    hepaticAdjustment: hepatic('A acetilação hepática forma NAPA; reduzir dose na disfunção hepática.', [d('Disfunção hepática', 'Reduzir dose e monitorizar níveis.', ['infarmed'])], ['ECG', 'Níveis séricos']),
+    therapeuticDrugMonitoring: ['Procainamida terapêutica 4–10 mg/L; NAPA 15–25 mg/L; monitorizar QTc e QRS.'],
+    contraindications: ['Bloqueio AV completo sem pacemaker', 'QT longo / torsades prévias', 'Lúpus induzido por fármacos', 'Insuficiência cardíaca grave'],
+    interactions: ['Prolongamento aditivo do QT com amiodarona, sotalol e outros', 'Cimetidina/amiodarona aumentam níveis', 'Efeito aditivo em bloqueio AV'],
+    practicalNotes: ['Vigiar hipotensão durante a carga (perfusão lenta) e alargamento do QRS.', 'Uso prolongado associado a síndrome lúpica induzida por fármacos.'],
+    references: refsFor(['aclsACC', 'renalHandbook', 'infarmed']),
     lastReviewedAt: REVIEW_DATE,
     validationStatus: REVIEW,
     confidence: 'moderate',

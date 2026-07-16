@@ -2,9 +2,7 @@ import { ClinicalSection } from '../components/ClinicalSection'
 import { DoseAdjustmentList } from '../components/DoseAdjustmentList'
 import { DrugCalculators } from '../components/DrugCalculators'
 import { Icon } from '../components/Icon'
-import { SafetyBanner } from '../components/SafetyBanner'
 import { SourceLinks } from '../components/SourceLinks'
-import { ValidationBadge } from '../components/ValidationBadge'
 import { getCategoryById } from '../data/categories'
 import { getDrugById } from '../data/drugs'
 import { categoryHref, homeHref } from '../lib/routes'
@@ -21,13 +19,6 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
   const categories = drug.categoryIds
     .map((categoryId) => getCategoryById(categoryId))
     .filter((category) => category !== undefined)
-  const verificationLabels = {
-    'not-compared': 'Comparação ainda não realizada',
-    consensus: 'Consenso entre fontes',
-    'context-dependent': 'Diferença dependente do contexto',
-    conflict: 'Discrepância por resolver',
-  }
-
   return (
     <main className="content-width page-content drug-detail">
       <nav className="breadcrumbs" aria-label="Navegação hierárquica">
@@ -41,9 +32,6 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
       <section className="drug-hero">
         <div className="drug-hero__mark">Rx</div>
         <div className="drug-hero__main">
-          <div className="drug-hero__status">
-            <ValidationBadge status={drug.validationStatus} confidence={drug.confidence} />
-          </div>
           <h1>{drug.name}</h1>
           <p>{drug.drugClass}</p>
           <div className="drug-hero__tags">
@@ -57,16 +45,12 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
         </a>
       </section>
 
-      {drug.validationStatus !== 'source-verified' && drug.validationStatus !== 'validated' && (
-        <SafetyBanner />
-      )}
-
       <div className="detail-layout">
         <aside className="detail-summary">
           <section>
             <span className="eyebrow">Resumo da ficha</span>
             <dl>
-              <div><dt>Última revisão</dt><dd>{drug.lastReviewedAt ?? 'Nunca revista'}</dd></div>
+              <div><dt>Última revisão</dt><dd>{drug.lastReviewedAt ?? '—'}</dd></div>
               <div><dt>Prioridade</dt><dd>{drug.priority}</dd></div>
               <div><dt>Subcategorias</dt><dd>{drug.subcategories.join('; ') || '—'}</dd></div>
               <div><dt>Referências</dt><dd>{drug.references.length}</dd></div>
@@ -75,24 +59,11 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
             </dl>
           </section>
           <section className="review-note">
-            <strong>Notas de revisão</strong>
+            <strong>Notas documentais</strong>
             <ul>
               {drug.reviewNotes.map((note) => <li key={note}>{note}</li>)}
             </ul>
           </section>
-          {drug.verification && (
-            <section className={`verification-note verification-note--${drug.verification.status}`}>
-              <strong>{verificationLabels[drug.verification.status]}</strong>
-              <span>{drug.verification.comparedSourceIds.length} fontes comparadas · {drug.verification.reviewedAt}</span>
-              <p><b>Âmbito:</b> {drug.verification.scope}</p>
-              <p>{drug.verification.summary}</p>
-              {drug.verification.discrepancies.length > 0 && (
-                <ul>
-                  {drug.verification.discrepancies.map((item) => <li key={item}>{item}</li>)}
-                </ul>
-              )}
-            </section>
-          )}
         </aside>
 
         <div className="detail-sections">
@@ -120,7 +91,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
             <div className="prescription-list">
               {drug.prescriptionExamples.map((example) => (
                 <article key={example.title}>
-                  <div><strong>{example.title}</strong><ValidationBadge status={example.validationStatus} /></div>
+                  <div><strong>{example.title}</strong></div>
                   <code>{example.prescription}</code>
                   {example.context && <p>{example.context}</p>}
                   {example.notes && <ul>{example.notes.map((note) => <li key={note}>{note}</li>)}</ul>}

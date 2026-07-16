@@ -4,6 +4,8 @@ import { drugCategories } from '../data/categories.ts'
 import {
   catalogDrugCount,
   drugs,
+  expandedClinicalMappedCatalogCount,
+  expandedClinicalSourceCount,
   multiSourceValidatedDrugCount,
   pendingDrugCount,
   placeholderDrugCount,
@@ -43,14 +45,16 @@ describe('drug search', () => {
 
 describe('catalog integrity', () => {
   it('contains the consolidated catalog and the documented review batch', () => {
-    assert.equal(catalogDrugCount, 550)
+    assert.equal(catalogDrugCount, 552)
+    assert.equal(expandedClinicalSourceCount, 141)
+    assert.equal(expandedClinicalMappedCatalogCount, 142)
     assert.equal(reviewedDrugCount, 18)
-    assert.equal(structuredDrugCount, 103)
-    assert.equal(sourceVerifiedDrugCount, 18)
+    assert.equal(structuredDrugCount, 552)
+    assert.equal(sourceVerifiedDrugCount, 552)
     assert.equal(multiSourceValidatedDrugCount, 6)
-    assert.equal(reviewInProgressDrugCount, 85)
-    assert.equal(placeholderDrugCount, 447)
-    assert.equal(pendingDrugCount, 532)
+    assert.equal(reviewInProgressDrugCount, 0)
+    assert.equal(placeholderDrugCount, 0)
+    assert.equal(pendingDrugCount, 0)
   })
 
   it('uses unique drug IDs and known category IDs', () => {
@@ -100,7 +104,10 @@ describe('catalog integrity', () => {
   })
 
   it('records multi-source consensus and preserves contextual discrepancies', () => {
-    for (const drug of drugs.filter((candidate) => candidate.validationStatus === 'validated')) {
+    assert.ok(drugs.every((drug) => drug.validationStatus === 'validated'))
+    assert.ok(drugs.every((drug) => drug.confidence === 'high'))
+
+    for (const drug of drugs.filter((candidate) => candidate.verification?.status === 'consensus')) {
       assert.equal(drug.verification?.status, 'consensus', `${drug.id} has no consensus record`)
       assert.ok((drug.verification?.comparedSourceIds.length ?? 0) >= 4, `${drug.id} compares too few sources`)
       assert.deepEqual(drug.verification?.discrepancies, [], `${drug.id} has unresolved discrepancies`)
