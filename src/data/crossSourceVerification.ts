@@ -61,6 +61,57 @@ const consensus = (
 export const crossSourceVerificationByDrugId: Readonly<
   Partial<Record<string, CrossSourceVerificationPatch>>
 > = {
+  amoxicilina: {
+    references: [],
+    validationStatus: 'validated',
+    confidence: 'high',
+    verification: {
+      status: 'context-dependent',
+      reviewedAt: REVIEW_DATE,
+      scope: 'Posologia adulta oral e IV, ajuste renal e hemodiálise, distinguindo apresentação europeia e informação norte-americana.',
+      comparedSourceIds: [
+        'amoxicillin-iv-smpc',
+        'amoxicillin-oral-smpc',
+        'amoxil-fda-label',
+        'amoxicillin-drugscom',
+      ],
+      summary: 'As fontes regulatórias e Drugs.com são concordantes dentro de cada apresentação, mas a informação oral norte-americana não valida a posologia IV europeia e os regimes não devem ser fundidos.',
+      discrepancies: [
+        'A informação norte-americana consultada descreve apresentações orais; o SmPC IV europeu permite doses e frequências diferentes conforme foco e gravidade.',
+        'Na hemodiálise, o momento e a quantidade dos suplementos variam entre via/apresentação e jurisdição; a prescrição deve seguir o RCM do produto concreto.',
+      ],
+    },
+    reviewNotes: [
+      'Revisão dirigida efectuada por via e apresentação; não foi aplicada votação por maioria.',
+      'O link Medscape indicado foi registado na bibliografia; a confirmação numérica desta revisão usa fontes externas acessíveis e específicas da apresentação.',
+    ],
+  },
+  'amoxicilina-acido-clavulanico': {
+    references: [],
+    validationStatus: 'validated',
+    confidence: 'high',
+    verification: {
+      status: 'context-dependent',
+      reviewedAt: REVIEW_DATE,
+      scope: 'Posologia adulta oral e IV, rácios amoxicilina/clavulanato, ajuste renal, hemodiálise e preparação IV.',
+      comparedSourceIds: [
+        'coamoxiclav-iv-smpc',
+        'coamoxiclav-oral-smpc',
+        'augmentin-drugscom',
+      ],
+      summary: 'Não existe uma única dose de “Augmentin”: a via, o rácio e a jurisdição alteram dose, frequência, ajuste renal e modo de preparação.',
+      discrepancies: [
+        'A apresentação IV europeia 1000/200 mg usa 8/8 h; a ficha oral norte-americana usa 875/125 mg 12/12 h ou 500/125 mg 8/8 h nas infecções graves.',
+        'A apresentação oral europeia 875/125 mg admite 12/12 h ou 8/8 h, mas não é recomendada com ClCr <30 mL/min; apresentações 4:1 têm tabelas renais próprias.',
+        'O regime anterior de 1,2 g IV 6/6 h não foi mantido como dose habitual da apresentação 1000/200 mg consultada.',
+      ],
+    },
+    reviewNotes: [
+      'Revisão dirigida efectuada por componente, via e apresentação; não foi aplicada votação por maioria.',
+      'A dose total isolada foi substituída pela expressão amoxicilina/clavulanato para reduzir erro de rácio.',
+      'O link Medscape indicado foi registado na bibliografia; a confirmação numérica desta revisão usa fontes externas acessíveis e específicas da apresentação.',
+    ],
+  },
   meropenem: consensus(
     'meropenem-smpc',
     webReference(

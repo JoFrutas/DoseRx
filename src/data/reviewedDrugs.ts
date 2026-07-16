@@ -7,6 +7,7 @@ import {
 } from './drugBuilders.ts'
 import { sourceVerifiedDrugsBatch2 } from './sourceVerifiedDrugsBatch2.ts'
 import { sourceVerifiedDrugsBatch3 } from './sourceVerifiedDrugsBatch3.ts'
+import { sourceVerifiedDrugsBatch4 } from './sourceVerifiedDrugsBatch4.ts'
 
 const REVIEW_DATE = '2026-07-16'
 
@@ -621,4 +622,5 @@ export const reviewedDrugs: Drug[] = [
   hydrocortisone,
   ...sourceVerifiedDrugsBatch2,
   ...sourceVerifiedDrugsBatch3,
+  ...sourceVerifiedDrugsBatch4,
 ]

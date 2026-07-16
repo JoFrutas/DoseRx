@@ -48,7 +48,7 @@ describe('catalog integrity', () => {
     assert.equal(catalogDrugCount, 552)
     assert.equal(expandedClinicalSourceCount, 141)
     assert.equal(expandedClinicalMappedCatalogCount, 142)
-    assert.equal(reviewedDrugCount, 19)
+    assert.equal(reviewedDrugCount, 21)
     assert.equal(structuredDrugCount, 552)
     assert.equal(sourceVerifiedDrugCount, 552)
     assert.equal(multiSourceValidatedDrugCount, 6)
@@ -131,5 +131,55 @@ describe('catalog integrity', () => {
     const enoxaparin = drugs.find((drug) => drug.id === 'enoxaparin')
     assert.equal(enoxaparin?.verification?.status, 'context-dependent')
     assert.ok((enoxaparin?.verification?.discrepancies.length ?? 0) > 0)
+
+    const amoxicillin = drugs.find((drug) => drug.id === 'amoxicilina')
+    assert.equal(amoxicillin?.verification?.status, 'context-dependent')
+    assert.ok((amoxicillin?.verification?.discrepancies.length ?? 0) > 0)
+
+    const amoxicillinClavulanate = drugs.find(
+      (drug) => drug.id === 'amoxicilina-acido-clavulanico',
+    )
+    assert.equal(amoxicillinClavulanate?.verification?.status, 'context-dependent')
+    assert.ok((amoxicillinClavulanate?.verification?.discrepancies.length ?? 0) > 0)
+  })
+
+  it('keeps amoxicillin formulations and renal regimens separated', () => {
+    const amoxicillin = drugs.find((drug) => drug.id === 'amoxicilina')
+    assert.ok(amoxicillin)
+    assert.ok(amoxicillin.references.some((reference) => reference.id === 'amoxicillin-iv-smpc'))
+    assert.ok(amoxicillin.usualAdultDose.some((item) => (
+      item.context.includes('Via IV')
+      && item.recommendation.includes('750 mg a 2 g IV de 8/8 h')
+    )))
+    assert.ok(amoxicillin.renalAdjustment.byKidneyFunction.some((item) => (
+      item.context.includes('GFR 10–30 mL/min — IV')
+      && item.recommendation === '1 g IV inicial, depois 500 mg a 1 g IV de 12/12 h.'
+    )))
+    assert.ok(amoxicillin.renalAdjustment.byKidneyFunction.some((item) => (
+      item.context.includes('GFR 10–30 mL/min — oral')
+      && item.recommendation.includes('Não utilizar a apresentação de 875 mg')
+    )))
+
+    const amoxicillinClavulanate = drugs.find(
+      (drug) => drug.id === 'amoxicilina-acido-clavulanico',
+    )
+    assert.ok(amoxicillinClavulanate)
+    assert.ok(amoxicillinClavulanate.references.some((reference) => (
+      reference.id === 'coamoxiclav-iv-smpc'
+    )))
+    assert.ok(amoxicillinClavulanate.usualAdultDose.some((item) => (
+      item.context === 'Via IV — apresentação 1000/200 mg'
+      && item.recommendation.startsWith('1000 mg/200 mg IV de 8/8 h.')
+    )))
+    assert.ok(amoxicillinClavulanate.renalAdjustment.byKidneyFunction.some((item) => (
+      item.context === 'ClCr 10–30 mL/min — IV'
+      && item.recommendation === '1000 mg/200 mg IV como dose inicial, depois 500 mg/100 mg IV de 12/12 h.'
+    )))
+    assert.ok(amoxicillinClavulanate.practicalNotes.some((note) => (
+      note.includes('não são intercambiáveis')
+    )))
+    assert.ok(amoxicillinClavulanate.usualAdultDose.every((item) => (
+      !item.recommendation.includes('1,2 g IV 6/6h')
+    )))
   })
 })
