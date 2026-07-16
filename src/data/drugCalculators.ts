@@ -292,21 +292,4 @@ export const drugCalculatorsByDrugId: Readonly<Record<string, DrugCalculatorDefi
       notes: ['A guideline descreve 200 mg/dia como 50 mg de 6/6 h ou perfusão contínua.', 'Introduza a preparação final padronizada localmente.'],
     },
   ],
-  'carvao-activado': [
-    {
-      kind: 'weight-dose',
-      id: 'activated-charcoal-weight-dose',
-      title: 'Dose única por peso',
-      description: 'Calcula a dose documental de 1 g/kg.',
-      defaultOptionId: 'single-dose',
-      options: [
-        { id: 'single-dose', label: 'Dose única — 1 g/kg', dosePerKg: 1, amountUnit: 'g' },
-      ],
-      sourceIds: ['reviewed-clinical-reference'],
-      notes: [
-        'A calculadora apenas efectua a multiplicação; não decide se a substância é adsorvível nem se existe benefício clínico.',
-        'Usar apenas em intoxicações seleccionadas, geralmente até 1 hora após a ingestão, e com via aérea protegida quando existe risco de aspiração.',
-      ],
-    },
-  ],
 }

@@ -24,14 +24,14 @@ O teste unitário usa o runner nativo e o suporte TypeScript do Node 22 ou super
 
 ## Organização dos dados
 
-- `src/data/sources/catalogo-farmacos.json` — catálogo consolidado com 716 linhas e 552 entradas únicas.
-- `src/data/sources/reviewed-clinical-reference.md` — documento clínico local revisto, preservado como fonte.
-- `src/data/sources/reviewed-clinical-notes.json` — 185 blocos clínicos extraídos do documento e mapeados para 190 entradas do catálogo.
+- `src/data/sources/catalogo-farmacos.json` — inventário interno com 716 linhas e 552 entradas únicas; define âmbito e taxonomia, mas não é uma referência bibliográfica.
+- `src/data/sources/reviewed-clinical-reference.md` — documento interno de trabalho usado para importar conteúdo; não aparece nem pode ser citado como referência bibliográfica.
+- `src/data/sources/reviewed-clinical-notes.json` — 185 blocos clínicos extraídos do documento interno e mapeados para 190 entradas; conserva proveniência técnica, não bibliografia.
 - `src/data/catalog.generated.ts` — 552 entradas únicas geradas a partir do catálogo; não editar manualmente.
 - `src/data/catalogReviewedDrugs.ts` — constrói as fichas restantes, usando as notas revistas quando existem e evitando doses numéricas não documentadas.
 - `src/data/reviewedDrugs.ts` — fichas clínicas com fontes primárias verificadas.
-- `src/data/expandedClinicalDrugs.ts` — 141 fichas estruturadas importadas da fonte clínica local actualizada; as sobreposições são substituídas pelas fichas primárias já revistas.
-- `src/data/crossSourceVerification.ts` — comparação rastreável entre a fonte local, Medscape, Drugs.com e fontes primárias, incluindo discrepâncias dependentes da jurisdição.
+- `src/data/expandedClinicalDrugs.ts` — 141 fichas estruturadas no modelo clínico completo usado, por exemplo, na vasopressina; as sobreposições são substituídas pelas fichas primárias já revistas.
+- `src/data/crossSourceVerification.ts` — comparação rastreável entre Medscape, Drugs.com e fontes primárias/regulatórias, incluindo discrepâncias dependentes da jurisdição.
 - `src/data/drugCalculators.ts` — calculadoras activadas apenas nas fichas com fontes verificadas.
 - `src/lib/calculators.ts` — fórmulas puras de dose por peso, velocidade de perfusão e volume/tempo.
 - `src/data/drugBuilders.ts` — tipos e auxiliares partilhados para construir doses e exemplos.
@@ -54,6 +54,8 @@ npm run clinical:notes:generate
 
 ## Política de fontes
 
+Os ficheiros do próprio projeto, listas de trabalho, folhas de cálculo, catálogos e documentos de importação são apenas proveniência interna. Nunca são apresentados ao utilizador como bibliografia e nunca contam para consenso entre fontes.
+
 O Medscape e o Drugs.com são comparadores clínicos rápidos, mas não constituem isoladamente uma validação independente. As fichas devem privilegiar:
 
 1. RCM/SmPC europeu ou português e documentação INFARMED;
@@ -61,7 +63,7 @@ O Medscape e o Drugs.com são comparadores clínicos rápidos, mas não constitu
 3. guidelines de sociedades científicas;
 4. protocolos institucionais específicos para hemodiálise e técnicas contínuas.
 
-O estado de consenso multiponto exige concordância da fonte local, Medscape, Drugs.com e pelo menos uma fonte primária independente no âmbito explicitado. Uma maioria numérica não resolve diferenças de formulação, indicação off-label, modalidade de substituição renal ou jurisdição. Quando fontes válidas divergem, a ficha identifica a diferença e privilegia o contexto europeu/português.
+O estado de consenso multiponto exige concordância entre Medscape, Drugs.com e pelo menos uma fonte primária, regulatória ou guideline independente no âmbito explicitado. Uma maioria numérica não resolve diferenças de formulação, indicação off-label, modalidade de substituição renal ou jurisdição. Quando fontes válidas divergem, a ficha identifica a diferença e privilegia o contexto europeu/português.
 
 ## Adicionar ou rever um fármaco
 

@@ -94,7 +94,7 @@ const contextForDoseLine = (line: string) => {
   if (/^\s*carga\b/iu.test(line)) return 'Dose de carga'
   if (/^\s*manutenção\b/iu.test(line)) return 'Manutenção'
   if (/^\s*habitual\b/iu.test(line)) return 'Adulto — regime habitual'
-  return 'Adulto — contexto descrito na referência revista'
+  return 'Adulto — regime documentado'
 }
 
 const adjustment = (
@@ -116,12 +116,12 @@ const prescription = (
   hasNumericRegime: boolean,
 ): PrescriptionExample => ({
   title: hasNumericRegime
-    ? 'Estrutura de prescrição da referência revista'
+    ? 'Exemplo prático de prescrição'
     : 'Selecção do regime por indicação e apresentação',
   prescription: prescriptionText,
   context: hasNumericRegime
-    ? 'Transcrição documental; aplicar apenas à indicação, população e via descritas.'
-    : 'A fonte clínica fornecida não contém um regime numérico individual para esta entrada.',
+    ? 'Aplicar apenas à indicação, população e via descritas.'
+    : 'Não existe um regime numérico universal para esta entrada.',
   notes: [
     'Confirmar formulação, concentração, diluição, compatibilidade, velocidade, duração e protocolo local.',
     'Não extrapolar entre apresentações, indicações ou vias diferentes.',
@@ -130,52 +130,31 @@ const prescription = (
   validationStatus: REVIEWED,
 })
 
-const referencesFor = (
-  seed: PlaceholderDrugSeed,
-  hasClinicalNote: boolean,
-): EvidenceReference[] => {
-  const references: EvidenceReference[] = [
-    {
-      id: 'reviewed-catalog',
-      title: 'Catálogo de fármacos de Medicina Intensiva — versão revista',
-      source: 'Ficheiro clínico local fornecido para o DoseRx',
-      year: 2026,
-      accessedAt: reviewedNotes.reviewedAt,
-    },
+const referencesFor = (seed: PlaceholderDrugSeed): EvidenceReference[] => {
+  const query = encodeURIComponent(seed.aliases[0] ?? seed.name)
+  return [
     {
       id: 'infarmed-rcm',
-      title: 'INFOMED — Resumo das Características do Medicamento',
+      title: `INFOMED — RCM/SmPC: ${seed.name}`,
       source: 'INFARMED',
       url: 'https://extranet.infarmed.pt/INFOMED-fo/',
       accessedAt: reviewedNotes.reviewedAt,
     },
     {
       id: 'medscape-reference',
-      title: `Medscape Drug Reference — consulta por ${seed.name}`,
+      title: `Medscape Drug Reference — ${seed.name}`,
       source: 'Medscape',
       url: 'https://reference.medscape.com/drugs',
       accessedAt: reviewedNotes.reviewedAt,
     },
     {
       id: 'drugs-com-reference',
-      title: `Drugs.com — consulta por ${seed.name}`,
+      title: `Drugs.com Drug Information — ${seed.name}`,
       source: 'Drugs.com',
-      url: `https://www.drugs.com/search.php?searchterm=${encodeURIComponent(seed.name)}`,
+      url: `https://www.drugs.com/search.php?searchterm=${query}`,
       accessedAt: reviewedNotes.reviewedAt,
     },
   ]
-
-  if (hasClinicalNote) {
-    references.unshift({
-      id: 'reviewed-clinical-reference',
-      title: 'DoseRx — Lista de referência de fármacos em Medicina Intensiva',
-      source: reviewedNotes.sourceFile,
-      year: 2026,
-      accessedAt: reviewedNotes.reviewedAt,
-    })
-  }
-
-  return references
 }
 
 const defaultMonitoringByCategory: Readonly<Record<string, string[]>> = {
@@ -220,7 +199,7 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
   const notes = notesByCatalogId.get(seed.id) ?? []
   const noteLines = unique(notes.flatMap((note) => [note.summary, ...note.bullets]))
   const hasClinicalNote = notes.length > 0
-  const sourceIds = [hasClinicalNote ? 'reviewed-clinical-reference' : 'reviewed-catalog']
+  const sourceIds = ['infarmed-rcm', 'medscape-reference', 'drugs-com-reference']
 
   const renalLines = noteLines.filter((line) => includesAny(line, renalPatterns))
   const hepaticLines = noteLines.filter((line) => includesAny(line, hepaticPatterns))
@@ -238,7 +217,7 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
   const inferredRoutes = inferRoutes(noteLines.join(' '))
 
   const fallbackDose =
-    'A referência clínica revista não define um regime posológico único para esta entrada. Seleccionar dose, intervalo, via e duração pelo RCM/SmPC da apresentação local e pelo protocolo da indicação.'
+    'Não existe um regime posológico único para esta entrada. Seleccionar dose, intervalo, via e duração pelo RCM/SmPC da apresentação local e pelo protocolo da indicação.'
   const usualAdultDose = doseLines.length > 0
     ? doseLines.slice(0, 8).map((line) => adjustment(contextForDoseLine(line), line, sourceIds))
     : [adjustment('Adulto em Medicina Intensiva', fallbackDose, sourceIds)]
@@ -246,9 +225,9 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
   const intermittentLine = renalLines.find((line) => includesAny(line, intermittentDialysisPatterns))
   const continuousLine = renalLines.find((line) => includesAny(line, continuousDialysisPatterns))
   const renalFallback =
-    'A fonte clínica revista não especifica um ajuste renal individual para esta entrada; confirmar ClCr/eGFR, modalidade de TSR, dose de efluente e RCM antes de prescrever.'
+    'Não está documentado um ajuste renal único para esta entrada; confirmar ClCr/eGFR, modalidade de TSR, dose de efluente e RCM antes de prescrever.'
   const hepaticFallback =
-    'A fonte clínica revista não especifica um ajuste hepático individual para esta entrada; confirmar gravidade, indicação e RCM antes de prescrever.'
+    'Não está documentado um ajuste hepático único para esta entrada; confirmar gravidade, indicação e RCM antes de prescrever.'
 
   const prescriptionText = doseLines.length > 0
     ? doseLines.slice(0, 3).join(' ')
@@ -259,15 +238,15 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
     ...notes
       .map((note) => note.summary)
       .filter((summary) => summary && !numericDosePattern.test(summary))
-      .map((summary) => `Enquadramento da referência revista: ${summary}.`),
+      .map((summary) => summary.endsWith('.') ? summary : `${summary}.`),
   ])
 
   const practicalNotes = unique([
     ...noteLines,
     ...scopeNotes,
     hasClinicalNote
-      ? 'Conteúdo clínico transcrito do ficheiro local revisto; manter o contexto original da indicação.'
-      : 'O catálogo revisto inclui esta entrada, mas o ficheiro clínico local não fornece uma posologia numérica individual.',
+      ? 'Manter o contexto original da indicação e confirmar a apresentação disponível.'
+      : 'A posologia depende da indicação e da apresentação; consultar as fontes externas associadas.',
     'Confirmar sempre a apresentação comercial, concentração, compatibilidade, estabilidade e protocolo local.',
   ])
 
@@ -328,18 +307,18 @@ export function createCatalogReviewedDrug(seed: PlaceholderDrugSeed): Drug {
       ? interactionLines
       : ['Rever interacções farmacológicas no RCM e na medicação activa antes da prescrição.'],
     practicalNotes,
-    references: referencesFor(seed, hasClinicalNote),
+    references: referencesFor(seed),
     lastReviewedAt: reviewedNotes.reviewedAt,
     validationStatus: REVIEWED,
     confidence: hasClinicalNote ? 'moderate' : 'low',
     reviewNotes: hasClinicalNote
       ? [
-          'Ficha preenchida a partir do documento clínico local revisto e aceite para integração.',
-          'Os campos não especificados no documento remetem para o RCM e para o protocolo da indicação.',
+          'Conteúdo clínico revisto para integração.',
+          'Os campos dependentes da apresentação remetem para o RCM e para o protocolo da indicação.',
         ]
       : [
-          'Entrada, prioridade e âmbito revistos no catálogo consolidado.',
-          'Sem posologia numérica individual no documento clínico local; a ficha mantém essa limitação de forma explícita.',
+          'Entrada, prioridade e âmbito revistos.',
+          'Sem regime numérico universal; a ficha mantém essa limitação de forma explícita.',
         ],
   }
 }

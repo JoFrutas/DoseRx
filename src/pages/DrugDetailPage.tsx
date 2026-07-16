@@ -58,12 +58,6 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
               <div><dt>Vias</dt><dd>{drug.routes.join('; ')}</dd></div>
             </dl>
           </section>
-          <section className="review-note">
-            <strong>Notas documentais</strong>
-            <ul>
-              {drug.reviewNotes.map((note) => <li key={note}>{note}</li>)}
-            </ul>
-          </section>
         </aside>
 
         <div className="detail-sections">

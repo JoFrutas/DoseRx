@@ -6,6 +6,7 @@ import {
   prescription,
 } from './drugBuilders.ts'
 import { sourceVerifiedDrugsBatch2 } from './sourceVerifiedDrugsBatch2.ts'
+import { sourceVerifiedDrugsBatch3 } from './sourceVerifiedDrugsBatch3.ts'
 
 const REVIEW_DATE = '2026-07-16'
 
@@ -619,4 +620,5 @@ export const reviewedDrugs: Drug[] = [
   pantoprazole,
   hydrocortisone,
   ...sourceVerifiedDrugsBatch2,
+  ...sourceVerifiedDrugsBatch3,
 ]

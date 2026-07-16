@@ -48,7 +48,7 @@ describe('catalog integrity', () => {
     assert.equal(catalogDrugCount, 552)
     assert.equal(expandedClinicalSourceCount, 141)
     assert.equal(expandedClinicalMappedCatalogCount, 142)
-    assert.equal(reviewedDrugCount, 18)
+    assert.equal(reviewedDrugCount, 19)
     assert.equal(structuredDrugCount, 552)
     assert.equal(sourceVerifiedDrugCount, 552)
     assert.equal(multiSourceValidatedDrugCount, 6)
@@ -70,9 +70,24 @@ describe('catalog integrity', () => {
   })
 
   it('keeps every source-verified recommendation and calculator traceable to a reference', () => {
+    const forbiddenReferenceIds = new Set([
+      'reviewed-catalog',
+      'reviewed-clinical-reference',
+      'local-clinical-catalog',
+    ])
+    const forbiddenReferenceText = /DoseRx — Lista de referência|Catálogo de fármacos de Medicina Intensiva|Catálogo clínico estruturado fornecido para DoseRx|reviewed-clinical-reference\.md/iu
+
     for (const drug of drugs.filter((candidate) => candidate.validationStatus !== 'not-validated')) {
       const referenceIds = new Set(drug.references.map((reference) => reference.id))
       assert.ok(referenceIds.size > 0, `${drug.id} has no references`)
+      for (const reference of drug.references) {
+        assert.ok(!forbiddenReferenceIds.has(reference.id), `${drug.id} exposes internal reference ${reference.id}`)
+        assert.doesNotMatch(
+          [reference.title, reference.source, reference.url].filter(Boolean).join(' '),
+          forbiddenReferenceText,
+          `${drug.id} exposes an internal document as bibliography`,
+        )
+      }
 
       const adjustments = [
         ...drug.usualAdultDose,
@@ -109,7 +124,7 @@ describe('catalog integrity', () => {
 
     for (const drug of drugs.filter((candidate) => candidate.verification?.status === 'consensus')) {
       assert.equal(drug.verification?.status, 'consensus', `${drug.id} has no consensus record`)
-      assert.ok((drug.verification?.comparedSourceIds.length ?? 0) >= 4, `${drug.id} compares too few sources`)
+      assert.ok((drug.verification?.comparedSourceIds.length ?? 0) >= 3, `${drug.id} compares too few external sources`)
       assert.deepEqual(drug.verification?.discrepancies, [], `${drug.id} has unresolved discrepancies`)
     }
 

@@ -15,14 +15,6 @@ interface CrossSourceVerificationPatch {
   reviewNotes?: string[]
 }
 
-const localClinicalCatalogReference: EvidenceReference = {
-  id: 'local-clinical-catalog',
-  title: 'Catálogo clínico estruturado fornecido para DoseRx (drugs.ts)',
-  source: 'Fonte clínica local incorporada em expandedClinicalDrugs.ts',
-  year: 2026,
-  accessedAt: REVIEW_DATE,
-}
-
 const webReference = (
   id: string,
   title: string,
@@ -44,7 +36,7 @@ const consensus = (
   scope: string,
   summary: string,
 ): CrossSourceVerificationPatch => ({
-  references: [localClinicalCatalogReference, medscape, drugsCom],
+  references: [medscape, drugsCom],
   validationStatus: 'validated',
   confidence: 'high',
   verification: {
@@ -52,7 +44,6 @@ const consensus = (
     reviewedAt: REVIEW_DATE,
     scope,
     comparedSourceIds: [
-      'local-clinical-catalog',
       medscape.id,
       drugsCom.id,
       primarySourceId,
@@ -61,7 +52,7 @@ const consensus = (
     discrepancies: [],
   },
   reviewNotes: [
-    'Conteúdo comparado com a fonte clínica local, Medscape, Drugs.com e uma fonte primária independente.',
+    'Conteúdo comparado com Medscape, Drugs.com e uma fonte primária ou regulatória independente.',
     'Não foram identificadas discrepâncias materiais dentro do âmbito explicitado na comparação.',
     'Formulação, concentração padronizada e protocolos institucionais continuam a ser confirmados no ponto de utilização.',
   ],
@@ -85,7 +76,7 @@ export const crossSourceVerificationByDrugId: Readonly<
       'https://www.drugs.com/dosage/meropenem.html',
     ),
     'Dose adulta por indicação, intervalos por ClCr e administração IV intermitente; regimes HD/CRRT mantêm fonte institucional própria.',
-    'As quatro fontes concordam nos regimes adultos principais e na redução progressiva por função renal.',
+    'As três fontes externas concordam nos regimes adultos principais e na redução progressiva por função renal.',
   ),
   fluconazole: consensus(
     'fluconazole-dailymed',
@@ -174,7 +165,6 @@ export const crossSourceVerificationByDrugId: Readonly<
   ),
   enoxaparin: {
     references: [
-      localClinicalCatalogReference,
       webReference(
         'medscape-enoxaparin',
         'Lovenox (enoxaparin) dosing and dose modifications',
@@ -193,7 +183,6 @@ export const crossSourceVerificationByDrugId: Readonly<
       reviewedAt: REVIEW_DATE,
       scope: 'Profilaxia e tratamento no adulto, incluindo insuficiência renal grave.',
       comparedSourceIds: [
-        'local-clinical-catalog',
         'medscape-enoxaparin',
         'drugscom-enoxaparin',
         'enoxaparin-eu-smpc',
