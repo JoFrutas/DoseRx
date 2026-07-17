@@ -45,7 +45,9 @@ for (const drug of drugs) {
 
   if (isSourceVerified && referenceIds.size === 0) issues.push(`${drug.id}: ficha verificada sem referências`)
   if (isSourceLinked && referenceIds.size === 0) issues.push(`${drug.id}: monografia documentada sem referências`)
-  if (!isSourceVerified && (drug.calculators?.length ?? 0) > 0) issues.push(`${drug.id}: calculadora em ficha não verificada`)
+  if (drug.validationStatus === 'catalog-only' && (drug.calculators?.length ?? 0) > 0) {
+    issues.push(`${drug.id}: calculadora em entrada apenas catalogal`)
+  }
   if (drug.validationStatus === 'validated' && drug.confidence !== 'high') issues.push(`${drug.id}: aprovação total sem confiança elevada`)
   if (drug.validationStatus === 'validated' && !drug.lastReviewedAt) issues.push(`${drug.id}: aprovação total sem data de revisão`)
   if (drug.validationStatus === 'validated' && drug.verification?.status !== 'consensus') {
@@ -120,14 +122,20 @@ for (const drug of drugs) {
 
   for (const calculator of drug.calculators ?? []) {
     if (calculator.sourceIds.length === 0) issues.push(`${drug.id}: calculadora ${calculator.id} sem fonte`)
+    if (!isSourceVerified && !['source-verified', 'validated'].includes(calculator.validationStatus)) {
+      issues.push(`${drug.id}: calculadora ${calculator.id} sem verificação própria`)
+    }
     for (const sourceId of calculator.sourceIds) {
       if (forbiddenBibliographicIds.has(sourceId)) issues.push(`${drug.id}: calculadora ${calculator.id} usa documento interno ${sourceId}`)
       if (!referenceIds.has(sourceId)) issues.push(`${drug.id}: calculadora ${calculator.id} usa fonte inexistente ${sourceId}`)
+      const reference = drug.references.find((candidate) => candidate.id === sourceId)
+      if (reference && !reference.url) issues.push(`${drug.id}: fonte da calculadora ${calculator.id} sem ligação externa (${sourceId})`)
     }
   }
 }
 
 const calculatorCount = drugs.reduce((total, drug) => total + (drug.calculators?.length ?? 0), 0)
+const calculatorDrugCount = drugs.filter((drug) => (drug.calculators?.length ?? 0) > 0).length
 const report = {
   catalog: drugs.length,
   clinicalMonographs: drugs.length - catalogOnly.length,
@@ -143,6 +151,7 @@ const report = {
   },
   forbiddenInternalBibliographicReferences: issues.filter((issue) => issue.includes('documento interno')).length,
   calculators: calculatorCount,
+  calculatorDrugs: calculatorDrugCount,
   statuses: Object.fromEntries(Object.entries(statusCounts).map(([status, items]) => [status, items.length])),
   issues,
 }

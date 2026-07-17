@@ -2,7 +2,10 @@ import type { Drug } from '../types/drug'
 import { catalogSeeds } from './catalog.generated.ts'
 import { createCatalogReviewedDrug } from './catalogReviewedDrugs.ts'
 import { crossSourceVerificationByDrugId } from './crossSourceVerification.ts'
-import { drugCalculatorsByDrugId } from './drugCalculators.ts'
+import {
+  calculatorEvidenceReferencesByDrugId,
+  drugCalculatorsByDrugId,
+} from './drugCalculators.ts'
 import {
   expandedClinicalDrugs,
   type ExpandedClinicalDrug,
@@ -127,12 +130,28 @@ const catalogOnlyDrugs = catalogSeeds
   .filter((seed) => !structuredIds.has(seed.id))
   .map(createCatalogReviewedDrug)
 
-const attachDocumentedCalculators = (drug: Drug): Drug => ({
-  ...drug,
-  calculators: drug.validationStatus === 'source-verified' || drug.validationStatus === 'validated'
-    ? drugCalculatorsByDrugId[drug.id] ?? drug.calculators ?? []
-    : [],
-})
+const attachDocumentedCalculators = (drug: Drug): Drug => {
+  const drugIsVerified = drug.validationStatus === 'source-verified'
+    || drug.validationStatus === 'validated'
+  const calculators = (drugCalculatorsByDrugId[drug.id] ?? drug.calculators ?? [])
+    .filter((calculator) => (
+      drug.validationStatus !== 'catalog-only'
+      && (drugIsVerified || calculator.validationStatus === 'source-verified'
+        || calculator.validationStatus === 'validated')
+    ))
+  const calculatorSourceIds = new Set(calculators.flatMap((calculator) => calculator.sourceIds))
+  const existingReferenceIds = new Set(drug.references.map((reference) => reference.id))
+  const calculatorReferences = (calculatorEvidenceReferencesByDrugId[drug.id] ?? [])
+    .filter((reference) => (
+      calculatorSourceIds.has(reference.id) && !existingReferenceIds.has(reference.id)
+    ))
+
+  return {
+    ...drug,
+    references: [...drug.references, ...calculatorReferences],
+    calculators,
+  }
+}
 
 export const drugs: Drug[] = [...structuredDrugsWithVerification, ...catalogOnlyDrugs]
   .map(attachDocumentedCalculators)

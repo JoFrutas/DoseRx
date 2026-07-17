@@ -268,6 +268,8 @@ img { display: block; max-width: 100%; }
 .calculator-grid { display: grid; gap: 12px; min-width: 0; }
 .calculator-card { min-width: 0; overflow: hidden; background: #f8fbfc; border: 1px solid #bfdde2; border-radius: var(--radius-md); }
 .calculator-card > header { padding: 15px 16px; background: linear-gradient(135deg, #eaf8f7, #f4f9ff); border-bottom: 1px solid #cce4e7; }
+.calculator-card__meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.calculator-card__meta .validation-badge { flex: 0 0 auto; padding: 4px 7px; font-size: 8px; }
 .calculator-card__kind { color: var(--primary); font-size: 9px; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
 .calculator-card h3 { margin: 4px 0 0; color: var(--dark); font-size: 15px; }
 .calculator-card header p { margin: 5px 0 0; color: var(--mid); font-size: 11px; line-height: 1.45; }

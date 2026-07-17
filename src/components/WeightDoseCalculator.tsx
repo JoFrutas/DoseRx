@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { calculateWeightDose, formatCalculatorNumber, formatCalculatorUnit } from '../lib/calculators'
 import type { EvidenceReference, WeightDoseCalculatorDefinition } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
+import { ValidationBadge } from './ValidationBadge'
 import { useI18n } from '../i18n/I18nContext'
 
 interface WeightDoseCalculatorProps {
@@ -32,7 +33,10 @@ export function WeightDoseCalculator({ definition, references }: WeightDoseCalcu
   return (
     <article className="calculator-card">
       <header>
-        <span className="calculator-card__kind">{ui.weightDose}</span>
+        <div className="calculator-card__meta">
+          <span className="calculator-card__kind">{ui.weightDose}</span>
+          <ValidationBadge status={definition.validationStatus ?? 'source-verified'} />
+        </div>
         <h3>{definition.title}</h3>
         <p>{definition.description}</p>
       </header>
@@ -66,6 +70,7 @@ export function WeightDoseCalculator({ definition, references }: WeightDoseCalcu
             {formatCalculatorNumber(Number(weightKg))} kg × {formatCalculatorNumber(option.dosePerKg)} {formatCalculatorUnit(option.amountUnit)}/kg
             {result.capped ? `; ${ui.maximumLimited} ${formatCalculatorNumber(option.maxDose as number)} ${formatCalculatorUnit(option.amountUnit)}` : ''}
           </small>
+          {option.note && <small>{option.note}</small>}
           {result.volumeMl !== null && definition.concentration && (
             <small>
               {ui.volumeOf} {definition.concentration.label}: <b>{formatCalculatorNumber(result.volumeMl)} mL</b>

@@ -9,6 +9,7 @@ export type CrossSourceStatus = 'not-compared' | 'consensus' | 'context-dependen
 export type DoseAmountUnit = 'g' | 'mg' | 'mcg' | 'mEq' | 'units'
 
 export type DoseRateUnit =
+  | 'ng/kg/min'
   | 'mcg/kg/min'
   | 'mcg/kg/h'
   | 'mcg/min'
@@ -43,6 +44,7 @@ export interface WeightDoseCalculatorDefinition {
   }
   sourceIds: string[]
   notes: string[]
+  validationStatus?: Extract<ValidationStatus, 'source-verified' | 'validated'>
 }
 
 export interface InfusionRateCalculatorDefinition {
@@ -62,6 +64,7 @@ export interface InfusionRateCalculatorDefinition {
   }
   sourceIds: string[]
   notes: string[]
+  validationStatus?: Extract<ValidationStatus, 'source-verified' | 'validated'>
 }
 
 export interface VolumeTimeCalculatorDefinition {
@@ -74,6 +77,7 @@ export interface VolumeTimeCalculatorDefinition {
   minimumDurationMinutes?: number
   sourceIds: string[]
   notes: string[]
+  validationStatus?: Extract<ValidationStatus, 'source-verified' | 'validated'>
 }
 
 export type DrugCalculatorDefinition =

@@ -73,6 +73,8 @@ function dosePerHourInBaseUnit(
   }
 
   switch (unit) {
+    case 'ng/kg/min':
+      return doseRate * (weightKg as number) * 60 / 1000
     case 'mcg/kg/min':
       return doseRate * (weightKg as number) * 60
     case 'mcg/kg/h':

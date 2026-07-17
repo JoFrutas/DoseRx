@@ -129,6 +129,23 @@ describe('catalog integrity', () => {
     }
   })
 
+  it('keeps calculator-level verification explicit in source-linked monographs', () => {
+    const sourceLinkedWithCalculators = drugs.filter((drug) => (
+      drug.validationStatus === 'source-linked' && (drug.calculators?.length ?? 0) > 0
+    ))
+    assert.ok(sourceLinkedWithCalculators.length >= 15)
+
+    for (const drug of sourceLinkedWithCalculators) {
+      const references = new Map(drug.references.map((reference) => [reference.id, reference]))
+      for (const calculator of drug.calculators ?? []) {
+        assert.equal(calculator.validationStatus, 'source-verified', `${drug.id}: calculator scope is not verified`)
+        for (const sourceId of calculator.sourceIds) {
+          assert.ok(references.get(sourceId)?.url, `${drug.id}: calculator source ${sourceId} has no direct link`)
+        }
+      }
+    }
+  })
+
   it('records multi-source consensus and preserves contextual discrepancies', () => {
     const statusCounts = Object.fromEntries(
       Object.entries(Object.groupBy(drugs, (drug) => drug.validationStatus))

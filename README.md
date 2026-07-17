@@ -35,7 +35,7 @@ O teste unitário usa o runner nativo e o suporte TypeScript do Node 22 ou super
 - `src/data/reviewedDrugs.ts` — fichas clínicas com fontes primárias verificadas.
 - `src/data/expandedClinicalDrugs.ts` — 141 monografias estruturadas com referências ligadas a cada recomendação. Permanecem `source-linked` enquanto não existir confirmação independente contra o texto integral das fontes.
 - `src/data/crossSourceVerification.ts` — comparação rastreável entre Medscape, Drugs.com e fontes primárias/regulatórias, incluindo discrepâncias dependentes da jurisdição.
-- `src/data/drugCalculators.ts` — calculadoras activadas apenas nas fichas com fontes verificadas.
+- `src/data/drugCalculators.ts` — 43 calculadoras em 36 fármacos, com evidência específica por fórmula e referências regulatórias/guidelines.
 - `src/lib/calculators.ts` — fórmulas puras de dose por peso, velocidade de perfusão e volume/tempo.
 - `src/data/drugBuilders.ts` — tipos e auxiliares partilhados para construir doses e exemplos.
 - `src/data/categories.ts` — taxonomia de categorias.
@@ -97,7 +97,9 @@ Estados documentais:
 
 ## Calculadoras
 
-As calculadoras são definições data-driven associadas a uma ficha. Cada definição exige `sourceIds` válidos e só é publicada em fármacos com estado `source-verified` ou `validated`.
+As calculadoras são definições data-driven associadas a uma ficha. Cada definição exige `sourceIds` válidos. Nas fichas `source-linked`, uma calculadora só é publicada se a sua fórmula tiver verificação independente própria (`validationStatus: source-verified`) e uma ligação directa para a fonte regulatória ou guideline. Isto permite verificar o cálculo sem promover artificialmente toda a monografia.
+
+O catálogo inclui 43 calculadoras em 36 fármacos: dose por peso, velocidade de perfusão e conversão volume/tempo. A interface mostra o selo de verificação dentro de cada calculadora e mantém visível o âmbito documental da monografia.
 
 - **Dose por peso:** peso × dose/kg, com limite máximo e volume do concentrado quando a concentração é inequívoca.
 - **Perfusão:** converte a dose alvo e a preparação confirmada em mL/h.

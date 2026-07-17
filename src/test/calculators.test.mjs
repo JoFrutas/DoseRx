@@ -21,9 +21,62 @@ describe('weight dose calculator', () => {
     assert.equal(result.volumeMl, 45)
     assert.equal(result.capped, true)
   })
+
+  it('applies regulatory caps used by alteplase and acetylcysteine', () => {
+    const alteplase = calculateWeightDose(120, 0.9, 90)
+    assert.equal(alteplase.calculatedDose, 108)
+    assert.equal(alteplase.finalDose, 90)
+    assert.equal(alteplase.capped, true)
+
+    const acetylcysteine = calculateWeightDose(120, 150, 15000, 200)
+    assert.equal(acetylcysteine.calculatedDose, 18000)
+    assert.equal(acetylcysteine.finalDose, 15000)
+    assert.equal(acetylcysteine.volumeMl, 75)
+  })
 })
 
 describe('infusion rate calculator', () => {
+  it('converts angiotensin II ng/kg/min to mL/h', () => {
+    const rate = calculateInfusionRate({
+      doseRate: 20,
+      doseRateUnit: 'ng/kg/min',
+      weightKg: 70,
+      preparationAmount: 2.5,
+      preparationAmountUnit: 'mg',
+      preparationVolumeMl: 250,
+    })
+    assert.equal(rate, 8.4)
+  })
+
+  it('converts the new source-backed continuous infusions', () => {
+    const cases = [
+      {
+        input: { doseRate: 3, doseRateUnit: 'mcg/kg/min', weightKg: 70, preparationAmount: 20, preparationAmountUnit: 'mg', preparationVolumeMl: 50 },
+        expected: 31.5,
+      },
+      {
+        input: { doseRate: 5, doseRateUnit: 'mcg/kg/min', weightKg: 70, preparationAmount: 200, preparationAmountUnit: 'mg', preparationVolumeMl: 250 },
+        expected: 26.25,
+      },
+      {
+        input: { doseRate: 0.5, doseRateUnit: 'mcg/kg/min', weightKg: 70, preparationAmount: 50, preparationAmountUnit: 'mg', preparationVolumeMl: 250 },
+        expected: 10.5,
+      },
+      {
+        input: { doseRate: 50, doseRateUnit: 'mcg/kg/min', weightKg: 70, preparationAmount: 2500, preparationAmountUnit: 'mg', preparationVolumeMl: 250 },
+        expected: 21,
+      },
+      {
+        input: { doseRate: 0.1, doseRateUnit: 'units/kg/h', weightKg: 70, preparationAmount: 100, preparationAmountUnit: 'units', preparationVolumeMl: 100 },
+        expected: 7,
+      },
+    ]
+
+    for (const testCase of cases) {
+      assert.equal(calculateInfusionRate(testCase.input), testCase.expected)
+    }
+  })
+
   it('converts propofol mcg/kg/min to mL/h', () => {
     const rate = calculateInfusionRate({
       doseRate: 5,

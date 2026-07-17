@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { calculateInfusionRate, formatCalculatorNumber, formatCalculatorUnit } from '../lib/calculators'
 import type { EvidenceReference, InfusionRateCalculatorDefinition } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
+import { ValidationBadge } from './ValidationBadge'
 import { useI18n } from '../i18n/I18nContext'
 
 interface InfusionRateCalculatorProps {
@@ -45,7 +46,10 @@ export function InfusionRateCalculator({ definition, references }: InfusionRateC
   return (
     <article className="calculator-card">
       <header>
-        <span className="calculator-card__kind">{ui.infusion}</span>
+        <div className="calculator-card__meta">
+          <span className="calculator-card__kind">{ui.infusion}</span>
+          <ValidationBadge status={definition.validationStatus ?? 'source-verified'} />
+        </div>
         <h3>{definition.title}</h3>
         <p>{definition.description}</p>
       </header>

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { calculateVolumeRate, formatCalculatorNumber } from '../lib/calculators'
 import type { EvidenceReference, VolumeTimeCalculatorDefinition } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
+import { ValidationBadge } from './ValidationBadge'
 import { useI18n } from '../i18n/I18nContext'
 
 interface VolumeTimeCalculatorProps {
@@ -27,7 +28,10 @@ export function VolumeTimeCalculator({ definition, references }: VolumeTimeCalcu
   return (
     <article className="calculator-card">
       <header>
-        <span className="calculator-card__kind">{ui.volumeTime}</span>
+        <div className="calculator-card__meta">
+          <span className="calculator-card__kind">{ui.volumeTime}</span>
+          <ValidationBadge status={definition.validationStatus ?? 'source-verified'} />
+        </div>
         <h3>{definition.title}</h3>
         <p>{definition.description}</p>
       </header>
