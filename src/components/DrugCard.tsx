@@ -1,4 +1,4 @@
-import { getCategoryById } from '../data/categories'
+import { useI18n } from '../i18n/I18nContext'
 import { drugHref } from '../lib/routes'
 import type { Drug } from '../types/drug'
 import { Icon } from './Icon'
@@ -9,8 +9,9 @@ interface DrugCardProps {
 }
 
 export function DrugCard({ drug }: DrugCardProps) {
+  const { categories: localizedCategories } = useI18n()
   const categories = drug.categoryIds
-    .map((categoryId) => getCategoryById(categoryId))
+    .map((categoryId) => localizedCategories.find((category) => category.id === categoryId))
     .filter((category) => category !== undefined)
 
   return (

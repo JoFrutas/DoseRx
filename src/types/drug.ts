@@ -1,4 +1,4 @@
-export type ValidationStatus = 'not-validated' | 'in-review' | 'source-verified' | 'validated'
+export type ValidationStatus = 'catalog-only' | 'source-linked' | 'source-verified' | 'validated'
 
 export type ConfidenceLevel = 'unvalidated' | 'low' | 'moderate' | 'high'
 

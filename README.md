@@ -2,7 +2,9 @@
 
 Aplicação de consulta rápida de fármacos em Medicina Intensiva, integrada visualmente na família JoFrutas/ICU Tools Hub.
 
-> **Estado do catálogo:** existem 552 entradas pesquisáveis. Destas, 6 têm consenso multiponto, 15 têm fontes primárias verificadas, 173 estão em revisão e 358 ainda não têm validação clínica. Os estados são mostrados na interface e as fichas em revisão ou não validadas não devem ser usadas como suporte autónomo à prescrição.
+> **Estado do catálogo:** existem 552 entradas pesquisáveis. Destas, 6 têm consenso multiponto, 15 têm fontes verificadas, 123 são monografias com referências externas ligadas e 408 são apenas entradas de catálogo, sem conteúdo posológico. Não existe um estado genérico “pendente”: a interface distingue explicitamente uma monografia clínica de uma entrada usada apenas para pesquisa e navegação.
+
+A interface e o conteúdo estruturado estão disponíveis em português, inglês e espanhol. As traduções clínicas EN/ES são assistidas e auditadas para cobertura, preservação de números/unidades e terminologia crítica; a fonte original continua a ser a referência decisiva.
 
 ## Correr localmente
 
@@ -17,6 +19,7 @@ Checks disponíveis:
 npm run lint
 npm run test
 npm run clinical:audit
+npm run translations:audit
 npm run build
 ```
 
@@ -28,9 +31,9 @@ O teste unitário usa o runner nativo e o suporte TypeScript do Node 22 ou super
 - `src/data/sources/reviewed-clinical-reference.md` — documento interno de trabalho usado para importar conteúdo; não aparece nem pode ser citado como referência bibliográfica.
 - `src/data/sources/reviewed-clinical-notes.json` — 185 blocos clínicos extraídos do documento interno e mapeados para 190 entradas; conserva proveniência técnica, não bibliografia.
 - `src/data/catalog.generated.ts` — 552 entradas únicas geradas a partir do catálogo; não editar manualmente.
-- `src/data/catalogReviewedDrugs.ts` — constrói as fichas restantes, usando as notas revistas quando existem e evitando doses numéricas não documentadas.
+- `src/data/catalogReviewedDrugs.ts` — constrói as 408 entradas estritamente catalogais; notas internas sem bibliografia específica não são expostas como conteúdo clínico.
 - `src/data/reviewedDrugs.ts` — fichas clínicas com fontes primárias verificadas.
-- `src/data/expandedClinicalDrugs.ts` — 141 rascunhos estruturados no modelo clínico completo; permanecem `in-review` até revisão médica e farmacêutica individual. As sobreposições são substituídas pelas fichas com fontes primárias verificadas.
+- `src/data/expandedClinicalDrugs.ts` — 141 monografias estruturadas com referências ligadas a cada recomendação. Permanecem `source-linked` enquanto não existir confirmação independente contra o texto integral das fontes.
 - `src/data/crossSourceVerification.ts` — comparação rastreável entre Medscape, Drugs.com e fontes primárias/regulatórias, incluindo discrepâncias dependentes da jurisdição.
 - `src/data/drugCalculators.ts` — calculadoras activadas apenas nas fichas com fontes verificadas.
 - `src/lib/calculators.ts` — fórmulas puras de dose por peso, velocidade de perfusão e volume/tempo.
@@ -39,6 +42,8 @@ O teste unitário usa o runner nativo e o suporte TypeScript do Node 22 ou super
 - `src/data/drugs.ts` — composição final do catálogo e sobreposição das fichas documentadas.
 - `src/types/drug.ts` — tipos `Drug`, `DrugCategory`, `DoseAdjustment`, `RenalAdjustment`, `HepaticAdjustment` e `PrescriptionExample`.
 - `src/lib/search.ts` — pesquisa por nome, alias, classe, prioridade, subcategoria, indicação e categoria.
+- `src/i18n/` — contexto PT/EN/ES, textos da interface, localização dos dados e traduções clínicas carregadas sob pedido.
+- `scripts/audit-translations.mjs` — verifica cobertura, números, unidades e termos clínicos propensos a falsos amigos.
 
 Para reconstruir o catálogo depois de alterar o JSON de origem:
 
@@ -50,6 +55,14 @@ Para voltar a extrair e mapear as notas depois de editar o documento clínico:
 
 ```bash
 npm run clinical:notes:generate
+```
+
+Depois de alterar conteúdo clínico, actualizar e auditar as traduções:
+
+```bash
+npm run translations:generate
+npm run translations:correct
+npm run translations:audit
 ```
 
 ## Política de fontes
@@ -69,8 +82,8 @@ Estados documentais:
 
 - `validated` — consenso multiponto sem discrepâncias materiais no âmbito definido;
 - `source-verified` — recomendações ligadas a fontes primárias, regulatórias ou guidelines específicas;
-- `in-review` — rascunho clínico estruturado ainda sem validação médica e farmacêutica completa;
-- `not-validated` — entrada de catálogo ou conteúdo genérico, sem bibliografia clínica específica.
+- `source-linked` — monografia em que todas as recomendações apontam para referências externas, mas sem confirmação independente do texto integral;
+- `catalog-only` — identidade e âmbito de catálogo, sem monografia posológica nem bibliografia clínica específica.
 
 ## Adicionar ou rever um fármaco
 

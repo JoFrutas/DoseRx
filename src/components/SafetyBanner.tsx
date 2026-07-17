@@ -1,30 +1,32 @@
 import type { ValidationStatus } from '../types/drug'
 import { Icon } from './Icon'
+import { useI18n } from '../i18n/I18nContext'
 
 interface SafetyBannerProps {
   compact?: boolean
-  status?: Extract<ValidationStatus, 'not-validated' | 'in-review'>
-  inReviewCount?: number
-  notValidatedCount?: number
+  status?: Extract<ValidationStatus, 'catalog-only' | 'source-linked'>
+  sourceLinkedCount?: number
+  catalogOnlyCount?: number
 }
 
 export function SafetyBanner({
   compact = false,
   status,
-  inReviewCount = 0,
-  notValidatedCount = 0,
+  sourceLinkedCount = 0,
+  catalogOnlyCount = 0,
 }: SafetyBannerProps) {
-  const title = status === 'in-review'
-    ? 'Ficha clínica em revisão'
-    : status === 'not-validated'
-      ? 'Ficha clínica não validada'
-      : 'Catálogo com diferentes níveis de revisão'
+  const { ui } = useI18n()
+  const title = status === 'source-linked'
+    ? ui.bannerLinkedTitle
+    : status === 'catalog-only'
+      ? ui.bannerCatalogTitle
+      : ui.bannerMixedTitle
 
-  const message = status === 'in-review'
-    ? 'O conteúdo é um rascunho estruturado. Confirme cada recomendação no RCM/SmPC, nas fontes específicas e no protocolo local.'
-    : status === 'not-validated'
-      ? 'Esta entrada contém apenas informação de catálogo ou texto genérico e não deve ser usada como suporte à prescrição.'
-      : `${inReviewCount} fichas estão em revisão e ${notValidatedCount} ainda não têm validação clínica. Verifique o estado apresentado em cada cartão.`
+  const message = status === 'source-linked'
+    ? ui.bannerLinkedMessage
+    : status === 'catalog-only'
+      ? ui.bannerCatalogMessage
+      : `${ui.bannerMixedMessage} ${sourceLinkedCount} ${ui.linkedCount}; ${catalogOnlyCount} ${ui.catalogOnlyCount}.`
 
   return (
     <aside

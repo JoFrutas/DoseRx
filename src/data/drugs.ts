@@ -123,7 +123,7 @@ const structuredDrugsWithVerification = structuredDrugs.map((drug) => {
 })
 const structuredIds = new Set(structuredDrugsWithVerification.map((drug) => drug.id))
 
-const pendingCatalogDrugs = catalogSeeds
+const catalogOnlyDrugs = catalogSeeds
   .filter((seed) => !structuredIds.has(seed.id))
   .map(createCatalogReviewedDrug)
 
@@ -134,7 +134,7 @@ const attachDocumentedCalculators = (drug: Drug): Drug => ({
     : [],
 })
 
-export const drugs: Drug[] = [...structuredDrugsWithVerification, ...pendingCatalogDrugs]
+export const drugs: Drug[] = [...structuredDrugsWithVerification, ...catalogOnlyDrugs]
   .map(attachDocumentedCalculators)
   .sort((first, second) => {
     const priorityOrder = { P1: 1, P2: 2, P3: 3 }
@@ -146,7 +146,7 @@ export const reviewedDrugCount = reviewedDrugs.length
 export const expandedClinicalSourceCount = expandedClinicalDrugs.length
 export const expandedClinicalMappedCatalogCount = expandedMappedDrugs.length
 export const structuredDrugCount = drugs.filter((drug) => (
-  drug.validationStatus !== 'not-validated'
+  drug.validationStatus !== 'catalog-only'
 )).length
 export const catalogDrugCount = drugs.length
 export const sourceVerifiedDrugCount = drugs.filter((drug) => (
@@ -155,14 +155,13 @@ export const sourceVerifiedDrugCount = drugs.filter((drug) => (
 export const multiSourceValidatedDrugCount = drugs.filter((drug) => (
   drug.verification?.status === 'consensus'
 )).length
-export const reviewInProgressDrugCount = drugs.filter((drug) => (
-  drug.validationStatus === 'in-review'
+export const sourceLinkedDrugCount = drugs.filter((drug) => (
+  drug.validationStatus === 'source-linked'
 )).length
-export const placeholderDrugCount = drugs.filter((drug) => (
-  drug.validationStatus === 'not-validated'
+export const catalogOnlyDrugCount = drugs.filter((drug) => (
+  drug.validationStatus === 'catalog-only'
 )).length
-export const pendingDrugCount = catalogDrugCount - sourceVerifiedDrugCount
-export const allDrugContentSourceVerified = pendingDrugCount === 0
+export const clinicalMonographCount = catalogDrugCount - catalogOnlyDrugCount
 
 export function getDrugById(drugId: string): Drug | undefined {
   return drugs.find((drug) => drug.id === drugId)

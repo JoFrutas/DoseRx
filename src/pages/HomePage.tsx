@@ -4,18 +4,18 @@ import { DrugCard } from '../components/DrugCard'
 import { LogoMark } from '../components/LogoMark'
 import { SafetyBanner } from '../components/SafetyBanner'
 import { SearchBar } from '../components/SearchBar'
-import { drugCategories } from '../data/categories'
 import {
   catalogDrugCount,
-  drugs,
+  catalogOnlyDrugCount,
   multiSourceValidatedDrugCount,
-  placeholderDrugCount,
-  reviewInProgressDrugCount,
+  sourceLinkedDrugCount,
   sourceVerifiedDrugCount,
 } from '../data/drugs'
+import { useI18n } from '../i18n/I18nContext'
 import { searchDrugs } from '../lib/search'
 
 export function HomePage() {
+  const { categories: drugCategories, drugs, ui } = useI18n()
   const [query, setQuery] = useState('')
   const results = searchDrugs(drugs, query, drugCategories)
   const isSearching = query.trim().length > 0
@@ -29,17 +29,14 @@ export function HomePage() {
           <div className="hero__brand">
             <LogoMark size="large" />
             <div>
-              <span className="eyebrow eyebrow--light">Consulta farmacológica em UCI</span>
-              <h1>Doses críticas.<br /><em>Contexto à vista.</em></h1>
-              <p>
-                Encontre rapidamente a estrutura de dose, prescrição, ajuste renal,
-                ajuste hepático e notas práticas de cada fármaco.
-              </p>
+              <span className="eyebrow eyebrow--light">{ui.heroEyebrow}</span>
+              <h1>{ui.heroTitleFirst}<br /><em>{ui.heroTitleSecond}</em></h1>
+              <p>{ui.heroDescription}</p>
             </div>
           </div>
           <SearchBar query={query} onQueryChange={setQuery} />
           <p className="hero__search-hint">
-            Pesquise por nome, alias, classe, indicação ou categoria.
+            {ui.searchHint}
           </p>
         </div>
       </section>
@@ -47,18 +44,18 @@ export function HomePage() {
       <div className="content-width home-content">
         <SafetyBanner
           compact
-          inReviewCount={reviewInProgressDrugCount}
-          notValidatedCount={placeholderDrugCount}
+          sourceLinkedCount={sourceLinkedDrugCount}
+          catalogOnlyCount={catalogOnlyDrugCount}
         />
 
         {isSearching ? (
           <section className="search-results" aria-live="polite">
             <div className="section-heading">
               <div>
-                <span className="eyebrow">Resultados</span>
-                <h2>{results.length} {results.length === 1 ? 'fármaco encontrado' : 'fármacos encontrados'}</h2>
+                <span className="eyebrow">{ui.results}</span>
+                <h2>{results.length} {results.length === 1 ? ui.drugFound : ui.drugsFound}</h2>
               </div>
-              <button className="text-button" type="button" onClick={() => setQuery('')}>Ver categorias</button>
+              <button className="text-button" type="button" onClick={() => setQuery('')}>{ui.viewCategories}</button>
             </div>
             {results.length > 0 ? (
               <div className="drug-list">
@@ -66,8 +63,8 @@ export function HomePage() {
               </div>
             ) : (
               <div className="empty-state">
-                <strong>Sem resultados para “{query}”</strong>
-                <p>Tente outro nome, classe, indicação, subcategoria ou alias.</p>
+                <strong>{ui.noResults} “{query}”</strong>
+                <p>{ui.noResultsHint}</p>
               </div>
             )}
           </section>
@@ -75,16 +72,15 @@ export function HomePage() {
           <section className="categories-section">
             <div className="section-heading">
               <div>
-                <span className="eyebrow">Catálogo de Medicina Intensiva</span>
-                <h2>Explorar por categoria</h2>
+                <span className="eyebrow">{ui.catalogEyebrow}</span>
+                <h2>{ui.exploreByCategory}</h2>
                 <p>
-                  {multiSourceValidatedDrugCount} fichas com consenso multiponto;{' '}
-                  {sourceVerifiedDrugCount - multiSourceValidatedDrugCount} com fontes primárias
-                  verificadas; {reviewInProgressDrugCount} em revisão e {placeholderDrugCount} sem
-                  validação clínica.
+                  {multiSourceValidatedDrugCount} {ui.consensusCount};{' '}
+                  {sourceVerifiedDrugCount - multiSourceValidatedDrugCount} {ui.verifiedCount};{' '}
+                  {sourceLinkedDrugCount} {ui.linkedCount}; {catalogOnlyDrugCount} {ui.catalogOnlyCount}.
                 </p>
               </div>
-              <span className="record-count">{catalogDrugCount} fármacos</span>
+              <span className="record-count">{catalogDrugCount} {ui.records}</span>
             </div>
             <div className="category-grid">
               {drugCategories.map((category) => (

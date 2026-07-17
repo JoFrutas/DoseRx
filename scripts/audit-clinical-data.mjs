@@ -16,8 +16,8 @@ const forbiddenBibliographicIds = new Set([
   'local-clinical-catalog',
 ])
 const validationRank = {
-  'not-validated': 0,
-  'in-review': 1,
+  'catalog-only': 0,
+  'source-linked': 1,
   'source-verified': 2,
   validated: 3,
 }
@@ -31,6 +31,8 @@ const statusCounts = Object.groupBy(drugs, (drug) => drug.validationStatus)
 const sourceVerified = drugs.filter((drug) => (
   drug.validationStatus === 'source-verified' || drug.validationStatus === 'validated'
 ))
+const sourceLinked = drugs.filter((drug) => drug.validationStatus === 'source-linked')
+const catalogOnly = drugs.filter((drug) => drug.validationStatus === 'catalog-only')
 
 if (reviewedClinicalUnmappedNoteCount > 0) {
   issues.push(`${reviewedClinicalUnmappedNoteCount} blocos da referência clínica sem correspondência no catálogo`)
@@ -39,8 +41,10 @@ if (reviewedClinicalUnmappedNoteCount > 0) {
 for (const drug of drugs) {
   const referenceIds = new Set(drug.references.map((reference) => reference.id))
   const isSourceVerified = drug.validationStatus === 'source-verified' || drug.validationStatus === 'validated'
+  const isSourceLinked = drug.validationStatus === 'source-linked'
 
   if (isSourceVerified && referenceIds.size === 0) issues.push(`${drug.id}: ficha verificada sem referências`)
+  if (isSourceLinked && referenceIds.size === 0) issues.push(`${drug.id}: monografia documentada sem referências`)
   if (!isSourceVerified && (drug.calculators?.length ?? 0) > 0) issues.push(`${drug.id}: calculadora em ficha não verificada`)
   if (drug.validationStatus === 'validated' && drug.confidence !== 'high') issues.push(`${drug.id}: aprovação total sem confiança elevada`)
   if (drug.validationStatus === 'validated' && !drug.lastReviewedAt) issues.push(`${drug.id}: aprovação total sem data de revisão`)
@@ -50,8 +54,14 @@ for (const drug of drugs) {
   if (drug.validationStatus === 'source-verified' && ['unvalidated', 'low'].includes(drug.confidence)) {
     issues.push(`${drug.id}: ficha verificada com confiança insuficiente`)
   }
-  if (drug.validationStatus === 'not-validated' && drug.confidence !== 'unvalidated') {
-    issues.push(`${drug.id}: ficha não validada com confiança atribuída`)
+  if (drug.validationStatus === 'catalog-only' && drug.confidence !== 'unvalidated') {
+    issues.push(`${drug.id}: entrada de catálogo com confiança clínica atribuída`)
+  }
+  if (drug.validationStatus === 'catalog-only' && referenceIds.size > 0) {
+    issues.push(`${drug.id}: entrada de catálogo contém referências clínicas`)
+  }
+  if (drug.validationStatus === 'source-linked' && drug.confidence === 'unvalidated') {
+    issues.push(`${drug.id}: monografia documentada sem nível de confiança`)
   }
   if (
     drug.validationStatus === 'validated'
@@ -80,7 +90,7 @@ for (const drug of drugs) {
     ...drug.prescriptionExamples,
   ]
 
-  if (isSourceVerified) {
+  if (isSourceVerified || isSourceLinked) {
     for (const item of adjustments) {
       if (item.sourceIds.length === 0) issues.push(`${drug.id}: recomendação sem fonte (${item.context ?? item.title})`)
       for (const sourceId of item.sourceIds) {
@@ -120,8 +130,10 @@ for (const drug of drugs) {
 const calculatorCount = drugs.reduce((total, drug) => total + (drug.calculators?.length ?? 0), 0)
 const report = {
   catalog: drugs.length,
+  clinicalMonographs: drugs.length - catalogOnly.length,
   sourceVerified: sourceVerified.length,
-  pending: drugs.length - sourceVerified.length,
+  sourceLinked: sourceLinked.length,
+  catalogOnly: catalogOnly.length,
   sourceCoverage: {
     expandedClinicalMonographs: expandedClinicalSourceCount,
     expandedClinicalMappedCatalogEntries: expandedClinicalMappedCatalogCount,

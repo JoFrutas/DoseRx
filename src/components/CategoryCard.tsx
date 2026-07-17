@@ -1,6 +1,7 @@
 import { categoryHref } from '../lib/routes'
 import type { DrugCategory } from '../types/drug'
 import { Icon } from './Icon'
+import { useI18n } from '../i18n/I18nContext'
 
 interface CategoryCardProps {
   category: DrugCategory
@@ -8,6 +9,7 @@ interface CategoryCardProps {
 }
 
 export function CategoryCard({ category, drugCount }: CategoryCardProps) {
+  const { ui } = useI18n()
   return (
     <a
       className="category-card"
@@ -18,7 +20,7 @@ export function CategoryCard({ category, drugCount }: CategoryCardProps) {
       <span className="category-card__body">
         <strong>{category.name}</strong>
         <span>{category.description}</span>
-        <small>{drugCount} {drugCount === 1 ? 'ficha estrutural' : 'fichas estruturais'}</small>
+        <small>{drugCount} {drugCount === 1 ? ui.structuralRecord : ui.structuralRecords}</small>
       </span>
       <span className="category-card__arrow"><Icon name="chevron-right" size={20} /></span>
     </a>

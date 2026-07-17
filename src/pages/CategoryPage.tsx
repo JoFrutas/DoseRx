@@ -1,8 +1,7 @@
 import { DrugCard } from '../components/DrugCard'
 import { Icon } from '../components/Icon'
 import { SafetyBanner } from '../components/SafetyBanner'
-import { getCategoryById } from '../data/categories'
-import { drugs } from '../data/drugs'
+import { useI18n } from '../i18n/I18nContext'
 import { homeHref } from '../lib/routes'
 import { NotFoundPage } from './NotFoundPage'
 
@@ -11,20 +10,21 @@ interface CategoryPageProps {
 }
 
 export function CategoryPage({ categoryId }: CategoryPageProps) {
-  const category = getCategoryById(categoryId)
+  const { categories, drugs, ui } = useI18n()
+  const category = categories.find((candidate) => candidate.id === categoryId)
   if (!category) return <NotFoundPage />
 
   const categoryDrugs = drugs.filter((drug) => drug.categoryIds.includes(category.id))
-  const inReviewCount = categoryDrugs.filter((drug) => (
-    drug.validationStatus === 'in-review'
+  const sourceLinkedCount = categoryDrugs.filter((drug) => (
+    drug.validationStatus === 'source-linked'
   )).length
-  const notValidatedCount = categoryDrugs.filter((drug) => (
-    drug.validationStatus === 'not-validated'
+  const catalogOnlyCount = categoryDrugs.filter((drug) => (
+    drug.validationStatus === 'catalog-only'
   )).length
 
   return (
     <main className="content-width page-content">
-      <a className="back-link" href={homeHref}><Icon name="arrow-left" size={18} /> Todas as categorias</a>
+      <a className="back-link" href={homeHref}><Icon name="arrow-left" size={18} /> {ui.back}</a>
 
       <section
         className="category-hero"
@@ -32,26 +32,26 @@ export function CategoryPage({ categoryId }: CategoryPageProps) {
       >
         <span className="category-hero__icon">{category.icon}</span>
         <div>
-          <span className="eyebrow">Categoria</span>
+          <span className="eyebrow">{ui.catalogEyebrow}</span>
           <h1>{category.name}</h1>
           <p>{category.description}</p>
         </div>
-        <strong>{categoryDrugs.length} {categoryDrugs.length === 1 ? 'ficha' : 'fichas'}</strong>
+        <strong>{categoryDrugs.length} {categoryDrugs.length === 1 ? ui.structuralRecord : ui.structuralRecords}</strong>
       </section>
 
-      {(inReviewCount > 0 || notValidatedCount > 0) && (
+      {(sourceLinkedCount > 0 || catalogOnlyCount > 0) && (
         <SafetyBanner
           compact
-          inReviewCount={inReviewCount}
-          notValidatedCount={notValidatedCount}
+          sourceLinkedCount={sourceLinkedCount}
+          catalogOnlyCount={catalogOnlyCount}
         />
       )}
 
       <section className="category-list-section">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">Fármacos</span>
-            <h2>Fichas nesta categoria</h2>
+            <span className="eyebrow">{ui.records}</span>
+            <h2>{ui.drugsInCategory}</h2>
           </div>
         </div>
         {categoryDrugs.length > 0 ? (
@@ -60,8 +60,8 @@ export function CategoryPage({ categoryId }: CategoryPageProps) {
           </div>
         ) : (
           <div className="empty-state">
-            <strong>Ainda não existem fármacos nesta categoria.</strong>
-            <p>A categoria já está pronta para receber conteúdo clínico estruturado.</p>
+            <strong>{ui.noResults}</strong>
+            <p>{ui.noResultsHint}</p>
           </div>
         )}
       </section>

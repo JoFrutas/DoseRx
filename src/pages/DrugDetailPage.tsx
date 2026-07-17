@@ -5,8 +5,7 @@ import { Icon } from '../components/Icon'
 import { SafetyBanner } from '../components/SafetyBanner'
 import { SourceLinks } from '../components/SourceLinks'
 import { ValidationBadge } from '../components/ValidationBadge'
-import { getCategoryById } from '../data/categories'
-import { getDrugById } from '../data/drugs'
+import { useI18n } from '../i18n/I18nContext'
 import { categoryHref, homeHref } from '../lib/routes'
 import { NotFoundPage } from './NotFoundPage'
 
@@ -15,23 +14,24 @@ interface DrugDetailPageProps {
 }
 
 export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
-  const drug = getDrugById(drugId)
+  const { categories: localizedCategories, drugs, ui } = useI18n()
+  const drug = drugs.find((candidate) => candidate.id === drugId)
   if (!drug) return <NotFoundPage />
 
   const categories = drug.categoryIds
-    .map((categoryId) => getCategoryById(categoryId))
+    .map((categoryId) => localizedCategories.find((category) => category.id === categoryId))
     .filter((category) => category !== undefined)
   const verificationLabels = {
-    'not-compared': 'Comparação ainda não realizada',
-    consensus: 'Consenso entre fontes',
-    'context-dependent': 'Diferença dependente do contexto',
-    conflict: 'Discrepância por resolver',
+    'not-compared': ui.verificationNotCompared,
+    consensus: ui.verificationConsensus,
+    'context-dependent': ui.verificationContext,
+    conflict: ui.verificationConflict,
   }
 
   return (
     <main className="content-width page-content drug-detail">
-      <nav className="breadcrumbs" aria-label="Navegação hierárquica">
-        <a href={homeHref}>Início</a>
+      <nav className="breadcrumbs" aria-label={ui.summary}>
+        <a href={homeHref}>{ui.home}</a>
         <span>/</span>
         {categories[0] && <a href={categoryHref(categories[0].id)}>{categories[0].shortName}</a>}
         <span>/</span>
@@ -53,28 +53,28 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
           </div>
         </div>
         <a className="back-link drug-hero__back" href={categories[0] ? categoryHref(categories[0].id) : homeHref}>
-          <Icon name="arrow-left" size={18} /> Voltar
+          <Icon name="arrow-left" size={18} /> {ui.back}
         </a>
       </section>
 
-      {drug.validationStatus === 'in-review' && <SafetyBanner status="in-review" />}
-      {drug.validationStatus === 'not-validated' && <SafetyBanner status="not-validated" />}
+      {drug.validationStatus === 'source-linked' && <SafetyBanner status="source-linked" />}
+      {drug.validationStatus === 'catalog-only' && <SafetyBanner status="catalog-only" />}
 
-      <div className="detail-layout">
+      <div className={`detail-layout${drug.validationStatus === 'catalog-only' ? ' detail-layout--catalog' : ''}`}>
         <aside className="detail-summary">
           <section>
-            <span className="eyebrow">Resumo da ficha</span>
+            <span className="eyebrow">{ui.summary}</span>
             <dl>
-              <div><dt>Última revisão</dt><dd>{drug.lastReviewedAt ?? '—'}</dd></div>
-              <div><dt>Prioridade</dt><dd>{drug.priority}</dd></div>
-              <div><dt>Subcategorias</dt><dd>{drug.subcategories.join('; ') || '—'}</dd></div>
-              <div><dt>Referências</dt><dd>{drug.references.length}</dd></div>
-              <div><dt>Aliases</dt><dd>{drug.aliases.join(', ') || '—'}</dd></div>
-              <div><dt>Vias</dt><dd>{drug.routes.join('; ')}</dd></div>
+              <div><dt>{ui.lastReview}</dt><dd>{drug.lastReviewedAt ?? '—'}</dd></div>
+              <div><dt>{ui.priority}</dt><dd>{drug.priority}</dd></div>
+              <div><dt>{ui.subcategories}</dt><dd>{drug.subcategories.join('; ') || '—'}</dd></div>
+              <div><dt>{ui.references}</dt><dd>{drug.references.length}</dd></div>
+              <div><dt>{ui.aliases}</dt><dd>{drug.aliases.join(', ') || '—'}</dd></div>
+              <div><dt>{ui.routes}</dt><dd>{drug.routes.join('; ')}</dd></div>
             </dl>
           </section>
           <section className="review-note">
-            <strong>Notas de revisão</strong>
+            <strong>{ui.reviewNotes}</strong>
             <ul>
               {drug.reviewNotes.map((note) => <li key={note}>{note}</li>)}
             </ul>
@@ -82,8 +82,8 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
           {drug.verification && (
             <section className={`verification-note verification-note--${drug.verification.status}`}>
               <strong>{verificationLabels[drug.verification.status]}</strong>
-              <span>{drug.verification.comparedSourceIds.length} fontes comparadas · {drug.verification.reviewedAt}</span>
-              <p><b>Âmbito:</b> {drug.verification.scope}</p>
+              <span>{drug.verification.comparedSourceIds.length} {ui.sourcesCompared} · {drug.verification.reviewedAt}</span>
+              <p><b>{ui.scope}:</b> {drug.verification.scope}</p>
               <p>{drug.verification.summary}</p>
               {drug.verification.discrepancies.length > 0 && (
                 <ul>
@@ -94,28 +94,25 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
           )}
         </aside>
 
-        <div className="detail-sections">
+        {drug.validationStatus !== 'catalog-only' && <div className="detail-sections">
           {drug.calculators && drug.calculators.length > 0 && (
-            <ClinicalSection title="Calculadoras documentadas" eyebrow="Cálculo assistido">
-              <p className="calculator-intro">
-                Resultados matemáticos baseados nos parâmetros introduzidos. A calculadora não selecciona
-                a indicação, o peso de dose, a função orgânica nem a preparação local.
-              </p>
+            <ClinicalSection title={ui.calculatorsTitle} eyebrow={ui.calculatorsEyebrow}>
+              <p className="calculator-intro">{ui.calculatorsIntro}</p>
               <DrugCalculators calculators={drug.calculators} references={drug.references} />
             </ClinicalSection>
           )}
 
-          <ClinicalSection title="Indicações comuns em UCI" eyebrow="Enquadramento">
+          <ClinicalSection title={ui.indicationsTitle} eyebrow={ui.indicationsEyebrow}>
             <ul className="plain-list">
               {drug.indications.map((indication) => <li key={indication}>{indication}</li>)}
             </ul>
           </ClinicalSection>
 
-          <ClinicalSection title="Dose habitual no adulto" eyebrow="Posologia">
+          <ClinicalSection title={ui.doseTitle} eyebrow={ui.doseEyebrow}>
             <DoseAdjustmentList items={drug.usualAdultDose} references={drug.references} />
           </ClinicalSection>
 
-          <ClinicalSection title="Como prescrever" eyebrow="Exemplos práticos">
+          <ClinicalSection title={ui.prescribeTitle} eyebrow={ui.prescribeEyebrow}>
             <div className="prescription-list">
               {drug.prescriptionExamples.map((example) => (
                 <article key={example.title}>
@@ -133,67 +130,67 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
           </ClinicalSection>
 
           {drug.loadingDose && (
-            <ClinicalSection title="Dose de carga" eyebrow="Se aplicável">
+            <ClinicalSection title={ui.loadingDoseTitle} eyebrow={ui.loadingDoseEyebrow}>
               <DoseAdjustmentList items={[drug.loadingDose]} references={drug.references} />
             </ClinicalSection>
           )}
 
-          <ClinicalSection title="Ajuste renal" eyebrow="ClCr / eGFR" tone="renal">
+          <ClinicalSection title={ui.renalTitle} eyebrow={ui.renalEyebrow} tone="renal">
             <p className="section-summary">{drug.renalAdjustment.summary}</p>
             <DoseAdjustmentList items={drug.renalAdjustment.byKidneyFunction} references={drug.references} />
-            <h3>Hemodiálise intermitente</h3>
+            <h3>{ui.intermittentHd}</h3>
             {drug.renalAdjustment.intermittentHemodialysis && (
               <DoseAdjustmentList items={[drug.renalAdjustment.intermittentHemodialysis]} references={drug.references} />
             )}
-            <h3>Técnicas contínuas de substituição renal</h3>
+            <h3>{ui.continuousKrt}</h3>
             {drug.renalAdjustment.continuousKidneyReplacement && (
               <DoseAdjustmentList items={[drug.renalAdjustment.continuousKidneyReplacement]} references={drug.references} />
             )}
           </ClinicalSection>
 
-          <ClinicalSection title="Ajuste hepático" eyebrow="Função hepática" tone="hepatic">
+          <ClinicalSection title={ui.hepaticTitle} eyebrow={ui.hepaticEyebrow} tone="hepatic">
             <p className="section-summary">{drug.hepaticAdjustment.summary}</p>
             <DoseAdjustmentList items={drug.hepaticAdjustment.bySeverity} references={drug.references} />
           </ClinicalSection>
 
-          <ClinicalSection title="Monitorização terapêutica" eyebrow="TDM e parâmetros">
+          <ClinicalSection title={ui.monitoringTitle} eyebrow={ui.monitoringEyebrow}>
             <ul className="plain-list">
               {drug.therapeuticDrugMonitoring.map((item) => <li key={item}>{item}</li>)}
             </ul>
           </ClinicalSection>
 
-          <ClinicalSection title="Contraindicações e interacções" eyebrow="Segurança" tone="warning">
+          <ClinicalSection title={ui.safetyTitle} eyebrow={ui.safetyEyebrow} tone="warning">
             <div className="two-column-list">
-              <div><h3>Contraindicações principais</h3><ul>{drug.contraindications.map((item) => <li key={item}>{item}</li>)}</ul></div>
-              <div><h3>Interacções importantes</h3><ul>{drug.interactions.map((item) => <li key={item}>{item}</li>)}</ul></div>
+              <div><h3>{ui.contraindications}</h3><ul>{drug.contraindications.map((item) => <li key={item}>{item}</li>)}</ul></div>
+              <div><h3>{ui.interactions}</h3><ul>{drug.interactions.map((item) => <li key={item}>{item}</li>)}</ul></div>
             </div>
           </ClinicalSection>
 
-          <ClinicalSection title="Notas práticas de Medicina Intensiva" eyebrow="À cabeceira">
+          <ClinicalSection title={ui.practicalTitle} eyebrow={ui.practicalEyebrow}>
             <ul className="plain-list">
               {drug.practicalNotes.map((item) => <li key={item}>{item}</li>)}
             </ul>
           </ClinicalSection>
 
-          <ClinicalSection title="Referências bibliográficas" eyebrow="Fontes">
+          <ClinicalSection title={ui.bibliographyTitle} eyebrow={ui.bibliographyEyebrow}>
             {drug.references.length > 0 ? (
               <ol className="reference-list">
                 {drug.references.map((reference) => (
                   <li key={reference.id}>
                     <strong>{reference.title}</strong>
                     {reference.source && <span>{reference.source}</span>}
-                    {reference.url && <a href={reference.url} target="_blank" rel="noreferrer">Abrir fonte <Icon name="external" size={14} /></a>}
+                    {reference.url && <a href={reference.url} target="_blank" rel="noreferrer">{ui.openSource} <Icon name="external" size={14} /></a>}
                   </li>
                 ))}
               </ol>
             ) : (
               <div className="empty-reference">
                 <Icon name="book" />
-                <div><strong>Nenhuma fonte associada</strong><p>Esta ficha ainda não tem referências documentais e não deve ser usada para prescrição.</p></div>
+                <div><strong>{ui.noSource}</strong><p>{ui.noSourceText}</p></div>
               </div>
             )}
           </ClinicalSection>
-        </div>
+        </div>}
       </div>
     </main>
   )

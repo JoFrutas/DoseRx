@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
 import { AppHeader } from './components/AppHeader'
+import { LanguageScreen } from './components/LanguageScreen'
+import { useI18n } from './i18n/I18nContext'
 import { parseRoute, useHashLocation } from './lib/routes'
 import { CategoryPage } from './pages/CategoryPage'
 import { DrugDetailPage } from './pages/DrugDetailPage'
@@ -7,12 +9,18 @@ import { HomePage } from './pages/HomePage'
 import { NotFoundPage } from './pages/NotFoundPage'
 
 export function App() {
+  const { language, loading, setLanguage, ui } = useI18n()
   const hash = useHashLocation()
   const route = parseRoute(hash)
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' })
   }, [hash])
+
+  if (!language) return <LanguageScreen onSelect={setLanguage} />
+  if (loading) {
+    return <main className="language-loading" aria-live="polite"><LogoLoading />{ui.loadingLanguage}</main>
+  }
 
   let page
   switch (route.name) {
@@ -37,10 +45,15 @@ export function App() {
       <footer className="app-footer">
         <div className="content-width">
           <strong>DoseRx</strong>
-          <span>Ferramenta de apoio · confirmar indicação, preparação e protocolo local</span>
-          <span>v0.3</span>
+          <span>{ui.footerSafety}</span>
+          <span>v0.4</span>
         </div>
+        {language !== 'pt' && <div className="content-width app-footer__translation">{ui.clinicalTranslationNotice}</div>}
       </footer>
     </div>
   )
+}
+
+function LogoLoading() {
+  return <span className="language-loading__mark">Rx</span>
 }

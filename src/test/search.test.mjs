@@ -3,14 +3,14 @@ import { describe, it } from 'node:test'
 import { drugCategories } from '../data/categories.ts'
 import {
   catalogDrugCount,
+  catalogOnlyDrugCount,
+  clinicalMonographCount,
   drugs,
   expandedClinicalMappedCatalogCount,
   expandedClinicalSourceCount,
   multiSourceValidatedDrugCount,
-  pendingDrugCount,
-  placeholderDrugCount,
-  reviewInProgressDrugCount,
   reviewedDrugCount,
+  sourceLinkedDrugCount,
   sourceVerifiedDrugCount,
   structuredDrugCount,
 } from '../data/drugs.ts'
@@ -57,12 +57,12 @@ describe('catalog integrity', () => {
     assert.equal(expandedClinicalSourceCount, 141)
     assert.equal(expandedClinicalMappedCatalogCount, 142)
     assert.equal(reviewedDrugCount, 21)
-    assert.equal(structuredDrugCount, 194)
+    assert.equal(structuredDrugCount, 144)
     assert.equal(sourceVerifiedDrugCount, 21)
     assert.equal(multiSourceValidatedDrugCount, 6)
-    assert.equal(reviewInProgressDrugCount, 173)
-    assert.equal(placeholderDrugCount, 358)
-    assert.equal(pendingDrugCount, 531)
+    assert.equal(sourceLinkedDrugCount, 123)
+    assert.equal(catalogOnlyDrugCount, 408)
+    assert.equal(clinicalMonographCount, 144)
   })
 
   it('uses unique drug IDs and known category IDs', () => {
@@ -135,8 +135,8 @@ describe('catalog integrity', () => {
         .map(([status, items]) => [status, items.length]),
     )
     assert.deepEqual(statusCounts, {
-      'not-validated': 358,
-      'in-review': 173,
+      'catalog-only': 408,
+      'source-linked': 123,
       validated: 6,
       'source-verified': 15,
     })
@@ -171,12 +171,12 @@ describe('catalog integrity', () => {
 
   it('does not promote internal drafts or catalog-only entries', () => {
     const aspirin = drugs.find((drug) => drug.id === 'acido-acetilsalicilico')
-    assert.equal(aspirin?.validationStatus, 'in-review')
+    assert.equal(aspirin?.validationStatus, 'catalog-only')
     assert.equal(aspirin?.references.length, 0)
     assert.equal(aspirin?.calculators?.length, 0)
 
     const acenocoumarol = drugs.find((drug) => drug.id === 'acenocumarol')
-    assert.equal(acenocoumarol?.validationStatus, 'not-validated')
+    assert.equal(acenocoumarol?.validationStatus, 'catalog-only')
     assert.equal(acenocoumarol?.confidence, 'unvalidated')
     assert.equal(acenocoumarol?.lastReviewedAt, null)
     assert.equal(acenocoumarol?.references.length, 0)

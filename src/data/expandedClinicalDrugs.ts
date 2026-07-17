@@ -12,14 +12,14 @@ export type ExpandedClinicalDrug = Omit<Drug, 'priority' | 'subcategories'>
 
 /**
  * ATENÇÃO CLÍNICA
- * As fichas abaixo são rascunhos estruturados a partir do documento clínico
- * interno e de referências padrão de Medicina Intensiva (ver
- * `referenceLibrary`). Não existe registo de validação médica e farmacêutica
- * individual de cada recomendação. A utilização assistencial exige revisão das
- * fontes específicas, da apresentação, da preparação e do protocolo local.
+ * As fichas abaixo são monografias estruturadas com referências externas
+ * explicitamente ligadas a cada recomendação (ver `referenceLibrary`). Uma
+ * ligação bibliográfica não equivale a verificação independente do conteúdo:
+ * apenas as fichas promovidas em `crossSourceVerification.ts` recebem os selos
+ * `source-verified` ou `validated`.
  */
 
-const REVIEW: ValidationStatus = 'in-review'
+const REVIEW: ValidationStatus = 'source-linked'
 const REVIEW_DATE = '2026-07-16'
 
 // ---------------------------------------------------------------------------
@@ -386,8 +386,8 @@ const refsFor = (ids: string[]): EvidenceReference[] =>
   ids.map((id) => referenceLibrary[id]).filter((r): r is EvidenceReference => Boolean(r))
 
 const REVIEW_NOTES = [
-  'Rascunho estruturado a partir de uma referência clínica interna; não constitui validação clínica ou farmacêutica.',
-  'Requer confirmação em fonte específica, revisão médica e farmacêutica e adequação ao protocolo local antes da utilização assistencial.',
+  'Cada recomendação está ligada às referências externas indicadas, mas ainda não foi confirmada de forma independente contra o texto integral da fonte.',
+  'Confirmar apresentação, preparação, protocolo local e eventuais actualizações antes da utilização assistencial.',
 ]
 
 // ---------------------------------------------------------------------------
