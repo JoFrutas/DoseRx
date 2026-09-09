@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { calculateInfusionRate, formatCalculatorNumber, formatCalculatorUnit } from '../lib/calculators'
+import { calculateDefinedInfusionRate, formatCalculatorNumber as formatNumber, formatCalculatorUnit as formatUnit } from '../lib/calculators'
 import type { EvidenceReference, InfusionRateCalculatorDefinition } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
 import { ValidationBadge } from './ValidationBadge'
@@ -11,9 +11,11 @@ interface InfusionRateCalculatorProps {
 }
 
 export function InfusionRateCalculator({ definition, references }: InfusionRateCalculatorProps) {
-  const { ui } = useI18n()
-  const [doseRate, setDoseRate] = useState(String(Number(definition.defaultDoseRate.toFixed(2))))
-  const [weightKg, setWeightKg] = useState('70')
+  const { ui, language } = useI18n()
+  const formatCalculatorNumber = (value: number) => formatNumber(value, language ?? 'pt')
+  const formatCalculatorUnit = (unit: Parameters<typeof formatUnit>[0]) => formatUnit(unit, language ?? 'pt')
+  const [doseRate, setDoseRate] = useState(String(definition.defaultDoseRate))
+  const [weightKg, setWeightKg] = useState('')
   const [preparationAmount, setPreparationAmount] = useState(
     definition.preparation.amount > 0 ? String(definition.preparation.amount) : '',
   )
@@ -25,7 +27,7 @@ export function InfusionRateCalculator({ definition, references }: InfusionRateC
 
   let rateMlHour = null
   try {
-    rateMlHour = calculateInfusionRate({
+    rateMlHour = calculateDefinedInfusionRate(definition, {
       doseRate: numericDoseRate,
       doseRateUnit: definition.doseRateUnit,
       weightKg: requiresWeight ? Number(weightKg) : undefined,

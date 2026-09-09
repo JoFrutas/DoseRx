@@ -15,8 +15,13 @@ import {
   structuredDrugCount,
 } from '../data/drugs.ts'
 import { normalizeSearchText, searchDrugs } from '../lib/search.ts'
+import { parseRoute } from '../lib/routes.ts'
 
 describe('drug search', () => {
+  it('treats malformed shared URLs as not found instead of crashing', () => {
+    for (const hash of ['#/drug/%', '#/drug/%E0%A4', '#/category/%GG']) assert.deepEqual(parseRoute(hash), { name: 'not-found' })
+    assert.deepEqual(parseRoute('#/drug/insulina-regular'), { name: 'drug', drugId: 'insulina-regular' })
+  })
   it('ignores accents and letter case', () => {
     assert.equal(normalizeSearchText('  Noradrenalína  '), 'noradrenalina')
   })
@@ -52,6 +57,23 @@ describe('drug search', () => {
 })
 
 describe('catalog integrity', () => {
+  it('keeps potassium and sodium phosphate identities and prescriptions separate', () => {
+    const sodium = drugs.find(drug => drug.id === 'fosfato-de-sodio')
+    const potassium = drugs.find(drug => drug.id === 'fosfato-de-potassio')
+    assert.ok(!sodium.aliases.includes('fosfato de potássio'))
+    assert.ok(!potassium.aliases.includes('fosfato de sódio'))
+    assert.equal(sodium.prescriptionExamples.length, 0)
+  })
+  it('preserves review status while removing outdated high-risk clinical instructions', () => {
+    const insulin = drugs.find(drug => drug.id === 'insulina-regular')
+    const sugammadex = drugs.find(drug => drug.id === 'sugamadex')
+    assert.equal(insulin.validationStatus, 'source-linked')
+    assert.equal(sugammadex.validationStatus, 'source-linked')
+    assert.ok(insulin.prescriptionExamples.some(item => /K <3,5 mmol\/L/.test(item.prescription)))
+    assert.ok(!JSON.stringify(insulin).includes('3,3'))
+    assert.ok(sugammadex.practicalNotes.some(note => /não garante/.test(note)))
+    assert.ok(!JSON.stringify(sugammadex).includes('alternativa segura'))
+  })
   it('contains the consolidated catalog and the documented review batch', () => {
     assert.equal(catalogDrugCount, 552)
     assert.equal(expandedClinicalSourceCount, 141)

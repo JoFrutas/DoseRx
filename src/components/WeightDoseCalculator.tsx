@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { calculateWeightDose, formatCalculatorNumber, formatCalculatorUnit } from '../lib/calculators'
+import { calculateWeightDose, formatCalculatorNumber as formatNumber, formatCalculatorUnit as formatUnit } from '../lib/calculators'
 import type { EvidenceReference, WeightDoseCalculatorDefinition } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
 import { ValidationBadge } from './ValidationBadge'
@@ -11,8 +11,10 @@ interface WeightDoseCalculatorProps {
 }
 
 export function WeightDoseCalculator({ definition, references }: WeightDoseCalculatorProps) {
-  const { ui } = useI18n()
-  const [weightKg, setWeightKg] = useState('70')
+  const { ui, language } = useI18n()
+  const formatCalculatorNumber = (value: number) => formatNumber(value, language ?? 'pt')
+  const formatCalculatorUnit = (unit: Parameters<typeof formatUnit>[0]) => formatUnit(unit, language ?? 'pt')
+  const [weightKg, setWeightKg] = useState('')
   const [optionId, setOptionId] = useState(definition.defaultOptionId)
   const option = definition.options.find((candidate) => candidate.id === optionId)
 

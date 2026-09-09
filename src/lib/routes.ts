@@ -24,7 +24,12 @@ export function parseRoute(hash: string): AppRoute {
   const [section, rawId, ...rest] = path.split('/')
   if (!rawId || rest.length > 0) return { name: 'not-found' }
 
-  const id = decodeURIComponent(rawId)
+  let id: string
+  try {
+    id = decodeURIComponent(rawId)
+  } catch {
+    return { name: 'not-found' }
+  }
   if (section === 'category') return { name: 'category', categoryId: id }
   if (section === 'drug') return { name: 'drug', drugId: id }
   return { name: 'not-found' }
