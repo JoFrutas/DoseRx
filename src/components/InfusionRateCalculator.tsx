@@ -87,7 +87,7 @@ export function InfusionRateCalculator({ definition, references }: InfusionRateC
           </small>
         </div>
       ) : (
-        <p className="calculator-placeholder">{ui.infusionPlaceholder}</p>
+        <p className="calculator-placeholder">{requiresWeight ? ui.infusionPlaceholder : ui.infusionPlaceholderNoWeight}</p>
       )}
       <ul className="calculator-notes">
         {definition.notes.map((note) => <li key={note}>{note}</li>)}
