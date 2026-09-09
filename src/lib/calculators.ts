@@ -1,4 +1,4 @@
-import type { DoseAmountUnit, DoseRateUnit } from '../types/drug'
+import type { DoseAmountUnit, DoseRateUnit, InfusionRateCalculatorDefinition, VolumeTimeCalculatorDefinition } from '../types/drug'
 
 export interface WeightDoseResult {
   calculatedDose: number
@@ -22,25 +22,33 @@ function requirePositive(value: number, label: string): void {
   }
 }
 
+function requireDosingWeight(weight: number): void {
+  requirePositive(weight, 'O peso')
+  if (weight < 1 || weight > 400) throw new Error('O peso de dose deve estar entre 1 e 400 kg.')
+}
+
 export function calculateWeightDose(
   weightKg: number,
   dosePerKg: number,
   maxDose?: number,
   concentrationPerMl?: number,
 ): WeightDoseResult {
-  requirePositive(weightKg, 'O peso')
+  requireDosingWeight(weightKg)
   requirePositive(dosePerKg, 'A dose por kg')
   if (maxDose !== undefined) requirePositive(maxDose, 'A dose máxima')
   if (concentrationPerMl !== undefined) requirePositive(concentrationPerMl, 'A concentração')
 
   const calculatedDose = weightKg * dosePerKg
+  requirePositive(calculatedDose, 'A dose calculada')
   const finalDose = maxDose === undefined ? calculatedDose : Math.min(calculatedDose, maxDose)
+  const volumeMl = concentrationPerMl === undefined ? null : finalDose / concentrationPerMl
+  if (volumeMl !== null) requirePositive(volumeMl, 'O volume calculado')
 
   return {
     calculatedDose,
     finalDose,
     capped: finalDose < calculatedDose,
-    volumeMl: concentrationPerMl === undefined ? null : finalDose / concentrationPerMl,
+    volumeMl,
   }
 }
 
@@ -69,7 +77,7 @@ function dosePerHourInBaseUnit(
   const requiresWeight = unit.includes('/kg/')
   if (requiresWeight) {
     if (weightKg === undefined) throw new Error('O peso é obrigatório para esta unidade de dose.')
-    requirePositive(weightKg, 'O peso')
+    requireDosingWeight(weightKg)
   }
 
   switch (unit) {
@@ -94,6 +102,8 @@ function dosePerHourInBaseUnit(
       return doseRate * 60
     case 'units/kg/h':
       return doseRate * (weightKg as number)
+    default:
+      throw new Error('Unidade de dose desconhecida.')
   }
 }
 
@@ -101,6 +111,10 @@ export function calculateInfusionRate(input: InfusionRateInput): number {
   requirePositive(input.doseRate, 'A dose alvo')
   requirePositive(input.preparationAmount, 'A quantidade preparada')
   requirePositive(input.preparationVolumeMl, 'O volume preparado')
+  if (!['g', 'mg', 'mcg', 'mEq', 'units'].includes(input.preparationAmountUnit)) {
+    throw new Error('Unidade da preparação desconhecida.')
+  }
+  if (typeof input.doseRateUnit !== 'string') throw new Error('Unidade de dose desconhecida.')
 
   if (rateFamily(input.doseRateUnit) !== amountFamily(input.preparationAmountUnit)) {
     throw new Error('A unidade da preparação não é compatível com a unidade da dose.')
@@ -115,20 +129,44 @@ export function calculateInfusionRate(input: InfusionRateInput): number {
     input.preparationAmount,
     input.preparationAmountUnit,
   ) / input.preparationVolumeMl
+  requirePositive(dosePerHour, 'A dose horária')
+  requirePositive(concentration, 'A concentração')
+  const rate = dosePerHour / concentration
+  requirePositive(rate, 'O ritmo calculado')
+  return rate
+}
 
-  return dosePerHour / concentration
+export function calculateDefinedInfusionRate(definition: InfusionRateCalculatorDefinition, input: InfusionRateInput): number {
+  if (input.doseRateUnit !== definition.doseRateUnit) throw new Error('A unidade deve corresponder à definição da calculadora.')
+  if (definition.maximumDoseRate !== undefined && input.doseRate > definition.maximumDoseRate) {
+    throw new Error('Dose acima do limite documentado desta calculadora.')
+  }
+  return calculateInfusionRate(input)
 }
 
 export function calculateVolumeRate(volumeMl: number, durationMinutes: number): number {
   requirePositive(volumeMl, 'O volume')
   requirePositive(durationMinutes, 'A duração')
-  return volumeMl * 60 / durationMinutes
+  const rate = volumeMl / durationMinutes * 60
+  requirePositive(rate, 'O ritmo calculado')
+  return rate
 }
 
-export function formatCalculatorNumber(value: number): string {
-  return new Intl.NumberFormat('pt-PT', { maximumFractionDigits: 2 }).format(value)
+export function calculateDefinedVolumeRate(definition: VolumeTimeCalculatorDefinition, volumeMl: number, durationMinutes: number): number {
+  if (definition.minimumDurationMinutes !== undefined && durationMinutes < definition.minimumDurationMinutes) {
+    throw new Error('Duração inferior ao mínimo documentado.')
+  }
+  return calculateVolumeRate(volumeMl, durationMinutes)
 }
 
-export function formatCalculatorUnit(unit: DoseAmountUnit | DoseRateUnit): string {
-  return unit.replace('units', 'unidades')
+export function formatCalculatorNumber(value: number, language = 'pt'): string {
+  if (!Number.isFinite(value)) return '—'
+  // Small positive rates must not silently become zero at two decimal places.
+  return new Intl.NumberFormat(language === 'pt' ? 'pt-PT' : language === 'es' ? 'es-ES' : 'en-GB', {
+    maximumSignificantDigits: 6,
+  }).format(value)
+}
+
+export function formatCalculatorUnit(unit: DoseAmountUnit | DoseRateUnit, language = 'pt'): string {
+  return unit.replace('units', language === 'en' ? 'units' : 'unidades')
 }

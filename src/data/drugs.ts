@@ -93,6 +93,8 @@ const expandedMappedDrugs: Drug[] = expandedClinicalDrugs
   .flatMap((drug) => (
   findCatalogSeeds(drug).map((seed) => {
     const aliases = [...new Set([...seed.aliases, ...drug.aliases, drug.name, drug.id])]
+      .filter(alias => !(seed.id === 'fosfato-de-sodio' && normalizeCatalogText(alias) === 'fosfato de potassio')
+        && !(seed.id === 'fosfato-de-potassio' && normalizeCatalogText(alias) === 'fosfato de sodio'))
     const categoryIds = [...new Set([...seed.categoryIds, ...drug.categoryIds])]
 
     return {
@@ -103,6 +105,9 @@ const expandedMappedDrugs: Drug[] = expandedClinicalDrugs
       priority: seed.priority,
       subcategories: seed.subcategories,
       categoryIds,
+      // The generic phosphate monograph maps to two salts. A potassium example
+      // must never become a sodium prescription through that mapping.
+      prescriptionExamples: seed.id === 'fosfato-de-sodio' ? [] : drug.prescriptionExamples,
     }
   })
 ))

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { calculateVolumeRate, formatCalculatorNumber } from '../lib/calculators'
+import { calculateDefinedVolumeRate, formatCalculatorNumber as formatNumber } from '../lib/calculators'
 import type { EvidenceReference, VolumeTimeCalculatorDefinition } from '../types/drug'
 import { SourceLinks } from './SourceLinks'
 import { ValidationBadge } from './ValidationBadge'
@@ -11,13 +11,14 @@ interface VolumeTimeCalculatorProps {
 }
 
 export function VolumeTimeCalculator({ definition, references }: VolumeTimeCalculatorProps) {
-  const { ui } = useI18n()
+  const { ui, language } = useI18n()
+  const formatCalculatorNumber = (value: number) => formatNumber(value, language ?? 'pt')
   const [volumeMl, setVolumeMl] = useState(String(definition.defaultVolumeMl))
   const [durationMinutes, setDurationMinutes] = useState(String(definition.defaultDurationMinutes))
 
   let rateMlHour = null
   try {
-    rateMlHour = calculateVolumeRate(Number(volumeMl), Number(durationMinutes))
+    rateMlHour = calculateDefinedVolumeRate(definition, Number(volumeMl), Number(durationMinutes))
   } catch {
     rateMlHour = null
   }

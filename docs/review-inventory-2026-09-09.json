@@ -1,0 +1,5997 @@
+{
+  "date": "2026-09-09",
+  "note": "Structural coverage is not independent clinical validation. Historical validation categories were preserved.",
+  "counts": {
+    "catalog": 552,
+    "monographs": 144,
+    "calculators": 43,
+    "monographsWithGenericOrMissingReferenceLinks": 122
+  },
+  "records": [
+    {
+      "id": "acenocumarol",
+      "name": "Acenocumarol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acetato-de-potassio",
+      "name": "Acetato de potássio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acetazolamida",
+      "name": "Acetazolamida",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acyclovir",
+      "name": "Aciclovir",
+      "priority": "P1",
+      "validationStatus": "validated",
+      "calculators": [
+        "acyclovir-weight-dose",
+        "acyclovir-volume-time"
+      ],
+      "references": 5,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "acido-acetilsalicilico",
+      "name": "Ácido acetilsalicílico",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-ascorbico",
+      "name": "Ácido ascórbico",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-folico",
+      "name": "Ácido fólico",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-folinico-leucovorina",
+      "name": "Ácido folínico (leucovorina)",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-tranexamico",
+      "name": "Ácido tranexâmico",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-zoledronico",
+      "name": "Ácido zoledrónico",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "adenosina",
+      "name": "Adenosina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "adrenalina",
+      "name": "Adrenalina",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "epinephrine-septic-shock-infusion"
+      ],
+      "references": 2,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "adrenalina-nebulizada",
+      "name": "Adrenalina nebulizada",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "albumina-humana-20",
+      "name": "Albumina humana 20%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "albumina-humana-25",
+      "name": "Albumina humana 25%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "albumina-humana-5",
+      "name": "Albumina humana 5%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "alopurinol",
+      "name": "Alopurinol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "alteplase",
+      "name": "Alteplase",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "alteplase-ischemic-stroke-dose"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "amantadina",
+      "name": "Amantadina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "amicacina",
+      "name": "Amicacina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "amikacin-extended-interval-dose"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "amiodarone",
+      "name": "Amiodarona",
+      "priority": "P1",
+      "validationStatus": "validated",
+      "calculators": [
+        "amiodarone-slow-load"
+      ],
+      "references": 5,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "amoxicilina",
+      "name": "Amoxicilina",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [],
+      "references": 6,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "amoxicilina-acido-clavulanico",
+      "name": "Amoxicilina/ácido clavulânico",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [],
+      "references": 5,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ampicilina",
+      "name": "Ampicilina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ampicilina-sulbactam",
+      "name": "Ampicilina/sulbactam",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "andexanet-alfa",
+      "name": "Andexanet alfa",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "anfotericina-b-desoxicolato",
+      "name": "Anfotericina B desoxicolato",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "anfotericina-b-lipossomica",
+      "name": "Anfotericina B lipossómica",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "ambisome-weight-dose"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "anidulafungina",
+      "name": "Anidulafungina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 1,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "apixabano",
+      "name": "Apixabano",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "argatroban",
+      "name": "Argatroban",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "artesunato-intravenoso",
+      "name": "Artesunato intravenoso",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "atracurio",
+      "name": "Atracúrio",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "atropina",
+      "name": "Atropina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "azitromicina",
+      "name": "Azitromicina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "aztreonam",
+      "name": "Aztreonam",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "azul-de-metileno",
+      "name": "Azul de metileno",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "benzilpenicilina",
+      "name": "Benzilpenicilina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "benzilpenicilina-penicilina-g",
+      "name": "Benzilpenicilina (penicilina G)",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bicarbonato-de-sodio",
+      "name": "Bicarbonato de sódio",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bisacodilo",
+      "name": "Bisacodilo",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bivalirudina",
+      "name": "Bivalirudina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bromocriptina",
+      "name": "Bromocriptina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bumetanida",
+      "name": "Bumetanida",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "calcitonina",
+      "name": "Calcitonina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "calcitriol",
+      "name": "Calcitriol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cangrelor",
+      "name": "Cangrelor",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "caplacizumab",
+      "name": "Caplacizumab",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "carbetocina",
+      "name": "Carbetocina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "carboprost",
+      "name": "Carboprost",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "carvao-activado",
+      "name": "Carvão activado",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "caspofungina",
+      "name": "Caspofungina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cefazolina",
+      "name": "Cefazolina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cefepima",
+      "name": "Cefepima",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cefiderocol",
+      "name": "Cefiderocol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cefotaxima",
+      "name": "Cefotaxima",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cefoxitina",
+      "name": "Cefoxitina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ceftarolina",
+      "name": "Ceftarolina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "infarmed",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ceftazidima",
+      "name": "Ceftazidima",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ceftazidima-avibactam",
+      "name": "Ceftazidima/avibactam",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ceftobiprole",
+      "name": "Ceftobiprole",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ceftolozano-tazobactam",
+      "name": "Ceftolozano/tazobactam",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ceftriaxona",
+      "name": "Ceftriaxona",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cefuroxima",
+      "name": "Cefuroxima",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cetamina",
+      "name": "Cetamina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cianocobalamina",
+      "name": "Cianocobalamina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ciclosporina",
+      "name": "Ciclosporina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ciclossilicato-de-zirconio-sodico",
+      "name": "Ciclossilicato de zircónio sódico",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cipro-heptadina",
+      "name": "Cipro-heptadina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ciprofloxacina",
+      "name": "Ciprofloxacina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cisatracurio",
+      "name": "Cisatracúrio",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "cisatracurium-intubation-dose",
+        "cisatracurium-continuous-infusion"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "claritromicina",
+      "name": "Claritromicina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clevidipina",
+      "name": "Clevidipina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clindamicina",
+      "name": "Clindamicina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clonidina",
+      "name": "Clonidina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clopidogrel",
+      "name": "Clopidogrel",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cloranfenicol",
+      "name": "Cloranfenicol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cloreto-de-calcio",
+      "name": "Cloreto de cálcio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cloreto-de-magnesio",
+      "name": "Cloreto de magnésio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "potassium-chloride",
+      "name": "Cloreto de potássio",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "potassium-infusion"
+      ],
+      "references": 1,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "cloreto-de-sodio-0-9",
+      "name": "Cloreto de sódio 0,9%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cloreto-de-sodio-23-4",
+      "name": "Cloreto de sódio 23,4%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cloreto-de-sodio-3",
+      "name": "Cloreto de sódio 3%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cloreto-de-sodio-7-5",
+      "name": "Cloreto de sódio 7,5%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cloreto-de-sodio-hipertonico",
+      "name": "Cloreto de sódio hipertónico",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clorotiazida",
+      "name": "Clorotiazida",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clortalidona",
+      "name": "Clortalidona",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "colestiramina",
+      "name": "Colestiramina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "colistimetato-de-sodio-colistina",
+      "name": "Colistimetato de sódio (colistina)",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "concentrado-de-complexo-protrombinico",
+      "name": "Concentrado de complexo protrombínico",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "concentrado-de-complexo-protrombinico-de-4-factores",
+      "name": "Concentrado de complexo protrombínico de 4 factores",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "concentrado-de-fibrinogenio",
+      "name": "Concentrado de fibrinogénio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "concentrado-eritrocitario",
+      "name": "Concentrado eritrocitário",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "concentrado-plaquetario",
+      "name": "Concentrado plaquetário",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "crioprecipitado",
+      "name": "Crioprecipitado",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dabigatrano",
+      "name": "Dabigatrano",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dalteparina",
+      "name": "Dalteparina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "danaparoide",
+      "name": "Danaparóide",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dantroleno",
+      "name": "Dantroleno",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "dantrolene-mh-dose"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "daptomicina",
+      "name": "Daptomicina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "daptomycin-labelled-dose"
+      ],
+      "references": 5,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "desferroxamina",
+      "name": "Desferroxamina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "desmopressina",
+      "name": "Desmopressina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dexametasona",
+      "name": "Dexametasona",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dexmedetomidina",
+      "name": "Dexmedetomidina",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "dexmedetomidine-icu-infusion"
+      ],
+      "references": 1,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "diazepam",
+      "name": "Diazepam",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "digoxina",
+      "name": "Digoxina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "diltiazem",
+      "name": "Diltiazem",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dinitrato-de-isossorbida",
+      "name": "Dinitrato de isossorbida",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dobutamina",
+      "name": "Dobutamina",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "dobutamine-infusion"
+      ],
+      "references": 1,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "dopamina",
+      "name": "Dopamina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "dopamine-continuous-infusion"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "doxiciclina",
+      "name": "Doxiciclina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "edoxabano",
+      "name": "Edoxabano",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "efedrina",
+      "name": "Efedrina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "electrolitos-para-nutricao-parenterica",
+      "name": "Electrólitos para nutrição parentérica",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "emulsao-lipidica-com-oleo-de-peixe",
+      "name": "Emulsão lipídica com óleo de peixe",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "emulsao-lipidica-de-oleo-de-soja",
+      "name": "Emulsão lipídica de óleo de soja",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "emulsao-lipidica-intravenosa",
+      "name": "Emulsão lipídica intravenosa",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "emulsao-lipidica-mct-lct",
+      "name": "Emulsão lipídica MCT/LCT",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "enoxaparin",
+      "name": "Enoxaparina",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "enoxaparin-treatment-dose"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "eplerenona",
+      "name": "Eplerenona",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "epoprostenol-inalado",
+      "name": "Epoprostenol inalado",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "eritromicina",
+      "name": "Eritromicina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ertapenem",
+      "name": "Ertapenem",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "esmolol",
+      "name": "Esmolol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "esmolol-loading-dose",
+        "esmolol-continuous-infusion"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "esomeprazol",
+      "name": "Esomeprazol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "espironolactona",
+      "name": "Espironolactona",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "etanol-intravenoso",
+      "name": "Etanol intravenoso",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "etomidato",
+      "name": "Etomidato",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fenilefrina",
+      "name": "Fenilefrina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 1,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fenitoina",
+      "name": "Fenitoína",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fenobarbital",
+      "name": "Fenobarbital",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fentanilo",
+      "name": "Fentanilo",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fidaxomicina",
+      "name": "Fidaxomicina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "flucitosina",
+      "name": "Flucitosina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "flucloxacilina",
+      "name": "Flucloxacilina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fluconazole",
+      "name": "Fluconazol",
+      "priority": "P1",
+      "validationStatus": "validated",
+      "calculators": [],
+      "references": 5,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fludrocortisona",
+      "name": "Fludrocortisona",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "flumazenilo",
+      "name": "Flumazenilo",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fomepizole",
+      "name": "Fomepizol",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "fomepizole-weight-dose",
+        "fomepizole-volume-time"
+      ],
+      "references": 1,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "fondaparinux",
+      "name": "Fondaparinux",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "foscarnet",
+      "name": "Foscarnet",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "foscarnet-labelled-dose"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "fosfato-de-potassio",
+      "name": "Fosfato de potássio",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; targeted primary-source review (see report for scope)"
+    },
+    {
+      "id": "fosfato-de-sodio",
+      "name": "Fosfato de sódio",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; targeted primary-source review (see report for scope)"
+    },
+    {
+      "id": "fosfenitoina",
+      "name": "Fosfenitoína",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fosfomicina-intravenosa",
+      "name": "Fosfomicina intravenosa",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fragmentos-fab-antidigoxina",
+      "name": "Fragmentos Fab antidigoxina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "furosemide",
+      "name": "Furosemida",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "furosemide-infusion"
+      ],
+      "references": 1,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "ganciclovir",
+      "name": "Ganciclovir",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "ganciclovir-adult-dose",
+        "ganciclovir-volume-time"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "gentamicina",
+      "name": "Gentamicina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "gentamicin-extended-interval-dose"
+      ],
+      "references": 6,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "glicerina",
+      "name": "Glicerina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glicopirrolato",
+      "name": "Glicopirrolato",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glicose",
+      "name": "Glicose",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glicose-10",
+      "name": "Glicose 10%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glicose-20",
+      "name": "Glicose 20%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glicose-30",
+      "name": "Glicose 30%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glicose-50",
+      "name": "Glicose 50%",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glicose-hipertonica",
+      "name": "Glicose hipertónica",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glicose-para-nutricao-parenterica",
+      "name": "Glicose para nutrição parentérica",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glucagon",
+      "name": "Glucagon",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glucarpidase",
+      "name": "Glucarpidase",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "gluconato-de-calcio",
+      "name": "Gluconato de cálcio",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "granisetrom",
+      "name": "Granisetrom",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "haloperidol",
+      "name": "Haloperidol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "heparina-nao-fraccionada",
+      "name": "Heparina não fraccionada",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "hidralazina",
+      "name": "Hidralazina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "hidroclorotiazida",
+      "name": "Hidroclorotiazida",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "hydrocortisone",
+      "name": "Hidrocortisona",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "hydrocortisone-septic-shock-infusion"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "hidroxiureia",
+      "name": "Hidroxiureia",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "hidroxocobalamina",
+      "name": "Hidroxocobalamina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "idarucizumab",
+      "name": "Idarucizumab",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "iloprost-inalado",
+      "name": "Iloprost inalado",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "imipenem-cilastatina",
+      "name": "Imipenem/cilastatina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "imipenem-cilastatina-relebactam",
+      "name": "Imipenem/cilastatina/relebactam",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "imunoglobulina-humana-antitetanica",
+      "name": "Imunoglobulina humana antitetânica",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "imunoglobulina-humana-intravenosa",
+      "name": "Imunoglobulina humana intravenosa",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-aspart",
+      "name": "Insulina aspart",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-degludec",
+      "name": "Insulina degludec",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-detemir",
+      "name": "Insulina detemir",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-em-alta-dose-com-euglicemia",
+      "name": "Insulina em alta dose com euglicemia",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-glargina",
+      "name": "Insulina glargina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-glulisina",
+      "name": "Insulina glulisina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-humana-regular",
+      "name": "Insulina humana regular",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-lispro",
+      "name": "Insulina lispro",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "insulina-regular",
+      "name": "Insulina regular",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "regular-insulin-hyperglycemic-crisis-infusion"
+      ],
+      "references": 5,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; targeted primary-source review (see report for scope)"
+    },
+    {
+      "id": "iodeto-de-potassio",
+      "name": "Iodeto de potássio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ipratropio",
+      "name": "Ipratrópio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "isavuconazol",
+      "name": "Isavuconazol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "isoprenalina",
+      "name": "Isoprenalina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ivermectina",
+      "name": "Ivermectina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "l-carnitina",
+      "name": "L-carnitina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "labetalol",
+      "name": "Labetalol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lacosamida",
+      "name": "Lacosamida",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lactato-de-ringer",
+      "name": "Lactato de Ringer",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lactulose",
+      "name": "Lactulose",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lansoprazol",
+      "name": "Lansoprazol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "levetiracetam",
+      "name": "Levetiracetam",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "levetiracetam-loading-dose",
+        "levetiracetam-volume-time"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "levofloxacina",
+      "name": "Levofloxacina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "levotiroxina-intravenosa",
+      "name": "Levotiroxina intravenosa",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lidocaina",
+      "name": "Lidocaína",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "linezolida",
+      "name": "Linezolida",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "liotironina",
+      "name": "Liotironina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lorazepam",
+      "name": "Lorazepam",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "macrogol-polietilenoglicol",
+      "name": "Macrogol (polietilenoglicol)",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "manitol",
+      "name": "Manitol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "meropenem",
+      "name": "Meropenem",
+      "priority": "P1",
+      "validationStatus": "validated",
+      "calculators": [
+        "meropenem-volume-time"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "meropenem-vaborbactam",
+      "name": "Meropenem/vaborbactam",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metamizol",
+      "name": "Metamizol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metilergometrina",
+      "name": "Metilergometrina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metilprednisolona",
+      "name": "Metilprednisolona",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metoclopramida",
+      "name": "Metoclopramida",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metolazona",
+      "name": "Metolazona",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metoprolol",
+      "name": "Metoprolol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metronidazol",
+      "name": "Metronidazol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "micafungina",
+      "name": "Micafungina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "midazolam",
+      "name": "Midazolam",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "milrinona",
+      "name": "Milrinona",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "milrinone-continuous-infusion"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "minociclina",
+      "name": "Minociclina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "misoprostol",
+      "name": "Misoprostol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "morfina",
+      "name": "Morfina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "moxifloxacina",
+      "name": "Moxifloxacina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "infarmed",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "multivitaminico-intravenoso",
+      "name": "Multivitamínico intravenoso",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "n-acetilcisteina",
+      "name": "N-acetilcisteína",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "acetylcysteine-three-bag-dose"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "naloxona",
+      "name": "Naloxona",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "neostigmina",
+      "name": "Neostigmina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nicardipina",
+      "name": "Nicardipina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nifedipina",
+      "name": "Nifedipina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nimodipina",
+      "name": "Nimodipina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nirmatrelvir-ritonavir",
+      "name": "Nirmatrelvir/ritonavir",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nitroglicerina",
+      "name": "Nitroglicerina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nitroprussiato-de-sodio",
+      "name": "Nitroprussiato de sódio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "norepinephrine",
+      "name": "Noradrenalina",
+      "priority": "P1",
+      "validationStatus": "validated",
+      "calculators": [
+        "norepinephrine-infusion"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "obidoxima",
+      "name": "Obidoxima",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "octreotido",
+      "name": "Octreótido",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "goldfrank",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "olanzapina",
+      "name": "Olanzapina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "infarmed",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "oligoelementos-intravenosos",
+      "name": "Oligoelementos intravenosos",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "omeprazol",
+      "name": "Omeprazol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ondansetrom",
+      "name": "Ondansetrom",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "oseltamivir",
+      "name": "Oseltamivir",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "oxido-nitrico-inalado",
+      "name": "Óxido nítrico inalado",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "oxitocina",
+      "name": "Oxitocina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "palonossetrom",
+      "name": "Palonossetrom",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pamidronato",
+      "name": "Pamidronato",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pantoprazole",
+      "name": "Pantoprazol",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "pantoprazole-continuous-infusion"
+      ],
+      "references": 3,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "paracetamol",
+      "name": "Paracetamol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "patiromer",
+      "name": "Patiromer",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pentamidina",
+      "name": "Pentamidina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "picossulfato-de-sodio",
+      "name": "Picossulfato de sódio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "piperacilina-tazobactam",
+      "name": "Piperacilina/tazobactam",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "piridostigmina",
+      "name": "Piridostigmina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "piridoxina",
+      "name": "Piridoxina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "plasma-fresco-congelado",
+      "name": "Plasma fresco congelado",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "plasma-lyte",
+      "name": "Plasma-Lyte",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "polimixina-b",
+      "name": "Polimixina B",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "posaconazol",
+      "name": "Posaconazol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "infarmed",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pralidoxima",
+      "name": "Pralidoxima",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "prasugrel",
+      "name": "Prasugrel",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "prednisolona",
+      "name": "Prednisolona",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "procainamida",
+      "name": "Procainamida",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "propiltiouracilo",
+      "name": "Propiltiouracilo",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "propofol",
+      "name": "Propofol",
+      "priority": "P1",
+      "validationStatus": "validated",
+      "calculators": [
+        "propofol-icu-infusion"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "propranolol",
+      "name": "Propranolol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "protamina",
+      "name": "Protamina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "quetiapina",
+      "name": "Quetiapina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "quinina",
+      "name": "Quinina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rasburicase",
+      "name": "Rasburicase",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "remdesivir",
+      "name": "Remdesivir",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 1,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "remifentanilo",
+      "name": "Remifentanilo",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rifampicina",
+      "name": "Rifampicina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rifaximina",
+      "name": "Rifaximina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rituximab",
+      "name": "Rituximab",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rivaroxabano",
+      "name": "Rivaroxabano",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rocuronium",
+      "name": "Rocurónio",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "rocuronium-intubation-dose",
+        "rocuronium-infusion"
+      ],
+      "references": 2,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "salbutamol",
+      "name": "Salbutamol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sene",
+      "name": "Sene",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "silibinina",
+      "name": "Silibinina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "solucao-de-hartmann",
+      "name": "Solução de Hartmann",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "solucao-de-lugol",
+      "name": "Solução de Lugol",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "solucoes-de-aminoacidos",
+      "name": "Soluções de aminoácidos",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sugamadex",
+      "name": "Sugamadex",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "sugammadex-reversal-dose"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; targeted primary-source review (see report for scope)"
+    },
+    {
+      "id": "sulfato-de-magnesio",
+      "name": "Sulfato de magnésio",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "suxametonio-succinilcolina",
+      "name": "Suxametónio (succinilcolina)",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tacrolimus",
+      "name": "Tacrolímus",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "teicoplanina",
+      "name": "Teicoplanina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tenecteplase",
+      "name": "Tenecteplase",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "terbutalina",
+      "name": "Terbutalina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "terlipressina",
+      "name": "Terlipressina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tiamazol-metimazol",
+      "name": "Tiamazol (metimazol)",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tiamina",
+      "name": "Tiamina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ticagrelor",
+      "name": "Ticagrelor",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tigeciclina",
+      "name": "Tigeciclina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "infarmed",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tinzaparina",
+      "name": "Tinzaparina",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tiopental",
+      "name": "Tiopental",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "infarmed",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tiossulfato-de-sodio",
+      "name": "Tiossulfato de sódio",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tobramicina",
+      "name": "Tobramicina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "tobramycin-extended-interval-dose"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "torasemida",
+      "name": "Torasemida",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "trimetoprim-sulfametoxazol",
+      "name": "Trimetoprim/sulfametoxazol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ureia-oral",
+      "name": "Ureia oral",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "valaciclovir",
+      "name": "Valaciclovir",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "valganciclovir",
+      "name": "Valganciclovir",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "valproato-de-sodio",
+      "name": "Valproato de sódio",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "vancomicina",
+      "name": "Vancomicina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "vancomycin-loading-dose"
+      ],
+      "references": 6,
+      "genericOrMissingLinks": [
+        "sanford",
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "vancomicina-oral-enterica",
+      "name": "Vancomicina oral/entérica",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "varfarina",
+      "name": "Varfarina",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "vasopressina",
+      "name": "Vasopressina",
+      "priority": "P1",
+      "validationStatus": "source-verified",
+      "calculators": [
+        "vasopressin-septic-shock-infusion"
+      ],
+      "references": 1,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "verapamilo",
+      "name": "Verapamilo",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "vitamina-k",
+      "name": "Vitamina K",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "voriconazol",
+      "name": "Voriconazol",
+      "priority": "P1",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "voriconazole-iv-dose"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; all calculator definitions and numerical fixtures"
+    },
+    {
+      "id": "zanamivir",
+      "name": "Zanamivir",
+      "priority": "P1",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "abacavir",
+      "name": "Abacavir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "abciximab",
+      "name": "Abciximab",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-aminocaproico",
+      "name": "Ácido aminocapróico",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-folinico",
+      "name": "Ácido folínico",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "albendazol",
+      "name": "Albendazol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "alfentanilo",
+      "name": "Alfentanilo",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ambrisentano",
+      "name": "Ambrisentano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "amilorida",
+      "name": "Amilorida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "aminofilina",
+      "name": "Aminofilina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "anakinra",
+      "name": "Anakinra",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "angiotensina-ii",
+      "name": "Angiotensina II",
+      "priority": "P2",
+      "validationStatus": "source-linked",
+      "calculators": [
+        "angiotensin-ii-infusion"
+      ],
+      "references": 4,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; targeted primary-source review (see report for scope)"
+    },
+    {
+      "id": "antitoxina-botulinica",
+      "name": "Antitoxina botulínica",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "antiveneno-especifico-regional",
+      "name": "Antiveneno específico regional",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "antiveneno-polivalente",
+      "name": "Antiveneno polivalente",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "aripiprazol",
+      "name": "Aripiprazol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "artemeter-lumefantrina",
+      "name": "Arteméter/lumefantrina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "atosibano",
+      "name": "Atosibano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "atovaquona-proguanil",
+      "name": "Atovaquona/proguanil",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "azatioprina",
+      "name": "Azatioprina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "aztreonam-avibactam",
+      "name": "Aztreonam/avibactam",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "azul-da-prussia",
+      "name": "Azul da Prússia",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "baloxavir-marboxil",
+      "name": "Baloxavir marboxil",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "basiliximab",
+      "name": "Basiliximab",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "betametasona",
+      "name": "Betametasona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bezlotoxumab",
+      "name": "Bezlotoxumab",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bictegravir",
+      "name": "Bictegravir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bosentano",
+      "name": "Bosentano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "brivaracetam",
+      "name": "Brivaracetam",
+      "priority": "P2",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "infarmed",
+        "renalHandbook"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bupivacaina",
+      "name": "Bupivacaína",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "buprenorfina",
+      "name": "Buprenorfina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "carbamazepina",
+      "name": "Carbamazepina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cefepima-enmetazobactam",
+      "name": "Cefepima/enmetazobactam",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cefoperazona-sulbactam",
+      "name": "Cefoperazona/sulbactam",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cetorolac",
+      "name": "Cetorolac",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ciclizina",
+      "name": "Ciclizina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ciclofosfamida",
+      "name": "Ciclofosfamida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cidofovir",
+      "name": "Cidofovir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clobazam",
+      "name": "Clobazam",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clonazepam",
+      "name": "Clonazepam",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cloreto-de-sodio-hipertonico-nebulizado",
+      "name": "Cloreto de sódio hipertónico nebulizado",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cobre",
+      "name": "Cobre",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "colchicina",
+      "name": "Colchicina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "complexo-lipidico-de-anfotericina-b",
+      "name": "Complexo lipídico de anfotericina B",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "concentrado-de-complexo-protrombinico-activado",
+      "name": "Concentrado de complexo protrombínico activado",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "concentrado-de-factor-von-willebrand",
+      "name": "Concentrado de factor von Willebrand",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "conivaptano",
+      "name": "Conivaptano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cromio",
+      "name": "Crómio",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dalbavancina",
+      "name": "Dalbavancina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "denosumab",
+      "name": "Denosumab",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dexketoprofeno",
+      "name": "Dexketoprofeno",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "diclofenac",
+      "name": "Diclofenac",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dimenidrinato",
+      "name": "Dimenidrinato",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dimercaprol",
+      "name": "Dimercaprol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dolutegravir",
+      "name": "Dolutegravir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "domperidona",
+      "name": "Domperidona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dornase-alfa",
+      "name": "Dornase alfa",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "droperidol",
+      "name": "Droperidol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "eculizumab",
+      "name": "Eculizumab",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "edetato-de-calcio-dissodico",
+      "name": "Edetato de cálcio dissódico",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "eltrombopag",
+      "name": "Eltrombopag",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "emtricitabina",
+      "name": "Emtricitabina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "enalaprilato",
+      "name": "Enalaprilato",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "enoximona",
+      "name": "Enoximona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "entecavir",
+      "name": "Entecavir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "epoprostenol",
+      "name": "Epoprostenol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "eptifibatida",
+      "name": "Eptifibatida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "eravaciclina",
+      "name": "Eravaciclina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "eslicarbazepina",
+      "name": "Eslicarbazepina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "estreptomicina",
+      "name": "Estreptomicina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "etambutol",
+      "name": "Etambutol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "etoposido",
+      "name": "Etoposido",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "everolimus",
+      "name": "Everolímus",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "factor-ix",
+      "name": "Factor IX",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "factor-viia-recombinante",
+      "name": "Factor VIIa recombinante",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "factor-viii",
+      "name": "Factor VIII",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "factor-xiii",
+      "name": "Factor XIII",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "famotidina",
+      "name": "Famotidina",
+      "priority": "P2",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "febuxostat",
+      "name": "Febuxostat",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fenoldopam",
+      "name": "Fenoldopam",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fenoxibenzamina",
+      "name": "Fenoxibenzamina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fentolamina",
+      "name": "Fentolamina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "filgrastim",
+      "name": "Filgrastim",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "fisostigmina",
+      "name": "Fisostigmina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "flecainida",
+      "name": "Flecainida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "gabapentina",
+      "name": "Gabapentina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "globulina-antitimocito",
+      "name": "Globulina antitimócito",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "hidromorfona",
+      "name": "Hidromorfona",
+      "priority": "P2",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ibuprofeno",
+      "name": "Ibuprofeno",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ibutilida",
+      "name": "Ibutilida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "iloprost",
+      "name": "Iloprost",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "imunoglobulina-anti-d",
+      "name": "Imunoglobulina anti-D",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "indapamida",
+      "name": "Indapamida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "infliximab",
+      "name": "Infliximab",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "isoflurano",
+      "name": "Isoflurano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "isoniazida",
+      "name": "Isoniazida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "itraconazol",
+      "name": "Itraconazol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "l-ornitina-l-aspartato",
+      "name": "L-ornitina-L-aspartato",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lamivudina",
+      "name": "Lamivudina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lamotrigina",
+      "name": "Lamotrigina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "letermovir",
+      "name": "Letermovir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "levobupivacaina",
+      "name": "Levobupivacaína",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "levodopa-carbidopa",
+      "name": "Levodopa/carbidopa",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "levosimendano",
+      "name": "Levosimendano",
+      "priority": "P2",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 1,
+      "genericOrMissingLinks": [
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "levotiroxina",
+      "name": "Levotiroxina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lidocaina-intravenosa",
+      "name": "Lidocaína intravenosa",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "loperamida",
+      "name": "Loperamida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "macitentano",
+      "name": "Macitentano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "manganes",
+      "name": "Manganês",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "maribavir",
+      "name": "Maribavir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "mebendazol",
+      "name": "Mebendazol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "melatonina",
+      "name": "Melatonina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metadona",
+      "name": "Metadona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metaraminol",
+      "name": "Metaraminol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metilnaltrexona",
+      "name": "Metilnaltrexona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "metronidazol-oral-enterico",
+      "name": "Metronidazol oral/entérico",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "mexiletina",
+      "name": "Mexiletina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "micofenolato-de-mofetil",
+      "name": "Micofenolato de mofetil",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "mivacurio",
+      "name": "Mivacúrio",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "n-acetilcisteina-nebulizada",
+      "name": "N-acetilcisteína nebulizada",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nafcilina",
+      "name": "Nafcilina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "naldemedina",
+      "name": "Naldemedina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "naloxegol",
+      "name": "Naloxegol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nefopam",
+      "name": "Nefopam",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nicardipina-intra-arterial",
+      "name": "Nicardipina intra-arterial",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "omadaciclina",
+      "name": "Omadaciclina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "oritavancina",
+      "name": "Oritavancina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "oxacilina",
+      "name": "Oxacilina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "oxcarbazepina",
+      "name": "Oxcarbazepina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "oxicodona",
+      "name": "Oxicodona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pancuronio",
+      "name": "Pancurónio",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "paromomicina",
+      "name": "Paromomicina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "penicilamina",
+      "name": "Penicilamina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pentobarbital",
+      "name": "Pentobarbital",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "peramivir",
+      "name": "Peramivir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "petidina-meperidina",
+      "name": "Petidina (meperidina)",
+      "priority": "P2",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 3,
+      "genericOrMissingLinks": [
+        "lexicomp",
+        "renalHandbook",
+        "infarmed"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pirazinamida",
+      "name": "Pirazinamida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pirimetamina",
+      "name": "Pirimetamina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "plazomicina",
+      "name": "Plazomicina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "poliestireno-sulfonato-de-calcio",
+      "name": "Poliestireno sulfonato de cálcio",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "poliestireno-sulfonato-de-sodio",
+      "name": "Poliestireno sulfonato de sódio",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "praziquantel",
+      "name": "Praziquantel",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pregabalina",
+      "name": "Pregabalina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "primaquina",
+      "name": "Primaquina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "proclorperazina",
+      "name": "Proclorperazina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "propafenona",
+      "name": "Propafenona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "prucaloprida",
+      "name": "Prucaloprida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "racecadotril",
+      "name": "Racecadotril",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "raltegravir",
+      "name": "Raltegravir",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ramelteona",
+      "name": "Ramelteona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ravulizumab",
+      "name": "Ravulizumab",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "reteplase",
+      "name": "Reteplase",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rezafungina",
+      "name": "Rezafungina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ribavirina",
+      "name": "Ribavirina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rifabutina",
+      "name": "Rifabutina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rifapentina",
+      "name": "Rifapentina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "risperidona",
+      "name": "Risperidona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "romiplostim",
+      "name": "Romiplostim",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ropivacaina",
+      "name": "Ropivacaína",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "selenio",
+      "name": "Selénio",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sevoflurano",
+      "name": "Sevoflurano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sildenafil",
+      "name": "Sildenafil",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sirolimus",
+      "name": "Sirolímus",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sotalol",
+      "name": "Sotalol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "succimero",
+      "name": "Succímero",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sucralfato",
+      "name": "Sucralfato",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sufentanilo",
+      "name": "Sufentanilo",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "sulfadiazina",
+      "name": "Sulfadiazina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tadalafil",
+      "name": "Tadalafil",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tedizolida",
+      "name": "Tedizolida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "telavancina",
+      "name": "Telavancina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "temocilina",
+      "name": "Temocilina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tenofovir-alafenamida",
+      "name": "Tenofovir alafenamida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tenofovir-disoproxil-fumarato",
+      "name": "Tenofovir disoproxil fumarato",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "teofilina",
+      "name": "Teofilina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tinidazol",
+      "name": "Tinidazol",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tiotropio",
+      "name": "Tiotrópio",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tirofibano",
+      "name": "Tirofibano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tocilizumab",
+      "name": "Tocilizumab",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tolvaptano",
+      "name": "Tolvaptano",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "topiramato",
+      "name": "Topiramato",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "trazodona",
+      "name": "Trazodona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "treprostinil",
+      "name": "Treprostinil",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "triamtereno",
+      "name": "Triamtereno",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "trimetoprim",
+      "name": "Trimetoprim",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "trometamol-tham",
+      "name": "Trometamol (THAM)",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "urapidil",
+      "name": "Urapidil",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "uroquinase",
+      "name": "Uroquinase",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "vecuronio",
+      "name": "Vecurónio",
+      "priority": "P2",
+      "validationStatus": "source-linked",
+      "calculators": [],
+      "references": 2,
+      "genericOrMissingLinks": [
+        "renalHandbook",
+        "lexicomp"
+      ],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "vernakalant",
+      "name": "Vernakalant",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "vitamina-a",
+      "name": "Vitamina A",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "vitamina-d",
+      "name": "Vitamina D",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "vitamina-e",
+      "name": "Vitamina E",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "zidovudina",
+      "name": "Zidovudina",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "zinco",
+      "name": "Zinco",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ziprasidona",
+      "name": "Ziprasidona",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "zonisamida",
+      "name": "Zonisamida",
+      "priority": "P2",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "abatacept",
+      "name": "Abatacept",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-etacrinico",
+      "name": "Ácido etacrínico",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "acido-para-aminossalicilico",
+      "name": "Ácido para-aminossalicílico",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "antimoniato-de-meglumina",
+      "name": "Antimoniato de meglumina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "atazanavir",
+      "name": "Atazanavir",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "bedaquilina",
+      "name": "Bedaquilina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "benznidazol",
+      "name": "Benznidazol",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "brincidofovir",
+      "name": "Brincidofovir",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cenobamato",
+      "name": "Cenobamato",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cicloserina",
+      "name": "Cicloserina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "clofazimina",
+      "name": "Clofazimina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "cobicistato",
+      "name": "Cobicistato",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "darunavir",
+      "name": "Darunavir",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "delafloxacina",
+      "name": "Delafloxacina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "delamanid",
+      "name": "Delamanid",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "dextrano",
+      "name": "Dextrano",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "doravirina",
+      "name": "Doravirina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "doripenem",
+      "name": "Doripenem",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "efavirenz",
+      "name": "Efavirenz",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "eflornitina",
+      "name": "Eflornitina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "epoetina-alfa",
+      "name": "Epoetina alfa",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "espiramicina",
+      "name": "Espiramicina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "etionamida",
+      "name": "Etionamida",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "etossuximida",
+      "name": "Etossuximida",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "felbamato",
+      "name": "Felbamato",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ferro-intravenoso",
+      "name": "Ferro intravenoso",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "gelatina-modificada",
+      "name": "Gelatina modificada",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "glutamina",
+      "name": "Glutamina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "hidroxietilamido",
+      "name": "Hidroxietilamido",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "lefamulina",
+      "name": "Lefamulina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "miltefosina",
+      "name": "Miltefosina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "molnupiravir",
+      "name": "Molnupiravir",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nifurtimox",
+      "name": "Nifurtimox",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "nistatina",
+      "name": "Nistatina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ornidazol",
+      "name": "Ornidazol",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pentetato-de-calcio-trissodico",
+      "name": "Pentetato de cálcio trissódico",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pentetato-de-zinco-trissodico",
+      "name": "Pentetato de zinco trissódico",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "perampanel",
+      "name": "Perampanel",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "pretomanid",
+      "name": "Pretomanid",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "primidona",
+      "name": "Primidona",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "quinupristina-dalfopristina",
+      "name": "Quinupristina/dalfopristina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rilpivirina",
+      "name": "Rilpivirina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "riociguat",
+      "name": "Riociguat",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "ritonavir",
+      "name": "Ritonavir",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "rufinamida",
+      "name": "Rufinamida",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "stiripentol",
+      "name": "Stiripentol",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "suramina",
+      "name": "Suramina",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    },
+    {
+      "id": "tecovirimat",
+      "name": "Tecovirimat",
+      "priority": "P3",
+      "validationStatus": "catalog-only",
+      "calculators": [],
+      "references": 0,
+      "genericOrMissingLinks": [],
+      "reviewScope": "structural; bibliography mapping; no complete primary-source clinical revalidation"
+    }
+  ]
+}

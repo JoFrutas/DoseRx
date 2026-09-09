@@ -9,7 +9,7 @@ A interface e o conteúdo estruturado estão disponíveis em português, inglês
 ## Correr localmente
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -23,7 +23,9 @@ npm run translations:audit
 npm run build
 ```
 
-O teste unitário usa o runner nativo e o suporte TypeScript do Node 22 ou superior.
+O teste unitário usa o runner nativo e o suporte TypeScript do Node 22.18 ou superior.
+
+A revisão de 09/09/2026 acrescenta fixtures sobre as 43 definições efetivas, limites de dose/duração, resultados finitos, identidade dos sais de fosfato e correções de maior risco. O inventário `docs/review-inventory-2026-09-09.json` explicita a cobertura e as referências genéricas ainda por resolver. Ver `REVISAO_2026-09-09.md` para resultados e limitações; esta revisão não promove os estados documentais históricos.
 
 ## Organização dos dados
 
@@ -62,6 +64,7 @@ Depois de alterar conteúdo clínico, actualizar e auditar as traduções:
 ```bash
 npm run translations:generate
 npm run translations:correct
+node scripts/apply-review-2026-09-translations.mjs
 npm run translations:audit
 ```
 
@@ -106,6 +109,10 @@ O catálogo inclui 43 calculadoras em 36 fármacos: dose por peso, velocidade de
 - **Volume/tempo:** converte o volume final e a duração prescrita em mL/h.
 
 As fórmulas não escolhem indicação, peso de dose, função renal/hepática, concentração local ou arredondamento. Esses parâmetros continuam a ser responsabilidade do prescritor e do protocolo institucional.
+
+Desde a revisão de setembro, o peso começa vazio. Doses acima do máximo documentado e durações abaixo do mínimo não produzem uma velocidade. Limites inferiores habituais continuam a gerar aviso porque podem existir ajustes individuais documentados. A calculadora de angiotensina II tem âmbito explícito de manutenção, até 40 ng/kg/min; o regime inicial das primeiras 3h não está automatizado nesta calculadora.
+
+Validação opcional em navegador: executar `node scripts/browser-review.mjs` com Playwright instalado; `DOSERX_PLAYWRIGHT` permite indicar um pacote existente e `DOSERX_BROWSER` um navegador. Por omissão utiliza Edge. Exemplos fictícios cobrem aciclovir, KCl, insulina nas três línguas e ligações malformadas.
 
 ## Deploy
 
