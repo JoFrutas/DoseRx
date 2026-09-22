@@ -4,14 +4,17 @@ import type { EvidenceReference, WeightDoseCalculatorDefinition } from '../types
 import { SourceLinks } from './SourceLinks'
 import { ValidationBadge } from './ValidationBadge'
 import { useI18n } from '../i18n/I18nContext'
+import { CalculatorFlow, useCalculatorFlowCopy, isPositiveInput, type CalculatorMode } from './CalculatorFlow'
 
 interface WeightDoseCalculatorProps {
+  mode: CalculatorMode
   definition: WeightDoseCalculatorDefinition
   references: EvidenceReference[]
 }
 
-export function WeightDoseCalculator({ definition, references }: WeightDoseCalculatorProps) {
+export function WeightDoseCalculator({ mode, definition, references }: WeightDoseCalculatorProps) {
   const { ui, language } = useI18n()
+  const flow = useCalculatorFlowCopy()
   const formatCalculatorNumber = (value: number) => formatNumber(value, language ?? 'pt')
   const formatCalculatorUnit = (unit: Parameters<typeof formatUnit>[0]) => formatUnit(unit, language ?? 'pt')
   const [weightKg, setWeightKg] = useState('')
@@ -42,7 +45,8 @@ export function WeightDoseCalculator({ definition, references }: WeightDoseCalcu
         <h3>{definition.title}</h3>
         <p>{definition.description}</p>
       </header>
-      <div className="calculator-fields calculator-fields--two">
+      <CalculatorFlow mode={mode} fields={[
+        { id: 'weight', valid: isPositiveInput(weightKg) && Number(weightKg) >= 1 && Number(weightKg) <= 400, error: flow.weight, input: (
         <label>
           <span>{ui.dosingWeight}</span>
           <input
@@ -55,6 +59,8 @@ export function WeightDoseCalculator({ definition, references }: WeightDoseCalcu
             onChange={(event) => setWeightKg(event.target.value)}
           />
         </label>
+        ) },
+        { id: 'regimen', valid: Boolean(option), error: flow.option, input: (
         <label>
           <span>{ui.documentedRegimen}</span>
           <select value={optionId} onChange={(event) => setOptionId(event.target.value)}>
@@ -63,11 +69,13 @@ export function WeightDoseCalculator({ definition, references }: WeightDoseCalcu
             ))}
           </select>
         </label>
-      </div>
+        ) },
+      ]}>
       {result && option ? (
         <div className="calculator-result" aria-live="polite">
           <span>{ui.mathematicalDose}</span>
           <strong>{formatCalculatorNumber(result.finalDose)} {formatCalculatorUnit(option.amountUnit)}</strong>
+          <small>{ui.documentedRegimen}: {option.label}</small>
           <small>
             {formatCalculatorNumber(Number(weightKg))} kg × {formatCalculatorNumber(option.dosePerKg)} {formatCalculatorUnit(option.amountUnit)}/kg
             {result.capped ? `; ${ui.maximumLimited} ${formatCalculatorNumber(option.maxDose as number)} ${formatCalculatorUnit(option.amountUnit)}` : ''}
@@ -82,6 +90,7 @@ export function WeightDoseCalculator({ definition, references }: WeightDoseCalcu
       ) : (
         <p className="calculator-placeholder">{ui.weightPlaceholder}</p>
       )}
+      </CalculatorFlow>
       <ul className="calculator-notes">
         {definition.notes.map((note) => <li key={note}>{note}</li>)}
       </ul>

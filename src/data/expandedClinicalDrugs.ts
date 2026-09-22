@@ -26,6 +26,14 @@ const REVIEW_DATE = '2026-07-16'
 // Biblioteca de referências partilhada. Os `id` são usados nos `sourceIds`.
 // ---------------------------------------------------------------------------
 export const referenceLibrary: Record<string, EvidenceReference> = {
+  paracetamolHpra2025: {
+    id: 'paracetamolHpra2025',
+    title: 'Paracetamol 10 mg/ml Solution for Infusion — Summary of Product Characteristics',
+    source: 'HPRA; Laboratoire Aguettant; PA1968/021/001; 06 March 2025; sections 4.2–4.4',
+    year: 2025,
+    url: 'https://assets.hpra.ie/products/Human/23043/Licence_PA1968-021-001_06032025152236.pdf',
+    accessedAt: '2026-09-22',
+  },
   ssc2021: {
     id: 'ssc2021',
     title:
@@ -2468,39 +2476,43 @@ export const expandedClinicalDrugs: ExpandedClinicalDrug[] = [
     indications: ['Analgesia multimodal (poupador de opióide)', 'Antipirético'],
     routes: ['Intravenosa', 'Oral', 'Retal'],
     usualAdultDose: [
-      d('Adulto', '1 g IV 6/6h (máx 4 g/dia). Reduzir a 3 g/dia se < 50 kg, hepatopatia, desnutrição ou álcool.', ['lexicomp']),
+      d('Adulto com peso >33 kg e ≤50 kg — via IV', '15 mg/kg por administração (1,5 mL/kg da solução 10 mg/mL). Máximo diário: 60 mg/kg, sem exceder 3 g. Não aplicar a dose fixa de 1 g neste grupo.', ['paracetamolHpra2025']),
+      d('Adulto com peso >50 kg, sem fatores de risco hepatotóxico — via IV', '1 g por administração (100 mL da solução 10 mg/mL); máximo 4 g/dia.', ['paracetamolHpra2025']),
+      d('Adulto com peso >50 kg e fatores de risco hepatotóxico — via IV', '1 g por administração (100 mL da solução 10 mg/mL); máximo 3 g/dia. Inclui insuficiência hepatocelular, hepatopatia crónica ou doença hepática ativa compensada, alcoolismo crónico, desnutrição crónica, desidratação ou síndrome de Gilbert. Contraindicado na insuficiência hepatocelular grave.', ['paracetamolHpra2025']),
+      d('Administração e limites cumulativos — via IV', 'Perfusão durante 15 minutos. Intervalo mínimo de 4 horas, prolongado conforme a função renal; no máximo 4 administrações em 24 horas, respeitando sempre o limite diário mais baixo aplicável. Somar o paracetamol de todas as vias e de todos os medicamentos associados.', ['paracetamolHpra2025']),
     ],
     prescriptionExamples: [
       rx(
-        'Analgesia multimodal',
-        'Paracetamol 1 g IV 6/6h como base analgésica, reduzindo necessidade de opióide.',
-        ['lexicomp'],
-        'Ajustar o máximo diário ao peso e ao risco hepático.',
+        'Analgesia multimodal — adulto >50 kg sem risco hepatotóxico',
+        'Paracetamol 1 g IV em 15 minutos, de 6/6h, até 4 g/dia; apenas para adulto >50 kg sem fatores de risco hepatotóxico e com intervalo compatível com a função renal.',
+        ['paracetamolHpra2025'],
+        'Para peso >33 kg e ≤50 kg, prescrever 15 mg/kg por administração e máximo 60 mg/kg/dia até 3 g. Em >50 kg com risco hepatotóxico, máximo 3 g/dia. Contabilizar todas as vias e formulações.',
         ['Hepatotoxicidade em sobredosagem — antídoto NAC.'],
       ),
     ],
     renalAdjustment: renal(
-      'Prolongar intervalo em DRC grave.',
+      'Na via IV, prolongar o intervalo mínimo conforme a ClCr; manter o limite por peso e risco hepático.',
       [
-        d('ClCr > 30 mL/min', 'Sem ajuste.', ['renalHandbook']),
-        d('ClCr < 30 mL/min', 'Intervalo mínimo de 6h; considerar dose diária reduzida.', ['renalHandbook']),
+        d('ClCr ≥50 mL/min', 'Intervalo mínimo de 4 horas.', ['paracetamolHpra2025']),
+        d('ClCr 10–<50 mL/min', 'Intervalo mínimo de 6 horas.', ['paracetamolHpra2025']),
+        d('ClCr <10 mL/min', 'Intervalo mínimo de 8 horas.', ['paracetamolHpra2025']),
       ],
       ['Vigilância clínica'],
     ),
     hepaticAdjustment: hepatic(
-      'Reduzir a dose máxima diária na hepatopatia; evitar em disfunção grave/hepatite ativa.',
-      [d('Hepatopatia', 'Máx 2–3 g/dia; evitar em insuficiência hepática grave.', ['lexicomp'])],
+      'Não exceder 3 g/dia nos fatores de risco hepatotóxico; aplicar o limite por peso se for inferior. Contraindicado na insuficiência hepatocelular grave.',
+      [d('Hepatopatia e outros fatores de risco', 'Em peso >50 kg, máximo 3 g/dia. Em peso >33 kg e ≤50 kg, máximo 60 mg/kg/dia, sem exceder 3 g. Não administrar na insuficiência hepatocelular grave.', ['paracetamolHpra2025'])],
       ['Transaminases se uso prolongado/hepatopatia'],
     ),
     therapeuticDrugMonitoring: ['Níveis apenas no contexto de sobredosagem (nomograma).'],
     contraindications: ['Insuficiência hepática grave', 'Hipersensibilidade ao paracetamol'],
     interactions: ['Uso crónico ↑ efeito da varfarina; indutores enzimáticos e álcool ↑ risco hepatotóxico.'],
-    practicalNotes: ['Antídoto na intoxicação: N-acetilcisteína. Componente-chave da analgesia multimodal.'],
-    references: refsFor(['lexicomp', 'renalHandbook']),
-    lastReviewedAt: REVIEW_DATE,
+    practicalNotes: ['Antídoto na intoxicação: N-acetilcisteína. Componente-chave da analgesia multimodal.', 'Os esquemas acima referem-se à solução IV 10 mg/mL; confirmar o RCM da apresentação local. Para peso ≤33 kg, consultar a tabela específica de peso do RCM e não aplicar a dose fixa de 1 g. Registar a dose em mg e o volume em mL.'],
+    references: refsFor(['paracetamolHpra2025', 'lexicomp', 'renalHandbook']),
+    lastReviewedAt: '2026-09-22',
     validationStatus: REVIEW,
     confidence: 'moderate',
-    reviewNotes: REVIEW_NOTES,
+    reviewNotes: [...REVIEW_NOTES, 'Revisão dirigida da posologia IV, dos limites por peso e risco hepático e dos intervalos renais com o RCM HPRA de 06/03/2025; não constitui validação independente integral da ficha.'],
   },
   // ----- Lote 5 — Bloqueadores neuromusculares e reversores -----
   {

@@ -7,6 +7,10 @@ import { describe, it } from 'node:test'
 import { calculateDefinedInfusionRate, calculateInfusionRate } from '../lib/calculators.ts'
 import { drugCalculatorsByDrugId } from '../data/drugCalculators.ts'
 import { uiTranslations } from '../i18n/translations.ts'
+import { drugs } from '../data/drugs.ts'
+import { localizeDrug } from '../i18n/localize.ts'
+import en from '../i18n/generated/en.json' with { type: 'json' }
+import es from '../i18n/generated/es.json' with { type: 'json' }
 
 const TEST_WEIGHT_KG = 70
 
@@ -121,5 +125,41 @@ describe('second review: calculator prompts', () => {
       assert.ok(/peso|weight/i.test(ui.infusionPlaceholder),
         `${language}: the weight prompt should mention the weight`)
     }
+  })
+})
+
+describe('paracetamol IV: weight-specific dosing retained in every language', () => {
+  const original = drugs.find(drug => drug.id === 'paracetamol')
+  for (const [language, map] of [['pt', {}], ['en', en], ['es', es]]) {
+    it(`${language}: separates per-dose and daily limits at 50 kg and hepatic risk`, () => {
+      const drug = localizeDrug(original, map)
+      const lowWeight = drug.usualAdultDose.find(item => item.context.includes('≤50 kg'))
+      assert.ok(lowWeight, '50 kg must remain within the weight-based group')
+      assert.match(lowWeight.context, />33 kg/)
+      assert.match(lowWeight.recommendation, /15 mg\/kg/)
+      assert.match(lowWeight.recommendation, /60 mg\/kg/)
+      assert.match(lowWeight.recommendation, /3 g/)
+      const fixed = drug.usualAdultDose.filter(item => item.context.includes('>50 kg'))
+      assert.equal(fixed.length, 2, 'separate fixed-dose groups with and without hepatic risk')
+      assert.match(fixed[0].recommendation, /4 g\//)
+      assert.match(fixed[1].recommendation, /3 g\//)
+      assert.match(drug.prescriptionExamples[0].prescription, />50 kg/)
+      assert.match(drug.prescriptionExamples[0].prescription, /15 min/)
+      assert.match(drug.prescriptionExamples[0].context, /15 mg\/kg/)
+      assert.match(drug.practicalNotes.join(' '), /≤33 kg/)
+    })
+  }
+  it('uses the exact SmPC renal interval bands, including <10 mL/min', () => {
+    const rows = original.renalAdjustment.byKidneyFunction
+    assert.equal(rows.length, 3)
+    assert.deepEqual(rows.map(item => item.context), ['ClCr ≥50 mL/min', 'ClCr 10–<50 mL/min', 'ClCr <10 mL/min'])
+    assert.deepEqual(rows.map(item => item.recommendation.match(/\d+/)[0]), ['4', '6', '8'])
+  })
+  it('traces the corrected dosing to the regulator without claiming full validation', () => {
+    const reference = original.references.find(item => item.id === 'paracetamolHpra2025')
+    assert.match(reference.url, /assets\.hpra\.ie\/products\/Human\/23043\/Licence_PA1968-021-001_06032025152236\.pdf$/)
+    assert.ok([...original.usualAdultDose, ...original.renalAdjustment.byKidneyFunction, ...original.hepaticAdjustment.bySeverity].every(item => item.sourceIds.includes(reference.id)))
+    assert.equal(original.validationStatus, 'source-linked')
+    assert.equal(original.calculators.length, 0)
   })
 })

@@ -1,15 +1,16 @@
 import type { ReactNode } from 'react'
 
 interface ClinicalSectionProps {
+  id?: string
   title: string
   eyebrow?: string
   children: ReactNode
   tone?: 'default' | 'renal' | 'hepatic' | 'warning'
 }
 
-export function ClinicalSection({ title, eyebrow, children, tone = 'default' }: ClinicalSectionProps) {
+export function ClinicalSection({ id, title, eyebrow, children, tone = 'default' }: ClinicalSectionProps) {
   return (
-    <section className={`clinical-section clinical-section--${tone}`}>
+    <section id={id} tabIndex={id ? -1 : undefined} className={`clinical-section clinical-section--${tone}`}>
       <header>
         {eyebrow && <span>{eyebrow}</span>}
         <h2>{title}</h2>

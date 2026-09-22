@@ -266,7 +266,7 @@ img { display: block; max-width: 100%; }
 .source-links a { color: var(--primary); font-weight: 800; text-decoration: underline; text-underline-offset: 2px; }
 .calculator-intro { margin: 0 0 14px; color: var(--mid); font-size: 12px; line-height: 1.55; }
 .calculator-grid { display: grid; gap: 12px; min-width: 0; }
-.calculator-card { min-width: 0; overflow: hidden; background: #f8fbfc; border: 1px solid #bfdde2; border-radius: var(--radius-md); }
+.calculator-card { min-width: 0; overflow: clip; background: #f8fbfc; border: 1px solid #bfdde2; border-radius: var(--radius-md); }
 .calculator-card > header { padding: 15px 16px; background: linear-gradient(135deg, #eaf8f7, #f4f9ff); border-bottom: 1px solid #cce4e7; }
 .calculator-card__meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .calculator-card__meta .validation-badge { flex: 0 0 auto; padding: 4px 7px; font-size: 8px; }
@@ -290,6 +290,25 @@ img { display: block; max-width: 100%; }
 .calculator-notes { padding: 0 32px; margin: 13px 0 0; }
 .calculator-notes li { margin: 5px 0; color: var(--mid); font-size: 10px; line-height: 1.45; }
 .calculator-card > .source-links { margin: 11px 16px 15px; }
+.calculator-mode { padding: 14px; color: var(--mid); background: #edf8f8; border: 1px solid #bfdde2; border-radius: var(--radius-md); }
+.calculator-mode__buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.calculator-flow__actions { display: flex; gap: 8px; }
+.calculator-mode__buttons button, .calculator-flow__actions button { min-height: 44px; padding: 10px 12px; border: 1px solid var(--border-strong); border-radius: 9px; background: #fff; color: var(--primary); cursor: pointer; font-size: 13px; font-weight: 700; }
+.calculator-mode__buttons button[aria-pressed="true"], .calculator-flow__actions .calculator-flow__primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.calculator-flow__actions button:disabled { opacity: .5; cursor: not-allowed; }
+.calculator-mode button:focus-visible, .calculator-flow button:focus-visible, .calculator-mode select:focus-visible, .calculator-shortcut:focus-visible { outline: 3px solid var(--aqua); outline-offset: 2px; }
+.calculator-mode p { font-size: 13px; line-height: 1.5; margin: 10px 0 0; }
+.calculator-mode label { display: grid; gap: 6px; margin-top: 12px; font-size: 13px; font-weight: 700; }
+.calculator-mode select { width: 100%; min-width: 0; min-height: 44px; padding: 8px; border-radius: 8px; border: 1px solid var(--border-strong); background: #fff; color: var(--dark); font: inherit; }
+.calculator-flow__field { display: grid; align-content: start; gap: 6px; min-width: 0; }
+.calculator-flow__error { color: var(--danger); font-size: 12px; line-height: 1.4; }
+.calculator-flow__progress { padding: 14px 16px 0; margin: 0; font-size: 12px; font-weight: 700; color: var(--primary); }
+.calculator-fields.calculator-fields--question { grid-template-columns: 1fr; }
+.calculator-flow__actions { position: sticky; bottom: 0; z-index: 1; padding: 14px 16px 12px; background: #f8fbfc; }
+.calculator-flow__actions .calculator-flow__primary { margin-left: auto; }
+.calculator-flow__result:focus { outline: 2px solid var(--aqua); outline-offset: -2px; }
+.calculator-shortcut { border: 0; cursor: pointer; margin-bottom: 12px; min-height: 44px; }
+#drug-calculators { scroll-margin-top: 110px; }
 .two-column-list { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .two-column-list > div { padding: 13px; background: var(--danger-bg); border: 1px solid #f7c6c2; border-radius: var(--radius-sm); }
 .two-column-list h3 { margin: 0 0 9px; color: var(--danger); }
@@ -318,6 +337,7 @@ img { display: block; max-width: 100%; }
   .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .detail-layout { grid-template-columns: 1fr; }
   .detail-summary { position: static; grid-template-columns: 1fr 1fr; }
+  .detail-sections { grid-row: 1; }
 }
 
 @media (max-width: 680px) {

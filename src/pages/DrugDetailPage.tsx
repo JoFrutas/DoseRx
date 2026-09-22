@@ -1,4 +1,5 @@
 import { ClinicalSection } from '../components/ClinicalSection'
+import { useCalculatorFlowCopy } from '../components/CalculatorFlow'
 import { DoseAdjustmentList } from '../components/DoseAdjustmentList'
 import { DrugCalculators } from '../components/DrugCalculators'
 import { Icon } from '../components/Icon'
@@ -15,6 +16,7 @@ interface DrugDetailPageProps {
 
 export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
   const { categories: localizedCategories, drugs, ui } = useI18n()
+  const flow = useCalculatorFlowCopy()
   const drug = drugs.find((candidate) => candidate.id === drugId)
   if (!drug) return <NotFoundPage />
 
@@ -46,6 +48,13 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
           </div>
           <h1>{drug.name}</h1>
           <p>{drug.drugClass}</p>
+          {drug.validationStatus !== 'catalog-only' && Boolean(drug.calculators?.length) && (
+            <button className="primary-button calculator-shortcut" type="button" onClick={() => {
+              const section = document.getElementById('drug-calculators')
+              section?.focus({ preventScroll: true })
+              section?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }}>{flow.shortcut} ↓</button>
+          )}
           <div className="drug-hero__tags">
             {categories.map((category) => (
               <a key={category.id} href={categoryHref(category.id)}>{category.shortName}</a>
@@ -96,7 +105,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
 
         {drug.validationStatus !== 'catalog-only' && <div className="detail-sections">
           {drug.calculators && drug.calculators.length > 0 && (
-            <ClinicalSection title={ui.calculatorsTitle} eyebrow={ui.calculatorsEyebrow}>
+            <ClinicalSection id="drug-calculators" title={ui.calculatorsTitle} eyebrow={ui.calculatorsEyebrow}>
               <p className="calculator-intro">{ui.calculatorsIntro}</p>
               <DrugCalculators calculators={drug.calculators} references={drug.references} />
             </ClinicalSection>
