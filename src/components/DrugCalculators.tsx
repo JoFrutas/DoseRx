@@ -1,5 +1,6 @@
 import type { DrugCalculatorDefinition, EvidenceReference } from '../types/drug'
 import { InfusionRateCalculator } from './InfusionRateCalculator'
+import { InfusionConversionCalculator } from './InfusionConversionCalculator'
 import { VolumeTimeCalculator } from './VolumeTimeCalculator'
 import { WeightDoseCalculator } from './WeightDoseCalculator'
 import { useState } from 'react'
@@ -33,6 +34,9 @@ export function DrugCalculators({ calculators, references }: DrugCalculatorsProp
       {calculators.map((calculator) => {
         let content
         switch (calculator.kind) {
+          case 'infusion-conversion':
+            content = <InfusionConversionCalculator mode={mode} definition={calculator} references={references} />
+            break
           case 'weight-dose':
             content = <WeightDoseCalculator mode={mode} definition={calculator} references={references} />
             break

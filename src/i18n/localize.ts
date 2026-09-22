@@ -60,6 +60,7 @@ const localizeCalculator = (
           label: translateText(calculator.concentration.label, translations),
         } : undefined,
       }
+    case 'infusion-conversion':
     case 'infusion-rate':
       return {
         ...calculator,

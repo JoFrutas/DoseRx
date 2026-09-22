@@ -1,4 +1,5 @@
 import type { Drug } from '../types/drug'
+import { infusionCalculationReference, prescriptionInfusionCalculator } from './infusionConversions.ts'
 import { catalogSeeds } from './catalog.generated.ts'
 import { createCatalogReviewedDrug } from './catalogReviewedDrugs.ts'
 import { crossSourceVerificationByDrugId } from './crossSourceVerification.ts'
@@ -142,6 +143,7 @@ const attachDocumentedCalculators = (drug: Drug): Drug => {
   const calculators = (drugCalculatorsByDrugId[drug.id] ?? drug.calculators ?? [])
     .filter((calculator) => (
       drug.validationStatus !== 'catalog-only'
+      && calculator.kind !== 'infusion-conversion'
       && (drugIsVerified || calculator.validationStatus === 'source-verified'
         || calculator.validationStatus === 'validated')
     ))
@@ -152,10 +154,12 @@ const attachDocumentedCalculators = (drug: Drug): Drug => {
       calculatorSourceIds.has(reference.id) && !existingReferenceIds.has(reference.id)
     ))
 
+  const conversion = prescriptionInfusionCalculator(drug)
+
   return {
     ...drug,
-    references: [...drug.references, ...calculatorReferences],
-    calculators,
+    references: [...drug.references, ...calculatorReferences, ...(conversion ? [infusionCalculationReference] : [])],
+    calculators: [...calculators, ...(conversion ? [conversion] : [])],
   }
 }
 

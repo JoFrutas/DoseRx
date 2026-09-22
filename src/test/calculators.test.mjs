@@ -6,11 +6,74 @@ import {
   calculateWeightDose,
   calculateDefinedInfusionRate,
   calculateDefinedVolumeRate,
+  calculatePrescriptionInfusionRate,
   formatCalculatorNumber,
   formatCalculatorUnit,
 } from '../lib/calculators.ts'
 import { drugs } from '../data/drugs.ts'
 import { drugCalculatorsByDrugId } from '../data/drugCalculators.ts'
+import { infusionConversionUnits } from '../data/infusionConversions.ts'
+
+describe('prescribed continuous infusion conversion', () => {
+  const conversions = drugs.flatMap(d => (d.calculators ?? []).filter(c => c.kind === 'infusion-conversion').map(c => [d.id, c]))
+  // Synthetic arithmetic examples only: these are not drug dose/preparation recommendations.
+  const fixtures = {
+    'mg/kg/h': [0.5, 500, 'mg', 50, 3.5],
+    'mcg/kg/h': [1, 1000, 'mcg', 50, 3.5],
+    'mcg/kg/min': [0.1, 2, 'mg', 50, 10.5],
+    'mg/h': [2, 50, 'mg', 50, 2],
+    'units/kg/h': [18, 25000, 'units', 50, 2.52],
+    'mcg/min': [30, 10, 'mg', 50, 9],
+    'mg/min': [2, 100, 'mg', 100, 120],
+    'mcg/h': [50, 1, 'mg', 50, 2.5],
+    'units/h': [1000000, 20000000, 'units', 100, 5],
+  }
+  it('exposes every explicitly scoped conversion, with no orphan, clinical default or validation claim', () => {
+    assert.equal(conversions.length, 29)
+    assert.deepEqual(conversions.map(([id]) => id).sort(), Object.keys(infusionConversionUnits).sort())
+    assert.equal(new Set(conversions.map(([, c]) => c.id)).size, 29)
+    for (const [id, definition] of conversions) {
+      const drug = drugs.find(d => d.id === id)
+      assert.notEqual(drug.validationStatus, 'catalog-only')
+      for (const key of ['defaultDoseRate', 'preparation', 'minimumDoseRate', 'maximumDoseRate', 'validationStatus']) assert.equal(key in definition, false)
+      assert.ok(definition.sourceIds.every(sourceId => drug.references.some(r => r.id === sourceId && r.url)))
+    }
+  })
+  for (const [id, definition] of conversions) it(`${id}: all selectable units match independent expected pump rates`, () => {
+    for (const doseRateUnit of definition.doseRateUnits) {
+      assert.ok(fixtures[doseRateUnit], `missing fixture ${doseRateUnit}`)
+      const [doseRate, preparationAmount, preparationAmountUnit, preparationVolumeMl, expected] = fixtures[doseRateUnit]
+      const actual = calculatePrescriptionInfusionRate(definition, { doseRate, doseRateUnit, weightKg: 70, preparationAmount, preparationAmountUnit, preparationVolumeMl })
+      assert.ok(Math.abs(actual - expected) < 1e-10, `${id} ${doseRateUnit}: ${actual} != ${expected}`)
+    }
+  })
+  const ketamine = conversions.find(([id]) => id === 'cetamina')[1]
+  const input = { doseRate: 0.5, doseRateUnit: 'mg/kg/h', weightKg: 70, preparationAmount: 500, preparationAmountUnit: 'mg', preparationVolumeMl: 50 }
+  it('ketamine: 70 kg at 0.5 mg/kg/h, 500 mg in final 50 mL gives 3.5 mL/h', () => {
+    assert.equal(calculatePrescriptionInfusionRate(ketamine, input), 3.5)
+    assert.equal(calculatePrescriptionInfusionRate(ketamine, { ...input, preparationAmount: 0.5, preparationAmountUnit: 'g' }), 3.5)
+    assert.equal(calculatePrescriptionInfusionRate(ketamine, { ...input, preparationAmount: 500000, preparationAmountUnit: 'mcg' }), 3.5)
+  })
+  it('refuses unsupported units, missing/invalid required values and overflow', () => {
+    for (const doseRateUnit of ['units/kg/h', 'mg/kg/s', undefined]) assert.throws(() => calculatePrescriptionInfusionRate(ketamine, { ...input, doseRateUnit }))
+    for (const preparationAmountUnit of ['units', 'mEq', 'ml']) assert.throws(() => calculatePrescriptionInfusionRate(ketamine, { ...input, preparationAmountUnit }))
+    for (const key of ['doseRate', 'weightKg', 'preparationAmount', 'preparationVolumeMl']) {
+      for (const value of [0, -1, NaN, Infinity, undefined]) assert.throws(() => calculatePrescriptionInfusionRate(ketamine, { ...input, [key]: value }))
+    }
+    assert.throws(() => calculatePrescriptionInfusionRate(ketamine, { ...input, weightKg: 401 }))
+    assert.throws(() => calculatePrescriptionInfusionRate(ketamine, { ...input, doseRate: Number.MAX_VALUE }))
+  })
+  it('absolute hourly dosing does not require or silently apply a weight', () => {
+    assert.equal(calculatePrescriptionInfusionRate(ketamine, { ...input, doseRate: 35, doseRateUnit: 'mg/h', weightKg: undefined }), 3.5)
+    assert.equal(calculatePrescriptionInfusionRate(ketamine, { ...input, doseRate: 35, doseRateUnit: 'mg/h', weightKg: 100 }), 3.5)
+  })
+  it('unit-based heparin cannot be prepared as mass and mcg/h is not mcg/min', () => {
+    const heparin = conversions.find(([id]) => id === 'heparina-nao-fraccionada')[1]
+    assert.throws(() => calculatePrescriptionInfusionRate(heparin, { ...input, doseRateUnit: 'units/kg/h' }))
+    assert.equal(calculateInfusionRate({ ...input, doseRate: 50, doseRateUnit: 'mcg/h', preparationAmount: 1 }), 2.5)
+    assert.equal(calculateInfusionRate({ ...input, doseRate: 50, doseRateUnit: 'mcg/min', preparationAmount: 1 }), 150)
+  })
+})
 
 describe('weight dose calculator', () => {
   it('calculates a dose and its concentrate volume', () => {
@@ -177,7 +240,7 @@ describe('volume and time calculator', () => {
 })
 
 describe('actual calculator definitions', () => {
-  const definitions = drugs.flatMap(drug => drug.calculators ?? [])
+  const definitions = drugs.flatMap(drug => drug.calculators ?? []).filter(c => c.kind !== 'infusion-conversion')
   const byId = new Map(definitions.map(definition => [definition.id, definition]))
   // Independently specified expected results for the published defaults at 70 kg.
   const weightFixtures = {

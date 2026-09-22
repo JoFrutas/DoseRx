@@ -28,14 +28,14 @@ describe('targeted monographs: formulation and high-risk limits', () => {
     protamina: [/100.*USP|USP.*100/, /50 mg/, /10 min/, /30 min/, /10 mg\/mL/],
     tiamina: [/125 mg\/mL/, /250 mg/, /3–5/, /500–750 mg/, /50–250 mL/, /30 min/],
   }
-  it('replaces exactly the ten requested catalog entries, without promoting evidence status or adding calculators', () => {
+  it('retains ten targeted monographs without promoting evidence; only manual conversion tools may be added', () => {
     assert.deepEqual(targetedClinicalDrugs.map(d => d.id).sort(), Object.keys(constraints).sort())
     for (const item of targetedClinicalDrugs) {
       const drug = drugs.find(d => d.id === item.id)
       assert.equal(drug.validationStatus, 'source-linked')
-      assert.equal(drug.calculators.length, 0)
+      assert.ok(drug.calculators.every(c => c.kind === 'infusion-conversion'))
       assert.equal(drug.verification, undefined)
-      assert.equal(drug.references.length, 1)
+      assert.equal(drug.references.length, 1 + Number(drug.calculators.length > 0))
       assert.match(drug.references[0].url, /^https:\/\/(www\.medicines\.org\.uk\/emc\/product\/|dailymed\.nlm\.nih\.gov\/dailymed\/)/)
       for (const row of [...drug.usualAdultDose, ...drug.renalAdjustment.byKidneyFunction]) {
         assert.deepEqual(row.sourceIds, [drug.references[0].id])

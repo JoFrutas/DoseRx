@@ -186,7 +186,7 @@ describe('catalog integrity', () => {
     }
   })
 
-  it('keeps calculator-level verification explicit in source-linked monographs', () => {
+  it('keeps clinical verification explicit and distinguishes mathematical converters in source-linked monographs', () => {
     const sourceLinkedWithCalculators = drugs.filter((drug) => (
       drug.validationStatus === 'source-linked' && (drug.calculators?.length ?? 0) > 0
     ))
@@ -195,7 +195,13 @@ describe('catalog integrity', () => {
     for (const drug of sourceLinkedWithCalculators) {
       const references = new Map(drug.references.map((reference) => [reference.id, reference]))
       for (const calculator of drug.calculators ?? []) {
-        assert.equal(calculator.validationStatus, 'source-verified', `${drug.id}: calculator scope is not verified`)
+        if (calculator.kind === 'infusion-conversion') {
+          assert.equal(calculator.validationStatus, undefined, `${drug.id}: conversion must not claim clinical verification`)
+          assert.equal(calculator.defaultDoseRate, undefined)
+          assert.equal(calculator.preparation, undefined)
+        } else {
+          assert.equal(calculator.validationStatus, 'source-verified', `${drug.id}: calculator scope is not verified`)
+        }
         for (const sourceId of calculator.sourceIds) {
           assert.ok(references.get(sourceId)?.url, `${drug.id}: calculator source ${sourceId} has no direct link`)
         }

@@ -12,6 +12,7 @@ export type DoseRateUnit =
   | 'ng/kg/min'
   | 'mcg/kg/min'
   | 'mcg/kg/h'
+  | 'mcg/h'
   | 'mcg/min'
   | 'mg/kg/h'
   | 'mg/h'
@@ -80,10 +81,23 @@ export interface VolumeTimeCalculatorDefinition {
   validationStatus?: Extract<ValidationStatus, 'source-verified' | 'validated'>
 }
 
+// Unit conversion only: no dose, preparation or clinical limits are prescribed.
+export interface InfusionConversionCalculatorDefinition {
+  kind: 'infusion-conversion'
+  id: string
+  title: string
+  description: string
+  doseRateUnits: DoseRateUnit[]
+  preparationAmountUnits: DoseAmountUnit[]
+  sourceIds: string[]
+  notes: string[]
+}
+
 export type DrugCalculatorDefinition =
   | WeightDoseCalculatorDefinition
   | InfusionRateCalculatorDefinition
   | VolumeTimeCalculatorDefinition
+  | InfusionConversionCalculatorDefinition
 
 export interface DrugCategory {
   id: string

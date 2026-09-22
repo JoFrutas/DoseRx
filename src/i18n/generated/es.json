@@ -4889,7 +4889,7 @@
   "vecuronium": "vecuronio",
   "Velocidade da noradrenalina": "velocidad de noradrenalina",
   "Velocidade da solução final": "Velocidad de solución final",
-  "Velocidade de perfusão": "Tasa de infusión",
+  "Velocidade de perfusão": "Velocidad de perfusión",
   "Velocidade de perfusão intermitente": "Velocidad de infusión intermitente",
   "Velocidade habitualmente não superior a 10 mEq/h; concentração até 40 mEq/L; máximo 200 mEq/24 h segundo o rótulo consultado.": "La velocidad no suele exceder los 10 mEq/h; concentración hasta 40 mEq/L; máximo 200 mEq/24 h según etiqueta consultada.",
   "Velocidade média inferior a 3 mcg/kg/min.": "Velocidad media inferior a 3 mcg/kg/min.",
@@ -4978,5 +4978,6 @@
   "Zidovudina": "zidovudina",
   "Zinco": "zinc",
   "Ziprasidona": "ziprasidona",
-  "Zonisamida": "Zonisamida"
+  "Zonisamida": "Zonisamida",
+  "Converte a dose prescrita e a preparação confirmada em mL/h.": "Convierte la dosis prescrita y la preparación confirmada a mL/h."
 }

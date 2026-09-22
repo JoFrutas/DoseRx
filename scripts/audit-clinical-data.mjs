@@ -122,7 +122,15 @@ for (const drug of drugs) {
 
   for (const calculator of drug.calculators ?? []) {
     if (calculator.sourceIds.length === 0) issues.push(`${drug.id}: calculadora ${calculator.id} sem fonte`)
-    if (!isSourceVerified && !['source-verified', 'validated'].includes(calculator.validationStatus)) {
+    if (calculator.kind === 'infusion-conversion') {
+      if ('defaultDoseRate' in calculator || 'preparation' in calculator || 'validationStatus' in calculator) {
+        issues.push(`${drug.id}: conversão matemática não pode prescrever valores nem alegar validação clínica`)
+      }
+      if (!calculator.doseRateUnits?.length || !calculator.preparationAmountUnits?.length) {
+        issues.push(`${drug.id}: conversão sem unidades explícitas`)
+      }
+      if (drug.validationStatus === 'catalog-only') issues.push(`${drug.id}: conversão sem monografia clínica`)
+    } else if (!isSourceVerified && !['source-verified', 'validated'].includes(calculator.validationStatus)) {
       issues.push(`${drug.id}: calculadora ${calculator.id} sem verificação própria`)
     }
     for (const sourceId of calculator.sourceIds) {

@@ -1,4 +1,4 @@
-import type { DoseAmountUnit, DoseRateUnit, InfusionRateCalculatorDefinition, VolumeTimeCalculatorDefinition } from '../types/drug'
+import type { DoseAmountUnit, DoseRateUnit, InfusionRateCalculatorDefinition, InfusionConversionCalculatorDefinition, VolumeTimeCalculatorDefinition } from '../types/drug'
 
 export interface WeightDoseResult {
   calculatedDose: number
@@ -89,6 +89,8 @@ function dosePerHourInBaseUnit(
       return doseRate * (weightKg as number)
     case 'mcg/min':
       return doseRate * 60
+    case 'mcg/h':
+      return doseRate
     case 'mg/kg/h':
       return doseRate * (weightKg as number) * 1000
     case 'mg/h':
@@ -140,6 +142,14 @@ export function calculateDefinedInfusionRate(definition: InfusionRateCalculatorD
   if (input.doseRateUnit !== definition.doseRateUnit) throw new Error('A unidade deve corresponder à definição da calculadora.')
   if (definition.maximumDoseRate !== undefined && input.doseRate > definition.maximumDoseRate) {
     throw new Error('Dose acima do limite documentado desta calculadora.')
+  }
+  return calculateInfusionRate(input)
+}
+
+export function calculatePrescriptionInfusionRate(definition: InfusionConversionCalculatorDefinition, input: InfusionRateInput): number {
+  if (!definition.doseRateUnits.includes(input.doseRateUnit)
+    || !definition.preparationAmountUnits.includes(input.preparationAmountUnit)) {
+    throw new Error('Unidade não disponível para esta conversão.')
   }
   return calculateInfusionRate(input)
 }
