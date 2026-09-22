@@ -1,10 +1,12 @@
 import type { Drug, DrugCategory } from '../types/drug'
+import { getDoseCompanion, hasDocumentedDose } from './doseAvailability.ts'
 
 export function normalizeSearchText(value: string): string {
   return value
     .normalize('NFD')
     .replace(/\p{Diacritic}/gu, '')
     .toLocaleLowerCase('pt-PT')
+    .replace(/\s+/gu, ' ')
     .trim()
 }
 
@@ -35,6 +37,9 @@ export function searchDrugs(
   if (!normalizedQuery) return []
 
   const tokens = normalizedQuery.split(/\s+/).filter(Boolean)
+  const exactCatalogMatch = source.find((drug) => drug.validationStatus === 'catalog-only'
+    && [drug.name, ...drug.aliases].some((name) => normalizeSearchText(name) === normalizedQuery))
+  const preferredCompanion = exactCatalogMatch && getDoseCompanion(exactCatalogMatch.id, source)
 
   return source
     .map((drug, sourceIndex) => {
@@ -45,7 +50,8 @@ export function searchDrugs(
         tokens.every((token) => alias.includes(token))
       ))
       const searchableText = getDrugSearchText(drug, categories)
-      const matches = tokens.every((token) => searchableText.includes(token))
+      const isCompanion = drug.id === preferredCompanion?.id
+      const matches = isCompanion || tokens.every((token) => searchableText.includes(token))
 
       let relevance = 6
       if (normalizedName === normalizedQuery) relevance = 0
@@ -54,12 +60,14 @@ export function searchDrugs(
       else if (normalizedAliases.some((alias) => alias.startsWith(normalizedQuery))) relevance = 3
       else if (nameMatchesTokens) relevance = 4
       else if (aliasMatchesTokens) relevance = 5
+      if (isCompanion) relevance = -1
 
       return { drug, matches, relevance, sourceIndex }
     })
     .filter((result) => result.matches)
     .sort((first, second) => (
       first.relevance - second.relevance
+      || Number(hasDocumentedDose(second.drug)) - Number(hasDocumentedDose(first.drug))
       || first.sourceIndex - second.sourceIndex
     ))
     .map(({ drug }) => drug)

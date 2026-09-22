@@ -8,11 +8,66 @@ import { calculateDefinedInfusionRate, calculateInfusionRate } from '../lib/calc
 import { drugCalculatorsByDrugId } from '../data/drugCalculators.ts'
 import { uiTranslations } from '../i18n/translations.ts'
 import { drugs } from '../data/drugs.ts'
+import { targetedClinicalDrugs } from '../data/targetedClinicalDrugs.ts'
 import { localizeDrug } from '../i18n/localize.ts'
 import en from '../i18n/generated/en.json' with { type: 'json' }
 import es from '../i18n/generated/es.json' with { type: 'json' }
 
 const TEST_WEIGHT_KG = 70
+
+describe('targeted monographs: formulation and high-risk limits', () => {
+  const constraints = {
+    salbutamol: [/2[,.]5–5 mg/, /40 mg\//, /hospital/, /2 mg\/mL/],
+    ipratropio: [/250–500 mcg/, /2 mg\//, /500 mcg\/2 mL/],
+    cefazolina: [/500 mg–1 g/, /1–1[,.]5 g/, /35–54 mL\/min/, /11–34 mL\/min/, /≤10 mL\/min/],
+    labetalol: [/0[,.]25 mg\/kg/, /20 mg/, /300 mg/, /2 mg\/min/, /5 mg\/mL/, /1 mg\/mL/],
+    nicardipina: [/3–5 mg\/h/, /15 mg\/h/, /1–5 mg\/h/, /0[,.]1–0[,.]2 mg\/mL/],
+    nitroglicerina: [/5 mcg\/min/, /3–5 min/, /10–20 mcg\/min/, /25 mg\/250 mL/],
+    'nitroprussiato-de-sodio': [/0[,.]3 mcg\/kg\/min/, /5 min/, /10 mcg\/kg\/min/, /<30 mL\/min/, /3 mcg\/kg\/min/, /1 mcg\/kg\/min/],
+    'cloreto-de-calcio': [/200–1000 mg/, /1 mL\/min/, /100 mg\/mL/, /200 mg/, /ceftriax/],
+    protamina: [/100.*USP|USP.*100/, /50 mg/, /10 min/, /30 min/, /10 mg\/mL/],
+    tiamina: [/125 mg\/mL/, /250 mg/, /3–5/, /500–750 mg/, /50–250 mL/, /30 min/],
+  }
+  it('replaces exactly the ten requested catalog entries, without promoting evidence status or adding calculators', () => {
+    assert.deepEqual(targetedClinicalDrugs.map(d => d.id).sort(), Object.keys(constraints).sort())
+    for (const item of targetedClinicalDrugs) {
+      const drug = drugs.find(d => d.id === item.id)
+      assert.equal(drug.validationStatus, 'source-linked')
+      assert.equal(drug.calculators.length, 0)
+      assert.equal(drug.verification, undefined)
+      assert.equal(drug.references.length, 1)
+      assert.match(drug.references[0].url, /^https:\/\/(www\.medicines\.org\.uk\/emc\/product\/|dailymed\.nlm\.nih\.gov\/dailymed\/)/)
+      for (const row of [...drug.usualAdultDose, ...drug.renalAdjustment.byKidneyFunction]) {
+        assert.deepEqual(row.sourceIds, [drug.references[0].id])
+        assert.equal(row.validationStatus, 'source-linked')
+      }
+    }
+  })
+  for (const [language, map] of [['pt', {}], ['en', en], ['es', es]]) {
+    for (const [id, expected] of Object.entries(constraints)) {
+      it(`${language}: ${id} retains formulation and critical dosing constraints`, () => {
+        const drug = localizeDrug(drugs.find(d => d.id === id), map)
+        const content = JSON.stringify(drug)
+        for (const pattern of expected) assert.match(content, pattern)
+        assert.ok(drug.indications.length > 0 && drug.routes.length > 0)
+        assert.ok(drug.renalAdjustment.summary.length > 0)
+        assert.ok(drug.hepaticAdjustment.summary.length > 0)
+      })
+    }
+  }
+  it('keeps cefazolin dose reductions conditional on the initial dose and separates the low-clearance intervals', () => {
+    const drug = drugs.find(d => d.id === 'cefazolina')
+    assert.match(drug.renalAdjustment.summary, /após dose inicial/)
+    assert.match(drug.renalAdjustment.byKidneyFunction[2].recommendation, /12\/12h/)
+    assert.match(drug.renalAdjustment.byKidneyFunction[3].recommendation, /18\/18h a 24\/24h/)
+  })
+  it('retains the strict nitroprusside renal mean-rate limit and five-minute reassessment', () => {
+    const drug = drugs.find(d => d.id === 'nitroprussiato-de-sodio')
+    assert.match(drug.usualAdultDose[0].recommendation, /pelo menos 5 min antes de alterar/)
+    assert.match(drug.renalAdjustment.byKidneyFunction[0].recommendation, /inferior a 3 mcg\/kg\/min/)
+    assert.match(drug.renalAdjustment.byKidneyFunction[1].recommendation, /1 mcg\/kg\/min/)
+  })
+})
 
 // Amount of drug, per hour, expressed in the unit the preparation is written in.
 // Written directly from each unit's name rather than copied from the engine.

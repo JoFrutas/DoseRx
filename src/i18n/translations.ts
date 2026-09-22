@@ -12,6 +12,12 @@ export const languageOptions: ReadonlyArray<{
 ]
 
 export interface UiStrings {
+  availabilityAll: string
+  availabilityLabel: string
+  availabilityHint: string
+  withDoses: string
+  catalogOnly: string
+  doseCompanion: string
   chooseLanguage: string
   languageSelectorLabel: string
   brandSubtitle: string
@@ -133,8 +139,11 @@ export interface UiStrings {
 }
 
 const pt: UiStrings = {
+  availabilityAll: 'Todos', availabilityLabel: 'Mostrar fármacos', withDoses: 'Com doses', catalogOnly: 'Só catálogo',
+  availabilityHint: 'Com doses indica conteúdo posológico; o estado de revisão continua visível em cada ficha.',
+  doseCompanion: 'Consultar ficha relacionada com doses — confirmar indicação e via:',
   chooseLanguage: 'Escolha o idioma', languageSelectorLabel: 'Mudar idioma', brandSubtitle: 'Medicina Intensiva', homeAria: 'DoseRx — página inicial',
-  availableRecords: 'fichas disponíveis', footerSafety: 'Ferramenta de apoio · confirmar indicação, preparação e protocolo local',
+  availableRecords: 'entradas no catálogo', footerSafety: 'Ferramenta de apoio · confirmar indicação, preparação e protocolo local',
   searchLabel: 'Pesquisar fármacos', searchPlaceholder: 'Pesquisar por fármaco, classe, indicação ou alias…', clearSearch: 'Limpar pesquisa',
   searchHint: 'Pesquise por nome, alias, classe, indicação ou categoria.', heroEyebrow: 'Consulta farmacológica em UCI',
   heroTitleFirst: 'Doses críticas.', heroTitleSecond: 'Contexto à vista.', heroDescription: 'Encontre rapidamente a estrutura de dose, prescrição, ajuste renal, ajuste hepático e notas práticas de cada fármaco.',
@@ -159,8 +168,11 @@ const pt: UiStrings = {
 }
 
 const en: UiStrings = {
+  availabilityAll: 'All', availabilityLabel: 'Show medicines', withDoses: 'With doses', catalogOnly: 'Catalog only',
+  availabilityHint: 'With doses indicates dosing content; the review status remains visible on each record.',
+  doseCompanion: 'View related dosing monograph — confirm indication and route:',
   chooseLanguage: 'Choose your language', languageSelectorLabel: 'Change language', brandSubtitle: 'Intensive Care Medicine', homeAria: 'DoseRx — home page',
-  availableRecords: 'records available', footerSafety: 'Decision-support tool · confirm indication, preparation and local protocol',
+  availableRecords: 'catalog entries', footerSafety: 'Decision-support tool · confirm indication, preparation and local protocol',
   searchLabel: 'Search medicines', searchPlaceholder: 'Search by medicine, class, indication or alias…', clearSearch: 'Clear search',
   searchHint: 'Search by name, alias, class, indication or category.', heroEyebrow: 'ICU pharmacology reference', heroTitleFirst: 'Critical doses.', heroTitleSecond: 'Context in view.', heroDescription: 'Quickly find dosing, prescribing, renal adjustment, hepatic adjustment and practical notes for each medicine.',
   results: 'Results', drugFound: 'medicine found', drugsFound: 'medicines found', viewCategories: 'View categories', noResults: 'No results for', noResultsHint: 'Try another name, class, indication, subcategory or alias.', catalogEyebrow: 'Intensive Care Medicine catalogue', exploreByCategory: 'Browse by category',
@@ -174,8 +186,11 @@ const en: UiStrings = {
 }
 
 const es: UiStrings = {
+  availabilityAll: 'Todos', availabilityLabel: 'Mostrar fármacos', withDoses: 'Con dosis', catalogOnly: 'Solo catálogo',
+  availabilityHint: 'Con dosis indica contenido posológico; el estado de revisión sigue visible en cada ficha.',
+  doseCompanion: 'Consultar ficha relacionada con dosis — confirmar indicación y vía:',
   chooseLanguage: 'Elige el idioma', languageSelectorLabel: 'Cambiar idioma', brandSubtitle: 'Medicina Intensiva', homeAria: 'DoseRx — página de inicio',
-  availableRecords: 'fichas disponibles', footerSafety: 'Herramienta de apoyo · confirmar indicación, preparación y protocolo local', searchLabel: 'Buscar fármacos', searchPlaceholder: 'Buscar por fármaco, clase, indicación o alias…', clearSearch: 'Borrar búsqueda', searchHint: 'Busca por nombre, alias, clase, indicación o categoría.', heroEyebrow: 'Consulta farmacológica en UCI', heroTitleFirst: 'Dosis críticas.', heroTitleSecond: 'Contexto visible.', heroDescription: 'Encuentra rápidamente la dosis, prescripción, ajuste renal, ajuste hepático y notas prácticas de cada fármaco.',
+  availableRecords: 'entradas del catálogo', footerSafety: 'Herramienta de apoyo · confirmar indicación, preparación y protocolo local', searchLabel: 'Buscar fármacos', searchPlaceholder: 'Buscar por fármaco, clase, indicación o alias…', clearSearch: 'Borrar búsqueda', searchHint: 'Busca por nombre, alias, clase, indicación o categoría.', heroEyebrow: 'Consulta farmacológica en UCI', heroTitleFirst: 'Dosis críticas.', heroTitleSecond: 'Contexto visible.', heroDescription: 'Encuentra rápidamente la dosis, prescripción, ajuste renal, ajuste hepático y notas prácticas de cada fármaco.',
   results: 'Resultados', drugFound: 'fármaco encontrado', drugsFound: 'fármacos encontrados', viewCategories: 'Ver categorías', noResults: 'Sin resultados para', noResultsHint: 'Prueba con otro nombre, clase, indicación, subcategoría o alias.', catalogEyebrow: 'Catálogo de Medicina Intensiva', exploreByCategory: 'Explorar por categoría', consensusCount: 'con consenso entre varias fuentes', verifiedCount: 'con fuentes verificadas', linkedCount: 'monografías vinculadas a fuentes', catalogOnlyCount: 'entradas solo de catálogo', records: 'fármacos', structuralRecord: 'ficha estructurada', structuralRecords: 'fichas estructuradas', home: 'Inicio', back: 'Volver', drugsInCategory: 'fármacos en esta categoría',
   scopeSummary: 'Ámbito del catálogo', summary: 'Resumen de la ficha', lastReview: 'Última revisión', priority: 'Prioridad', subcategories: 'Subcategorías', references: 'Referencias', aliases: 'Alias', routes: 'Vías', reviewNotes: 'Notas de revisión', sourcesCompared: 'fuentes comparadas', scope: 'Ámbito', calculatorsTitle: 'Calculadoras documentadas', calculatorsEyebrow: 'Cálculo asistido', calculatorsIntro: 'Resultados matemáticos basados en los parámetros introducidos. La calculadora no selecciona la indicación, el peso de dosificación, la función orgánica ni la preparación local.', indicationsTitle: 'Indicaciones habituales en UCI', indicationsEyebrow: 'Contexto clínico', doseTitle: 'Dosis habitual en adultos', doseEyebrow: 'Posología', prescribeTitle: 'Cómo prescribir', prescribeEyebrow: 'Ejemplos prácticos', loadingDoseTitle: 'Dosis de carga', loadingDoseEyebrow: 'Si corresponde',
   renalTitle: 'Ajuste renal', renalEyebrow: 'ClCr / eGFR', intermittentHd: 'Hemodiálisis intermitente', continuousKrt: 'Técnicas continuas de sustitución renal', hepaticTitle: 'Ajuste hepático', hepaticEyebrow: 'Función hepática', monitoringTitle: 'Monitorización terapéutica', monitoringEyebrow: 'TDM y parámetros', safetyTitle: 'Contraindicaciones e interacciones', safetyEyebrow: 'Seguridad', contraindications: 'Contraindicaciones principales', interactions: 'Interacciones importantes', practicalTitle: 'Notas prácticas de Medicina Intensiva', practicalEyebrow: 'A pie de cama', bibliographyTitle: 'Referencias bibliográficas', bibliographyEyebrow: 'Fuentes', openSource: 'Abrir fuente', noSource: 'Ninguna fuente asociada', noSourceText: 'Esta entrada es solo de catálogo y no contiene recomendaciones de prescripción.', sources: 'Fuentes:', sourceLinksAria: 'Fuentes de esta recomendación',
@@ -185,3 +200,4 @@ const es: UiStrings = {
 }
 
 export const uiTranslations: Readonly<Record<Language, UiStrings>> = { pt, en, es }
+

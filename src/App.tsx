@@ -1,8 +1,9 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { AppHeader } from './components/AppHeader'
 import { LanguageScreen } from './components/LanguageScreen'
 import { useI18n } from './i18n/I18nContext'
 import { parseRoute, useHashLocation } from './lib/routes'
+import type { DoseAvailability } from './lib/doseAvailability'
 import { CategoryPage } from './pages/CategoryPage'
 import { DrugDetailPage } from './pages/DrugDetailPage'
 import { HomePage } from './pages/HomePage'
@@ -12,6 +13,10 @@ export function App() {
   const { language, loading, setLanguage, ui } = useI18n()
   const hash = useHashLocation()
   const route = parseRoute(hash)
+  // Keep list context alive while a monograph is open, including browser Back.
+  const [searchQuery, setSearchQuery] = useState('')
+  const [homeAvailability, setHomeAvailability] = useState<DoseAvailability>('all')
+  const [categoryAvailability, setCategoryAvailability] = useState<Record<string, DoseAvailability>>({})
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' })
@@ -25,10 +30,12 @@ export function App() {
   let page
   switch (route.name) {
     case 'home':
-      page = <HomePage />
+      page = <HomePage query={searchQuery} setQuery={setSearchQuery} availability={homeAvailability} setAvailability={setHomeAvailability} />
       break
     case 'category':
-      page = <CategoryPage categoryId={route.categoryId} />
+      page = <CategoryPage categoryId={route.categoryId} availability={categoryAvailability[route.categoryId] ?? 'all'} setAvailability={(value) => {
+        setCategoryAvailability(previous => ({ ...previous, [route.categoryId]: value }))
+      }} />
       break
     case 'drug':
       page = <DrugDetailPage drugId={route.drugId} />

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { CategoryCard } from '../components/CategoryCard'
 import { DrugCard } from '../components/DrugCard'
 import { LogoMark } from '../components/LogoMark'
@@ -13,12 +12,21 @@ import {
 } from '../data/drugs'
 import { useI18n } from '../i18n/I18nContext'
 import { searchDrugs } from '../lib/search'
+import { DoseAvailabilityFilter } from '../components/DoseAvailabilityFilter'
+import { filterByDoseAvailability, type DoseAvailability } from '../lib/doseAvailability'
 
-export function HomePage() {
+interface HomePageProps {
+  query: string
+  setQuery: (query: string) => void
+  availability: DoseAvailability
+  setAvailability: (availability: DoseAvailability) => void
+}
+
+export function HomePage({ query, setQuery, availability, setAvailability }: HomePageProps) {
   const { categories: drugCategories, drugs, ui } = useI18n()
-  const [query, setQuery] = useState('')
-  const results = searchDrugs(drugs, query, drugCategories)
-  const isSearching = query.trim().length > 0
+  const matches = query.trim() ? searchDrugs(drugs, query, drugCategories) : drugs
+  const results = filterByDoseAvailability(matches, availability)
+  const isSearching = query.trim().length > 0 || availability !== 'all'
 
   return (
     <main>
@@ -42,6 +50,7 @@ export function HomePage() {
       </section>
 
       <div className="content-width home-content">
+        <DoseAvailabilityFilter drugs={matches} value={availability} onChange={setAvailability} />
         <SafetyBanner
           compact
           sourceLinkedCount={sourceLinkedDrugCount}
@@ -55,7 +64,7 @@ export function HomePage() {
                 <span className="eyebrow">{ui.results}</span>
                 <h2>{results.length} {results.length === 1 ? ui.drugFound : ui.drugsFound}</h2>
               </div>
-              <button className="text-button" type="button" onClick={() => setQuery('')}>{ui.viewCategories}</button>
+              <button className="text-button" type="button" onClick={() => { setQuery(''); setAvailability('all') }}>{ui.viewCategories}</button>
             </div>
             {results.length > 0 ? (
               <div className="drug-list">

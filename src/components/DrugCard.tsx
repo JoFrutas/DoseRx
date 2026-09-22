@@ -1,5 +1,6 @@
 import { useI18n } from '../i18n/I18nContext'
 import { drugHref } from '../lib/routes'
+import { hasDocumentedDose } from '../lib/doseAvailability'
 import type { Drug } from '../types/drug'
 import { Icon } from './Icon'
 import { ValidationBadge } from './ValidationBadge'
@@ -9,7 +10,8 @@ interface DrugCardProps {
 }
 
 export function DrugCard({ drug }: DrugCardProps) {
-  const { categories: localizedCategories } = useI18n()
+  const { categories: localizedCategories, ui } = useI18n()
+  const withDose = hasDocumentedDose(drug)
   const categories = drug.categoryIds
     .map((categoryId) => localizedCategories.find((category) => category.id === categoryId))
     .filter((category) => category !== undefined)
@@ -24,6 +26,7 @@ export function DrugCard({ drug }: DrugCardProps) {
         </span>
         <span className="drug-card__class">{drug.drugClass}</span>
         <span className="drug-card__tags">
+          <span className={`dose-availability dose-availability--${withDose ? 'available' : 'catalog'}`}>{withDose ? ui.withDoses : ui.catalogOnly}</span>
           <span className={`priority-tag priority-tag--${drug.priority.toLowerCase()}`}>{drug.priority}</span>
           {categories.slice(0, 3).map((category) => (
             <span key={category.id}>{category.shortName}</span>

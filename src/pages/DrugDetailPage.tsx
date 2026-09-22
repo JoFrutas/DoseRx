@@ -7,7 +7,8 @@ import { SafetyBanner } from '../components/SafetyBanner'
 import { SourceLinks } from '../components/SourceLinks'
 import { ValidationBadge } from '../components/ValidationBadge'
 import { useI18n } from '../i18n/I18nContext'
-import { categoryHref, homeHref } from '../lib/routes'
+import { categoryHref, drugHref, homeHref } from '../lib/routes'
+import { getDoseCompanion } from '../lib/doseAvailability'
 import { NotFoundPage } from './NotFoundPage'
 
 interface DrugDetailPageProps {
@@ -19,6 +20,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
   const flow = useCalculatorFlowCopy()
   const drug = drugs.find((candidate) => candidate.id === drugId)
   if (!drug) return <NotFoundPage />
+  const doseCompanion = getDoseCompanion(drug.id, drugs)
 
   const categories = drug.categoryIds
     .map((categoryId) => localizedCategories.find((category) => category.id === categoryId))
@@ -68,6 +70,9 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
 
       {drug.validationStatus === 'source-linked' && <SafetyBanner status="source-linked" />}
       {drug.validationStatus === 'catalog-only' && <SafetyBanner status="catalog-only" />}
+      {doseCompanion && <p className="dose-companion">{ui.doseCompanion}{' '}
+        <a href={drugHref(doseCompanion.id)}>{doseCompanion.name}</a>
+      </p>}
 
       <div className={`detail-layout${drug.validationStatus === 'catalog-only' ? ' detail-layout--catalog' : ''}`}>
         <aside className="detail-summary">
@@ -121,7 +126,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
             <DoseAdjustmentList items={drug.usualAdultDose} references={drug.references} />
           </ClinicalSection>
 
-          <ClinicalSection title={ui.prescribeTitle} eyebrow={ui.prescribeEyebrow}>
+          {drug.prescriptionExamples.length > 0 && <ClinicalSection title={ui.prescribeTitle} eyebrow={ui.prescribeEyebrow}>
             <div className="prescription-list">
               {drug.prescriptionExamples.map((example) => (
                 <article key={example.title}>
@@ -136,7 +141,7 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
                 </article>
               ))}
             </div>
-          </ClinicalSection>
+          </ClinicalSection>}
 
           {drug.loadingDose && (
             <ClinicalSection title={ui.loadingDoseTitle} eyebrow={ui.loadingDoseEyebrow}>
@@ -147,13 +152,11 @@ export function DrugDetailPage({ drugId }: DrugDetailPageProps) {
           <ClinicalSection title={ui.renalTitle} eyebrow={ui.renalEyebrow} tone="renal">
             <p className="section-summary">{drug.renalAdjustment.summary}</p>
             <DoseAdjustmentList items={drug.renalAdjustment.byKidneyFunction} references={drug.references} />
-            <h3>{ui.intermittentHd}</h3>
             {drug.renalAdjustment.intermittentHemodialysis && (
-              <DoseAdjustmentList items={[drug.renalAdjustment.intermittentHemodialysis]} references={drug.references} />
+              <><h3>{ui.intermittentHd}</h3><DoseAdjustmentList items={[drug.renalAdjustment.intermittentHemodialysis]} references={drug.references} /></>
             )}
-            <h3>{ui.continuousKrt}</h3>
             {drug.renalAdjustment.continuousKidneyReplacement && (
-              <DoseAdjustmentList items={[drug.renalAdjustment.continuousKidneyReplacement]} references={drug.references} />
+              <><h3>{ui.continuousKrt}</h3><DoseAdjustmentList items={[drug.renalAdjustment.continuousKidneyReplacement]} references={drug.references} /></>
             )}
           </ClinicalSection>
 

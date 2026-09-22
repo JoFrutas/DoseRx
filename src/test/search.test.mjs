@@ -16,14 +16,49 @@ import {
 } from '../data/drugs.ts'
 import { normalizeSearchText, searchDrugs } from '../lib/search.ts'
 import { parseRoute } from '../lib/routes.ts'
+import { filterByDoseAvailability, getDoseCompanion, hasDocumentedDose } from '../lib/doseAvailability.ts'
 
 describe('drug search', () => {
+  it('filters actual dose content separately from evidence status', () => {
+    assert.equal(filterByDoseAvailability(drugs, 'with-dose').length, 154)
+    assert.equal(filterByDoseAvailability(drugs, 'catalog-only').length, 398)
+    assert.equal(filterByDoseAvailability(drugs, 'all').length, 552)
+    assert.ok(filterByDoseAvailability(drugs, 'with-dose').every(hasDocumentedDose))
+    const empty = { ...drugs.find(d => d.id === 'cefazolina'), usualAdultDose: [] }
+    assert.equal(hasDocumentedDose(empty), false)
+  })
+  it('surfaces explicit related dosing records while preserving separate catalog identities', () => {
+    for (const [query, doseId, catalogId] of [
+      ['Benzilpenicilina (penicilina G)', 'benzilpenicilina', 'benzilpenicilina-penicilina-g'],
+      ['Insulina humana regular', 'insulina-regular', 'insulina-humana-regular'],
+    ]) {
+      const results = searchDrugs(drugs, query, drugCategories)
+      assert.equal(results[0].id, doseId)
+      assert.ok(results.some(d => d.id === catalogId))
+      assert.equal(getDoseCompanion(catalogId, drugs)?.id, doseId)
+    }
+    for (const id of ['insulina-glargina', 'insulina-em-alta-dose-com-euglicemia', 'vancomicina-oral-enterica']) {
+      const drug = drugs.find(d => d.id === id)
+      assert.equal(getDoseCompanion(id, drugs), undefined)
+      assert.equal(searchDrugs(drugs, drug.name, drugCategories)[0].id, id)
+    }
+  })
   it('treats malformed shared URLs as not found instead of crashing', () => {
     for (const hash of ['#/drug/%', '#/drug/%E0%A4', '#/category/%GG']) assert.deepEqual(parseRoute(hash), { name: 'not-found' })
     assert.deepEqual(parseRoute('#/drug/insulina-regular'), { name: 'drug', drugId: 'insulina-regular' })
   })
   it('ignores accents and letter case', () => {
     assert.equal(normalizeSearchText('  Noradrenalína  '), 'noradrenalina')
+  })
+
+  it('normalizes repeated internal whitespace before exact companion ranking', () => {
+    assert.equal(normalizeSearchText(' Insulina\t humana\u00a0 regular '), 'insulina humana regular')
+    for (const [query, expected] of [
+      ['Insulina  humana regular', 'insulina-regular'],
+      [' Insulina\t humana\u00a0regular ', 'insulina-regular'],
+      ['Benzilpenicilina  (penicilina G)', 'benzilpenicilina'],
+      ['Benzilpenicilina\t(penicilina\u00a0G)', 'benzilpenicilina'],
+    ]) assert.equal(searchDrugs(drugs, query, drugCategories)[0]?.id, expected, query)
   })
 
   it('finds a drug through an alias', () => {
@@ -79,12 +114,12 @@ describe('catalog integrity', () => {
     assert.equal(expandedClinicalSourceCount, 141)
     assert.equal(expandedClinicalMappedCatalogCount, 142)
     assert.equal(reviewedDrugCount, 21)
-    assert.equal(structuredDrugCount, 144)
+    assert.equal(structuredDrugCount, 154)
     assert.equal(sourceVerifiedDrugCount, 21)
     assert.equal(multiSourceValidatedDrugCount, 6)
-    assert.equal(sourceLinkedDrugCount, 123)
-    assert.equal(catalogOnlyDrugCount, 408)
-    assert.equal(clinicalMonographCount, 144)
+    assert.equal(sourceLinkedDrugCount, 133)
+    assert.equal(catalogOnlyDrugCount, 398)
+    assert.equal(clinicalMonographCount, 154)
   })
 
   it('uses unique drug IDs and known category IDs', () => {
@@ -174,8 +209,8 @@ describe('catalog integrity', () => {
         .map(([status, items]) => [status, items.length]),
     )
     assert.deepEqual(statusCounts, {
-      'catalog-only': 408,
-      'source-linked': 123,
+      'catalog-only': 398,
+      'source-linked': 133,
       validated: 6,
       'source-verified': 15,
     })

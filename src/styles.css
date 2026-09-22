@@ -394,3 +394,16 @@ img { display: block; max-width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
+/* Dosing availability is separate from evidence review status. */
+.dose-filter { border: 0; padding: 0; margin: 0 0 1.5rem; min-width: 0; }
+.dose-filter legend { font-weight: 700; margin-bottom: .6rem; }
+.dose-filter__options { display: flex; gap: .5rem; flex-wrap: wrap; }
+.dose-filter__options button { border: 1px solid #b9cecc; border-radius: .65rem; padding: .7rem .9rem; background: #fff; color: #164d4a; cursor: pointer; font: inherit; min-height: 44px; }
+.dose-filter__options button[aria-pressed="true"] { color: #fff; background: #164d4a; border-color: #164d4a; }
+.dose-filter__options button span { margin-left: .3rem; font-weight: 700; }
+.dose-filter p { margin: .6rem 0 0; color: #566b70; font-size: .85rem; }
+.drug-card__tags .dose-availability { font-weight: 700; }
+.drug-card__tags .dose-availability--available { color: #164d4a; background: #e2f3ed; }
+.drug-card__tags .dose-availability--catalog { color: #735a28; background: #fbf1dc; }
+.dose-companion { display: block; padding: 1rem; border: 1px solid #b9cecc; border-radius: .75rem; background: #e2f3ed; margin: 1rem 0; }
+.dose-companion a { font-weight: 700; text-decoration: underline; }

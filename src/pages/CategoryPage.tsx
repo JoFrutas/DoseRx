@@ -1,4 +1,6 @@
 import { DrugCard } from '../components/DrugCard'
+import { DoseAvailabilityFilter } from '../components/DoseAvailabilityFilter'
+import { filterByDoseAvailability, type DoseAvailability } from '../lib/doseAvailability'
 import { Icon } from '../components/Icon'
 import { SafetyBanner } from '../components/SafetyBanner'
 import { useI18n } from '../i18n/I18nContext'
@@ -7,14 +9,17 @@ import { NotFoundPage } from './NotFoundPage'
 
 interface CategoryPageProps {
   categoryId: string
+  availability: DoseAvailability
+  setAvailability: (availability: DoseAvailability) => void
 }
 
-export function CategoryPage({ categoryId }: CategoryPageProps) {
+export function CategoryPage({ categoryId, availability, setAvailability }: CategoryPageProps) {
   const { categories, drugs, ui } = useI18n()
   const category = categories.find((candidate) => candidate.id === categoryId)
   if (!category) return <NotFoundPage />
 
   const categoryDrugs = drugs.filter((drug) => drug.categoryIds.includes(category.id))
+  const visibleDrugs = filterByDoseAvailability(categoryDrugs, availability)
   const sourceLinkedCount = categoryDrugs.filter((drug) => (
     drug.validationStatus === 'source-linked'
   )).length
@@ -48,15 +53,16 @@ export function CategoryPage({ categoryId }: CategoryPageProps) {
       )}
 
       <section className="category-list-section">
+        <DoseAvailabilityFilter drugs={categoryDrugs} value={availability} onChange={setAvailability} />
         <div className="section-heading">
           <div>
             <span className="eyebrow">{ui.records}</span>
             <h2>{ui.drugsInCategory}</h2>
           </div>
         </div>
-        {categoryDrugs.length > 0 ? (
+        {visibleDrugs.length > 0 ? (
           <div className="drug-list">
-            {categoryDrugs.map((drug) => <DrugCard key={drug.id} drug={drug} />)}
+            {visibleDrugs.map((drug) => <DrugCard key={drug.id} drug={drug} />)}
           </div>
         ) : (
           <div className="empty-state">
