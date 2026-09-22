@@ -29,9 +29,9 @@ describe('prescribed continuous infusion conversion', () => {
     'units/h': [1000000, 20000000, 'units', 100, 5],
   }
   it('exposes every explicitly scoped conversion, with no orphan, clinical default or validation claim', () => {
-    assert.equal(conversions.length, 29)
+    assert.equal(conversions.length, 30)
     assert.deepEqual(conversions.map(([id]) => id).sort(), Object.keys(infusionConversionUnits).sort())
-    assert.equal(new Set(conversions.map(([, c]) => c.id)).size, 29)
+    assert.equal(new Set(conversions.map(([, c]) => c.id)).size, 30)
     for (const [id, definition] of conversions) {
       const drug = drugs.find(d => d.id === id)
       assert.notEqual(drug.validationStatus, 'catalog-only')

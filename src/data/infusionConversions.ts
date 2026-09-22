@@ -18,6 +18,7 @@ export const infusionConversionUnits: Readonly<Record<string, DoseRateUnit[]>> =
   isoprenalina: ['mcg/kg/min', 'mcg/min'],
   labetalol: ['mg/min', 'mg/h'],
   nicardipina: ['mg/h'],
+  clevidipina: ['mg/h'],
   nitroglicerina: ['mcg/min', 'mg/h'],
   'nitroprussiato-de-sodio': ['mcg/kg/min'],
   bumetanida: ['mg/h'],

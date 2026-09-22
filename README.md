@@ -2,7 +2,7 @@
 
 Aplicação de consulta rápida de fármacos em Medicina Intensiva, integrada visualmente na família JoFrutas/ICU Tools Hub.
 
-> **Estado do catálogo:** existem 552 entradas pesquisáveis. Destas, 6 têm consenso multiponto, 15 têm fontes verificadas, 123 são monografias com referências externas ligadas e 408 são apenas entradas de catálogo, sem conteúdo posológico. Não existe um estado genérico “pendente”: a interface distingue explicitamente uma monografia clínica de uma entrada usada apenas para pesquisa e navegação.
+> **Estado do catálogo (22/09/2026):** existem 552 entradas pesquisáveis e 166 com conteúdo posológico. Destas, 6 têm consenso multiponto, 15 têm fontes verificadas e 145 são monografias com referências externas ligadas. As restantes 386 são apenas entradas de catálogo, sem conteúdo posológico. A interface distingue explicitamente os estados documentais; uma ficha com fonte ligada não equivale a revisão clínica independente.
 
 A interface e o conteúdo estruturado estão disponíveis em português, inglês e espanhol. As traduções clínicas EN/ES são assistidas e auditadas para cobertura, preservação de números/unidades e terminologia crítica; a fonte original continua a ser a referência decisiva.
 
@@ -33,11 +33,14 @@ A revisão de 09/09/2026 acrescenta fixtures sobre as 43 definições efetivas, 
 - `src/data/sources/reviewed-clinical-reference.md` — documento interno de trabalho usado para importar conteúdo; não aparece nem pode ser citado como referência bibliográfica.
 - `src/data/sources/reviewed-clinical-notes.json` — 185 blocos clínicos extraídos do documento interno e mapeados para 190 entradas; conserva proveniência técnica, não bibliografia.
 - `src/data/catalog.generated.ts` — 552 entradas únicas geradas a partir do catálogo; não editar manualmente.
-- `src/data/catalogReviewedDrugs.ts` — constrói as 408 entradas estritamente catalogais; notas internas sem bibliografia específica não são expostas como conteúdo clínico.
+- `src/data/catalogReviewedDrugs.ts` — constrói as 386 entradas estritamente catalogais; notas internas sem bibliografia específica não são expostas como conteúdo clínico.
 - `src/data/reviewedDrugs.ts` — fichas clínicas com fontes primárias verificadas.
 - `src/data/expandedClinicalDrugs.ts` — 141 monografias estruturadas com referências ligadas a cada recomendação. Permanecem `source-linked` enquanto não existir confirmação independente contra o texto integral das fontes.
+- `src/data/targetedClinicalDrugs.ts` — 10 fichas adicionais com âmbito adulto e fontes regulatórias específicas.
+- `src/data/additionalAdultDrugs.ts` — 12 fichas adicionais de 22/09/2026; doses, vias, ajustes e precauções limitados à indicação e formulação identificadas. Revisão clínica independente pendente.
 - `src/data/crossSourceVerification.ts` — comparação rastreável entre Medscape, Drugs.com e fontes primárias/regulatórias, incluindo discrepâncias dependentes da jurisdição.
 - `src/data/drugCalculators.ts` — 43 calculadoras em 36 fármacos, com evidência específica por fórmula e referências regulatórias/guidelines.
+- `src/data/infusionConversions.ts` — 30 conversores matemáticos de dose prescrita para mL/h, sem dose ou preparação predefinida e sem selo de validação clínica.
 - `src/lib/calculators.ts` — fórmulas puras de dose por peso, velocidade de perfusão e volume/tempo.
 - `src/data/drugBuilders.ts` — tipos e auxiliares partilhados para construir doses e exemplos.
 - `src/data/categories.ts` — taxonomia de categorias.
@@ -100,9 +103,9 @@ Estados documentais:
 
 ## Calculadoras
 
-As calculadoras são definições data-driven associadas a uma ficha. Cada definição exige `sourceIds` válidos. Nas fichas `source-linked`, uma calculadora só é publicada se a sua fórmula tiver verificação independente própria (`validationStatus: source-verified`) e uma ligação directa para a fonte regulatória ou guideline. Isto permite verificar o cálculo sem promover artificialmente toda a monografia.
+As calculadoras são definições data-driven associadas a uma ficha. Cada definição exige `sourceIds` válidos. As calculadoras com doses/limites documentados mantêm a sua verificação específica. Os conversores `infusion-conversion` usam apenas valores prescritos introduzidos pelo utilizador, com referência ao método matemático; não recomendam doses, diluições ou limites clínicos nem promovem a evidência da ficha.
 
-O catálogo inclui 43 calculadoras em 36 fármacos: dose por peso, velocidade de perfusão e conversão volume/tempo. A interface mostra o selo de verificação dentro de cada calculadora e mantém visível o âmbito documental da monografia.
+O catálogo inclui 73 calculadoras em 66 fármacos: 43 definições com doses/limites documentados e 30 conversores de perfusão. Estes últimos não apresentam selo de validação clínica. Estão disponíveis formulário completo e modo de perguntas, com resultados apenas após preenchimento dos dados necessários.
 
 - **Dose por peso:** peso × dose/kg, com limite máximo e volume do concentrado quando a concentração é inequívoca.
 - **Perfusão:** converte a dose alvo e a preparação confirmada em mL/h.

@@ -20,8 +20,8 @@ import { filterByDoseAvailability, getDoseCompanion, hasDocumentedDose } from '.
 
 describe('drug search', () => {
   it('filters actual dose content separately from evidence status', () => {
-    assert.equal(filterByDoseAvailability(drugs, 'with-dose').length, 154)
-    assert.equal(filterByDoseAvailability(drugs, 'catalog-only').length, 398)
+    assert.equal(filterByDoseAvailability(drugs, 'with-dose').length, 166)
+    assert.equal(filterByDoseAvailability(drugs, 'catalog-only').length, 386)
     assert.equal(filterByDoseAvailability(drugs, 'all').length, 552)
     assert.ok(filterByDoseAvailability(drugs, 'with-dose').every(hasDocumentedDose))
     const empty = { ...drugs.find(d => d.id === 'cefazolina'), usualAdultDose: [] }
@@ -114,12 +114,12 @@ describe('catalog integrity', () => {
     assert.equal(expandedClinicalSourceCount, 141)
     assert.equal(expandedClinicalMappedCatalogCount, 142)
     assert.equal(reviewedDrugCount, 21)
-    assert.equal(structuredDrugCount, 154)
+    assert.equal(structuredDrugCount, 166)
     assert.equal(sourceVerifiedDrugCount, 21)
     assert.equal(multiSourceValidatedDrugCount, 6)
-    assert.equal(sourceLinkedDrugCount, 133)
-    assert.equal(catalogOnlyDrugCount, 398)
-    assert.equal(clinicalMonographCount, 154)
+    assert.equal(sourceLinkedDrugCount, 145)
+    assert.equal(catalogOnlyDrugCount, 386)
+    assert.equal(clinicalMonographCount, 166)
   })
 
   it('uses unique drug IDs and known category IDs', () => {
@@ -215,8 +215,8 @@ describe('catalog integrity', () => {
         .map(([status, items]) => [status, items.length]),
     )
     assert.deepEqual(statusCounts, {
-      'catalog-only': 398,
-      'source-linked': 133,
+      'catalog-only': 386,
+      'source-linked': 145,
       validated: 6,
       'source-verified': 15,
     })

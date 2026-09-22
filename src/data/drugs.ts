@@ -13,6 +13,7 @@ import {
 } from './expandedClinicalDrugs.ts'
 import { reviewedDrugs } from './reviewedDrugs.ts'
 import { targetedClinicalDrugs } from './targetedClinicalDrugs.ts'
+import { additionalAdultDrugs } from './additionalAdultDrugs.ts'
 
 const canonicalIdOverrides: Readonly<Record<string, string[]>> = {
   levosimendan: ['levosimendano'],
@@ -117,7 +118,7 @@ const expandedMappedDrugs: Drug[] = expandedClinicalDrugs
 const reviewedIds = new Set(reviewedDrugs.map((drug) => drug.id))
 const additionalStructuredDrugs = expandedMappedDrugs
   .filter((drug) => !reviewedIds.has(drug.id))
-const structuredDrugs = [...reviewedDrugs, ...additionalStructuredDrugs, ...targetedClinicalDrugs]
+const structuredDrugs = [...reviewedDrugs, ...additionalStructuredDrugs, ...targetedClinicalDrugs, ...additionalAdultDrugs]
 const structuredDrugsWithVerification = structuredDrugs.map((drug) => {
   const verificationPatch = crossSourceVerificationByDrugId[drug.id]
   if (!verificationPatch) return drug
